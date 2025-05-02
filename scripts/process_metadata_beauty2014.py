@@ -4,7 +4,7 @@ import pandas as pd
 from io import StringIO
 from tqdm import tqdm
 import warnings
-from src.utils.project_dirs import get_reviews_raw2018_dir, processed_data_dir
+from src.utils.project_dirs import get_reviews_raw2014_dir, processed_data_dir
 import os
 
 def load_and_fix_json_lines(file_path):
@@ -68,21 +68,29 @@ def handle_duplicate_asins(df):
         print("Warning: 'asin' column not found.")
         return df
 
+    print(f"Shape before duplicate handling: {df.shape}, Unique ASINs: {df['asin'].nunique()}")
+
     def are_rows_equal(group):
         subset = group.iloc[:, 1:] # columns except 'asin'
         return subset.drop_duplicates(keep='first').shape[0] > 1
 
+    # Find ASINs that repeat more than once
     repeated_asins = df['asin'].value_counts()[df['asin'].value_counts() > 1].index
-    is_repeated = df['asin'].isin(repeated_asins)
-    different_duplicates = df[is_repeated].groupby('asin').apply(are_rows_equal)
+    is_repeated = df['asin'].isin(repeated_asins) # boolean mask indicating rows with repeated ASINs
+    different_duplicates = df[is_repeated].groupby('asin', observed=False).apply(are_rows_equal) # first column is the group by i.e. asin
 
-    if different_duplicates.any():
+    # Filter for ASINs where the rows are different
+    different_asins = different_duplicates[different_duplicates].index.tolist()
+
+    if different_asins:
         print("Warning, ASINs with different values in other columns:")
-        for asin in different_duplicates[different_duplicates].index:
+        for asin in different_asins:
             print(df[df['asin'] == asin])
     else:
         print("All duplicate ASINs have identical values in other columns.")
-        df = df.drop_duplicates(subset=['asin'], keep='first').reset_index(drop=True)
+        df = df.drop_duplicates(subset=['asin'], keep='first').reset_index(drop=True) # Added reset_index
+
+    print(f"Shape after duplicate handling: {df.shape}, Unique ASINs: {df['asin'].nunique()}")
     return df
 
 def inspect_and_clean_columns(df, columns_to_keep):
@@ -158,7 +166,6 @@ def truncate_text_columns(df, truncation_config):
     return df
 
 def main():
-
     raw_dir2014 = get_reviews_raw2014_dir() # this is a Pathlib object
     os.system(f"wget https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Beauty.json.gz -P {str(raw_dir2014)}")
     os.system(f"gunzip {os.path.join(str(raw_dir2014), 'meta_Beauty.json.gz')}")

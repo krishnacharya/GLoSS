@@ -68,3 +68,7 @@ def get_training_scripts_dir():
 def get_eval_scripts_dir():
     return get_src_dir() / "eval"
 
+def get_bm25_indexes_dir():
+    res = project_root() / "bm25_indexes"
+    res.mkdir(parents=True, exist_ok=True)
+    return res
