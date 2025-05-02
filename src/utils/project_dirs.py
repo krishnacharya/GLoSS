@@ -72,3 +72,8 @@ def get_bm25_indexes_dir():
     res = project_root() / "bm25_indexes"
     res.mkdir(parents=True, exist_ok=True)
     return res
+
+def get_llama_modelsave_dir():
+    res = project_root() / "llama_modelsave"
+    res.mkdir(parents=True, exist_ok=True)
+    return res
