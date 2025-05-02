@@ -19,6 +19,12 @@ def processed_data_root() -> Path:
     res.mkdir(parents=True, exist_ok=True)
     return res
 
+def processed_data_dir(dataset:str):
+    res = processed_data_root()
+    res = res / dataset
+    res.mkdir(parents=True, exist_ok = True)
+    return res
+
 def raw_data_ds(dataset):
     res = raw_data_root()
     res = res / dataset
@@ -45,6 +51,11 @@ def get_hfdata_dir():
 
 def get_reviews_raw2018_dir():
     res = project_root() / "reviews" / "raw-2018"
+    res.mkdir(parents=True, exist_ok=True)
+    return res
+
+def get_reviews_raw2014_dir():
+    res = project_root() / "reviews" / "raw-2014"
     res.mkdir(parents=True, exist_ok=True)
     return res
 
