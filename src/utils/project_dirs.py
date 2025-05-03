@@ -77,3 +77,18 @@ def get_llama_modelsave_dir():
     res = project_root() / "llama_modelsave"
     res.mkdir(parents=True, exist_ok=True)
     return res
+
+def get_gen_dir():
+    res = project_root() / "genqueries"
+    res.mkdir(parents=True, exist_ok=True)
+    return res
+
+def get_gen_dir_dataset(dataset:str):
+    res = get_gen_dir() / dataset
+    res.mkdir(parents=True, exist_ok=True)
+    return res
+
+def ft_configs_dir():
+    res = project_root() / "ft_configs"
+    res.mkdir(parents=True, exist_ok=True)
+    return res

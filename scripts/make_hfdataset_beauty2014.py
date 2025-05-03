@@ -2,9 +2,7 @@ import random
 from collections import defaultdict
 from typing import List, Dict
 import pandas as pd
-from datasets import Dataset, DatasetDict, load_from_disk
-from src.utils.project_dirs import processed_data_dir, get_hfdata_dir
-
+from datasets import Dataset, DatasetDict
 
 def prepare_metadata(meta_corpus_path: str) -> pd.DataFrame:
     """
@@ -37,88 +35,6 @@ def prepare_reviewer_asins(core5: pd.DataFrame) -> Dict[str, List[str]]:
     return reviewer_asins
 
 
-def create_prompt(history: List[str], next_item: str) -> str:
-    """
-    Creates a prompt for the recommendation task.
-
-    Args:
-        history (List[str]): List of item titles representing the purchase history.
-        next_item (str): The title of the next item to predict.
-
-    Returns:
-        str: The formatted prompt.
-    """
-    amzn_prompt = (
-        "Below is a customer's purchase history on Amazon, listed in chronological order (earliest to latest). \n"
-        "Each item is represented by the following format: Title: <item title> \n"
-        "Based on this history, predict **only one** item the customer is most likely to purchase next in the same format.\n\n"
-        "### Purchase history:\n"
-        "{}\n\n"
-        "### Next item:\n"
-        "{}"
-    )
-    return amzn_prompt.format("\n".join(history), next_item)
-
-
-def prepare_records(reviewer_asins: Dict[str, List[str]],asin_dict: Dict[str, str]) -> (List[Dict], List[Dict], List[Dict]):
-    """
-    Prepares training, validation, and test records from reviewer-ASIN data.
-
-    Args:
-        reviewer_asins (Dict[str, List[str]]): ASINs grouped by reviewer ID.
-        asin_dict (Dict[str, str]): Dictionary mapping ASINs to their natural language representation.
-
-    Returns:
-        tuple: (train_records, val_records, test_records)
-    """
-    train_records, val_records, test_records = [], [], []
-    for reviewer_id, asins_list in reviewer_asins.items():
-        n = len(asins_list)
-        if n < 3:
-            raise ValueError(f"Reviewer {reviewer_id} has less than 3 reviews")
-        formatted_asins_list = [
-            asin_dict.get(asin, f"Unknown ASIN: {asin}") for asin in asins_list
-        ]
-
-        # Train set
-        train_text = create_prompt(formatted_asins_list[: n - 2], formatted_asins_list[n - 2])
-        train_records.append({"reviewer_id": reviewer_id, "text": train_text})
-
-        # Validation set
-        val_ptext = create_prompt(formatted_asins_list[: n - 2], "")
-        val_text = create_prompt(formatted_asins_list[: n - 2], formatted_asins_list[n - 2])
-        val_seen_asins = asins_list[: n - 2]
-        val_asin = asins_list[n - 2]
-        val_asin_text = formatted_asins_list[n - 2]
-        val_records.append(
-            {
-                "reviewer_id": reviewer_id,
-                "ptext": val_ptext,
-                "text": val_text,
-                "seen_asins": val_seen_asins,
-                "asin": val_asin,
-                "asin_text": val_asin_text,
-            }
-        )
-
-        # Test set
-        test_ptext = create_prompt(formatted_asins_list[: n - 1], "")
-        test_text = create_prompt(formatted_asins_list[: n - 1], formatted_asins_list[n - 1])
-        test_seen_asins = asins_list[: n - 1]
-        test_asin = asins_list[n - 1]
-        test_asin_text = formatted_asins_list[n - 1]
-        test_records.append(
-            {
-                "reviewer_id": reviewer_id,
-                "ptext": test_ptext,
-                "text": test_text,
-                "seen_asins": test_seen_asins,
-                "asin": test_asin,
-                "asin_text": test_asin_text,
-            }
-        )
-    return train_records, val_records, test_records
-
 def create_datasets(
     core5: pd.DataFrame,
     meta_corpus: pd.DataFrame,
@@ -131,7 +47,7 @@ def create_datasets(
 
     Args:
         core5 (pd.DataFrame): 'reviewerID' and 'asin' interaction dataframe.
-        meta_corpus (pd.DataFrame): metadata corpus dataframe with 'asin', 'Title', 'Brand', 'Category', and 'Price' columns
+        meta_corpus (pd.DataFrame): metadata corpus dataframe with 'asin', 'Title'
         save_path (str or Path): Path to save the resulting Hugging Face datasets.
         Nval (int): Number of reviewers to include in the validation set.
         random_seed (int): Seed for random sampling.
@@ -141,17 +57,71 @@ def create_datasets(
     """
     # Prepare metadata
     meta_corpus.columns = ['asin', 'Title']
-    asin_dict = meta_corpus.set_index('asin')['Title'].to_dict()  # asin to title
+    asins_compact = meta_corpus[['asin']].copy()
+    asins_compact['nlang'] = "Title: " + meta_corpus['Title']
+    asin_dict = asins_compact.set_index('asin')['nlang'].to_dict() # asin to serialized natural language string
 
     # Group ASINs by reviewer
     reviewer_asins = prepare_reviewer_asins(core5)
+
+    # Define prompt template
+    amzn_prompt = (
+        "Below is a customer's purchase history on Amazon, listed in chronological order (earliest to latest). \n"
+        "Each item is represented by the following format: Title: <item title> \n"
+        "Based on this history, predict **only one** item the customer is most likely to purchase next in the same format.\n\n"
+        "### Purchase history:\n"
+        "{}\n\n"
+        "### Next item:\n"
+        "{}"
+    )
 
     # Split reviewers into validation and others
     random.seed(random_seed)
     val_rewid = set(random.sample(list(reviewer_asins.keys()), Nval))
 
     # Prepare records for each split
-    train_records, val_records, test_records = prepare_records(reviewer_asins, asin_dict)
+    train_records, val_records, test_records = [], [], []
+    for reviewer_id, asins_list in reviewer_asins.items():
+        n = len(asins_list)
+        if n < 3:
+            continue  # Skip reviewers with less than 3 interactions
+        formatted_asins_list = [asin_dict.get(asin, f"Unknown ASIN: {asin}") for asin in asins_list]
+
+        # Prepare test set for all reviewers
+        test_ptext = amzn_prompt.format("\n".join(formatted_asins_list[:n-1]), "")
+        test_text = amzn_prompt.format("\n".join(formatted_asins_list[:n-1]), formatted_asins_list[n-1])
+        test_seen_asins = asins_list[:n-1]
+        test_asin = asins_list[n-1]
+        test_asin_text = formatted_asins_list[n-1]
+        test_records.append({
+            "reviewer_id": reviewer_id,
+            "ptext": test_ptext,
+            "text": test_text,
+            "seen_asins": test_seen_asins,
+            "asin": test_asin,
+            "asin_text": test_asin_text
+        })
+
+        if reviewer_id in val_rewid:  # Validation set
+            val_ptext = amzn_prompt.format("\n".join(formatted_asins_list[:n-2]), "")
+            val_text = amzn_prompt.format("\n".join(formatted_asins_list[:n-2]), formatted_asins_list[n-2])
+            val_seen_asins = asins_list[:n-2]
+            val_asin = asins_list[n-2]
+            val_asin_text = formatted_asins_list[n-2]
+            val_records.append({
+                "reviewer_id": reviewer_id,
+                "ptext": val_ptext,
+                "text": val_text,
+                "seen_asins": val_seen_asins,
+                "asin": val_asin,
+                "asin_text": val_asin_text
+            })
+            # Train set is shorter for validation users
+            train_text = amzn_prompt.format("\n".join(formatted_asins_list[:n-3]), formatted_asins_list[n-3])
+            train_records.append({"reviewer_id": reviewer_id, "text": train_text})
+        else:  # Train set for non-validation users
+            train_text = amzn_prompt.format("\n".join(formatted_asins_list[:n-2]), formatted_asins_list[n-2])
+            train_records.append({"reviewer_id": reviewer_id, "text": train_text})
 
     # Convert lists to Hugging Face datasets
     train_dataset = Dataset.from_pandas(pd.DataFrame(train_records))
@@ -168,9 +138,10 @@ def create_datasets(
 
     return dataset_dict
 
-
 def main():
     """Main function to orchestrate dataset creation."""
+    from src.utils.project_dirs import processed_data_dir, get_hfdata_dir
+
     core5_file = str(processed_data_dir('beauty2014') / 'df_withdup.json')
     meta_corpus_file = str(processed_data_dir('beauty2014') / 'meta_corpus.json')
 
@@ -185,6 +156,5 @@ def main():
     dataset_withdup = create_datasets(
         core5, meta_corpus, save_path=str(hf_dir / 'beauty2014'), Nval=Nval, random_seed=42
     )
-
 if __name__ == "__main__":
     main()

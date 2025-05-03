@@ -133,7 +133,8 @@ def evaluate_model(qrels: Qrels, run: Run, metrics: List[str], model_name: str):
     return results
 
 
-def main(dataset_path: str, meta_corpus_path: str, bm25_index_name: str = "amznbeauty2014_index", k: int = 5, metrics: List[str] = ["recall@5", "ndcg@5", "mrr"]):
+def main(dataset_path: str, meta_corpus_path: str, bm25_index_name: str = "amznbeauty2014_index", \
+        k: int = 5, metrics: List[str] = ["recall@5", "ndcg@5", "mrr"], dataset_split: str = "test"):
     """Main function to load data, build baselines, and evaluate them."""
     # Load datasets
     dataset = load_datasets(dataset_path)
@@ -147,8 +148,8 @@ def main(dataset_path: str, meta_corpus_path: str, bm25_index_name: str = "amznb
     retriever = build_bm25_retriever(corpus_list, bm25_index_path)
 
     # Prepare ground truth
-    qrels_test = Qrels(get_qrels(dataset['test']))
-    print("\nQrels (test):")
+    qrels_test = Qrels(get_qrels(dataset[dataset_split]))
+    print(f"\nQrels ({dataset_split}):")
     print("-" * 30)
 
     # # Load item popularity
@@ -156,19 +157,19 @@ def main(dataset_path: str, meta_corpus_path: str, bm25_index_name: str = "amznb
     # item_pop = core5['asin'].value_counts()
 
     # # Evaluate Random Recommendations
-    # run_test_rand = Run(randrecs_fromcorpus(asins_compact[['asin']], dataset['test'], k=k))
+    # run_test_rand = Run(randrecs_fromcorpus(asins_compact[['asin']], dataset[dataset_split], k=k))
     # evaluate_model(qrels_test, run_test_rand, metrics, "Random Recommendations")
 
     # # Evaluate Popularity-Weighted Recommendations
-    # run_test_popweighted = Run(randrecs_popweighted(asins_compact[['asin']], dataset['test'], item_pop, k=k))
+    # run_test_popweighted = Run(randrecs_popweighted(asins_compact[['asin']], dataset[dataset_split], item_pop, k=k))
     # evaluate_model(qrels_test, run_test_popweighted, metrics, "Popularity-Weighted Recommendations")
 
     # # Evaluate Repeat Last Seen Recommendations
-    # run_test_repeat_last = Run(repeat_last_seen(dataset['test'], item_pop, k=k))
+    # run_test_repeat_last = Run(repeat_last_seen(dataset[dataset_split], item_pop, k=k))
     # evaluate_model(qrels_test, run_test_repeat_last, metrics, "Repeat Last Seen Recommendations")
 
     # Evaluate Text-Based Last Similar Recommendations
-    run_test_textbased_lastsimilar = Run(textbased_lastsimilar(dataset['test'], retriever, asin_dict, asins_compact, k=k))
+    run_test_textbased_lastsimilar = Run(textbased_lastsimilar(dataset[dataset_split], retriever, asin_dict, asins_compact, k=k))
     evaluate_model(qrels_test, run_test_textbased_lastsimilar, metrics, "Text-Based Last Similar Recommendations")
 
 
@@ -177,4 +178,10 @@ if __name__ == "__main__":
     processed_dir = processed_data_dir('beauty2014')
     dataset_path_withdup = str(hf_dir / 'beauty2014')
     meta_corpus_path = str(processed_dir / 'meta_corpus.json')
-    main(dataset_path_withdup, meta_corpus_path, bm25_index_name="amznbeauty2014_index")
+    main(dataset_path_withdup, meta_corpus_path, bm25_index_name="amznbeauty2014_index", dataset_split="validation")
+
+# on test LIR
+# {'recall@5': np.float64(0.04333050127442651), 'ndcg@5': np.float64(0.023179244762936268), 'mrr': np.float64(0.016472894215147044)}
+
+# on validation LIR
+# {'recall@5': np.float64(0.03577817531305903), 'ndcg@5': np.float64(0.01862776408186558), 'mrr': np.float64(0.012939773404889682)}

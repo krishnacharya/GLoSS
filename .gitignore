@@ -1,0 +1,4 @@
+# ignore any files with the prefix cache, recurvisely in all directories
+cache*
+
+
