@@ -133,3 +133,36 @@ if __name__ == "__main__":
     retriever_filepath = str(get_bm25_indexes_dir() / args.retriever_index)
     at_k = args.num_sequences
     main(meta_filepath, generated_filepath, retriever_filepath, args.num_sequences, at_k)
+
+
+# on test LLama1BftBeauty2014 with beam search
+# Metrics: {'recall@5': np.float64(0.04534275365559182), 'ndcg@5': np.float64(0.026878945255920418), 'mrr': np.float64(0.020865566635364964)}
+
+# on validation LLama1BftBeauty2014  with beam search
+# Metrics: {'recall@5': np.float64(0.05366726296958855), 'ndcg@5': np.float64(0.03218498256886583), 'mrr': np.float64(0.025163983303518187)}
+
+# on test LLama1BftBeauty2014 with sampling 0.5
+
+# onn validation LLama1BftBeauty2014 with sampling, temp 0.5
+# Metrics: {'recall@5': np.float64(0.01073345259391771), 'ndcg@5': np.float64(0.006946322436661294), 'mrr': np.float64(0.005724508050089446)}
+
+# on validation llama1b sampling, temp = 0.2
+# Metrics: {'recall@5': np.float64(0.011627906976744186), 'ndcg@5': np.float64(0.008841746091621304), 'mrr': np.float64(0.007901013714967202)}
+
+# on validation llama1b sampling, temp = 0.1
+# Metrics: {'recall@5': np.float64(0.006261180679785331), 'ndcg@5': np.float64(0.005600947680807617), 'mrr': np.float64(0.005366726296958855)}
+# -----------------------------
+# on test Qwen3-0.6B-ftBeauty2014
+
+
+# on validation Qwen3-0.6B-ftBeauty2014
+# Metrics: {'recall@5': np.float64(0.01073345259391771), 'ndcg@5': np.float64(0.010286225402504472), 'mrr': np.float64(0.010137149672033392)}
+
+# on test Gemma3-1B-ftBeauty2014
+# -----------------------------
+
+# on val SmolLM160M-ftBeauty2014 with beam search
+# Metrics: {'recall@5': np.float64(0.0017889087656529517), 'ndcg@5': np.float64(0.0014587922661640944), 'mrr': np.float64(0.0013416815742397137)}
+
+# on val SmolLM160M-ftBeauty2014 with sampling temp 0.5
+# Metrics: {'recall@5': np.float64(0.014311270125223614), 'ndcg@5': np.float64(0.009315474775102668), 'mrr': np.float64(0.007692307692307692)}

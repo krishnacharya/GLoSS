@@ -13,7 +13,7 @@ import argparse
 def add_eos_to_text(example, tokenizer):
     return {"text": example["text"] + tokenizer.eos_token}
 
-def finetune_llama1b_quantized(config):
+def finetune(config):
     model_name = config['finetuning_config']['model_name']
     dataset_name = config['finetuning_config']['dataset_name']
     dataset_split = config['finetuning_config']['dataset_split']
@@ -113,7 +113,7 @@ def finetune_llama1b_quantized(config):
         lr_scheduler_type = config['training_arguments']['lr_scheduler_type'],
         seed = random_state,
         report_to = config['training_arguments']['report_to'],
-        evaluation_strategy = config['training_arguments']['evaluation_strategy'],
+        eval_strategy = config['training_arguments']['eval_strategy'],
         eval_steps = config['training_arguments']['eval_steps'],
         save_strategy = config['training_arguments']['save_strategy'],
         metric_for_best_model = config['training_arguments']['metric_for_best_model'],
@@ -141,4 +141,9 @@ if __name__ == "__main__":
     args = args.parse_args()
     with open(args.config, "r") as f:
         config = yaml.safe_load(f)
-    finetune_llama1b_quantized(config)
+    finetune(config)
+
+# Llama 1B, 16 lora, 11M parameters, 0.045 recall@5
+# Gemma 3, 1B, 16 lora, 13M parameters
+# Qwen 3, 600M, 16 lora, 10M parameters
+# SmolLM 160M, 256 lora, 78M parameters
