@@ -96,42 +96,7 @@ def finetune(config):
     # model output directory
     model_output_dir = get_llama_modelsave_dir() / f"{model_name.split('/')[-1]}-ft{dataset_name.split('_')[-1]}_ep{num_train_epochs}_maxseq{max_seq_length}"  # this is a pathlib object
     print(f"Model output directory: {model_output_dir}")
-
-    # training_args = TrainingArguments(
-    #     output_dir = str(model_output_dir),
-    #     run_name = run_name,
-    #     per_device_train_batch_size = per_device_train_batch_size,
-    #     gradient_accumulation_steps = gradient_accumulation_steps,
-    #     warmup_steps = warmup_steps,
-    #     # num_train_epochs = num_train_epochs,
-    #     max_steps = max_steps,
-    #     learning_rate = learning_rate,
-    #     fp16 = not is_bfloat16_supported(),
-    #     bf16 = is_bfloat16_supported(),
-    #     logging_steps = config['training_arguments']['logging_steps'],
-    #     optim = config['training_arguments']['optim'],
-    #     weight_decay = config['training_arguments']['weight_decay'],
-    #     lr_scheduler_type = config['training_arguments']['lr_scheduler_type'],
-    #     seed = random_state,
-    #     report_to = config['training_arguments']['report_to'],
-    #     evaluation_strategy = config['training_arguments']['evaluation_strategy'],
-    #     eval_steps = config['training_arguments']['eval_steps'],
-    #     save_strategy = config['training_arguments']['save_strategy'],
-    #     metric_for_best_model = config['training_arguments']['metric_for_best_model'],
-    #     greater_is_better = config['training_arguments']['greater_is_better'],
-    #     save_total_limit = config['training_arguments']['save_total_limit'],
-    # )
-
-    # trainer = SFTTrainer(model = model,
-    #                     tokenizer = tokenizer,
-    #                     train_dataset = train_dataset,
-    #                     eval_dataset = eval_dataset, #added eval dataset
-    #                     dataset_text_field = "text",
-    #                     max_seq_length = max_seq_length,
-    #                     dataset_num_proc = 2,
-    #                     packing = False, # using False as it's buggy and doesnt count correct number of examples
-    #                     args = training_args,
-    #                     )
+    
     training_arguments = TrainingArguments(
         output_dir = str(model_output_dir), # Make sure this is defined
         run_name = run_name, # Make sure this is defined

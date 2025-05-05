@@ -154,8 +154,21 @@ if __name__ == "__main__":
 # -----------------------------
 
 #Llama3BftBeauty2014
+# on test, finetuned 16k steps, beam search
+
+
+
 #on validation, finetuned 16k steps, beam search
 # Metrics: {'recall@5': np.float64(0.061717352415026835), 'ndcg@5': np.float64(0.03787972431398929), 'mrr': np.float64(0.03018783542039356)}
+
+# on validation, finetuned 16k steps, sampling temp 0.5
+# Metrics: {'recall@5': np.float64(0.027728085867620753), 'ndcg@5': np.float64(0.02085487360331486), 'mrr': np.float64(0.018559928443649374)}
+
+# on validation, finetuned 16k steps, sampling temp 0.2
+# Metrics: {'recall@5': np.float64(0.024150268336314847), 'ndcg@5': np.float64(0.020414549032904978), 'mrr': np.float64(0.01915623136553369)}
+
+# on validation, finetuned 16k steps, sampling temp 0.1
+
 # -----------------------------
 # on test Qwen3-0.6B-ftBeauty2014
 
