@@ -159,10 +159,16 @@ def gen_with_beam(model_name: str, dataset_name: str, dataset_split: str,  max_s
     full_split = full_dataset[dataset_split]
     print(f"Loaded dataset '{dataset_name}', split '{dataset_split}' with {len(full_split)} examples. Using field '{data_field}'.")
 
-    model_path = str(get_llama_modelsave_dir() / model_name)
-
-    model = AutoModelForCausalLM.from_pretrained(model_path, device_map="auto", load_in_4bit=load_in_4bit)
+    try:
+        model_path = str(get_llama_modelsave_dir() / model_name)
+        if not os.path.exists(model_path):
+            raise FileExistsError(f"Model path {model_path} does not exist locally")
+    except FileExistsError:
+        model_path = model_name # use HF model
+    
+    model = AutoModelForCausalLM.from_pretrained(model_path, device_map="auto")
     tokenizer = AutoTokenizer.from_pretrained(model_path)
+
     print(tokenizer.pad_token, tokenizer.truncation_side, tokenizer.padding_side) # padding side and tunrcation side will be set to left in the generate_beam_sequences call below
     results = generate_beam_sequences(model, tokenizer, full_split,\
                            batch_size= batch_size, num_beams= num_beams,\

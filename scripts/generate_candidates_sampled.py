@@ -156,7 +156,12 @@ def generate_with_sampling(model_name: str, dataset_name: str, dataset_split: st
     full_split = full_dataset[dataset_split]
     print(f"Loaded dataset '{dataset_name}', split '{dataset_split}' with {len(full_split)} examples. Using field '{data_field}'.")
 
-    model_path = str(project_root() / model_name)  # Assuming model_name is a path relative to project_root
+    try:
+        model_path = str(project_root() / model_name)  # if model is local
+        if not os.path.exists(model_path):
+            raise FileExistsError(f"Model path {model_path} does not exist locally")
+    except FileExistsError:
+        model_path = model_name # use the one from HF
     model, tokenizer = FastLanguageModel.from_pretrained(model_name=model_path,
                                                        max_seq_length=max_seq_length,
                                                        dtype=None,

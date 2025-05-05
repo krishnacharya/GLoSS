@@ -134,7 +134,7 @@ if __name__ == "__main__":
     at_k = args.num_sequences
     main(meta_filepath, generated_filepath, retriever_filepath, args.num_sequences, at_k)
 
-
+# -----------------------------
 # on test LLama1BftBeauty2014 with beam search
 # Metrics: {'recall@5': np.float64(0.04534275365559182), 'ndcg@5': np.float64(0.026878945255920418), 'mrr': np.float64(0.020865566635364964)}
 
@@ -152,13 +152,21 @@ if __name__ == "__main__":
 # on validation llama1b sampling, temp = 0.1
 # Metrics: {'recall@5': np.float64(0.006261180679785331), 'ndcg@5': np.float64(0.005600947680807617), 'mrr': np.float64(0.005366726296958855)}
 # -----------------------------
+
+#Llama3BftBeauty2014
+#on validation, finetuned 16k steps, beam search
+# Metrics: {'recall@5': np.float64(0.061717352415026835), 'ndcg@5': np.float64(0.03787972431398929), 'mrr': np.float64(0.03018783542039356)}
+# -----------------------------
 # on test Qwen3-0.6B-ftBeauty2014
 
 
 # on validation Qwen3-0.6B-ftBeauty2014
 # Metrics: {'recall@5': np.float64(0.01073345259391771), 'ndcg@5': np.float64(0.010286225402504472), 'mrr': np.float64(0.010137149672033392)}
 
-# on test Gemma3-1B-ftBeauty2014
+#Gemma3-1B-ftBeauty2014
+
+# valudation, not finetuned, sampling temp 0.5
+
 # -----------------------------
 
 # on val SmolLM160M-ftBeauty2014 with beam search

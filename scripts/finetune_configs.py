@@ -9,6 +9,7 @@ from trl import SFTTrainer
 from transformers import TrainingArguments
 import yaml
 import argparse
+from transformers.trainer_callback import EarlyStoppingCallback
 
 def add_eos_to_text(example, tokenizer):
     return {"text": example["text"] + tokenizer.eos_token}
@@ -27,7 +28,7 @@ def finetune(config):
     gradient_accumulation_steps = config['finetuning_config']['gradient_accumulation_steps']
     random_state = config['finetuning_config']['random_state']
     num_train_epochs = config['finetuning_config']['num_train_epochs']
-    max_steps = config['finetuning_config']['max_steps']
+    # max_steps = config['finetuning_config']['max_steps']
     warmup_steps = config['finetuning_config']['warmup_steps']
 
     effective_batch_size = per_device_train_batch_size * gradient_accumulation_steps
@@ -39,7 +40,7 @@ def finetune(config):
         lora_r=lora_r,
         lora_alpha=lora_alpha,
         learning_rate=learning_rate,
-        max_steps=max_steps,
+        # max_steps=max_steps,
         num_train_epochs=num_train_epochs,
         warmup_steps=warmup_steps
     )
@@ -93,21 +94,55 @@ def finetune(config):
     eval_dataset = eval_dataset.map(add_eos_to_text, fn_kwargs={"tokenizer": tokenizer})
 
     # model output directory
-    model_output_dir = get_llama_modelsave_dir() / f"{model_name.split('/')[-1]}-ft{dataset_name.split('_')[-1]}_ep{num_train_epochs}_maxseq{max_seq_length}_maxsteps{max_steps}"  # this is a pathlib object
+    model_output_dir = get_llama_modelsave_dir() / f"{model_name.split('/')[-1]}-ft{dataset_name.split('_')[-1]}_ep{num_train_epochs}_maxseq{max_seq_length}"  # this is a pathlib object
     print(f"Model output directory: {model_output_dir}")
 
-    training_args = TrainingArguments(
-        output_dir = str(model_output_dir),
-        run_name = run_name,
+    # training_args = TrainingArguments(
+    #     output_dir = str(model_output_dir),
+    #     run_name = run_name,
+    #     per_device_train_batch_size = per_device_train_batch_size,
+    #     gradient_accumulation_steps = gradient_accumulation_steps,
+    #     warmup_steps = warmup_steps,
+    #     # num_train_epochs = num_train_epochs,
+    #     max_steps = max_steps,
+    #     learning_rate = learning_rate,
+    #     fp16 = not is_bfloat16_supported(),
+    #     bf16 = is_bfloat16_supported(),
+    #     logging_steps = config['training_arguments']['logging_steps'],
+    #     optim = config['training_arguments']['optim'],
+    #     weight_decay = config['training_arguments']['weight_decay'],
+    #     lr_scheduler_type = config['training_arguments']['lr_scheduler_type'],
+    #     seed = random_state,
+    #     report_to = config['training_arguments']['report_to'],
+    #     evaluation_strategy = config['training_arguments']['evaluation_strategy'],
+    #     eval_steps = config['training_arguments']['eval_steps'],
+    #     save_strategy = config['training_arguments']['save_strategy'],
+    #     metric_for_best_model = config['training_arguments']['metric_for_best_model'],
+    #     greater_is_better = config['training_arguments']['greater_is_better'],
+    #     save_total_limit = config['training_arguments']['save_total_limit'],
+    # )
+
+    # trainer = SFTTrainer(model = model,
+    #                     tokenizer = tokenizer,
+    #                     train_dataset = train_dataset,
+    #                     eval_dataset = eval_dataset, #added eval dataset
+    #                     dataset_text_field = "text",
+    #                     max_seq_length = max_seq_length,
+    #                     dataset_num_proc = 2,
+    #                     packing = False, # using False as it's buggy and doesnt count correct number of examples
+    #                     args = training_args,
+    #                     )
+    training_arguments = TrainingArguments(
+        output_dir = str(model_output_dir), # Make sure this is defined
+        run_name = run_name, # Make sure this is defined
         per_device_train_batch_size = per_device_train_batch_size,
         gradient_accumulation_steps = gradient_accumulation_steps,
         warmup_steps = warmup_steps,
-        # num_train_epochs = num_train_epochs,
-        max_steps = max_steps,
+        num_train_epochs = num_train_epochs,
         learning_rate = learning_rate,
-        fp16 = not is_bfloat16_supported(),
-        bf16 = is_bfloat16_supported(),
-        logging_steps = config['training_arguments']['logging_steps'],
+        fp16 = not is_bfloat16_supported(), # Make sure is_bfloat16_supported() is defined or handled
+        bf16 = is_bfloat16_supported(), # Make sure is_bfloat16_supported() is defined or handled
+        logging_steps = config['training_arguments']['logging_steps'], # Assuming this is 1 from your config
         optim = config['training_arguments']['optim'],
         weight_decay = config['training_arguments']['weight_decay'],
         lr_scheduler_type = config['training_arguments']['lr_scheduler_type'],
@@ -119,18 +154,26 @@ def finetune(config):
         metric_for_best_model = config['training_arguments']['metric_for_best_model'],
         greater_is_better = config['training_arguments']['greater_is_better'],
         save_total_limit = config['training_arguments']['save_total_limit'],
+        load_best_model_at_end = config['training_arguments']['load_best_model_at_end'],
     )
 
-    trainer = SFTTrainer(model = model,
-                        tokenizer = tokenizer,
-                        train_dataset = train_dataset,
-                        eval_dataset = eval_dataset, #added eval dataset
-                        dataset_text_field = "text",
-                        max_seq_length = max_seq_length,
-                        dataset_num_proc = 2,
-                        packing = False, # using False as it's buggy and doesnt count correct number of examples
-                        args = training_args,
-                        )
+    early_stopping_callback = EarlyStoppingCallback(
+        early_stopping_patience=config['early_stopping_config']['patience'], # Or your desired number of epochs
+        early_stopping_threshold=config['early_stopping_config']['threshold'], # Or your desired threshold
+    )
+
+    trainer = SFTTrainer(
+        model = model, # Make sure this is defined
+        tokenizer = tokenizer, # Make sure this is defined
+        train_dataset = train_dataset, # Make sure this is defined
+        eval_dataset = eval_dataset, # Make sure this is defined
+        dataset_text_field = "text", # Assuming your text field is named "text"
+        max_seq_length = max_seq_length,
+        dataset_num_proc = 2, # Or your desired number of processes
+        packing = False,
+        args = training_arguments,
+        callbacks = [early_stopping_callback],
+    )
     trainer_stats = unsloth_train(trainer)
     model.save_pretrained(str(model_output_dir))
     tokenizer.save_pretrained(str(model_output_dir))
@@ -143,7 +186,9 @@ if __name__ == "__main__":
         config = yaml.safe_load(f)
     finetune(config)
 
-# Llama 1B, 16 lora, 11M parameters, 0.045 recall@5
+# Llama 3.2-1B, 16 lora, 11M parameters, 0.045 recall@5
 # Gemma 3, 1B, 16 lora, 13M parameters
 # Qwen 3, 600M, 16 lora, 10M parameters
 # SmolLM 160M, 256 lora, 78M parameters
+
+# Llama 3.2 3B, 16 lora, 24M params
