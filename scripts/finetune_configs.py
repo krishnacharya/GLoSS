@@ -92,7 +92,7 @@ def finetune(config):
     eval_dataset = eval_dataset.map(add_eos_to_text, fn_kwargs={"tokenizer": tokenizer})
 
     # model output directory
-    model_output_dir = get_llama_modelsave_dir() / f"{model_name.split('/')[-1]}-ft{dataset_name.split('_')[-1]}_ep{num_train_epochs}_maxseq{max_seq_length}"  # this is a pathlib object
+    model_output_dir = get_llama_modelsave_dir() / f"{model_name.split('/')[-1]}-ft{dataset_name.split('_')[-1]}_ep{num_train_epochs}_maxseq{max_seq_length}_bs{per_device_train_batch_size}_acc{gradient_accumulation_steps}"  # this is a pathlib object
     print(f"Model output directory: {model_output_dir}")
 
     training_arguments = TrainingArguments(
