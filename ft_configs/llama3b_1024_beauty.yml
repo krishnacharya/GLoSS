@@ -11,7 +11,7 @@ finetuning_config:
   per_device_train_batch_size: 4
   gradient_accumulation_steps: 4
   random_state: 3407
-  num_train_epochs: 15
+  num_train_epochs: 10
   warmup_steps: 300
 
 wandb_config:
