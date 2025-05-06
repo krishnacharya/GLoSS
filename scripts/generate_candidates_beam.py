@@ -174,7 +174,7 @@ def gen_with_beam(model_name: str, dataset_name: str, dataset_split: str,  max_s
                            batch_size= batch_size, num_beams= num_beams,\
                            num_return_sequences = num_return_sequences, max_new_tokens = max_new_tokens,
                            max_context=max_seq_length, field=data_field)
-    gen_path = str(get_gen_dir_dataset(dataset_name) / f"{model_name.split('/')[-1]}_{dataset_split}_beam{num_beams}_max_seq{max_seq_length}v2.json")
+    gen_path = str(get_gen_dir_dataset(dataset_name) / f"{model_name.split('/')[-1]}_{dataset_split}_beam{num_beams}_max_seq{max_seq_length}_bs{batch_size}_numret{num_return_sequences}.json")
     with open(gen_path, "w") as f:
         json.dump(results, f, indent=2)
 

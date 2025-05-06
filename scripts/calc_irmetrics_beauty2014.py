@@ -157,7 +157,6 @@ if __name__ == "__main__":
 # on test, finetuned 16k steps, beam search
 
 
-
 #on validation, finetuned 16k steps, beam search
 # Metrics: {'recall@5': np.float64(0.061717352415026835), 'ndcg@5': np.float64(0.03787972431398929), 'mrr': np.float64(0.03018783542039356)}
 
@@ -169,6 +168,8 @@ if __name__ == "__main__":
 
 # on validation, finetuned 16k steps, sampling temp 0.1
 
+# on validaton, full finetuned model, beam search
+# Metrics: {'recall@5': np.float64(0.05992844364937388), 'ndcg@5': np.float64(0.0382845443238836), 'mrr': np.float64(0.031261180679785325)}
 # -----------------------------
 # on test Qwen3-0.6B-ftBeauty2014
 
