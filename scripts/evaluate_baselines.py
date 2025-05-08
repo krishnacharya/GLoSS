@@ -178,7 +178,7 @@ if __name__ == "__main__":
     processed_dir = processed_data_dir('beauty2014')
     dataset_path_withdup = str(hf_dir / 'beauty2014')
     meta_corpus_path = str(processed_dir / 'meta_corpus.json')
-    main(dataset_path_withdup, meta_corpus_path, bm25_index_name="amznbeauty2014_index", dataset_split="validation")
+    main(dataset_path_withdup, meta_corpus_path, bm25_index_name="amznbeauty2014_index", dataset_split="test")
 
 # on test LIR
 # {'recall@5': np.float64(0.04333050127442651), 'ndcg@5': np.float64(0.023179244762936268), 'mrr': np.float64(0.016472894215147044)}

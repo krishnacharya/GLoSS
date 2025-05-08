@@ -83,6 +83,11 @@ def get_gen_dir():
     res.mkdir(parents=True, exist_ok=True)
     return res
 
+def get_gen_dir_model(dataset:str, model_name:str):
+    res = get_gen_dir_dataset(dataset) / model_name
+    res.mkdir(parents=True, exist_ok=True)
+    return res
+
 def get_gen_dir_dataset(dataset:str):
     res = get_gen_dir() / dataset
     res.mkdir(parents=True, exist_ok=True)

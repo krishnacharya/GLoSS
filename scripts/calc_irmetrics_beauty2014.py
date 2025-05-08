@@ -98,7 +98,7 @@ def load_data(meta_filepath: str, generated_filepath: str) -> tuple[pd.DataFrame
     print(f"Loaded generated data: type={type(genop)}, first element length={len(genop[0]) if genop else 0}")
     return asins_compact, genop
 
-def main(meta_filepath: str, generated_filepath: str, retriever_filepath: str, num_sequences: int, at_k: int):
+def get_metrics(meta_filepath: str, generated_filepath: str, retriever_filepath: str, num_sequences: int, at_k: int):
     """Main function to load data, evaluate retrieval, and print results."""
     print("Starting the evaluation process...")
 
@@ -132,4 +132,4 @@ if __name__ == "__main__":
     meta_filepath = str(processed_data_dir('beauty2014') / args.meta_file)
     retriever_filepath = str(get_bm25_indexes_dir() / args.retriever_index)
     at_k = args.num_sequences
-    main(meta_filepath, generated_filepath, retriever_filepath, args.num_sequences, at_k)
+    get_metrics(meta_filepath, generated_filepath, retriever_filepath, args.num_sequences, at_k)
