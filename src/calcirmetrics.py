@@ -138,3 +138,63 @@ if __name__ == "__main__":
     retriever_filepath = str(get_bm25_indexes_dir() / args.retriever_index)
     at_k = args.num_sequences
     get_metrics(meta_filepath, generated_filepath, retriever_filepath, args.num_sequences, at_k, category)
+
+# Last item text retrieval baseline
+
+# Beauty, TEST
+# {'recall@5': np.float64(0.04333050127442651), 'ndcg@5': np.float64(0.023179244762936268), 'mrr': np.float64(0.016472894215147044)}
+
+# Toys, TEST
+# {'recall@5': np.float64(0.05212683681361176), 'ndcg@5': np.float64(0.026660292010049123), 'mrr': np.float64(0.0182822033170061)}
+
+# Sports  TEST
+# {'recall@5': np.float64(0.021153467988875466), 'ndcg@5': np.float64(0.011012792672956575), 'mrr': np.float64(0.007661226133288385)}
+
+# --------------------------------------------------------------------------------------------------------------------------------
+
+# RESULTS ON BEAUTY with finetuned Llama-3.2-1B, 3B, 8B
+
+# Llama-3.2-1B TEST, beam search
+# Metrics: {'recall@5': np.float64(0.04534275365559182), 'ndcg@5': np.float64(0.026878945255920418), 'mrr': np.float64(0.020865566635364964)}
+
+# Llama-3.2-3B TEST, beam search
+# Metrics: {'recall@5': np.float64(0.0651969771497563), 'ndcg@5': np.float64(0.04003929537456322), 'mrr': np.float64(0.031844266571271006)}
+
+# Llama-3.1-8B TEST, beam search
+# Metrics: {'recall@5': np.float64(0.06814828064213209), 'ndcg@5': np.float64(0.04232513489127515), 'mrr': np.float64(0.03390570734397591)}
+
+
+# --------------------------------------------------------------------------------------------------------------------------------
+
+# RESULTS on Toys
+
+# Llama-3.2-1B VALIDATION, beam search
+# Metrics: {'recall@5': np.float64(0.06398348813209494), 'ndcg@5': np.float64(0.040829700785598326), 'mrr': np.float64(0.03331613347093223)}
+
+# Llama-3.2-3B VALIDATION, beam search
+# Metrics: {'recall@5': np.float64(0.07430340557275542), 'ndcg@5': np.float64(0.045229769215361273), 'mrr': np.float64(0.03577571379428964)}
+
+# Llama-3.1-8B VALIDATION, beam search
+
+
+
+# Llama-3.2-1B TEST, beam search
+# 
+
+# Llama-3.2-3B TEST, test, beam search
+
+# Llama-3.1-8B TEST, test, beam search
+
+
+
+# --------------------------------------------------------------------------------------------------------------------------------
+
+# RESULTS on sports and outdoors
+
+# Llama-3.2-1B TEST, beam search
+# 
+
+# Llama-3.2-3B TEST, beam search
+# 
+
+# Llama-3.1-8B TEST, beam search    
