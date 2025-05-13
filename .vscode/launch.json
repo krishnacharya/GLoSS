@@ -336,8 +336,8 @@
             "program": "/home/kacharya33/nanoGenRec/src/finetune_with_config.py",
             "console": "integratedTerminal",
             "args": [
-                "--config", "ft_configs/sports2014/llama1b_1024_toys.yml",
-                "--dataset_name", "sports2014"
+                "--config", "ft_configs/toys2014/llama1b_1024_toys.yml",
+                "--dataset", "toys"
             ],
             "env": {
                 "CUDA_VISIBLE_DEVICES": "0"
@@ -542,3 +542,16 @@
 // nohup env CUDA_VISIBLE_DEVICES=0 
 // python scripts/finetune_configs.py
 // --config ft_configs/llama8b_1024_beauty.yml > finetune_llama8b_beauty.log 2>&1 &
+
+
+
+nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
+    --config ft_configs/toys2014/llama3b_1024_toys.yml \
+    --dataset toys \
+    > finetune_toys3b.log 2>&1 &
+
+
+nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
+--config ft_configs/toys2014/llama8b_1024_toys.yml \
+--dataset toys \
+> finetune_toys8b.log 2>&1 &
