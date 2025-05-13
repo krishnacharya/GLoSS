@@ -226,3 +226,4 @@ if __name__ == "__main__":
 # {'recall@10': np.float64(0.07929878834751225), 'ndcg@10': np.float64(0.0354878347593205), 'mrr': np.float64(0.021948996836854535)}
 
 # Evaluating Text-Based Last Similar Recommendations, Test Sports
+# {'recall@10': np.float64(0.033935443998089725), 'ndcg@10': np.float64(0.015128138210088621), 'mrr': np.float64(0.00934831096431793)}
