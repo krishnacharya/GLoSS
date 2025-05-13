@@ -198,6 +198,8 @@ if __name__ == "__main__":
     main(dataset_path, meta_corpus_path, bm25_index_name, k, metrics, dataset_split)
 
 
+# Recommendations with @k=5
+# ------------------------------
 # Evaluating Text-Based Last Similar Recommendations, Test Beauty
 # ------------------------------
 # {'recall@5': np.float64(0.04333050127442651), 'ndcg@5': np.float64(0.023179244762936268), 'mrr': np.float64(0.016472894215147044)}
@@ -211,3 +213,16 @@ if __name__ == "__main__":
 # Evaluating Text-Based Last Similar Recommendations, Test Sports
 # {'recall@5': np.float64(0.021153467988875466), 'ndcg@5': np.float64(0.011012792672956575), 'mrr': np.float64(0.007661226133288385)}
 # ------------------------------
+
+
+# ------------------------------------------------------------------------------------------------------------------------
+
+# Recommendations with @k=10
+# ------------------------------
+# Evaluating Text-Based Last Similar Recommendations, Test Beauty
+# {'recall@10': np.float64(0.06135133926575147), 'ndcg@10': np.float64(0.02897731633458996), 'mrr': np.float64(0.0188485941560216)}
+
+# Evaluating Text-Based Last Similar Recommendations, Test Toys
+# {'recall@10': np.float64(0.07929878834751225), 'ndcg@10': np.float64(0.0354878347593205), 'mrr': np.float64(0.021948996836854535)}
+
+# Evaluating Text-Based Last Similar Recommendations, Test Sports
