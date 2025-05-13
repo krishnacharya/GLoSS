@@ -1,3 +1,4 @@
+# TODO check
 import os
 import gc
 import torch
@@ -35,8 +36,8 @@ def get_unique_sorted_asins(asins: List[str], scores: List[float]) -> Dict[str, 
             seen.add(asin)
     return dict(asin_score_pairs)
 
-def get_rundict(genop: List[Dict], retriever: bm25s.BM25,\
-                num_return_sequences: int, asins_compact: pd.DataFrame) -> Dict[str, Dict[str, float]]:
+def get_rundict(genop: List[Dict], retriever: bm25s.BM25, \
+    num_return_sequences: int, asins_compact: pd.DataFrame) -> Dict[str, Dict[str, float]]:
     run_dict = {}
     l = len(genop)
 
@@ -100,7 +101,7 @@ def load_data(meta_filepath: str, generated_filepath: str) -> tuple[pd.DataFrame
     return asins_compact, genop
 
 def get_metrics(meta_filepath: str, generated_filepath: str, \
-                retriever_filepath: str, num_sequences: int, at_k: int):
+                retriever_filepath: str, num_sequences: int, at_k: int, category: str):
     """Main function to load data, evaluate retrieval, and print results."""
     print("Starting the evaluation process...")
 
@@ -117,6 +118,7 @@ def get_metrics(meta_filepath: str, generated_filepath: str, \
     qrels, rundR, ans = evaluate_retrieval(genop, retriever_filepath, num_sequences, asins_compact, at_k)
 
     print("\n--- Evaluation Summary ---")
+    print(f"Category: {category}")
     print(f"Generated sequences file: {generated_filepath}")
     print(f"Retriever index file: {retriever_filepath}")
     print(f"Number of return sequences: {num_sequences}")
@@ -124,14 +126,15 @@ def get_metrics(meta_filepath: str, generated_filepath: str, \
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate retrieval performance based on generated sequences.")
-    parser.add_argument("--meta_file", type=str, required=True, help="Path to the meta corpus JSON file.")
-    parser.add_argument("--generated_file", type=str, required=True, help="Path to the JSON file containing generated sequences.")
-    parser.add_argument("--retriever_index", type=str, required=True, help="Path to the BM25 retriever index file.")
+    parser.add_argument("--category", type=str, required=True, help="The category of the dataset to evaluate (e.g., 'beauty', 'toys').")
+    parser.add_argument("--generated_file", type=str, required=True, help="The JSON file containing generated sequences (e.g., 'val_gen_op.json').")
+    parser.add_argument("--retriever_index", type=str, required=True, help="The BM25 retriever index file (e.g., 'amznbeauty2014_index').")
     parser.add_argument("--num_sequences", type=int, default=5, help="Number of generated sequences to consider per reviewer.")
 
     args = parser.parse_args()
-    generated_filepath = str(get_gen_dir_dataset('beauty2014') / args.generated_file)
-    meta_filepath = str(processed_data_dir('beauty2014') / args.meta_file)
+    category = args.category.lower()
+    generated_filepath = str(get_gen_dir_dataset(category) / args.generated_file)
+    meta_filepath = str(processed_data_dir(f'{category}2014') / 'meta_corpus.json')
     retriever_filepath = str(get_bm25_indexes_dir() / args.retriever_index)
     at_k = args.num_sequences
-    get_metrics(meta_filepath, generated_filepath, retriever_filepath, args.num_sequences, at_k)
+    get_metrics(meta_filepath, generated_filepath, retriever_filepath, args.num_sequences, at_k, category)

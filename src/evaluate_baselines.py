@@ -211,3 +211,11 @@ if __name__ == "__main__":
 # Evaluating Text-Based Last Similar Recommendations, Test Sports
 # {'recall@5': np.float64(0.021153467988875466), 'ndcg@5': np.float64(0.011012792672956575), 'mrr': np.float64(0.007661226133288385)}
 # ------------------------------
+
+###########################################################
+
+# Llama-3.2-1B validation, beam search, toys
+
+
+# Llama-3.2-3B validation, beam search, toys
+# Metrics: {'recall@5': np.float64(0.07430340557275542), 'ndcg@5': np.float64(0.045229769215361273), 'mrr': np.float64(0.03577571379428964)}
