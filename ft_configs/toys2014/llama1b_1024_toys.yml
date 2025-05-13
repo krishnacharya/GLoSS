@@ -1,0 +1,33 @@
+finetuning_config:
+  model_name: "unsloth/Llama-3.2-1B"
+  dataset_name: "toys2014"
+  dataset_split: "train"
+  max_seq_length: 1024
+  dtype: null
+  load_in_4bit: true
+  lora_r: 16
+  lora_alpha: 16
+  learning_rate: 0.0001
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4
+  random_state: 3407
+  num_train_epochs: 0.1
+  warmup_steps: 300
+
+wandb_config:
+  project_name_suffix: "-ft{dataset_name}"
+  run_name_template: "bs{effective_batch_size}_r{lora_r}_alpha{lora_alpha}_lr{learning_rate}_ep{num_train_epochs}_warmup{warmup_steps}"
+
+training_arguments:
+  optim: "adamw_8bit"
+  weight_decay: 0.01
+  lr_scheduler_type: "linear"
+  logging_steps: 1
+  report_to: "wandb"
+  eval_strategy: "epoch"
+  eval_steps: 100
+  save_strategy: "best"
+  metric_for_best_model: "eval_loss"
+  greater_is_better: false
+  save_total_limit: 2
+  load_best_model_at_end: true

@@ -14,9 +14,8 @@ from transformers.trainer_callback import EarlyStoppingCallback
 def add_eos_to_text(example, tokenizer):
     return {"text": example["text"] + tokenizer.eos_token}
 
-def finetune(config):
+def finetune(config, dataset_name):
     model_name = config['finetuning_config']['model_name']
-    dataset_name = config['finetuning_config']['dataset_name']
     dataset_split = config['finetuning_config']['dataset_split']
     max_seq_length = config['finetuning_config']['max_seq_length']
     dtype = config['finetuning_config']['dtype']
@@ -142,9 +141,12 @@ def finetune(config):
     tokenizer.save_pretrained(str(model_output_dir))
 
 if __name__ == "__main__":
-    args = argparse.ArgumentParser()
-    args.add_argument("--config", type=str, required=True, help="Path to the finetuning configuration file")
-    args = args.parse_args()
+    parser = argparse.ArgumentParser(description="Fine-tune a language model on a Hugging Face dataset.")
+    parser.add_argument("--config", type=str, required=True, help="Path to the finetuning configuration file (YAML).")
+    parser.add_argument("--dataset", type=str, required=True, help="The name of the Hugging Face dataset directory (e.g., 'beauty2014', 'toys2014').")
+    args = parser.parse_args()
+
     with open(args.config, "r") as f:
         config = yaml.safe_load(f)
-    finetune(config)
+
+    finetune(config, args.dataset)

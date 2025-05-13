@@ -203,6 +203,11 @@
 //     ]
 // }
 
+// python src/process_metadata.py --url https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Sports_and_Outdoors.json.gz --category Sports
+
+
+// python src/process_interactions.py --reviews_url https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Sports_and_Outdoors_5.json.gz --category Sports
+
 // {
 //     "version": "0.2.0",
 //     "configurations": [
@@ -234,7 +239,7 @@
 //             "program": "/home/kacharya33/nanoGenRec/src/make_hfdataset.py",
 //             "console": "integratedTerminal",
 //             "args": [
-//                 "--category", "Toys"
+//                 "--category", "Sports"
 //             ],
 //             "env": {
 //                 "CUDA_VISIBLE_DEVICES": "0"
@@ -243,24 +248,27 @@
 //     ]
 // }
 
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python Debugger: Current File with Arguments",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "/home/kacharya33/nanoGenRec/src/evaluate_baselines.py",
-            "console": "integratedTerminal",
-            "args": [
-                "--category", "toys"
-            ],
-            "env": {
-                "CUDA_VISIBLE_DEVICES": "0"
-            }
-        }
-    ]
-}
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/evaluate_baselines.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "--category", "toys"
+//             ],
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             }
+//         }
+//     ]
+// }
+
+
+
 
 // {
 //     "version": "0.2.0",
@@ -317,6 +325,28 @@
 //         }
 //     ]
 // }
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/home/kacharya33/nanoGenRec/src/finetune_with_config.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--config", "ft_configs/sports2014/llama1b_1024_toys.yml",
+                "--dataset_name", "sports2014"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        }
+    ]
+}
+
+
 
 // python scripts/calc_irmetrics_beauty2014.py --meta_file meta_corpus.json --generated_file llama1bcheckpoint-9700-cop_validation_beam5_max_seq1024v2.json --retriever_index amznbeauty2014_index --num_sequences 5
 // python scripts/calc_irmetrics_beauty2014.py --meta_file meta_corpus.json --generated_file qwen-checkpoint-10200_validation_beam5_max_seq1024v2.json --retriever_index amznbeauty2014_index --num_sequences 5
@@ -509,3 +539,6 @@
 //     > gen8b_8kstep_test_bs4.log 2>&1 &
 
 
+// nohup env CUDA_VISIBLE_DEVICES=0 
+// python scripts/finetune_configs.py
+// --config ft_configs/llama8b_1024_beauty.yml > finetune_llama8b_beauty.log 2>&1 &
