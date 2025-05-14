@@ -176,9 +176,6 @@ if __name__ == "__main__":
 # Llama-3.1-8B VALIDATION, beam search, @ end of all steps
 # Metrics: {'recall@5': np.float64(0.07739938080495357), 'ndcg@5': np.float64(0.046847991572880665), 'mrr': np.float64(0.0369797041623667)}
 
-# Llama-3.1-8B VALIDATION, beam search, @ 10k steps trained model
-
-
 
 # Llama-3.2-1B TEST, beam search
 # Metrics: {'recall@5': np.float64(0.0665635473060067), 'ndcg@5': np.float64(0.040061362732516495), 'mrr': np.float64(0.0314230471771075)}
@@ -189,15 +186,26 @@ if __name__ == "__main__":
 # Llama-3.1-8B TEST, test, beam search @ end of all steps
 # Metrics: {'recall@5': np.float64(0.06336684712554783), 'ndcg@5': np.float64(0.03742206198025493), 'mrr': np.float64(0.02899630488957635)}
 
+# Llama-3.1-8B TEST, beam search, @ 8 epochs roughly 9.6k steps
+# running now
 
 # --------------------------------------------------------------------------------------------------------------------------------
 
 # RESULTS on sports and outdoors
 
+# Llama-3.2-1B validation, beam search
+# Metrics: {'recall@5': np.float64(0.02473299606520517), 'ndcg@5': np.float64(0.01400914019033381), 'mrr': np.float64(0.010577103241521453)}
+
+# Llama-3.2-3B validation, beam search
+# Metrics: {'recall@5': np.float64(0.03035413153456998), 'ndcg@5': np.float64(0.01629757765139283), 'mrr': np.float64(0.01177627880831928)}
+
+# Llama-3.1-8B validation, beam search    
+
+
 # Llama-3.2-1B TEST, beam search
 # 
 
 # Llama-3.2-3B TEST, beam search
-# 
+# running now
 
 # Llama-3.1-8B TEST, beam search    
