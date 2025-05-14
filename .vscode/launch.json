@@ -248,27 +248,27 @@
 //     ]
 // }
 
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python Debugger: Current File with Arguments",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "/home/kacharya33/nanoGenRec/src/evaluate_baselines.py",
-            "console": "integratedTerminal",
-            "args": [
-                "--category","sports",
-                "--split","test",
-                "--k", "10",
-                "--metrics","recall@10","ndcg@10","mrr"
-            ],
-            "env": {
-                "CUDA_VISIBLE_DEVICES": "0"
-            }
-        }
-    ]
-}
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/evaluate_baselines.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "--category","sports",
+//                 "--split","test",
+//                 "--k", "10",
+//                 "--metrics","recall@10","ndcg@10","mrr"
+//             ],
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             }
+//         }
+//     ]
+// }
 // {
 //     "version": "0.2.0",
 //     "configurations": [
@@ -737,3 +737,24 @@
 //     --max_new_tokens 50 \
 //     --load_in_4bit True \
 //     > genop_Toys_test-8B.log 2>&1 &
+
+// # TO RUN Finetune
+
+nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
+    --config ft_configs/sports2014/llama1b_1024_sports.yml \
+    --dataset sports \
+    > finetune_sports1b.log 2>&1 &
+
+nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
+    --config ft_configs/sports2014/llama3b_1024_sports.yml \
+    --dataset sports \
+    > finetune_sports3b.log 2>&1 &
+
+
+// nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
+//     --config ft_configs/sports2014/llama8b_1024_sports.yml \
+//     --dataset sports \
+//     > finetune_sports8b.log 2>&1 &
+
+// zip -r toys-bestmodels.zip toys-bestmodels/
+
