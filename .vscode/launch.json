@@ -740,21 +740,21 @@
 
 // # TO RUN Finetune
 
-nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
-    --config ft_configs/sports2014/llama1b_1024_sports.yml \
-    --dataset sports \
-    > finetune_sports1b.log 2>&1 &
-
-nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
-    --config ft_configs/sports2014/llama3b_1024_sports.yml \
-    --dataset sports \
-    > finetune_sports3b.log 2>&1 &
-
+// nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
+//     --config ft_configs/sports2014/llama1b_1024_sports.yml \
+//     --dataset sports \
+//     > finetune_sports1b.log 2>&1 &
 
 // nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
-//     --config ft_configs/sports2014/llama8b_1024_sports.yml \
+//     --config ft_configs/sports2014/llama3b_1024_sports.yml \
 //     --dataset sports \
-//     > finetune_sports8b.log 2>&1 &
+//     > finetune_sports3b.log 2>&1 &
+
+
+nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
+    --config ft_configs/sports2014/llama8b_1024_sports.yml \
+    --dataset sports \
+    > finetune_sports8b.log 2>&1 &
 
 // zip -r toys-bestmodels.zip toys-bestmodels/
 
