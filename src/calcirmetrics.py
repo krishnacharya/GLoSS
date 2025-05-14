@@ -174,18 +174,21 @@ if __name__ == "__main__":
 # Llama-3.2-3B VALIDATION, beam search
 # Metrics: {'recall@5': np.float64(0.07430340557275542), 'ndcg@5': np.float64(0.045229769215361273), 'mrr': np.float64(0.03577571379428964)}
 
-# Llama-3.1-8B VALIDATION, beam search
+# Llama-3.1-8B VALIDATION, beam search, @ end
 # Metrics: {'recall@5': np.float64(0.07739938080495357), 'ndcg@5': np.float64(0.046847991572880665), 'mrr': np.float64(0.0369797041623667)}
+
+# Llama-3.1-8B VALIDATION, beam search, @ 10k steps
+
 
 
 # Llama-3.2-1B TEST, beam search
 # Metrics: {'recall@5': np.float64(0.0665635473060067), 'ndcg@5': np.float64(0.040061362732516495), 'mrr': np.float64(0.0314230471771075)}
 
 # Llama-3.2-3B TEST, test, beam search
-
+# Metrics: {'recall@5': np.float64(0.0720288734209848), 'ndcg@5': np.float64(0.04361009241182541), 'mrr': np.float64(0.034358511643894474)}
 
 # Llama-3.1-8B TEST, test, beam search
-
+# Metrics: {'recall@5': np.float64(0.06336684712554783), 'ndcg@5': np.float64(0.03742206198025493), 'mrr': np.float64(0.02899630488957635)}
 
 
 # --------------------------------------------------------------------------------------------------------------------------------

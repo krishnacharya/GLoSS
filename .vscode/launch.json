@@ -334,7 +334,7 @@
 //             "console": "integratedTerminal",
 //             "args": [
 //                 "--category", "toys",
-//                 "--generated_file", "llama-1b/Llama-3.2-1B-fttoys_ep10_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json",
+//                 "--generated_file", "llama-8b/Llama-3.1-8B-fttoys_ep10_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json",
 //                 "--retriever_index", "amzntoys2014_index",
 //                 "--num_sequences", "5"
 //             ],
@@ -738,6 +738,17 @@
 //     --load_in_4bit True \
 //     > genop_Toys_test-8B.log 2>&1 &
 
+nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/generate_withbeams.py \
+    --model_name toys-bestmodels/llama-3.1-8b-toys-10kcpt\
+    --dataset_name toys \
+    --dataset_split validation \
+    --max_seq_length 1024 \
+    --num_beams 5 \
+    --batch_size 8 \
+    --num_return_sequences 5 \
+    --max_new_tokens 50 \
+    --load_in_4bit True \
+    > genop_Toys_val-8B-10k.log 2>&1 &
 // # TO RUN Finetune
 
 // nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
@@ -751,10 +762,10 @@
 //     > finetune_sports3b.log 2>&1 &
 
 
-nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
-    --config ft_configs/sports2014/llama8b_1024_sports.yml \
-    --dataset sports \
-    > finetune_sports8b.log 2>&1 &
+// nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
+//     --config ft_configs/sports2014/llama8b_1024_sports.yml \
+//     --dataset sports \
+//     > finetune_sports8b.log 2>&1 &
 
 // zip -r toys-bestmodels.zip toys-bestmodels/
 
