@@ -183,11 +183,8 @@ if __name__ == "__main__":
 # Llama-3.2-3B TEST, test, beam search
 # Metrics: {'recall@5': np.float64(0.0720288734209848), 'ndcg@5': np.float64(0.04361009241182541), 'mrr': np.float64(0.034358511643894474)}
 
-# Llama-3.1-8B TEST, test, beam search @ end of all steps
-# Metrics: {'recall@5': np.float64(0.06336684712554783), 'ndcg@5': np.float64(0.03742206198025493), 'mrr': np.float64(0.02899630488957635)}
-
-# Llama-3.1-8B TEST, beam search, @ 8 epochs roughly 9.6k steps
-# TODO running now
+# Llama-3.1-8B TEST, beam search, @ 8 epochs roughly 8 epochs, 16 effective batch size, ~9.6k steps
+# Metrics: {'recall@5': np.float64(0.07238979118329467), 'ndcg@5': np.float64(0.043678647997469976), 'mrr': np.float64(0.03434046575577898)}
 
 # --------------------------------------------------------------------------------------------------------------------------------
 
@@ -200,13 +197,13 @@ if __name__ == "__main__":
 # Metrics: {'recall@5': np.float64(0.03035413153456998), 'ndcg@5': np.float64(0.01629757765139283), 'mrr': np.float64(0.01177627880831928)}
 
 # Llama-3.1-8B validation, beam search    
-# TODO 
+# skipped 
 
 # Llama-3.2-1B TEST, beam search
-# TODO
+#TODO running
 
 # Llama-3.2-3B TEST, beam search
-# TODO running now
+# Metrics: {'recall@5': np.float64(0.02876646908447341), 'ndcg@5': np.float64(0.017792914482537434), 'mrr': np.float64(0.014215617420943712)}
 
 # Llama-3.1-8B TEST, beam search    
-#TODO run overnight
+#TODO running

@@ -755,8 +755,8 @@
 // zip -r toys-bestmodels.zip toys-bestmodels/
 
 
-nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/generate_withbeams.py \
-    --model_name sports-bestmodels/Llama-3.2-3B-ftsports_ep7_maxseq1024_bs4_acc4\
+nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate_withbeams.py \
+    --model_name sports-bestmodels/Llama-3.2-1B-ftsports_ep7_maxseq1024_bs4_acc4\
     --dataset_name sports \
     --dataset_split test \
     --max_seq_length 1024 \
@@ -765,7 +765,7 @@ nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/generate
     --num_return_sequences 5 \
     --max_new_tokens 50 \
     --load_in_4bit True \
-    > gen_sports_test3B.log 2>&1 &
+    > gen_sports_test1B.log 2>&1 &
 
 
 // nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate_withbeams.py \
@@ -791,14 +791,35 @@ nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/generate
 //             "program": "/home/kacharya33/nanoGenRec/src/calcirmetrics.py",
 //             "console": "integratedTerminal",
 //             "args": [
-//                 "--category",
-//                 "sports",
-//                 "--generated_file",
-//                 "llama-3b/Llama-3.2-3B-ftsports_ep7_maxseq1024_bs4_acc4_validation_beam5_max_seq1024_bs8_numret5.json",
-//                 "--retriever_index",
-//                 "amznsports2014_index",
-//                 "--num_sequences",
-//                 "5"
+//                 "--category", "sports",
+//                 "--generated_file","llama-3b/Llama-3.2-3B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json",
+//                 "--retriever_index","amznsports2014_index",
+//                 "--num_sequences","5"
+//             ],
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             }
+//         }
+//     ]
+// }
+
+
+
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/calcirmetrics.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "--category", "toys",
+//                 "--generated_file","llama-8b/Llama-3.1-8B-fttoys_ep8_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json",
+//                 "--retriever_index","amzntoys2014_index",
+//                 "--num_sequences","5"
 //             ],
 //             "env": {
 //                 "CUDA_VISIBLE_DEVICES": "0"
