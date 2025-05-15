@@ -827,3 +827,5 @@ nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate
 //         }
 //     ]
 // }
+
+// rsync -av --progress kacharya33@simian:/home/kacharya33/nanoGenRec/hfdatasets.zip
