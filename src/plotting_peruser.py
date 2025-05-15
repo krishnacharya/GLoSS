@@ -50,8 +50,7 @@ def plot_metric_vs_sequence_length(metric_per_reviewer, reviewer_sequence_counts
     plt.show()
 
 
-
-def plot_metric_vs_sequence_length_v2(metric_per_reviewer, reviewer_sequence_counts, max_seq_length=None, min_reviewers=1):
+def get_metric_summary(metric_per_reviewer, reviewer_sequence_counts, max_seq_length=None, min_reviewers=1):
     """
     Calculates the mean metric and SEM for each sequence length.  This function is now a helper.
 
@@ -81,7 +80,7 @@ def plot_metric_vs_sequence_length_v2(metric_per_reviewer, reviewer_sequence_cou
 
     return metric_summary
 
-def plot_across_modelsizes(genfiles, category, retriever_index, num_sequences,
+def plot_across_modelsizes(genfiles, model_names, category, retriever_index, num_sequences,
                             at_k, df_ui, yaxis_name="recall@5", xaxis_name="Sequence Length", max_seq_length=50):
     """
     Plots the mean retrieval metric against sequence length for different generated files from different model sizes on the same plot.
@@ -103,7 +102,6 @@ def plot_across_modelsizes(genfiles, category, retriever_index, num_sequences,
     retriever_filepath = str(get_bm25_indexes_dir() / retriever_index)
 
     for i, generated_filepath in enumerate(genfiles):
-        model_name = generated_filepath.split('/')[-2].split('-')[0] # Extract model name from the path
         asins_compact, genop = load_data(meta_filepath, generated_filepath)
         verify_reviewer_ids(genop)
 
@@ -112,10 +110,10 @@ def plot_across_modelsizes(genfiles, category, retriever_index, num_sequences,
         reviewer_counts = df_ui['reviewerID'].value_counts().to_dict()
 
         # Calculate metric summary using the helper function
-        metric_summary = plot_metric_vs_sequence_length_v2(metric_perreviewer, reviewer_counts, max_seq_length=max_seq_length)
+        metric_summary = get_metric_summary(metric_perreviewer, reviewer_counts, max_seq_length=max_seq_length)
 
         if not metric_summary:
-            print(f"No data for {model_name} meets the criteria (min_reviewers, max_seq_length). Skipping.")
+            print(f"No data for {model_names[i]} meets the criteria (min_reviewers, max_seq_length). Skipping.")
             continue  # Skip to the next model
 
         sequence_lengths = sorted(metric_summary.keys())
@@ -124,12 +122,12 @@ def plot_across_modelsizes(genfiles, category, retriever_index, num_sequences,
         sems_lower = [metric_summary[length]['mean'] - metric_summary[length]['sem'] for length in sequence_lengths]
         
         # Plotting
-        plt.plot(sequence_lengths, means, marker='o', linestyle='-', color=colors[i], label=model_name)
+        plt.plot(sequence_lengths, means, marker='o', linestyle='-', color=colors[i], label=model_names[i])
         # plt.fill_between(sequence_lengths, sems_lower, sems_upper, color=colors[i], alpha=0.2)
 
     plt.xlabel(xaxis_name)
-    plt.ylabel(yaxis_name)
-    plt.title(f'{yaxis_name} vs. Sequence Length for Different Models')
+    plt.ylabel(yaxis_name.capitalize())
+    # plt.title(f'{yaxis_name} vs. Sequence Length for Different Models')
     plt.xticks(sequence_lengths)
 
     plt.legend()
@@ -142,6 +140,7 @@ if __name__ == "__main__":
     generated_file1b = 'llama-1b/llama-1b-test_beam5_max_seq1024.json'
     generated_file3b = 'llama-3b/llama-3b-test_beam5_max_seq1024_bs8_numret5.json'
     generated_file8b = 'llama-8b/llama-8b-8.3k_test_beam5_max_seq1024_bs8_numret5.json'
+    model_names = ['Llama-1B', 'Llama-3B', 'Llama-8B']
     retriever_index = 'amznbeauty2014_index'
     num_sequences = 5
     at_k = 5
@@ -151,5 +150,5 @@ if __name__ == "__main__":
     retriever_filepath = str(get_bm25_indexes_dir() / retriever_index)
 
     df_ui = pd.read_json(str(processed_data_dir(f'{category}2014') / 'df_dedup.json'), orient='records', lines=True)
-    plot_across_modelsizes(generated_filepaths, category, retriever_index, num_sequences, at_k,\
+    plot_across_modelsizes(generated_filepaths, model_names, category, retriever_index, num_sequences, at_k,\
                             df_ui, yaxis_name="recall@5", xaxis_name="Sequence Length", max_seq_length = 50)
