@@ -176,7 +176,7 @@ if __name__ == "__main__":
 # Llama-3.1-8B VALIDATION, beam search, @ end of all steps
 # Metrics: {'recall@5': np.float64(0.07739938080495357), 'ndcg@5': np.float64(0.046847991572880665), 'mrr': np.float64(0.0369797041623667)}
 
-
+# RESULTS on Toys
 # Llama-3.2-1B TEST, beam search
 # Metrics: {'recall@5': np.float64(0.0665635473060067), 'ndcg@5': np.float64(0.040061362732516495), 'mrr': np.float64(0.0314230471771075)}
 
@@ -200,7 +200,7 @@ if __name__ == "__main__":
 # skipped 
 
 # Llama-3.2-1B TEST, beam search
-#TODO running
+# Metrics: {'recall@5': np.float64(0.02205242014776526), 'ndcg@5': np.float64(0.013278895268697173), 'mrr': np.float64(0.010423631204876816)}
 
 # Llama-3.2-3B TEST, beam search
 # Metrics: {'recall@5': np.float64(0.02876646908447341), 'ndcg@5': np.float64(0.017792914482537434), 'mrr': np.float64(0.014215617420943712)}

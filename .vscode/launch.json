@@ -755,22 +755,9 @@
 // zip -r toys-bestmodels.zip toys-bestmodels/
 
 
-nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate_withbeams.py \
-    --model_name sports-bestmodels/Llama-3.2-1B-ftsports_ep7_maxseq1024_bs4_acc4\
-    --dataset_name sports \
-    --dataset_split test \
-    --max_seq_length 1024 \
-    --num_beams 5 \
-    --batch_size 8 \
-    --num_return_sequences 5 \
-    --max_new_tokens 50 \
-    --load_in_4bit True \
-    > gen_sports_test1B.log 2>&1 &
-
-
 // nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate_withbeams.py \
-//     --model_name toys-bestmodels/Llama-3.1-8B-fttoys_ep8_maxseq1024_bs4_acc4\
-//     --dataset_name toys \
+//     --model_name sports-bestmodels/Llama-3.2-1B-ftsports_ep7_maxseq1024_bs4_acc4\
+//     --dataset_name sports \
 //     --dataset_split test \
 //     --max_seq_length 1024 \
 //     --num_beams 5 \
@@ -778,7 +765,20 @@ nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate
 //     --num_return_sequences 5 \
 //     --max_new_tokens 50 \
 //     --load_in_4bit True \
-//     > output_toys_test8B-9kstep.log 2>&1 &
+//     > gen_sports_test1B.log 2>&1 &
+
+
+nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate_withbeams.py \
+    --model_name toys-bestmodels/llama-8b-toys-7.2kcpt\
+    --dataset_name toys \
+    --dataset_split test \
+    --max_seq_length 1024 \
+    --num_beams 5 \
+    --batch_size 8 \
+    --num_return_sequences 5 \
+    --max_new_tokens 50 \
+    --load_in_4bit True \
+    > output_toys_test8B-7.2k.log 2>&1 &
 
 
 // {
@@ -792,7 +792,7 @@ nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate
 //             "console": "integratedTerminal",
 //             "args": [
 //                 "--category", "sports",
-//                 "--generated_file","llama-3b/Llama-3.2-3B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json",
+//                 "--generated_file","llama-1b/Llama-3.2-1B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json",
 //                 "--retriever_index","amznsports2014_index",
 //                 "--num_sequences","5"
 //             ],
