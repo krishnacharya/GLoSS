@@ -206,4 +206,4 @@ if __name__ == "__main__":
 # Metrics: {'recall@5': np.float64(0.02876646908447341), 'ndcg@5': np.float64(0.017792914482537434), 'mrr': np.float64(0.014215617420943712)}
 
 # Llama-3.1-8B TEST, beam search    
-#TODO running
+# Metrics: {'recall@5': 0.03590190184566115, 'ndcg@5': 0.02176466662205941, 'mrr': 0.01714938524782051}

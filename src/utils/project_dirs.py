@@ -9,6 +9,11 @@ def data_root():
     res.mkdir(parents=True, exist_ok=True)
     return res
 
+def get_minilm_index_dir():
+    res = project_root() / "minilm_index"
+    res.mkdir(parents=True, exist_ok=True)
+    return res
+
 def raw_data_root():
     res = data_root() / "raw"
     res.mkdir(parents=True, exist_ok=True)
