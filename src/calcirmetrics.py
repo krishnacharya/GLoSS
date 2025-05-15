@@ -187,11 +187,11 @@ if __name__ == "__main__":
 # Metrics: {'recall@5': np.float64(0.06336684712554783), 'ndcg@5': np.float64(0.03742206198025493), 'mrr': np.float64(0.02899630488957635)}
 
 # Llama-3.1-8B TEST, beam search, @ 8 epochs roughly 9.6k steps
-# running now
+# TODO running now
 
 # --------------------------------------------------------------------------------------------------------------------------------
 
-# RESULTS on sports and outdoors
+# RESULTS on Sports
 
 # Llama-3.2-1B validation, beam search
 # Metrics: {'recall@5': np.float64(0.02473299606520517), 'ndcg@5': np.float64(0.01400914019033381), 'mrr': np.float64(0.010577103241521453)}
@@ -200,12 +200,13 @@ if __name__ == "__main__":
 # Metrics: {'recall@5': np.float64(0.03035413153456998), 'ndcg@5': np.float64(0.01629757765139283), 'mrr': np.float64(0.01177627880831928)}
 
 # Llama-3.1-8B validation, beam search    
-
+# TODO 
 
 # Llama-3.2-1B TEST, beam search
-# 
+# TODO
 
 # Llama-3.2-3B TEST, beam search
-# running now
+# TODO running now
 
 # Llama-3.1-8B TEST, beam search    
+#TODO run overnight
