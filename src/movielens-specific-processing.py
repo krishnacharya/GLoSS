@@ -3,6 +3,11 @@ import urllib.parse
 import os
 import pandas as pd
 import zipfile
+from collections import defaultdict
+import random
+from datasets import Dataset, DatasetDict
+from pathlib import Path
+
 ##NOTES ON ML100K
     # u.data     -- The full u data set, 100000 ratings by 943 users on 1682 items.
     #             Each user has rated at least 20 movies.  Users and items are
@@ -132,6 +137,121 @@ def check_monotonicity(df, column='timestamp', group_by=None):
         results['grouped_monotonic'] = None
     return results
 
+
+def create_hf_dataset_MLFamily(df_ui, meta_corpus, save_path:str, Nval:int=512, random_seed:int=42, dname = 'ml100k'):
+    '''
+        Makes a huggingface dataset for movielens family of datasets.
+
+        meta corpus should have columns: movie_id, title, genre
+        df_ui should have columns: user_id, movie_id, rating, timestamp, title, genre
+    '''
+    def group_movies_for_user(df_ui:pd.DataFrame):
+        '''
+            Group movie ids by user id from the interaction dataframe.
+            Args:
+                df_ui_path (str): Path to the interactions with 'user_id' and 'movie_id' columns.
+            Returns:
+                Dict[str, List[str]]: A dictionary mapping user IDs to lists of movie IDs.
+        '''
+        user_movies = defaultdict(list)
+        for _, row in df_ui.iterrows():
+            user_movies[row['user_id']].append(row['movie_id'])
+        return user_movies
+    
+    assert dname in ['ml100k', 'ml1m'], "dname must be one of 'ml100k', 'ml1m'"
+    assert meta_corpus.columns.tolist() == ['movie_id', 'title', 'genre']
+    assert df_ui.columns.tolist() == ['user_id', 'movie_id', 'rating', 'timestamp', 'title', 'genre']
+    
+    movies_compact = meta_corpus[['movie_id']].copy()
+    movies_compact['nlang'] = "Title: " + meta_corpus['title'] + " Genres: " + meta_corpus['genre']
+    movieid_to_nlang = movies_compact.set_index('movie_id')['nlang'].to_dict()
+
+    # Group 
+    user_movies = group_movies_for_user(df_ui)
+
+    # Define prompt template
+    movielens_prompt = (
+        "Below is a user's watch history on Netflix, listed in chronological order (earliest to latest). \n"
+        "Each movie is represented by the following format: Title: <movie title>, Genres: <movie genres> \n"
+        "Based on this history, predict **only one** movie the user is most likely to watch next in the same format.\n\n"
+        "### Watch history:\n"
+        "{}\n\n"
+        "### Next movie:\n"
+        "{}"
+    )
+
+    # Split reviewers into validation and others
+    random.seed(random_seed)
+    all_users = list(user_movies.keys())
+    Nval = min(Nval, len(all_users) // 2)
+    val_users = set(random.sample(all_users, Nval))
+
+    train_records, val_records, test_records = [], [], []
+    for user_id, movies_list in user_movies.items():
+        n = len(movies_list)
+        if n < 3:
+            continue # Skip users with less than 3 movies though in movielens family of datasets, users have at least 20 interactions.
+
+        # raise error if movie_id not in movieid_to_nlang
+        formatted_movies_list = [movieid_to_nlang.get(movie_id, f"Unknown Movie: {movie_id}") for movie_id in movies_list] 
+        
+        # Prepare test set for all reviewers
+        test_ptext = movielens_prompt.format("\n".join(formatted_movies_list[:n-1]), "")
+        test_text = movielens_prompt.format("\n".join(formatted_movies_list[:n-1]), formatted_movies_list[n-1])
+        test_seen_asins = movies_list[:n-1]
+        test_asin = movies_list[n-1]
+        test_asin_text = formatted_movies_list[n-1]
+        test_records.append({
+            "user_id": user_id,
+            "ptext": test_ptext,
+            "text": test_text,
+            "seen_asins": test_seen_asins,
+            "asin": test_asin,
+            "asin_text": test_asin_text
+        })
+
+        if user_id in val_users:  # Validation set
+            val_ptext = movielens_prompt.format("\n".join(formatted_movies_list[:n-2]), "")
+            val_text = movielens_prompt.format("\n".join(formatted_movies_list[:n-2]), formatted_movies_list[n-2])
+            val_seen_asins = movies_list[:n-2]
+            val_asin = movies_list[n-2]
+            val_asin_text = formatted_movies_list[n-2]
+            val_records.append({
+                "user_id": user_id,
+                "ptext": val_ptext,
+                "text": val_text,
+                "seen_asins": val_seen_asins,
+                "asin": val_asin,
+                "asin_text": val_asin_text
+            })
+            # Train set is shorter for validation users
+            train_text = movielens_prompt.format("\n".join(formatted_movies_list[:n-3]), formatted_movies_list[n-3])
+            train_records.append({"user_id": user_id, "text": train_text})
+        else:  # Train set for non-validation users
+            train_text = movielens_prompt.format("\n".join(formatted_movies_list[:n-2]), formatted_movies_list[n-2])
+            train_records.append({"user_id": user_id, "text": train_text})
+
+    # Convert lists to Hugging Face datasets
+    train_dataset = Dataset.from_pandas(pd.DataFrame(train_records))
+    val_dataset = Dataset.from_pandas(pd.DataFrame(val_records))
+    test_dataset = Dataset.from_pandas(pd.DataFrame(test_records))
+
+    # Create a DatasetDict
+    dataset_dict = DatasetDict(
+        {"train": train_dataset, "validation": val_dataset, "test": test_dataset}
+    )
+
+    # Save dataset locally
+    output_path = Path(save_path) / "movielens" / dname
+    output_path.mkdir(parents=True, exist_ok=True)
+    dataset_dict.save_to_disk(str(output_path))
+
+    print(f"Hugging Face datasets saved to {output_path}")
+
+    return dataset_dict
+
+        
+
 def ml_100k_processing(ml100k_url: str):
     """
     Downloads, unzips, and processes the MovieLens 100k dataset.
@@ -230,7 +350,8 @@ def ml_100k_processing(ml100k_url: str):
 
     output_path=str(processed_data_dir(f"ml100k") / 'meta_corpus.json')
     create_corpus_metadata(metadata_df, movieid_list=df_ui['movie_id'].unique(), output_path=output_path)
-    
+
+
 
 def ml_1m_processing():
     pass
