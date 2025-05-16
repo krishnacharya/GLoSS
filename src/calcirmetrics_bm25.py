@@ -189,6 +189,7 @@ if __name__ == "__main__":
 # Llama-3.1-8B TEST, beam search, @ 7.2k steps
 # Metrics: {'recall@5': 0.07842227378190256, 'ndcg@5': 0.04717886157028416, 'mrr': 0.03702328778894904}
 
+
 # --------------------------------------------------------------------------------------------------------------------------------
 
 # RESULTS on Sports
@@ -202,6 +203,7 @@ if __name__ == "__main__":
 # Llama-3.1-8B validation, beam search    
 # skipped 
 
+# RESULTS on Sports
 # Llama-3.2-1B TEST, beam search
 # Metrics: {'recall@5': np.float64(0.02205242014776526), 'ndcg@5': np.float64(0.013278895268697173), 'mrr': np.float64(0.010423631204876816)}
 
