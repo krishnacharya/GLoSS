@@ -781,31 +781,6 @@
 //     > output_toys_test8B-7.2k.log 2>&1 &
 
 
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python Debugger: Current File with Arguments",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "/home/kacharya33/nanoGenRec/src/calcirmetrics.py",
-            "console": "integratedTerminal",
-            "args": [
-                "--category", "sports",
-                "--generated_file","llama-8b/Llama-3.1-8B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json",
-                "--retriever_index","amznsports2014_index",
-                "--num_sequences","5"
-            ],
-            "env": {
-                "CUDA_VISIBLE_DEVICES": "0"
-            }
-        }
-    ]
-}
-
-
-
-
 // {
 //     "version": "0.2.0",
 //     "configurations": [
@@ -816,9 +791,9 @@
 //             "program": "/home/kacharya33/nanoGenRec/src/calcirmetrics.py",
 //             "console": "integratedTerminal",
 //             "args": [
-//                 "--category", "toys",
-//                 "--generated_file","llama-8b/Llama-3.1-8B-fttoys_ep8_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json",
-//                 "--retriever_index","amzntoys2014_index",
+//                 "--category", "sports",
+//                 "--generated_file","llama-8b/Llama-3.1-8B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json",
+//                 "--retriever_index","amznsports2014_index",
 //                 "--num_sequences","5"
 //             ],
 //             "env": {
@@ -827,5 +802,30 @@
 //         }
 //     ]
 // }
+
+
+
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/home/kacharya33/nanoGenRec/src/calcirmetrics_bm25.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--category", "toys",
+                "--generated_file","llama-8b/llama-8b-toys-7.2kcpt_test_beam5_max_seq1024_bs8_numret5.json",
+                "--retriever_index","amzntoys2014_index",
+                "--num_sequences","5"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        }
+    ]
+}
 
 // rsync -av --progress kacharya33@simian:/home/kacharya33/nanoGenRec/hfdatasets.zip .

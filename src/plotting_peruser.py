@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from collections import defaultdict
 import pandas as pd
 from src.utils.project_dirs import *
-from src.calcirmetrics import load_data, verify_reviewer_ids, evaluate_retrieval
+from src.calcirmetrics_bm25 import load_data, verify_reviewer_ids, evaluate_retrieval # TODO make it general, if its sparse or dense retrieval
 
 def plot_metric_vs_sequence_length(metric_per_reviewer, reviewer_sequence_counts, max_seq_length=None, min_reviewers=5, yaxis_name = "Metric", xaxis_name = "Sequence Length"):
     """
