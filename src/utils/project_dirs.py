@@ -102,3 +102,18 @@ def ft_configs_dir():
     res = project_root() / "ft_configs"
     res.mkdir(parents=True, exist_ok=True)
     return res
+
+def get_peruser_metric_dir():
+    res = project_root() / "peruser_metrics"
+    res.mkdir(parents=True, exist_ok=True)
+    return res
+
+def get_peruser_metric_dataset_modelname(dataset:str, model_name:str):
+    res = get_peruser_metric_dir() / dataset / model_name
+    res.mkdir(parents=True, exist_ok=True)
+    return res
+
+# def get_peruser_metric_dataset_split(dataset:str, split:str):
+#     res = get_peruser_metric_dir() / dataset / split
+#     res.mkdir(parents=True, exist_ok=True)
+#     return res

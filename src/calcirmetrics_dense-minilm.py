@@ -1,7 +1,7 @@
 
 from retriv import DenseRetriever
 import pandas as pd
-from src.utils.project_dirs import get_gen_dir_dataset, processed_data_dir, get_bm25_indexes_dir,get_minilm_index_dir
+from src.utils.project_dirs import get_gen_dir_dataset, processed_data_dir, get_bm25_indexes_dir,get_minilm_index_dir,  get_peruser_metric_dataset_modelname
 from src.calcirmetrics_bm25 import load_data, verify_reviewer_ids, get_qrels
 from ranx import Qrels, Run, evaluate
 from typing import List, Dict
@@ -133,7 +133,11 @@ def get_metrics(meta_filepath: str, generated_filepath: str, \
     print("Evaluating retrieval performance...")
     qrels, rundR, ans = evaluate_retrieval(genop, retriever_filepath, num_sequences, at_k, batch_size=batch_size)
     
-    # TODO: save rundR scores to file
+    perusermetrics = rundR.scores
+    df_metrics = pd.DataFrame(perusermetrics)
+    df_metrics.to_csv(peruser_savepath + ".csv", index=False)
+    df_metrics.to_json(peruser_savepath + ".jsonl", orient="records")
+
 
     print("\n--- Evaluation Summary ---")
     print(f"Category: {category}")
@@ -146,11 +150,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate retrieval performance based on generated sequences.")
     parser.add_argument("--category", type=str, required=True, help="The category of the dataset to evaluate (e.g., 'beauty', 'toys').")
     parser.add_argument("--generated_file", type=str, required=True, help="The JSON file containing generated sequences (e.g., 'val_gen_op.json').")
+    parser.add_argument("--split", type=str, required=True, help="The split to evaluate on (e.g., 'validation', 'test').")
+    parser.add_argument("--short_model_name", type=str, required=True, help="The short model name (e.g., 'llama-1b').")
+
     parser.add_argument("--num_sequences", type=int, default=5, help="Number of generated sequences to consider per reviewer.")
     parser.add_argument("--at_k", type=int, default=5, help="Number of return sequences to consider per reviewer.")
     parser.add_argument("--batch_size", type=int, default=512, help="Batch size for dense retrieval.")
-    parser.add_argument("--peruser_savepath", type=str, , help="Path to save per-user rundR scores.")
-
 
     args = parser.parse_args()
     category = args.category.lower()
@@ -158,9 +163,13 @@ if __name__ == "__main__":
     meta_filepath = str(processed_data_dir(f'{category}2014') / 'meta_corpus.jsonl')
     retriever_filepath = str(get_minilm_index_dir() / f'{category}2014_index')
 
+    filename = (args.category + "_" + args.split + "_" + args.short_model_name)
+    # peruser_savepath = str(get_peruser_metric_dir() / args.category / args.short_model_name / filename)
+    peruser_savepath = str(get_peruser_metric_dataset_modelname(args.category, args.short_model_name) / filename)
+
     get_metrics(meta_filepath = meta_filepath, generated_filepath = generated_filepath, \
                 retriever_filepath = retriever_filepath, num_sequences = args.num_sequences, at_k = args.at_k, category = category,
-                batch_size = args.batch_size, peruser_savepath = args.peruser_savepath)
+                batch_size = args.batch_size, peruser_savepath = peruser_savepath)
 
 
 
