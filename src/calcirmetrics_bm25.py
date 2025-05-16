@@ -26,7 +26,7 @@ def get_qrels(genop: List[Dict]) -> Dict[str, Dict[str, int]]:
         qrels_dict[reviewer][asin] = 1
     return dict(qrels_dict)
 
-def get_unique_sorted_asins(asins: List[str], scores: List[float]) -> Dict[str, float]:
+def get_unique_sorted_asins(asins: List[str], scores: List[float]) -> Dict[str, float]: # TODO step thru
     """Helper: return unique asins sorted by score."""
     seen = set()
     asin_score_pairs = []
@@ -187,7 +187,7 @@ if __name__ == "__main__":
 # Metrics: {'recall@5': np.float64(0.07238979118329467), 'ndcg@5': np.float64(0.043678647997469976), 'mrr': np.float64(0.03434046575577898)}
 
 # Llama-3.1-8B TEST, beam search, @ 7.2k steps
-
+# Metrics: {'recall@5': 0.07842227378190256, 'ndcg@5': 0.04717886157028416, 'mrr': 0.03702328778894904}
 
 # --------------------------------------------------------------------------------------------------------------------------------
 
