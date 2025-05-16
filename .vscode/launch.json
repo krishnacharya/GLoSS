@@ -875,3 +875,83 @@
 
 
 // nohup env CUDA_VISIBLE_DEVICES=0 /bin/bash get_dense_ret_metrics_test.sh > get_dense_ret_metrics_test.log 2>&1 &
+
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/process_metadata.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "--url", "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_v2/metaFiles2/meta_Video_Games.json.gz",
+//                 "--category", "Games"
+//             ],
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             }
+//         }
+//     ]
+// }
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/process_interactions.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "--reviews_url","https://mcauleylab.ucsd.edu/public_datasets/data/amazon_v2/categoryFilesSmall/Video_Games_5.json.gz",
+//                 "--category", "Games"
+//             ],
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             }
+//         }
+//     ]
+// }
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/make_hfdataset.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "--category", "Games"
+//             ],
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             }
+//         }
+//     ]
+// }
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/home/kacharya33/nanoGenRec/src/movielens-specific-processing.py",
+            "console": "integratedTerminal",
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        }
+    ]
+}
+
+
+// https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Video_Games_5.json.gz
+// https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Video_Games.json.gz # this is incomplete!!

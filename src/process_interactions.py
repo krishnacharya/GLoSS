@@ -4,7 +4,7 @@ import numpy as np
 from src.utils.project_dirs import get_reviews_raw2014_dir, processed_data_dir
 import os
 import argparse
-from pathlib import Path÷
+from pathlib import Path
 import urllib.parse
 
 def load_and_preprocess_reviews(file_path):

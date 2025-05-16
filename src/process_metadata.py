@@ -7,8 +7,10 @@ import warnings
 import os
 import argparse
 from src.utils.project_dirs import get_reviews_raw2014_dir, processed_data_dir
-from pathlib import Path
 import urllib.parse
+from pathlib import Path
+
+# https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/
 
 def max_word_length_column(df, column_name):
     """
@@ -228,6 +230,8 @@ def main():
         print(f"Warning: Uncompressed file exists at {file_path_uncompressed}, but compressed version not found. Assuming uncompressed version is the latest.")
 
     meta_df = load_and_fix_json_lines(file_path_uncompressed)
+    columns_to_keep = ['asin', 'title'] # hack works only for amazon datasets
+    meta_df = meta_df[columns_to_keep]    
 
     if meta_df is not None:
         print(f"Initial shape: {meta_df.shape}, Unique ASINs: {meta_df['asin'].nunique()}")
