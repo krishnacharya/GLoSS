@@ -936,6 +936,22 @@
 //     ]
 // }
 
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/movielens-specific-processing.py",
+//             "console": "integratedTerminal",
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             }
+//         }
+//     ]
+// }
+
 {
     "version": "0.2.0",
     "configurations": [
@@ -943,14 +959,22 @@
             "name": "Python Debugger: Current File with Arguments",
             "type": "debugpy",
             "request": "launch",
-            "program": "/home/kacharya33/nanoGenRec/src/movielens-specific-processing.py",
+            "program": "/home/kacharya33/nanoGenRec/src/eval_baseline_mlens.py",
             "console": "integratedTerminal",
+            "args": [
+                "--dataset", "ml100k",
+                "--bm25_index_name", "ml100k_index",
+                "--k", "5",
+                "--metrics", "recall@5", "ndcg@5", "mrr",
+                "--split", "test"
+            ],
             "env": {
                 "CUDA_VISIBLE_DEVICES": "0"
-            }
         }
     ]
 }
+
+
 
 
 // https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Video_Games_5.json.gz

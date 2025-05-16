@@ -1,4 +1,4 @@
-from src.utils.project_dirs import get_movielens_raw_dir, processed_data_dir
+from src.utils.project_dirs import get_movielens_raw_dir, processed_data_dir, get_hfdata_dir
 import urllib.parse
 import os
 import pandas as pd
@@ -7,6 +7,7 @@ from collections import defaultdict
 import random
 from datasets import Dataset, DatasetDict
 from pathlib import Path
+from src.process_metadata import truncate_text_columns
 
 ##NOTES ON ML100K
     # u.data     -- The full u data set, 100000 ratings by 943 users on 1682 items.
@@ -163,7 +164,7 @@ def create_hf_dataset_MLFamily(df_ui, meta_corpus, save_path:str, Nval:int=512, 
     assert df_ui.columns.tolist() == ['user_id', 'movie_id', 'rating', 'timestamp', 'title', 'genre']
     
     movies_compact = meta_corpus[['movie_id']].copy()
-    movies_compact['nlang'] = "Title: " + meta_corpus['title'] + " Genres: " + meta_corpus['genre']
+    movies_compact['nlang'] = "Title: " + meta_corpus['title'] + ", Genres: " + meta_corpus['genre']
     movieid_to_nlang = movies_compact.set_index('movie_id')['nlang'].to_dict()
 
     # Group 
@@ -171,7 +172,7 @@ def create_hf_dataset_MLFamily(df_ui, meta_corpus, save_path:str, Nval:int=512, 
 
     # Define prompt template
     movielens_prompt = (
-        "Below is a user's watch history on Netflix, listed in chronological order (earliest to latest). \n"
+        "Below is a user's Movielens watch history in chronological order (earliest to latest). \n"
         "Each movie is represented by the following format: Title: <movie title>, Genres: <movie genres> \n"
         "Based on this history, predict **only one** movie the user is most likely to watch next in the same format.\n\n"
         "### Watch history:\n"
@@ -198,31 +199,33 @@ def create_hf_dataset_MLFamily(df_ui, meta_corpus, save_path:str, Nval:int=512, 
         # Prepare test set for all reviewers
         test_ptext = movielens_prompt.format("\n".join(formatted_movies_list[:n-1]), "")
         test_text = movielens_prompt.format("\n".join(formatted_movies_list[:n-1]), formatted_movies_list[n-1])
-        test_seen_asins = movies_list[:n-1]
-        test_asin = movies_list[n-1]
-        test_asin_text = formatted_movies_list[n-1]
+
+        test_seen_movids = movies_list[:n-1]
+        test_movid = movies_list[n-1]
+        test_mov_text = formatted_movies_list[n-1]
+        
         test_records.append({
             "user_id": user_id,
             "ptext": test_ptext,
             "text": test_text,
-            "seen_asins": test_seen_asins,
-            "asin": test_asin,
-            "asin_text": test_asin_text
+            "seen_movie_ids": test_seen_movids,
+            "movie_id": test_movid,
+            "movie_id_text": test_mov_text
         })
 
         if user_id in val_users:  # Validation set
             val_ptext = movielens_prompt.format("\n".join(formatted_movies_list[:n-2]), "")
             val_text = movielens_prompt.format("\n".join(formatted_movies_list[:n-2]), formatted_movies_list[n-2])
-            val_seen_asins = movies_list[:n-2]
-            val_asin = movies_list[n-2]
-            val_asin_text = formatted_movies_list[n-2]
+            val_seen_movids = movies_list[:n-2]
+            val_movid = movies_list[n-2]
+            val_mov_text = formatted_movies_list[n-2]
             val_records.append({
                 "user_id": user_id,
                 "ptext": val_ptext,
                 "text": val_text,
-                "seen_asins": val_seen_asins,
-                "asin": val_asin,
-                "asin_text": val_asin_text
+                "seen_movie_ids": val_seen_movids,
+                "movie_id": val_movid,
+                "movie_id_text": val_mov_text
             })
             # Train set is shorter for validation users
             train_text = movielens_prompt.format("\n".join(formatted_movies_list[:n-3]), formatted_movies_list[n-3])
@@ -242,7 +245,7 @@ def create_hf_dataset_MLFamily(df_ui, meta_corpus, save_path:str, Nval:int=512, 
     )
 
     # Save dataset locally
-    output_path = Path(save_path) / "movielens" / dname
+    output_path = Path(save_path) / dname
     output_path.mkdir(parents=True, exist_ok=True)
     dataset_dict.save_to_disk(str(output_path))
 
@@ -252,7 +255,7 @@ def create_hf_dataset_MLFamily(df_ui, meta_corpus, save_path:str, Nval:int=512, 
 
         
 
-def ml_100k_processing(ml100k_url: str):
+def ml_100k_processing(ml100k_url: str, valfrac:float=0.05):
     """
     Downloads, unzips, and processes the MovieLens 100k dataset.
 
@@ -313,6 +316,11 @@ def ml_100k_processing(ml100k_url: str):
 
     metadata_df['genre'] = metadata_df.apply(get_genres, axis=1)
     metadata_df = metadata_df[['movie_id', 'title', 'genre']]
+    # metadata_df['movie_id'] = metadata_df['movie_id'].astype(str)
+    metadata_df = metadata_df.astype(str)
+
+    truncation_config = {'title': 25} # 25 words is a lot for a movie title, but can filter corruptions
+    metadata_df = truncate_text_columns(metadata_df, truncation_config)
 
     #############################################################
     # Load the ratings data
@@ -326,6 +334,10 @@ def ml_100k_processing(ml100k_url: str):
     except FileNotFoundError:
         print(f"Error: Could not read ratings file {ratings_file}.")
         return
+
+    # df_ui['movie_id'] = df_ui['movie_id'].astype(str)
+    # df_ui['user_id'] = df_ui['user_id'].astype(str)
+    df_ui = df_ui.astype(str)
     # get the number of times each a user has rated, and the number of times each movie has been rated
     print("User rating counts:")
     print(df_ui['user_id'].value_counts().describe())
@@ -351,7 +363,9 @@ def ml_100k_processing(ml100k_url: str):
     output_path=str(processed_data_dir(f"ml100k") / 'meta_corpus.json')
     create_corpus_metadata(metadata_df, movieid_list=df_ui['movie_id'].unique(), output_path=output_path)
 
-
+    hf_dir = get_hfdata_dir()
+    Nval = int(valfrac * len(df_ui['user_id'].unique()))
+    create_hf_dataset_MLFamily(df_ui, metadata_df, save_path=hf_dir, Nval=Nval, random_seed=42, dname='ml100k')
 
 def ml_1m_processing():
     pass
