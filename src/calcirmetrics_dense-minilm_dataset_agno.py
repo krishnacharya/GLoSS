@@ -234,14 +234,11 @@ def get_metrics(meta_filepath: str, generated_filepath: str,
     print("Metrics:", ans)
 
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Evaluate retrieval performance based on generated sequences.")
-    parser.add_argument("--dataset_name", type=str, required=True,
-                        help="Specific dataset name (e.g., 'beauty', 'ml100k', 'sports').")
-    parser.add_argument("--data_family", type=str, required=True,
-                        choices=["amazon", "movielens"],
+    parser.add_argument("--dataset_name", type=str, required=True, help="Specific dataset name (e.g., 'beauty', 'ml100k', 'sports').")
+    parser.add_argument("--data_family", type=str, required=True,choices=["amazon", "movielens"],
                         help="Family of the dataset (e.g., 'amazon', 'movielens').")
     parser.add_argument("--generated_file", type=str, required=True,
                         help="The JSON file containing generated sequences (e.g., 'val_gen_op.json').")
@@ -249,7 +246,6 @@ if __name__ == "__main__":
                         help="The split to evaluate on (e.g., 'validation', 'test').")
     parser.add_argument("--short_model_name", type=str, required=True,
                         help="The short model name (e.g., 'llama-1b').")
-
     parser.add_argument("--num_sequences", type=int, default=5,
                         help="Number of generated sequences to consider per reviewer.")
     parser.add_argument("--at_k", type=int, default=5,
