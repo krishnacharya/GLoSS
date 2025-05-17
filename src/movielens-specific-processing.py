@@ -29,45 +29,8 @@ from src.process_metadata import truncate_text_columns
     #             several genres at once.
     #             The movie ids are the ones used in the u.data data set.
 
-# def ml_100k_processing(ml100k_url:str):
-#     data_dir = get_movielens_raw_dir()
-#     parsed_reviews_url = urllib.parse.urlparse(ml100k_url)
-#     reviews_filename_compressed = os.path.basename(parsed_reviews_url.path)
-#     reviews_filename_uncompressed, ext = os.path.splitext(reviews_filename_compressed)
-#     if ext == '.gz' or ext == '.zip':
-#         reviews_filename_uncompressed = reviews_filename_uncompressed
-#     else:
-#         reviews_filename_uncompressed = reviews_filename_compressed
+# NOTES ON ML1M
 
-#     reviews_file_compressed = str(data_dir / reviews_filename_compressed)
-#     reviews_file_uncompressed = str(data_dir / reviews_filename_uncompressed)
-
-#     # Download and unzip the reviews file if it doesn't exist
-#     if not os.path.exists(reviews_file_uncompressed):
-#         print(f"Downloading reviews from: {ml100k_url} to {reviews_file_compressed}...")
-#         os.system(f"wget '{ml100k_url}' -O '{reviews_file_compressed}'")
-#         if os.path.exists(reviews_file_compressed) and (reviews_filename_compressed.endswith('.gz') or reviews_filename_compressed.endswith('.zip')):
-#             print(f"Unzipping {reviews_file_compressed} to {reviews_file_uncompressed}...")
-#             os.system(f"gunzip '{reviews_file_compressed}' -c > '{reviews_file_uncompressed}'")
-#         elif not reviews_filename_compressed.endswith('.gz'):
-#             reviews_file_uncompressed = reviews_file_compressed
-#         elif not os.path.exists(reviews_file_compressed):
-#             print(f"Error: Could not download reviews file from {ml100k_url}.")
-#             return
-#     elif reviews_filename_compressed.endswith('.gz') and not os.path.exists(reviews_file_compressed):
-#         print(f"Warning: Uncompressed reviews file exists at {reviews_file_uncompressed}, but compressed version not found. Assuming uncompressed version is the latest.")
-
-
-#     metadata_file = str(data_dir / "u.item")
-#     metadata_df = pd.read_csv(metadata_file, sep='|', header=None, names=["movie_id", "title", "release_date", "video_release_date", "IMDb_URL", "unknown", "Action", "Adventure", "Animation", "Children's", "Comedy", "Crime", "Documentary", "Drama", "Fantasy", "Film-Noir", "Horror", "Musical", "Mystery", "Romance", "Sci-Fi", "Thriller", "War", "Western"])
-#     metadata_df['genre'] = metadata_df.apply(lambda row: [col for col in row.index[5:] if row[col] == 1], axis=1) # TODO fix can be multple genre, seperate them by comma!
-#     metadata_df = metadata_df[['movie_id', 'title', 'genre']]
-
-#     # Load the ratings data
-#     df_ui = pd.read_csv(str(data_dir / "u.data"), sep='\t', header=None, names=["user_id", "movie_id", "rating", "timestamp"])
-#     # get the number of times each a user has rated, and the number of times each movie has been rated
-#     print(df_ui['user_id'].value_counts().describe())
-#     print(df_ui['movie_id'].value_counts().describe())
 
 # def calculate_dfmetrics(df):
 #     """Calculates dataframe metrics."""

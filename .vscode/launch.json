@@ -952,6 +952,129 @@
 //     ]
 // }
 
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/eval_baseline_mlens.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "--dataset", "ml100k",
+//                 "--bm25_index_name", "ml100k_index",
+//                 "--k", "5",
+//                 "--metrics", "recall@5", "ndcg@5", "mrr",
+//                 "--split", "test"
+//             ],
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//         }
+//     ]
+// }
+
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/finetune_with_config.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "--config", "ft_configs/ml100k/llama1b_1024_ml100k.yml",
+//                 "--dataset", "ml100k"
+//             ],
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             }
+//         }
+//     ]
+// }
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/finetune_with_config.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "--config", "ft_configs/toys2014/llama8b_toysv2.yml",
+//                 "--dataset", "toys"
+//             ],
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             }
+//         }
+//     ]
+// }
+
+
+
+// https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Video_Games_5.json.gz
+// https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Video_Games.json.gz # this is incomplete!!
+
+// nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
+//     --config ft_configs/ml100k/llama1b_1024_ml100k.yml \
+//     --dataset ml100k > finetune_ml100k_llama1b_50eps.log 2>&1 &
+
+
+// nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
+//     --config ft_configs/ml100k/llama3b_1024_ml100k.yml \
+//     --dataset ml100k > finetune_ml100k_llama3b_50eps.log 2>&1 &
+
+
+// nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
+//     --config ft_configs/ml100k/llama8b_1024_ml100k.yml \
+//     --dataset ml100k > finetune_ml100k_llama8b_50eps.log 2>&1 &
+
+
+// nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/generate_withbeams_ml.py \
+//     --model_name ml100kbest/llama-1b-checkpoint-649 \
+//     --dataset_name ml100k \
+//     --dataset_split test \
+//     --max_seq_length 1024 \
+//     --num_beams 5 \
+//     --batch_size 8 \
+//     --num_return_sequences 5 \
+//     --max_new_tokens 50 \
+//     --load_in_4bit True \
+//     > genop_ml100k_test1b_649step.log 2>&1 &
+
+// nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/generate_withbeams_ml.py \
+//     --model_name ml100kbest/llama-3b-checkpoint-590 \
+//     --dataset_name ml100k \
+//     --dataset_split test \
+//     --max_seq_length 1024 \
+//     --num_beams 5 \
+//     --batch_size 8 \
+//     --num_return_sequences 5 \
+//     --max_new_tokens 50 \
+//     --load_in_4bit True \
+//     > genop_ml100k_test3b_590step.log 2>&1 &
+
+// nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/generate_withbeams_ml.py \
+//     --model_name ml100kbest/llama-8b-checkpoint-708 \
+//     --dataset_name ml100k \
+//     --dataset_split test \
+//     --max_seq_length 1024 \
+//     --num_beams 5 \
+//     --batch_size 8 \
+//     --num_return_sequences 5 \
+//     --max_new_tokens 50 \
+//     --load_in_4bit True \
+//     > genop_ml100k_test8b_708step.log 2>&1 &
+
+
+// llama-1b-checkpoint-649_test_beam5_max_seq1024_bs8_numret5
+
+
 {
     "version": "0.2.0",
     "configurations": [
@@ -959,23 +1082,18 @@
             "name": "Python Debugger: Current File with Arguments",
             "type": "debugpy",
             "request": "launch",
-            "program": "/home/kacharya33/nanoGenRec/src/eval_baseline_mlens.py",
+            "program": "/home/kacharya33/nanoGenRec/src/calcirmetrics_bm25_dataset_agno.py",
             "console": "integratedTerminal",
             "args": [
-                "--dataset", "ml100k",
-                "--bm25_index_name", "ml100k_index",
-                "--k", "5",
-                "--metrics", "recall@5", "ndcg@5", "mrr",
-                "--split", "test"
+                "--dataset_name", "ml100k",
+                "--data_family", "movielens",
+                "--generated_file", "llama-3b/llama-3b-checkpoint-590_test_beam5_max_seq1024_bs8_numret5.json",
+                "--retriever_index","ml100k_index",
+                "--num_sequences","5"
             ],
             "env": {
-                "CUDA_VISIBLE_DEVICES": "0"
+                "CUDA_VISIBLE_DEVICES": "1"
+            }
         }
     ]
 }
-
-
-
-
-// https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/reviews_Video_Games_5.json.gz
-// https://snap.stanford.edu/data/amazon/productGraph/categoryFiles/meta_Video_Games.json.gz # this is incomplete!!
