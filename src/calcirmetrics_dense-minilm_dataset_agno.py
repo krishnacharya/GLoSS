@@ -253,3 +253,5 @@ if __name__ == "__main__":
 # Toys, llama-8b, TEST with all-MiniLM-L6-v2
 # Metrics: {'recall@5': 0.07960814642949214, 'ndcg@5': 0.05264008851607378, 'mrr': 0.043805963736358165}
 
+# ML100k, llama-8b, TEST with all-MiniLM-L6-v2
+# Metrics: {'recall@5': 0.060445387062566275, 'ndcg@5': 0.03594454348807995, 'mrr': 0.027942735949098622}

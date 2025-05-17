@@ -1,0 +1,1682 @@
+{"id":0,"text":"Title: Toy Story (1995), Genres: Animation,Children's,Comedy"}
+{"id":1,"text":"Title: GoldenEye (1995), Genres: Action,Adventure,Thriller"}
+{"id":2,"text":"Title: Four Rooms (1995), Genres: Thriller"}
+{"id":3,"text":"Title: Get Shorty (1995), Genres: Action,Comedy,Drama"}
+{"id":4,"text":"Title: Copycat (1995), Genres: Crime,Drama,Thriller"}
+{"id":5,"text":"Title: Shanghai Triad (Yao a yao yao dao waipo qiao) (1995), Genres: Drama"}
+{"id":6,"text":"Title: Twelve Monkeys (1995), Genres: Drama,Sci-Fi"}
+{"id":7,"text":"Title: Babe (1995), Genres: Children's,Comedy,Drama"}
+{"id":8,"text":"Title: Dead Man Walking (1995), Genres: Drama"}
+{"id":9,"text":"Title: Richard III (1995), Genres: Drama,War"}
+{"id":10,"text":"Title: Seven (Se7en) (1995), Genres: Crime,Thriller"}
+{"id":11,"text":"Title: Usual Suspects, The (1995), Genres: Crime,Thriller"}
+{"id":12,"text":"Title: Mighty Aphrodite (1995), Genres: Comedy"}
+{"id":13,"text":"Title: Postino, Il (1994), Genres: Drama,Romance"}
+{"id":14,"text":"Title: Mr. Holland's Opus (1995), Genres: Drama"}
+{"id":15,"text":"Title: French Twist (Gazon maudit) (1995), Genres: Comedy,Romance"}
+{"id":16,"text":"Title: From Dusk Till Dawn (1996), Genres: Action,Comedy,Crime,Horror,Thriller"}
+{"id":17,"text":"Title: White Balloon, The (1995), Genres: Drama"}
+{"id":18,"text":"Title: Antonia's Line (1995), Genres: Drama"}
+{"id":19,"text":"Title: Angels and Insects (1995), Genres: Drama,Romance"}
+{"id":20,"text":"Title: Muppet Treasure Island (1996), Genres: Action,Adventure,Comedy,Musical,Thriller"}
+{"id":21,"text":"Title: Braveheart (1995), Genres: Action,Drama,War"}
+{"id":22,"text":"Title: Taxi Driver (1976), Genres: Drama,Thriller"}
+{"id":23,"text":"Title: Rumble in the Bronx (1995), Genres: Action,Adventure,Crime"}
+{"id":24,"text":"Title: Birdcage, The (1996), Genres: Comedy"}
+{"id":25,"text":"Title: Brothers McMullen, The (1995), Genres: Comedy"}
+{"id":26,"text":"Title: Bad Boys (1995), Genres: Action"}
+{"id":27,"text":"Title: Apollo 13 (1995), Genres: Action,Drama,Thriller"}
+{"id":28,"text":"Title: Batman Forever (1995), Genres: Action,Adventure,Comedy,Crime"}
+{"id":29,"text":"Title: Belle de jour (1967), Genres: Drama"}
+{"id":30,"text":"Title: Crimson Tide (1995), Genres: Drama,Thriller,War"}
+{"id":31,"text":"Title: Crumb (1994), Genres: Documentary"}
+{"id":32,"text":"Title: Desperado (1995), Genres: Action,Romance,Thriller"}
+{"id":33,"text":"Title: Doom Generation, The (1995), Genres: Comedy,Drama"}
+{"id":34,"text":"Title: Free Willy 2: The Adventure Home (1995), Genres: Adventure,Children's,Drama"}
+{"id":35,"text":"Title: Mad Love (1995), Genres: Drama,Romance"}
+{"id":36,"text":"Title: Nadja (1994), Genres: Drama"}
+{"id":37,"text":"Title: Net, The (1995), Genres: Sci-Fi,Thriller"}
+{"id":38,"text":"Title: Strange Days (1995), Genres: Action,Crime,Sci-Fi"}
+{"id":39,"text":"Title: To Wong Foo, Thanks for Everything! Julie Newmar (1995), Genres: Comedy"}
+{"id":40,"text":"Title: Billy Madison (1995), Genres: Comedy"}
+{"id":41,"text":"Title: Clerks (1994), Genres: Comedy"}
+{"id":42,"text":"Title: Disclosure (1994), Genres: Drama,Thriller"}
+{"id":43,"text":"Title: Dolores Claiborne (1994), Genres: Drama,Thriller"}
+{"id":44,"text":"Title: Eat Drink Man Woman (1994), Genres: Comedy,Drama"}
+{"id":45,"text":"Title: Exotica (1994), Genres: Drama"}
+{"id":46,"text":"Title: Ed Wood (1994), Genres: Comedy,Drama"}
+{"id":47,"text":"Title: Hoop Dreams (1994), Genres: Documentary"}
+{"id":48,"text":"Title: I.Q. (1994), Genres: Comedy,Romance"}
+{"id":49,"text":"Title: Star Wars (1977), Genres: Action,Adventure,Romance,Sci-Fi,War"}
+{"id":50,"text":"Title: Legends of the Fall (1994), Genres: Drama,Romance,War,Western"}
+{"id":51,"text":"Title: Madness of King George, The (1994), Genres: Drama"}
+{"id":52,"text":"Title: Natural Born Killers (1994), Genres: Action,Thriller"}
+{"id":53,"text":"Title: Outbreak (1995), Genres: Action,Drama,Thriller"}
+{"id":54,"text":"Title: Professional, The (1994), Genres: Crime,Drama,Romance,Thriller"}
+{"id":55,"text":"Title: Pulp Fiction (1994), Genres: Crime,Drama"}
+{"id":56,"text":"Title: Priest (1994), Genres: Drama"}
+{"id":57,"text":"Title: Quiz Show (1994), Genres: Drama"}
+{"id":58,"text":"Title: Three Colors: Red (1994), Genres: Drama"}
+{"id":59,"text":"Title: Three Colors: Blue (1993), Genres: Drama"}
+{"id":60,"text":"Title: Three Colors: White (1994), Genres: Drama"}
+{"id":61,"text":"Title: Stargate (1994), Genres: Action,Adventure,Sci-Fi"}
+{"id":62,"text":"Title: Santa Clause, The (1994), Genres: Children's,Comedy"}
+{"id":63,"text":"Title: Shawshank Redemption, The (1994), Genres: Drama"}
+{"id":64,"text":"Title: What's Eating Gilbert Grape (1993), Genres: Comedy,Drama"}
+{"id":65,"text":"Title: While You Were Sleeping (1995), Genres: Comedy,Romance"}
+{"id":66,"text":"Title: Ace Ventura: Pet Detective (1994), Genres: Comedy"}
+{"id":67,"text":"Title: Crow, The (1994), Genres: Action,Romance,Thriller"}
+{"id":68,"text":"Title: Forrest Gump (1994), Genres: Comedy,Romance,War"}
+{"id":69,"text":"Title: Four Weddings and a Funeral (1994), Genres: Comedy,Romance"}
+{"id":70,"text":"Title: Lion King, The (1994), Genres: Animation,Children's,Musical"}
+{"id":71,"text":"Title: Mask, The (1994), Genres: Comedy,Crime,Fantasy"}
+{"id":72,"text":"Title: Maverick (1994), Genres: Action,Comedy,Western"}
+{"id":73,"text":"Title: Faster Pussycat! Kill! Kill! (1965), Genres: Action,Comedy,Drama"}
+{"id":74,"text":"Title: Brother Minister: The Assassination of Malcolm X (1994), Genres: Documentary"}
+{"id":75,"text":"Title: Carlito's Way (1993), Genres: Crime,Drama"}
+{"id":76,"text":"Title: Firm, The (1993), Genres: Drama,Thriller"}
+{"id":77,"text":"Title: Free Willy (1993), Genres: Adventure,Children's,Drama"}
+{"id":78,"text":"Title: Fugitive, The (1993), Genres: Action,Thriller"}
+{"id":79,"text":"Title: Hot Shots! Part Deux (1993), Genres: Action,Comedy,War"}
+{"id":80,"text":"Title: Hudsucker Proxy, The (1994), Genres: Comedy,Romance"}
+{"id":81,"text":"Title: Jurassic Park (1993), Genres: Action,Adventure,Sci-Fi"}
+{"id":82,"text":"Title: Much Ado About Nothing (1993), Genres: Comedy,Romance"}
+{"id":83,"text":"Title: Robert A. Heinlein's The Puppet Masters (1994), Genres: Horror,Sci-Fi"}
+{"id":84,"text":"Title: Ref, The (1994), Genres: Comedy"}
+{"id":85,"text":"Title: Remains of the Day, The (1993), Genres: Drama"}
+{"id":86,"text":"Title: Searching for Bobby Fischer (1993), Genres: Drama"}
+{"id":87,"text":"Title: Sleepless in Seattle (1993), Genres: Comedy,Romance"}
+{"id":88,"text":"Title: Blade Runner (1982), Genres: Film-Noir,Sci-Fi"}
+{"id":89,"text":"Title: So I Married an Axe Murderer (1993), Genres: Comedy,Romance,Thriller"}
+{"id":90,"text":"Title: Nightmare Before Christmas, The (1993), Genres: Children's,Comedy,Musical"}
+{"id":91,"text":"Title: True Romance (1993), Genres: Action,Crime,Romance"}
+{"id":92,"text":"Title: Welcome to the Dollhouse (1995), Genres: Comedy,Drama"}
+{"id":93,"text":"Title: Home Alone (1990), Genres: Children's,Comedy"}
+{"id":94,"text":"Title: Aladdin (1992), Genres: Animation,Children's,Comedy,Musical"}
+{"id":95,"text":"Title: Terminator 2: Judgment Day (1991), Genres: Action,Sci-Fi,Thriller"}
+{"id":96,"text":"Title: Dances with Wolves (1990), Genres: Adventure,Drama,Western"}
+{"id":97,"text":"Title: Silence of the Lambs, The (1991), Genres: Drama,Thriller"}
+{"id":98,"text":"Title: Snow White and the Seven Dwarfs (1937), Genres: Animation,Children's,Musical"}
+{"id":99,"text":"Title: Fargo (1996), Genres: Crime,Drama,Thriller"}
+{"id":100,"text":"Title: Heavy Metal (1981), Genres: Action,Adventure,Animation,Horror,Sci-Fi"}
+{"id":101,"text":"Title: Aristocats, The (1970), Genres: Animation,Children's"}
+{"id":102,"text":"Title: All Dogs Go to Heaven 2 (1996), Genres: Animation,Children's,Musical"}
+{"id":103,"text":"Title: Theodore Rex (1995), Genres: Comedy"}
+{"id":104,"text":"Title: Sgt. Bilko (1996), Genres: Comedy"}
+{"id":105,"text":"Title: Diabolique (1996), Genres: Drama,Thriller"}
+{"id":106,"text":"Title: Moll Flanders (1996), Genres: Drama"}
+{"id":107,"text":"Title: Kids in the Hall: Brain Candy (1996), Genres: Comedy"}
+{"id":108,"text":"Title: Mystery Science Theater 3000: The Movie (1996), Genres: Comedy,Sci-Fi"}
+{"id":109,"text":"Title: Operation Dumbo Drop (1995), Genres: Action,Adventure,Comedy,War"}
+{"id":110,"text":"Title: Truth About Cats & Dogs, The (1996), Genres: Comedy,Romance"}
+{"id":111,"text":"Title: Flipper (1996), Genres: Adventure,Children's"}
+{"id":112,"text":"Title: Horseman on the Roof, The (Hussard sur le toit, Le) (1995), Genres: Drama"}
+{"id":113,"text":"Title: Wallace & Gromit: The Best of Aardman Animation (1996), Genres: Animation"}
+{"id":114,"text":"Title: Haunted World of Edward D. Wood Jr., The (1995), Genres: Documentary"}
+{"id":115,"text":"Title: Cold Comfort Farm (1995), Genres: Comedy"}
+{"id":116,"text":"Title: Rock, The (1996), Genres: Action,Adventure,Thriller"}
+{"id":117,"text":"Title: Twister (1996), Genres: Action,Adventure,Thriller"}
+{"id":118,"text":"Title: Maya Lin: A Strong Clear Vision (1994), Genres: Documentary"}
+{"id":119,"text":"Title: Striptease (1996), Genres: Comedy,Crime"}
+{"id":120,"text":"Title: Independence Day (ID4) (1996), Genres: Action,Sci-Fi,War"}
+{"id":121,"text":"Title: Cable Guy, The (1996), Genres: Comedy"}
+{"id":122,"text":"Title: Frighteners, The (1996), Genres: Comedy,Horror"}
+{"id":123,"text":"Title: Lone Star (1996), Genres: Drama,Mystery"}
+{"id":124,"text":"Title: Phenomenon (1996), Genres: Drama,Romance"}
+{"id":125,"text":"Title: Spitfire Grill, The (1996), Genres: Drama"}
+{"id":126,"text":"Title: Godfather, The (1972), Genres: Action,Crime,Drama"}
+{"id":127,"text":"Title: Supercop (1992), Genres: Action,Thriller"}
+{"id":128,"text":"Title: Bound (1996), Genres: Crime,Drama,Romance,Thriller"}
+{"id":129,"text":"Title: Kansas City (1996), Genres: Crime"}
+{"id":130,"text":"Title: Breakfast at Tiffany's (1961), Genres: Drama,Romance"}
+{"id":131,"text":"Title: Wizard of Oz, The (1939), Genres: Adventure,Children's,Drama,Musical"}
+{"id":132,"text":"Title: Gone with the Wind (1939), Genres: Drama,Romance,War"}
+{"id":133,"text":"Title: Citizen Kane (1941), Genres: Drama"}
+{"id":134,"text":"Title: 2001: A Space Odyssey (1968), Genres: Drama,Mystery,Sci-Fi,Thriller"}
+{"id":135,"text":"Title: Mr. Smith Goes to Washington (1939), Genres: Drama"}
+{"id":136,"text":"Title: Big Night (1996), Genres: Drama"}
+{"id":137,"text":"Title: D3: The Mighty Ducks (1996), Genres: Children's,Comedy"}
+{"id":138,"text":"Title: Love Bug, The (1969), Genres: Children's,Comedy"}
+{"id":139,"text":"Title: Homeward Bound: The Incredible Journey (1993), Genres: Adventure,Children's"}
+{"id":140,"text":"Title: 20,000 Leagues Under the Sea (1954), Genres: Adventure,Children's,Fantasy,Sci-Fi"}
+{"id":141,"text":"Title: Bedknobs and Broomsticks (1971), Genres: Adventure,Children's,Musical"}
+{"id":142,"text":"Title: Sound of Music, The (1965), Genres: Musical"}
+{"id":143,"text":"Title: Die Hard (1988), Genres: Action,Thriller"}
+{"id":144,"text":"Title: Lawnmower Man, The (1992), Genres: Action,Sci-Fi,Thriller"}
+{"id":145,"text":"Title: Unhook the Stars (1996), Genres: Drama"}
+{"id":146,"text":"Title: Long Kiss Goodnight, The (1996), Genres: Action,Thriller"}
+{"id":147,"text":"Title: Ghost and the Darkness, The (1996), Genres: Action,Adventure"}
+{"id":148,"text":"Title: Jude (1996), Genres: Drama"}
+{"id":149,"text":"Title: Swingers (1996), Genres: Comedy,Drama"}
+{"id":150,"text":"Title: Willy Wonka and the Chocolate Factory (1971), Genres: Adventure,Children's,Comedy"}
+{"id":151,"text":"Title: Sleeper (1973), Genres: Comedy,Sci-Fi"}
+{"id":152,"text":"Title: Fish Called Wanda, A (1988), Genres: Comedy"}
+{"id":153,"text":"Title: Monty Python's Life of Brian (1979), Genres: Comedy"}
+{"id":154,"text":"Title: Dirty Dancing (1987), Genres: Musical,Romance"}
+{"id":155,"text":"Title: Reservoir Dogs (1992), Genres: Crime,Thriller"}
+{"id":156,"text":"Title: Platoon (1986), Genres: Drama,War"}
+{"id":157,"text":"Title: Weekend at Bernie's (1989), Genres: Comedy"}
+{"id":158,"text":"Title: Basic Instinct (1992), Genres: Mystery,Thriller"}
+{"id":159,"text":"Title: Glengarry Glen Ross (1992), Genres: Drama"}
+{"id":160,"text":"Title: Top Gun (1986), Genres: Action,Romance"}
+{"id":161,"text":"Title: On Golden Pond (1981), Genres: Drama"}
+{"id":162,"text":"Title: Return of the Pink Panther, The (1974), Genres: Comedy"}
+{"id":163,"text":"Title: Abyss, The (1989), Genres: Action,Adventure,Sci-Fi,Thriller"}
+{"id":164,"text":"Title: Jean de Florette (1986), Genres: Drama"}
+{"id":165,"text":"Title: Manon of the Spring (Manon des sources) (1986), Genres: Drama"}
+{"id":166,"text":"Title: Private Benjamin (1980), Genres: Comedy"}
+{"id":167,"text":"Title: Monty Python and the Holy Grail (1974), Genres: Comedy"}
+{"id":168,"text":"Title: Wrong Trousers, The (1993), Genres: Animation,Comedy"}
+{"id":169,"text":"Title: Cinema Paradiso (1988), Genres: Comedy,Drama,Romance"}
+{"id":170,"text":"Title: Delicatessen (1991), Genres: Comedy,Sci-Fi"}
+{"id":171,"text":"Title: Empire Strikes Back, The (1980), Genres: Action,Adventure,Drama,Romance,Sci-Fi,War"}
+{"id":172,"text":"Title: Princess Bride, The (1987), Genres: Action,Adventure,Comedy,Romance"}
+{"id":173,"text":"Title: Raiders of the Lost Ark (1981), Genres: Action,Adventure"}
+{"id":174,"text":"Title: Brazil (1985), Genres: Sci-Fi"}
+{"id":175,"text":"Title: Aliens (1986), Genres: Action,Sci-Fi,Thriller,War"}
+{"id":176,"text":"Title: Good, The Bad and The Ugly, The (1966), Genres: Action,Western"}
+{"id":177,"text":"Title: 12 Angry Men (1957), Genres: Drama"}
+{"id":178,"text":"Title: Clockwork Orange, A (1971), Genres: Sci-Fi"}
+{"id":179,"text":"Title: Apocalypse Now (1979), Genres: Drama,War"}
+{"id":180,"text":"Title: Return of the Jedi (1983), Genres: Action,Adventure,Romance,Sci-Fi,War"}
+{"id":181,"text":"Title: GoodFellas (1990), Genres: Crime,Drama"}
+{"id":182,"text":"Title: Alien (1979), Genres: Action,Horror,Sci-Fi,Thriller"}
+{"id":183,"text":"Title: Army of Darkness (1993), Genres: Action,Adventure,Comedy,Horror,Sci-Fi"}
+{"id":184,"text":"Title: Psycho (1960), Genres: Horror,Romance,Thriller"}
+{"id":185,"text":"Title: Blues Brothers, The (1980), Genres: Action,Comedy,Musical"}
+{"id":186,"text":"Title: Godfather: Part II, The (1974), Genres: Action,Crime,Drama"}
+{"id":187,"text":"Title: Full Metal Jacket (1987), Genres: Action,Drama,War"}
+{"id":188,"text":"Title: Grand Day Out, A (1992), Genres: Animation,Comedy"}
+{"id":189,"text":"Title: Henry V (1989), Genres: Drama,War"}
+{"id":190,"text":"Title: Amadeus (1984), Genres: Drama,Mystery"}
+{"id":191,"text":"Title: Raging Bull (1980), Genres: Drama"}
+{"id":192,"text":"Title: Right Stuff, The (1983), Genres: Drama"}
+{"id":193,"text":"Title: Sting, The (1973), Genres: Comedy,Crime"}
+{"id":194,"text":"Title: Terminator, The (1984), Genres: Action,Sci-Fi,Thriller"}
+{"id":195,"text":"Title: Dead Poets Society (1989), Genres: Drama"}
+{"id":196,"text":"Title: Graduate, The (1967), Genres: Drama,Romance"}
+{"id":197,"text":"Title: Nikita (La Femme Nikita) (1990), Genres: Thriller"}
+{"id":198,"text":"Title: Bridge on the River Kwai, The (1957), Genres: Drama,War"}
+{"id":199,"text":"Title: Shining, The (1980), Genres: Horror"}
+{"id":200,"text":"Title: Evil Dead II (1987), Genres: Action,Adventure,Comedy,Horror"}
+{"id":201,"text":"Title: Groundhog Day (1993), Genres: Comedy,Romance"}
+{"id":202,"text":"Title: Unforgiven (1992), Genres: Western"}
+{"id":203,"text":"Title: Back to the Future (1985), Genres: Comedy,Sci-Fi"}
+{"id":204,"text":"Title: Patton (1970), Genres: Drama,War"}
+{"id":205,"text":"Title: Akira (1988), Genres: Adventure,Animation,Sci-Fi,Thriller"}
+{"id":206,"text":"Title: Cyrano de Bergerac (1990), Genres: Action,Drama,Romance"}
+{"id":207,"text":"Title: Young Frankenstein (1974), Genres: Comedy,Horror"}
+{"id":208,"text":"Title: This Is Spinal Tap (1984), Genres: Comedy,Drama,Musical"}
+{"id":209,"text":"Title: Indiana Jones and the Last Crusade (1989), Genres: Action,Adventure"}
+{"id":210,"text":"Title: M*A*S*H (1970), Genres: Comedy,War"}
+{"id":211,"text":"Title: Unbearable Lightness of Being, The (1988), Genres: Drama"}
+{"id":212,"text":"Title: Room with a View, A (1986), Genres: Drama,Romance"}
+{"id":213,"text":"Title: Pink Floyd - The Wall (1982), Genres: Drama,Musical,War"}
+{"id":214,"text":"Title: Field of Dreams (1989), Genres: Drama"}
+{"id":215,"text":"Title: When Harry Met Sally... (1989), Genres: Comedy,Romance"}
+{"id":216,"text":"Title: Bram Stoker's Dracula (1992), Genres: Horror,Romance"}
+{"id":217,"text":"Title: Cape Fear (1991), Genres: Thriller"}
+{"id":218,"text":"Title: Nightmare on Elm Street, A (1984), Genres: Horror"}
+{"id":219,"text":"Title: Mirror Has Two Faces, The (1996), Genres: Comedy,Romance"}
+{"id":220,"text":"Title: Breaking the Waves (1996), Genres: Drama"}
+{"id":221,"text":"Title: Star Trek: First Contact (1996), Genres: Action,Adventure,Sci-Fi"}
+{"id":222,"text":"Title: Sling Blade (1996), Genres: Drama,Thriller"}
+{"id":223,"text":"Title: Ridicule (1996), Genres: Drama"}
+{"id":224,"text":"Title: 101 Dalmatians (1996), Genres: Children's,Comedy"}
+{"id":225,"text":"Title: Die Hard 2 (1990), Genres: Action,Thriller"}
+{"id":226,"text":"Title: Star Trek VI: The Undiscovered Country (1991), Genres: Action,Adventure,Sci-Fi"}
+{"id":227,"text":"Title: Star Trek: The Wrath of Khan (1982), Genres: Action,Adventure,Sci-Fi"}
+{"id":228,"text":"Title: Star Trek III: The Search for Spock (1984), Genres: Action,Adventure,Sci-Fi"}
+{"id":229,"text":"Title: Star Trek IV: The Voyage Home (1986), Genres: Action,Adventure,Sci-Fi"}
+{"id":230,"text":"Title: Batman Returns (1992), Genres: Action,Adventure,Comedy,Crime"}
+{"id":231,"text":"Title: Young Guns (1988), Genres: Action,Comedy,Western"}
+{"id":232,"text":"Title: Under Siege (1992), Genres: Action"}
+{"id":233,"text":"Title: Jaws (1975), Genres: Action,Horror"}
+{"id":234,"text":"Title: Mars Attacks! (1996), Genres: Action,Comedy,Sci-Fi,War"}
+{"id":235,"text":"Title: Citizen Ruth (1996), Genres: Comedy,Drama"}
+{"id":236,"text":"Title: Jerry Maguire (1996), Genres: Drama,Romance"}
+{"id":237,"text":"Title: Raising Arizona (1987), Genres: Comedy"}
+{"id":238,"text":"Title: Sneakers (1992), Genres: Crime,Drama,Sci-Fi"}
+{"id":239,"text":"Title: Beavis and Butt-head Do America (1996), Genres: Animation,Comedy"}
+{"id":240,"text":"Title: Last of the Mohicans, The (1992), Genres: Action,Romance,War"}
+{"id":241,"text":"Title: Kolya (1996), Genres: Comedy"}
+{"id":242,"text":"Title: Jungle2Jungle (1997), Genres: Children's,Comedy"}
+{"id":243,"text":"Title: Smilla's Sense of Snow (1997), Genres: Action,Drama,Thriller"}
+{"id":244,"text":"Title: Devil's Own, The (1997), Genres: Action,Drama,Thriller,War"}
+{"id":245,"text":"Title: Chasing Amy (1997), Genres: Drama,Romance"}
+{"id":246,"text":"Title: Turbo: A Power Rangers Movie (1997), Genres: Action,Adventure,Children's"}
+{"id":247,"text":"Title: Grosse Pointe Blank (1997), Genres: Comedy,Crime"}
+{"id":248,"text":"Title: Austin Powers: International Man of Mystery (1997), Genres: Comedy"}
+{"id":249,"text":"Title: Fifth Element, The (1997), Genres: Action,Sci-Fi"}
+{"id":250,"text":"Title: Shall We Dance? (1996), Genres: Comedy"}
+{"id":251,"text":"Title: Lost World: Jurassic Park, The (1997), Genres: Action,Adventure,Sci-Fi,Thriller"}
+{"id":252,"text":"Title: Pillow Book, The (1995), Genres: Drama,Romance"}
+{"id":253,"text":"Title: Batman & Robin (1997), Genres: Action,Adventure,Crime"}
+{"id":254,"text":"Title: My Best Friend's Wedding (1997), Genres: Comedy,Romance"}
+{"id":255,"text":"Title: When the Cats Away (Chacun cherche son chat) (1996), Genres: Comedy,Romance"}
+{"id":256,"text":"Title: Men in Black (1997), Genres: Action,Adventure,Comedy,Sci-Fi"}
+{"id":257,"text":"Title: Contact (1997), Genres: Drama,Sci-Fi"}
+{"id":258,"text":"Title: George of the Jungle (1997), Genres: Children's,Comedy"}
+{"id":259,"text":"Title: Event Horizon (1997), Genres: Action,Mystery,Sci-Fi,Thriller"}
+{"id":260,"text":"Title: Air Bud (1997), Genres: Children's,Comedy"}
+{"id":261,"text":"Title: In the Company of Men (1997), Genres: Drama"}
+{"id":262,"text":"Title: Steel (1997), Genres: Action"}
+{"id":263,"text":"Title: Mimic (1997), Genres: Sci-Fi,Thriller"}
+{"id":264,"text":"Title: Hunt for Red October, The (1990), Genres: Action,Thriller"}
+{"id":265,"text":"Title: Kull the Conqueror (1997), Genres: Action,Adventure"}
+{"id":266,"text":"Title: unknown, Genres: unknown"}
+{"id":267,"text":"Title: Chasing Amy (1997), Genres: Drama,Romance"}
+{"id":268,"text":"Title: Full Monty, The (1997), Genres: Comedy"}
+{"id":269,"text":"Title: Gattaca (1997), Genres: Drama,Sci-Fi,Thriller"}
+{"id":270,"text":"Title: Starship Troopers (1997), Genres: Action,Adventure,Sci-Fi,War"}
+{"id":271,"text":"Title: Good Will Hunting (1997), Genres: Drama"}
+{"id":272,"text":"Title: Heat (1995), Genres: Action,Crime,Thriller"}
+{"id":273,"text":"Title: Sabrina (1995), Genres: Comedy,Romance"}
+{"id":274,"text":"Title: Sense and Sensibility (1995), Genres: Drama,Romance"}
+{"id":275,"text":"Title: Leaving Las Vegas (1995), Genres: Drama,Romance"}
+{"id":276,"text":"Title: Restoration (1995), Genres: Drama"}
+{"id":277,"text":"Title: Bed of Roses (1996), Genres: Drama,Romance"}
+{"id":278,"text":"Title: Once Upon a Time... When We Were Colored (1995), Genres: Drama"}
+{"id":279,"text":"Title: Up Close and Personal (1996), Genres: Drama,Romance"}
+{"id":280,"text":"Title: River Wild, The (1994), Genres: Action,Thriller"}
+{"id":281,"text":"Title: Time to Kill, A (1996), Genres: Drama"}
+{"id":282,"text":"Title: Emma (1996), Genres: Drama,Romance"}
+{"id":283,"text":"Title: Tin Cup (1996), Genres: Comedy,Romance"}
+{"id":284,"text":"Title: Secrets & Lies (1996), Genres: Drama"}
+{"id":285,"text":"Title: English Patient, The (1996), Genres: Drama,Romance,War"}
+{"id":286,"text":"Title: Marvin's Room (1996), Genres: Drama"}
+{"id":287,"text":"Title: Scream (1996), Genres: Horror,Thriller"}
+{"id":288,"text":"Title: Evita (1996), Genres: Drama,Musical"}
+{"id":289,"text":"Title: Fierce Creatures (1997), Genres: Comedy"}
+{"id":290,"text":"Title: Absolute Power (1997), Genres: Mystery,Thriller"}
+{"id":291,"text":"Title: Rosewood (1997), Genres: Drama"}
+{"id":292,"text":"Title: Donnie Brasco (1997), Genres: Crime,Drama"}
+{"id":293,"text":"Title: Liar Liar (1997), Genres: Comedy"}
+{"id":294,"text":"Title: Breakdown (1997), Genres: Action,Thriller"}
+{"id":295,"text":"Title: Promesse, La (1996), Genres: Drama"}
+{"id":296,"text":"Title: Ulee's Gold (1997), Genres: Drama"}
+{"id":297,"text":"Title: Face/Off (1997), Genres: Action,Sci-Fi,Thriller"}
+{"id":298,"text":"Title: Hoodlum (1997), Genres: Crime,Drama,Film-Noir"}
+{"id":299,"text":"Title: Air Force One (1997), Genres: Action,Thriller"}
+{"id":300,"text":"Title: In & Out (1997), Genres: Comedy"}
+{"id":301,"text":"Title: L.A. Confidential (1997), Genres: Crime,Film-Noir,Mystery,Thriller"}
+{"id":302,"text":"Title: Ulee's Gold (1997), Genres: Drama"}
+{"id":303,"text":"Title: Fly Away Home (1996), Genres: Adventure,Children's"}
+{"id":304,"text":"Title: Ice Storm, The (1997), Genres: Drama"}
+{"id":305,"text":"Title: Mrs. Brown (Her Majesty, Mrs. Brown) (1997), Genres: Drama,Romance"}
+{"id":306,"text":"Title: Devil's Advocate, The (1997), Genres: Crime,Horror,Mystery,Thriller"}
+{"id":307,"text":"Title: FairyTale: A True Story (1997), Genres: Children's,Drama,Fantasy"}
+{"id":308,"text":"Title: Deceiver (1997), Genres: Crime"}
+{"id":309,"text":"Title: Rainmaker, The (1997), Genres: Drama"}
+{"id":310,"text":"Title: Wings of the Dove, The (1997), Genres: Drama,Romance,Thriller"}
+{"id":311,"text":"Title: Midnight in the Garden of Good and Evil (1997), Genres: Comedy,Crime,Drama,Mystery"}
+{"id":312,"text":"Title: Titanic (1997), Genres: Action,Drama,Romance"}
+{"id":313,"text":"Title: 3 Ninjas: High Noon At Mega Mountain (1998), Genres: Action,Children's"}
+{"id":314,"text":"Title: Apt Pupil (1998), Genres: Drama,Thriller"}
+{"id":315,"text":"Title: As Good As It Gets (1997), Genres: Comedy,Drama"}
+{"id":316,"text":"Title: In the Name of the Father (1993), Genres: Drama"}
+{"id":317,"text":"Title: Schindler's List (1993), Genres: Drama,War"}
+{"id":318,"text":"Title: Everyone Says I Love You (1996), Genres: Comedy,Musical,Romance"}
+{"id":319,"text":"Title: Paradise Lost: The Child Murders at Robin Hood Hills (1996), Genres: Documentary"}
+{"id":320,"text":"Title: Mother (1996), Genres: Comedy"}
+{"id":321,"text":"Title: Murder at 1600 (1997), Genres: Mystery,Thriller"}
+{"id":322,"text":"Title: Dante's Peak (1997), Genres: Action,Thriller"}
+{"id":323,"text":"Title: Lost Highway (1997), Genres: Mystery"}
+{"id":324,"text":"Title: Crash (1996), Genres: Drama,Thriller"}
+{"id":325,"text":"Title: G.I. Jane (1997), Genres: Action,Drama,War"}
+{"id":326,"text":"Title: Cop Land (1997), Genres: Crime,Drama,Mystery"}
+{"id":327,"text":"Title: Conspiracy Theory (1997), Genres: Action,Mystery,Romance,Thriller"}
+{"id":328,"text":"Title: Desperate Measures (1998), Genres: Crime,Drama,Thriller"}
+{"id":329,"text":"Title: 187 (1997), Genres: Drama"}
+{"id":330,"text":"Title: Edge, The (1997), Genres: Adventure,Thriller"}
+{"id":331,"text":"Title: Kiss the Girls (1997), Genres: Crime,Drama,Thriller"}
+{"id":332,"text":"Title: Game, The (1997), Genres: Mystery,Thriller"}
+{"id":333,"text":"Title: U Turn (1997), Genres: Action,Crime,Mystery"}
+{"id":334,"text":"Title: How to Be a Player (1997), Genres: Comedy"}
+{"id":335,"text":"Title: Playing God (1997), Genres: Crime,Thriller"}
+{"id":336,"text":"Title: House of Yes, The (1997), Genres: Comedy,Drama,Thriller"}
+{"id":337,"text":"Title: Bean (1997), Genres: Comedy"}
+{"id":338,"text":"Title: Mad City (1997), Genres: Action,Drama"}
+{"id":339,"text":"Title: Boogie Nights (1997), Genres: Drama"}
+{"id":340,"text":"Title: Critical Care (1997), Genres: Comedy"}
+{"id":341,"text":"Title: Man Who Knew Too Little, The (1997), Genres: Comedy,Mystery"}
+{"id":342,"text":"Title: Alien: Resurrection (1997), Genres: Action,Horror,Sci-Fi"}
+{"id":343,"text":"Title: Apostle, The (1997), Genres: Drama"}
+{"id":344,"text":"Title: Deconstructing Harry (1997), Genres: Comedy,Drama"}
+{"id":345,"text":"Title: Jackie Brown (1997), Genres: Crime,Drama"}
+{"id":346,"text":"Title: Wag the Dog (1997), Genres: Comedy,Drama"}
+{"id":347,"text":"Title: Desperate Measures (1998), Genres: Crime,Drama,Thriller"}
+{"id":348,"text":"Title: Hard Rain (1998), Genres: Action,Thriller"}
+{"id":349,"text":"Title: Fallen (1998), Genres: Action,Mystery,Thriller"}
+{"id":350,"text":"Title: Prophecy II, The (1998), Genres: Horror"}
+{"id":351,"text":"Title: Spice World (1997), Genres: Comedy,Musical"}
+{"id":352,"text":"Title: Deep Rising (1998), Genres: Action,Horror,Sci-Fi"}
+{"id":353,"text":"Title: Wedding Singer, The (1998), Genres: Comedy,Romance"}
+{"id":354,"text":"Title: Sphere (1998), Genres: Adventure,Sci-Fi,Thriller"}
+{"id":355,"text":"Title: Client, The (1994), Genres: Drama,Mystery,Thriller"}
+{"id":356,"text":"Title: One Flew Over the Cuckoo's Nest (1975), Genres: Drama"}
+{"id":357,"text":"Title: Spawn (1997), Genres: Action,Adventure,Sci-Fi,Thriller"}
+{"id":358,"text":"Title: Assignment, The (1997), Genres: Thriller"}
+{"id":359,"text":"Title: Wonderland (1997), Genres: Documentary"}
+{"id":360,"text":"Title: Incognito (1997), Genres: Crime,Thriller"}
+{"id":361,"text":"Title: Blues Brothers 2000 (1998), Genres: Action,Comedy,Musical"}
+{"id":362,"text":"Title: Sudden Death (1995), Genres: Action"}
+{"id":363,"text":"Title: Ace Ventura: When Nature Calls (1995), Genres: Comedy"}
+{"id":364,"text":"Title: Powder (1995), Genres: Drama"}
+{"id":365,"text":"Title: Dangerous Minds (1995), Genres: Drama"}
+{"id":366,"text":"Title: Clueless (1995), Genres: Comedy"}
+{"id":367,"text":"Title: Bio-Dome (1996), Genres: Comedy"}
+{"id":368,"text":"Title: Black Sheep (1996), Genres: Comedy"}
+{"id":369,"text":"Title: Mary Reilly (1996), Genres: Drama,Thriller"}
+{"id":370,"text":"Title: Bridges of Madison County, The (1995), Genres: Drama,Romance"}
+{"id":371,"text":"Title: Jeffrey (1995), Genres: Comedy"}
+{"id":372,"text":"Title: Judge Dredd (1995), Genres: Action,Adventure,Sci-Fi"}
+{"id":373,"text":"Title: Mighty Morphin Power Rangers: The Movie (1995), Genres: Action,Children's"}
+{"id":374,"text":"Title: Showgirls (1995), Genres: Drama"}
+{"id":375,"text":"Title: Houseguest (1994), Genres: Comedy"}
+{"id":376,"text":"Title: Heavyweights (1994), Genres: Children's,Comedy"}
+{"id":377,"text":"Title: Miracle on 34th Street (1994), Genres: Drama"}
+{"id":378,"text":"Title: Tales From the Crypt Presents: Demon Knight (1995), Genres: Horror"}
+{"id":379,"text":"Title: Star Trek: Generations (1994), Genres: Action,Adventure,Sci-Fi"}
+{"id":380,"text":"Title: Muriel's Wedding (1994), Genres: Comedy,Romance"}
+{"id":381,"text":"Title: Adventures of Priscilla, Queen of the Desert, The (1994), Genres: Comedy,Drama"}
+{"id":382,"text":"Title: Flintstones, The (1994), Genres: Children's,Comedy"}
+{"id":383,"text":"Title: Naked Gun 33 1/3: The Final Insult (1994), Genres: Comedy"}
+{"id":384,"text":"Title: True Lies (1994), Genres: Action,Adventure,Comedy,Romance"}
+{"id":385,"text":"Title: Addams Family Values (1993), Genres: Comedy"}
+{"id":386,"text":"Title: Age of Innocence, The (1993), Genres: Drama"}
+{"id":387,"text":"Title: Beverly Hills Cop III (1994), Genres: Action,Comedy"}
+{"id":388,"text":"Title: Black Beauty (1994), Genres: Adventure,Children's"}
+{"id":389,"text":"Title: Fear of a Black Hat (1993), Genres: Comedy"}
+{"id":390,"text":"Title: Last Action Hero (1993), Genres: Action,Comedy"}
+{"id":391,"text":"Title: Man Without a Face, The (1993), Genres: Drama"}
+{"id":392,"text":"Title: Mrs. Doubtfire (1993), Genres: Comedy"}
+{"id":393,"text":"Title: Radioland Murders (1994), Genres: Comedy,Mystery,Romance"}
+{"id":394,"text":"Title: Robin Hood: Men in Tights (1993), Genres: Comedy"}
+{"id":395,"text":"Title: Serial Mom (1994), Genres: Comedy,Crime,Horror"}
+{"id":396,"text":"Title: Striking Distance (1993), Genres: Action"}
+{"id":397,"text":"Title: Super Mario Bros. (1993), Genres: Action,Adventure,Children's,Sci-Fi"}
+{"id":398,"text":"Title: Three Musketeers, The (1993), Genres: Action,Adventure,Comedy"}
+{"id":399,"text":"Title: Little Rascals, The (1994), Genres: Children's,Comedy"}
+{"id":400,"text":"Title: Brady Bunch Movie, The (1995), Genres: Comedy"}
+{"id":401,"text":"Title: Ghost (1990), Genres: Comedy,Romance,Thriller"}
+{"id":402,"text":"Title: Batman (1989), Genres: Action,Adventure,Crime,Drama"}
+{"id":403,"text":"Title: Pinocchio (1940), Genres: Animation,Children's"}
+{"id":404,"text":"Title: Mission: Impossible (1996), Genres: Action,Adventure,Mystery"}
+{"id":405,"text":"Title: Thinner (1996), Genres: Horror,Thriller"}
+{"id":406,"text":"Title: Spy Hard (1996), Genres: Comedy"}
+{"id":407,"text":"Title: Close Shave, A (1995), Genres: Animation,Comedy,Thriller"}
+{"id":408,"text":"Title: Jack (1996), Genres: Comedy,Drama"}
+{"id":409,"text":"Title: Kingpin (1996), Genres: Comedy"}
+{"id":410,"text":"Title: Nutty Professor, The (1996), Genres: Comedy,Fantasy,Romance,Sci-Fi"}
+{"id":411,"text":"Title: Very Brady Sequel, A (1996), Genres: Comedy"}
+{"id":412,"text":"Title: Tales from the Crypt Presents: Bordello of Blood (1996), Genres: Horror"}
+{"id":413,"text":"Title: My Favorite Year (1982), Genres: Comedy"}
+{"id":414,"text":"Title: Apple Dumpling Gang, The (1975), Genres: Children's,Comedy,Western"}
+{"id":415,"text":"Title: Old Yeller (1957), Genres: Children's,Drama"}
+{"id":416,"text":"Title: Parent Trap, The (1961), Genres: Children's,Drama"}
+{"id":417,"text":"Title: Cinderella (1950), Genres: Animation,Children's,Musical"}
+{"id":418,"text":"Title: Mary Poppins (1964), Genres: Children's,Comedy,Musical"}
+{"id":419,"text":"Title: Alice in Wonderland (1951), Genres: Animation,Children's,Musical"}
+{"id":420,"text":"Title: William Shakespeare's Romeo and Juliet (1996), Genres: Drama,Romance"}
+{"id":421,"text":"Title: Aladdin and the King of Thieves (1996), Genres: Animation,Children's,Comedy"}
+{"id":422,"text":"Title: E.T. the Extra-Terrestrial (1982), Genres: Children's,Drama,Fantasy,Sci-Fi"}
+{"id":423,"text":"Title: Children of the Corn: The Gathering (1996), Genres: Horror"}
+{"id":424,"text":"Title: Bob Roberts (1992), Genres: Comedy"}
+{"id":425,"text":"Title: Transformers: The Movie, The (1986), Genres: Action,Animation,Children's,Sci-Fi,Thriller,War"}
+{"id":426,"text":"Title: To Kill a Mockingbird (1962), Genres: Drama"}
+{"id":427,"text":"Title: Harold and Maude (1971), Genres: Comedy"}
+{"id":428,"text":"Title: Day the Earth Stood Still, The (1951), Genres: Drama,Sci-Fi"}
+{"id":429,"text":"Title: Duck Soup (1933), Genres: Comedy,War"}
+{"id":430,"text":"Title: Highlander (1986), Genres: Action,Adventure"}
+{"id":431,"text":"Title: Fantasia (1940), Genres: Animation,Children's,Musical"}
+{"id":432,"text":"Title: Heathers (1989), Genres: Comedy"}
+{"id":433,"text":"Title: Forbidden Planet (1956), Genres: Sci-Fi"}
+{"id":434,"text":"Title: Butch Cassidy and the Sundance Kid (1969), Genres: Action,Comedy,Western"}
+{"id":435,"text":"Title: American Werewolf in London, An (1981), Genres: Horror"}
+{"id":436,"text":"Title: Amityville 1992: It's About Time (1992), Genres: Horror"}
+{"id":437,"text":"Title: Amityville 3-D (1983), Genres: Horror"}
+{"id":438,"text":"Title: Amityville: A New Generation (1993), Genres: Horror"}
+{"id":439,"text":"Title: Amityville II: The Possession (1982), Genres: Horror"}
+{"id":440,"text":"Title: Amityville Horror, The (1979), Genres: Horror"}
+{"id":441,"text":"Title: Amityville Curse, The (1990), Genres: Horror"}
+{"id":442,"text":"Title: Birds, The (1963), Genres: Horror"}
+{"id":443,"text":"Title: Blob, The (1958), Genres: Horror,Sci-Fi"}
+{"id":444,"text":"Title: Body Snatcher, The (1945), Genres: Horror"}
+{"id":445,"text":"Title: Burnt Offerings (1976), Genres: Horror"}
+{"id":446,"text":"Title: Carrie (1976), Genres: Horror"}
+{"id":447,"text":"Title: Omen, The (1976), Genres: Horror"}
+{"id":448,"text":"Title: Star Trek: The Motion Picture (1979), Genres: Action,Adventure,Sci-Fi"}
+{"id":449,"text":"Title: Star Trek V: The Final Frontier (1989), Genres: Action,Adventure,Sci-Fi"}
+{"id":450,"text":"Title: Grease (1978), Genres: Comedy,Musical,Romance"}
+{"id":451,"text":"Title: Jaws 2 (1978), Genres: Action,Horror"}
+{"id":452,"text":"Title: Jaws 3-D (1983), Genres: Action,Horror"}
+{"id":453,"text":"Title: Bastard Out of Carolina (1996), Genres: Drama"}
+{"id":454,"text":"Title: Jackie Chan's First Strike (1996), Genres: Action"}
+{"id":455,"text":"Title: Beverly Hills Ninja (1997), Genres: Action,Comedy"}
+{"id":456,"text":"Title: Free Willy 3: The Rescue (1997), Genres: Adventure,Children's,Drama"}
+{"id":457,"text":"Title: Nixon (1995), Genres: Drama"}
+{"id":458,"text":"Title: Cry, the Beloved Country (1995), Genres: Drama"}
+{"id":459,"text":"Title: Crossing Guard, The (1995), Genres: Drama"}
+{"id":460,"text":"Title: Smoke (1995), Genres: Drama"}
+{"id":461,"text":"Title: Like Water For Chocolate (Como agua para chocolate) (1992), Genres: Drama,Romance"}
+{"id":462,"text":"Title: Secret of Roan Inish, The (1994), Genres: Adventure"}
+{"id":463,"text":"Title: Vanya on 42nd Street (1994), Genres: Drama"}
+{"id":464,"text":"Title: Jungle Book, The (1994), Genres: Adventure,Children's,Romance"}
+{"id":465,"text":"Title: Red Rock West (1992), Genres: Thriller"}
+{"id":466,"text":"Title: Bronx Tale, A (1993), Genres: Drama"}
+{"id":467,"text":"Title: Rudy (1993), Genres: Drama"}
+{"id":468,"text":"Title: Short Cuts (1993), Genres: Drama"}
+{"id":469,"text":"Title: Tombstone (1993), Genres: Western"}
+{"id":470,"text":"Title: Courage Under Fire (1996), Genres: Drama,War"}
+{"id":471,"text":"Title: Dragonheart (1996), Genres: Action,Adventure,Fantasy"}
+{"id":472,"text":"Title: James and the Giant Peach (1996), Genres: Animation,Children's,Musical"}
+{"id":473,"text":"Title: Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1963), Genres: Sci-Fi,War"}
+{"id":474,"text":"Title: Trainspotting (1996), Genres: Drama"}
+{"id":475,"text":"Title: First Wives Club, The (1996), Genres: Comedy"}
+{"id":476,"text":"Title: Matilda (1996), Genres: Children's,Comedy"}
+{"id":477,"text":"Title: Philadelphia Story, The (1940), Genres: Comedy,Romance"}
+{"id":478,"text":"Title: Vertigo (1958), Genres: Mystery,Thriller"}
+{"id":479,"text":"Title: North by Northwest (1959), Genres: Comedy,Thriller"}
+{"id":480,"text":"Title: Apartment, The (1960), Genres: Comedy,Drama"}
+{"id":481,"text":"Title: Some Like It Hot (1959), Genres: Comedy,Crime"}
+{"id":482,"text":"Title: Casablanca (1942), Genres: Drama,Romance,War"}
+{"id":483,"text":"Title: Maltese Falcon, The (1941), Genres: Film-Noir,Mystery"}
+{"id":484,"text":"Title: My Fair Lady (1964), Genres: Musical,Romance"}
+{"id":485,"text":"Title: Sabrina (1954), Genres: Comedy,Romance"}
+{"id":486,"text":"Title: Roman Holiday (1953), Genres: Comedy,Romance"}
+{"id":487,"text":"Title: Sunset Blvd. (1950), Genres: Film-Noir"}
+{"id":488,"text":"Title: Notorious (1946), Genres: Film-Noir,Romance,Thriller"}
+{"id":489,"text":"Title: To Catch a Thief (1955), Genres: Comedy,Romance,Thriller"}
+{"id":490,"text":"Title: Adventures of Robin Hood, The (1938), Genres: Action,Adventure"}
+{"id":491,"text":"Title: East of Eden (1955), Genres: Drama"}
+{"id":492,"text":"Title: Thin Man, The (1934), Genres: Mystery"}
+{"id":493,"text":"Title: His Girl Friday (1940), Genres: Comedy"}
+{"id":494,"text":"Title: Around the World in 80 Days (1956), Genres: Adventure,Comedy"}
+{"id":495,"text":"Title: It's a Wonderful Life (1946), Genres: Drama"}
+{"id":496,"text":"Title: Bringing Up Baby (1938), Genres: Comedy"}
+{"id":497,"text":"Title: African Queen, The (1951), Genres: Action,Adventure,Romance,War"}
+{"id":498,"text":"Title: Cat on a Hot Tin Roof (1958), Genres: Drama"}
+{"id":499,"text":"Title: Fly Away Home (1996), Genres: Adventure,Children's"}
+{"id":500,"text":"Title: Dumbo (1941), Genres: Animation,Children's,Musical"}
+{"id":501,"text":"Title: Bananas (1971), Genres: Comedy,War"}
+{"id":502,"text":"Title: Candidate, The (1972), Genres: Drama"}
+{"id":503,"text":"Title: Bonnie and Clyde (1967), Genres: Crime,Drama"}
+{"id":504,"text":"Title: Dial M for Murder (1954), Genres: Mystery,Thriller"}
+{"id":505,"text":"Title: Rebel Without a Cause (1955), Genres: Drama"}
+{"id":506,"text":"Title: Streetcar Named Desire, A (1951), Genres: Drama"}
+{"id":507,"text":"Title: People vs. Larry Flynt, The (1996), Genres: Drama"}
+{"id":508,"text":"Title: My Left Foot (1989), Genres: Drama"}
+{"id":509,"text":"Title: Magnificent Seven, The (1954), Genres: Action,Drama,Western"}
+{"id":510,"text":"Title: Lawrence of Arabia (1962), Genres: Adventure,War"}
+{"id":511,"text":"Title: Wings of Desire (1987), Genres: Comedy,Drama,Romance"}
+{"id":512,"text":"Title: Third Man, The (1949), Genres: Mystery,Thriller"}
+{"id":513,"text":"Title: Annie Hall (1977), Genres: Comedy,Romance"}
+{"id":514,"text":"Title: Boot, Das (1981), Genres: Action,Drama,War"}
+{"id":515,"text":"Title: Local Hero (1983), Genres: Comedy"}
+{"id":516,"text":"Title: Manhattan (1979), Genres: Comedy,Drama,Romance"}
+{"id":517,"text":"Title: Miller's Crossing (1990), Genres: Drama"}
+{"id":518,"text":"Title: Treasure of the Sierra Madre, The (1948), Genres: Adventure"}
+{"id":519,"text":"Title: Great Escape, The (1963), Genres: Adventure,War"}
+{"id":520,"text":"Title: Deer Hunter, The (1978), Genres: Drama,War"}
+{"id":521,"text":"Title: Down by Law (1986), Genres: Comedy,Drama"}
+{"id":522,"text":"Title: Cool Hand Luke (1967), Genres: Comedy,Drama"}
+{"id":523,"text":"Title: Great Dictator, The (1940), Genres: Comedy"}
+{"id":524,"text":"Title: Big Sleep, The (1946), Genres: Film-Noir,Mystery"}
+{"id":525,"text":"Title: Ben-Hur (1959), Genres: Action,Adventure,Drama"}
+{"id":526,"text":"Title: Gandhi (1982), Genres: Drama"}
+{"id":527,"text":"Title: Killing Fields, The (1984), Genres: Drama,War"}
+{"id":528,"text":"Title: My Life as a Dog (Mitt liv som hund) (1985), Genres: Drama"}
+{"id":529,"text":"Title: Man Who Would Be King, The (1975), Genres: Adventure"}
+{"id":530,"text":"Title: Shine (1996), Genres: Drama,Romance"}
+{"id":531,"text":"Title: Kama Sutra: A Tale of Love (1996), Genres: Romance"}
+{"id":532,"text":"Title: Daytrippers, The (1996), Genres: Mystery"}
+{"id":533,"text":"Title: Traveller (1997), Genres: Drama"}
+{"id":534,"text":"Title: Addicted to Love (1997), Genres: Comedy,Romance"}
+{"id":535,"text":"Title: Ponette (1996), Genres: Drama"}
+{"id":536,"text":"Title: My Own Private Idaho (1991), Genres: Drama"}
+{"id":537,"text":"Title: Anastasia (1997), Genres: Animation,Children's,Musical"}
+{"id":538,"text":"Title: Mouse Hunt (1997), Genres: Children's,Comedy"}
+{"id":539,"text":"Title: Money Train (1995), Genres: Action"}
+{"id":540,"text":"Title: Mortal Kombat (1995), Genres: Action,Adventure"}
+{"id":541,"text":"Title: Pocahontas (1995), Genres: Animation,Children's,Musical,Romance"}
+{"id":542,"text":"Title: Misérables, Les (1995), Genres: Drama,Musical"}
+{"id":543,"text":"Title: Things to Do in Denver when You're Dead (1995), Genres: Crime,Drama,Romance"}
+{"id":544,"text":"Title: Vampire in Brooklyn (1995), Genres: Comedy,Romance"}
+{"id":545,"text":"Title: Broken Arrow (1996), Genres: Action,Thriller"}
+{"id":546,"text":"Title: Young Poisoner's Handbook, The (1995), Genres: Crime"}
+{"id":547,"text":"Title: NeverEnding Story III, The (1994), Genres: Children's,Fantasy"}
+{"id":548,"text":"Title: Rob Roy (1995), Genres: Drama,Romance,War"}
+{"id":549,"text":"Title: Die Hard: With a Vengeance (1995), Genres: Action,Thriller"}
+{"id":550,"text":"Title: Lord of Illusions (1995), Genres: Horror"}
+{"id":551,"text":"Title: Species (1995), Genres: Sci-Fi"}
+{"id":552,"text":"Title: Walk in the Clouds, A (1995), Genres: Drama,Romance"}
+{"id":553,"text":"Title: Waterworld (1995), Genres: Action,Adventure"}
+{"id":554,"text":"Title: White Man's Burden (1995), Genres: Drama"}
+{"id":555,"text":"Title: Wild Bill (1995), Genres: Western"}
+{"id":556,"text":"Title: Farinelli: il castrato (1994), Genres: Drama,Musical"}
+{"id":557,"text":"Title: Heavenly Creatures (1994), Genres: Drama,Fantasy,Thriller"}
+{"id":558,"text":"Title: Interview with the Vampire (1994), Genres: Drama,Horror"}
+{"id":559,"text":"Title: Kid in King Arthur's Court, A (1995), Genres: Adventure,Children's,Comedy,Fantasy,Romance,Sci-Fi"}
+{"id":560,"text":"Title: Mary Shelley's Frankenstein (1994), Genres: Drama,Horror"}
+{"id":561,"text":"Title: Quick and the Dead, The (1995), Genres: Action,Adventure,Western"}
+{"id":562,"text":"Title: Stephen King's The Langoliers (1995), Genres: Horror"}
+{"id":563,"text":"Title: Tales from the Hood (1995), Genres: Comedy,Horror"}
+{"id":564,"text":"Title: Village of the Damned (1995), Genres: Horror,Thriller"}
+{"id":565,"text":"Title: Clear and Present Danger (1994), Genres: Action,Adventure,Thriller"}
+{"id":566,"text":"Title: Wes Craven's New Nightmare (1994), Genres: Horror"}
+{"id":567,"text":"Title: Speed (1994), Genres: Action,Romance,Thriller"}
+{"id":568,"text":"Title: Wolf (1994), Genres: Drama,Horror"}
+{"id":569,"text":"Title: Wyatt Earp (1994), Genres: Western"}
+{"id":570,"text":"Title: Another Stakeout (1993), Genres: Comedy,Thriller"}
+{"id":571,"text":"Title: Blown Away (1994), Genres: Action,Thriller"}
+{"id":572,"text":"Title: Body Snatchers (1993), Genres: Horror,Sci-Fi,Thriller"}
+{"id":573,"text":"Title: Boxing Helena (1993), Genres: Mystery,Romance,Thriller"}
+{"id":574,"text":"Title: City Slickers II: The Legend of Curly's Gold (1994), Genres: Comedy,Western"}
+{"id":575,"text":"Title: Cliffhanger (1993), Genres: Action,Adventure,Crime"}
+{"id":576,"text":"Title: Coneheads (1993), Genres: Comedy,Sci-Fi"}
+{"id":577,"text":"Title: Demolition Man (1993), Genres: Action,Sci-Fi"}
+{"id":578,"text":"Title: Fatal Instinct (1993), Genres: Comedy"}
+{"id":579,"text":"Title: Englishman Who Went Up a Hill, But Came Down a Mountain, The (1995), Genres: Comedy,Romance"}
+{"id":580,"text":"Title: Kalifornia (1993), Genres: Drama,Thriller"}
+{"id":581,"text":"Title: Piano, The (1993), Genres: Drama,Romance"}
+{"id":582,"text":"Title: Romeo Is Bleeding (1993), Genres: Crime,Thriller"}
+{"id":583,"text":"Title: Secret Garden, The (1993), Genres: Children's,Drama"}
+{"id":584,"text":"Title: Son in Law (1993), Genres: Comedy"}
+{"id":585,"text":"Title: Terminal Velocity (1994), Genres: Action"}
+{"id":586,"text":"Title: Hour of the Pig, The (1993), Genres: Drama,Mystery"}
+{"id":587,"text":"Title: Beauty and the Beast (1991), Genres: Animation,Children's,Musical"}
+{"id":588,"text":"Title: Wild Bunch, The (1969), Genres: Western"}
+{"id":589,"text":"Title: Hellraiser: Bloodline (1996), Genres: Action,Horror,Sci-Fi"}
+{"id":590,"text":"Title: Primal Fear (1996), Genres: Drama,Thriller"}
+{"id":591,"text":"Title: True Crime (1995), Genres: Mystery,Thriller"}
+{"id":592,"text":"Title: Stalingrad (1993), Genres: War"}
+{"id":593,"text":"Title: Heavy (1995), Genres: Drama,Romance"}
+{"id":594,"text":"Title: Fan, The (1996), Genres: Thriller"}
+{"id":595,"text":"Title: Hunchback of Notre Dame, The (1996), Genres: Animation,Children's,Musical"}
+{"id":596,"text":"Title: Eraser (1996), Genres: Action,Thriller"}
+{"id":597,"text":"Title: Big Squeeze, The (1996), Genres: Comedy,Drama"}
+{"id":598,"text":"Title: Police Story 4: Project S (Chao ji ji hua) (1993), Genres: Action"}
+{"id":599,"text":"Title: Daniel Defoe's Robinson Crusoe (1996), Genres: Children's"}
+{"id":600,"text":"Title: For Whom the Bell Tolls (1943), Genres: Adventure,War"}
+{"id":601,"text":"Title: American in Paris, An (1951), Genres: Musical,Romance"}
+{"id":602,"text":"Title: Rear Window (1954), Genres: Mystery,Thriller"}
+{"id":603,"text":"Title: It Happened One Night (1934), Genres: Comedy"}
+{"id":604,"text":"Title: Meet Me in St. Louis (1944), Genres: Musical"}
+{"id":605,"text":"Title: All About Eve (1950), Genres: Drama"}
+{"id":606,"text":"Title: Rebecca (1940), Genres: Romance,Thriller"}
+{"id":607,"text":"Title: Spellbound (1945), Genres: Mystery,Romance,Thriller"}
+{"id":608,"text":"Title: Father of the Bride (1950), Genres: Comedy"}
+{"id":609,"text":"Title: Gigi (1958), Genres: Musical"}
+{"id":610,"text":"Title: Laura (1944), Genres: Crime,Film-Noir,Mystery"}
+{"id":611,"text":"Title: Lost Horizon (1937), Genres: Drama"}
+{"id":612,"text":"Title: My Man Godfrey (1936), Genres: Comedy"}
+{"id":613,"text":"Title: Giant (1956), Genres: Drama"}
+{"id":614,"text":"Title: 39 Steps, The (1935), Genres: Thriller"}
+{"id":615,"text":"Title: Night of the Living Dead (1968), Genres: Horror,Sci-Fi"}
+{"id":616,"text":"Title: Blue Angel, The (Blaue Engel, Der) (1930), Genres: Drama"}
+{"id":617,"text":"Title: Picnic (1955), Genres: Drama"}
+{"id":618,"text":"Title: Extreme Measures (1996), Genres: Drama,Thriller"}
+{"id":619,"text":"Title: Chamber, The (1996), Genres: Drama"}
+{"id":620,"text":"Title: Davy Crockett, King of the Wild Frontier (1955), Genres: Western"}
+{"id":621,"text":"Title: Swiss Family Robinson (1960), Genres: Adventure,Children's"}
+{"id":622,"text":"Title: Angels in the Outfield (1994), Genres: Children's,Comedy"}
+{"id":623,"text":"Title: Three Caballeros, The (1945), Genres: Animation,Children's,Musical"}
+{"id":624,"text":"Title: Sword in the Stone, The (1963), Genres: Animation,Children's"}
+{"id":625,"text":"Title: So Dear to My Heart (1949), Genres: Children's,Drama"}
+{"id":626,"text":"Title: Robin Hood: Prince of Thieves (1991), Genres: Drama"}
+{"id":627,"text":"Title: Sleepers (1996), Genres: Crime,Drama"}
+{"id":628,"text":"Title: Victor/Victoria (1982), Genres: Comedy,Musical"}
+{"id":629,"text":"Title: Great Race, The (1965), Genres: Comedy,Musical"}
+{"id":630,"text":"Title: Crying Game, The (1992), Genres: Action,Drama,Romance,War"}
+{"id":631,"text":"Title: Sophie's Choice (1982), Genres: Drama"}
+{"id":632,"text":"Title: Christmas Carol, A (1938), Genres: Drama"}
+{"id":633,"text":"Title: Microcosmos: Le peuple de l'herbe (1996), Genres: Documentary"}
+{"id":634,"text":"Title: Fog, The (1980), Genres: Horror"}
+{"id":635,"text":"Title: Escape from New York (1981), Genres: Action,Adventure,Sci-Fi,Thriller"}
+{"id":636,"text":"Title: Howling, The (1981), Genres: Comedy,Horror"}
+{"id":637,"text":"Title: Return of Martin Guerre, The (Retour de Martin Guerre, Le) (1982), Genres: Drama"}
+{"id":638,"text":"Title: Tin Drum, The (Blechtrommel, Die) (1979), Genres: Drama"}
+{"id":639,"text":"Title: Cook the Thief His Wife & Her Lover, The (1989), Genres: Drama"}
+{"id":640,"text":"Title: Paths of Glory (1957), Genres: Drama,War"}
+{"id":641,"text":"Title: Grifters, The (1990), Genres: Crime,Drama,Film-Noir"}
+{"id":642,"text":"Title: The Innocent (1994), Genres: Drama,Romance"}
+{"id":643,"text":"Title: Thin Blue Line, The (1988), Genres: Documentary"}
+{"id":644,"text":"Title: Paris Is Burning (1990), Genres: Documentary"}
+{"id":645,"text":"Title: Once Upon a Time in the West (1969), Genres: Western"}
+{"id":646,"text":"Title: Ran (1985), Genres: Drama,War"}
+{"id":647,"text":"Title: Quiet Man, The (1952), Genres: Comedy,Romance"}
+{"id":648,"text":"Title: Once Upon a Time in America (1984), Genres: Crime,Drama,Thriller"}
+{"id":649,"text":"Title: Seventh Seal, The (Sjunde inseglet, Det) (1957), Genres: Drama"}
+{"id":650,"text":"Title: Glory (1989), Genres: Action,Drama,War"}
+{"id":651,"text":"Title: Rosencrantz and Guildenstern Are Dead (1990), Genres: Comedy,Drama"}
+{"id":652,"text":"Title: Touch of Evil (1958), Genres: Crime,Film-Noir,Thriller"}
+{"id":653,"text":"Title: Chinatown (1974), Genres: Film-Noir,Mystery,Thriller"}
+{"id":654,"text":"Title: Stand by Me (1986), Genres: Adventure,Comedy,Drama"}
+{"id":655,"text":"Title: M (1931), Genres: Crime,Film-Noir,Thriller"}
+{"id":656,"text":"Title: Manchurian Candidate, The (1962), Genres: Film-Noir,Thriller"}
+{"id":657,"text":"Title: Pump Up the Volume (1990), Genres: Drama"}
+{"id":658,"text":"Title: Arsenic and Old Lace (1944), Genres: Comedy,Mystery,Thriller"}
+{"id":659,"text":"Title: Fried Green Tomatoes (1991), Genres: Drama"}
+{"id":660,"text":"Title: High Noon (1952), Genres: Western"}
+{"id":661,"text":"Title: Somewhere in Time (1980), Genres: Drama,Romance"}
+{"id":662,"text":"Title: Being There (1979), Genres: Comedy"}
+{"id":663,"text":"Title: Paris, Texas (1984), Genres: Drama"}
+{"id":664,"text":"Title: Alien 3 (1992), Genres: Action,Horror,Sci-Fi,Thriller"}
+{"id":665,"text":"Title: Blood For Dracula (Andy Warhol's Dracula) (1974), Genres: Horror"}
+{"id":666,"text":"Title: Audrey Rose (1977), Genres: Horror"}
+{"id":667,"text":"Title: Blood Beach (1981), Genres: Action,Horror"}
+{"id":668,"text":"Title: Body Parts (1991), Genres: Horror"}
+{"id":669,"text":"Title: Body Snatchers (1993), Genres: Horror,Sci-Fi,Thriller"}
+{"id":670,"text":"Title: Bride of Frankenstein (1935), Genres: Horror"}
+{"id":671,"text":"Title: Candyman (1992), Genres: Horror"}
+{"id":672,"text":"Title: Cape Fear (1962), Genres: Film-Noir,Thriller"}
+{"id":673,"text":"Title: Cat People (1982), Genres: Horror"}
+{"id":674,"text":"Title: Nosferatu (Nosferatu, eine Symphonie des Grauens) (1922), Genres: Horror"}
+{"id":675,"text":"Title: Crucible, The (1996), Genres: Drama"}
+{"id":676,"text":"Title: Fire on the Mountain (1996), Genres: Documentary"}
+{"id":677,"text":"Title: Volcano (1997), Genres: Drama,Thriller"}
+{"id":678,"text":"Title: Conan the Barbarian (1981), Genres: Action,Adventure"}
+{"id":679,"text":"Title: Kull the Conqueror (1997), Genres: Action,Adventure"}
+{"id":680,"text":"Title: Wishmaster (1997), Genres: Horror"}
+{"id":681,"text":"Title: I Know What You Did Last Summer (1997), Genres: Horror,Mystery,Thriller"}
+{"id":682,"text":"Title: Rocket Man (1997), Genres: Comedy"}
+{"id":683,"text":"Title: In the Line of Fire (1993), Genres: Action,Thriller"}
+{"id":684,"text":"Title: Executive Decision (1996), Genres: Action,Thriller"}
+{"id":685,"text":"Title: Perfect World, A (1993), Genres: Action,Drama"}
+{"id":686,"text":"Title: McHale's Navy (1997), Genres: Comedy,War"}
+{"id":687,"text":"Title: Leave It to Beaver (1997), Genres: Comedy"}
+{"id":688,"text":"Title: Jackal, The (1997), Genres: Action,Thriller"}
+{"id":689,"text":"Title: Seven Years in Tibet (1997), Genres: Drama,War"}
+{"id":690,"text":"Title: Dark City (1998), Genres: Film-Noir,Sci-Fi,Thriller"}
+{"id":691,"text":"Title: American President, The (1995), Genres: Comedy,Drama,Romance"}
+{"id":692,"text":"Title: Casino (1995), Genres: Drama"}
+{"id":693,"text":"Title: Persuasion (1995), Genres: Romance"}
+{"id":694,"text":"Title: Kicking and Screaming (1995), Genres: Comedy,Drama"}
+{"id":695,"text":"Title: City Hall (1996), Genres: Drama,Thriller"}
+{"id":696,"text":"Title: Basketball Diaries, The (1995), Genres: Drama"}
+{"id":697,"text":"Title: Browning Version, The (1994), Genres: Drama"}
+{"id":698,"text":"Title: Little Women (1994), Genres: Drama"}
+{"id":699,"text":"Title: Miami Rhapsody (1995), Genres: Comedy"}
+{"id":700,"text":"Title: Wonderful, Horrible Life of Leni Riefenstahl, The (1993), Genres: Documentary"}
+{"id":701,"text":"Title: Barcelona (1994), Genres: Comedy,Romance"}
+{"id":702,"text":"Title: Widows' Peak (1994), Genres: Drama"}
+{"id":703,"text":"Title: House of the Spirits, The (1993), Genres: Drama,Romance"}
+{"id":704,"text":"Title: Singin' in the Rain (1952), Genres: Musical,Romance"}
+{"id":705,"text":"Title: Bad Moon (1996), Genres: Horror"}
+{"id":706,"text":"Title: Enchanted April (1991), Genres: Drama"}
+{"id":707,"text":"Title: Sex, Lies, and Videotape (1989), Genres: Drama"}
+{"id":708,"text":"Title: Strictly Ballroom (1992), Genres: Comedy,Romance"}
+{"id":709,"text":"Title: Better Off Dead... (1985), Genres: Comedy"}
+{"id":710,"text":"Title: Substance of Fire, The (1996), Genres: Drama"}
+{"id":711,"text":"Title: Tin Men (1987), Genres: Comedy,Drama"}
+{"id":712,"text":"Title: Othello (1995), Genres: Drama"}
+{"id":713,"text":"Title: Carrington (1995), Genres: Drama,Romance"}
+{"id":714,"text":"Title: To Die For (1995), Genres: Comedy,Drama"}
+{"id":715,"text":"Title: Home for the Holidays (1995), Genres: Drama,Romance"}
+{"id":716,"text":"Title: Juror, The (1996), Genres: Drama,Thriller"}
+{"id":717,"text":"Title: In the Bleak Midwinter (1995), Genres: Comedy"}
+{"id":718,"text":"Title: Canadian Bacon (1994), Genres: Comedy,War"}
+{"id":719,"text":"Title: First Knight (1995), Genres: Action,Adventure,Drama,Romance"}
+{"id":720,"text":"Title: Mallrats (1995), Genres: Comedy"}
+{"id":721,"text":"Title: Nine Months (1995), Genres: Comedy"}
+{"id":722,"text":"Title: Boys on the Side (1995), Genres: Comedy,Drama"}
+{"id":723,"text":"Title: Circle of Friends (1995), Genres: Drama,Romance"}
+{"id":724,"text":"Title: Exit to Eden (1994), Genres: Comedy"}
+{"id":725,"text":"Title: Fluke (1995), Genres: Children's,Drama"}
+{"id":726,"text":"Title: Immortal Beloved (1994), Genres: Drama,Romance"}
+{"id":727,"text":"Title: Junior (1994), Genres: Comedy,Sci-Fi"}
+{"id":728,"text":"Title: Nell (1994), Genres: Drama"}
+{"id":729,"text":"Title: Queen Margot (Reine Margot, La) (1994), Genres: Drama,Romance"}
+{"id":730,"text":"Title: Corrina, Corrina (1994), Genres: Comedy,Drama,Romance"}
+{"id":731,"text":"Title: Dave (1993), Genres: Comedy,Romance"}
+{"id":732,"text":"Title: Go Fish (1994), Genres: Drama,Romance"}
+{"id":733,"text":"Title: Made in America (1993), Genres: Comedy"}
+{"id":734,"text":"Title: Philadelphia (1993), Genres: Drama"}
+{"id":735,"text":"Title: Shadowlands (1993), Genres: Drama,Romance"}
+{"id":736,"text":"Title: Sirens (1994), Genres: Comedy,Drama"}
+{"id":737,"text":"Title: Threesome (1994), Genres: Comedy,Romance"}
+{"id":738,"text":"Title: Pretty Woman (1990), Genres: Comedy,Romance"}
+{"id":739,"text":"Title: Jane Eyre (1996), Genres: Drama,Romance"}
+{"id":740,"text":"Title: Last Supper, The (1995), Genres: Drama,Thriller"}
+{"id":741,"text":"Title: Ransom (1996), Genres: Drama,Thriller"}
+{"id":742,"text":"Title: Crow: City of Angels, The (1996), Genres: Action,Thriller"}
+{"id":743,"text":"Title: Michael Collins (1996), Genres: Drama,War"}
+{"id":744,"text":"Title: Ruling Class, The (1972), Genres: Comedy"}
+{"id":745,"text":"Title: Real Genius (1985), Genres: Comedy"}
+{"id":746,"text":"Title: Benny & Joon (1993), Genres: Comedy,Romance"}
+{"id":747,"text":"Title: Saint, The (1997), Genres: Action,Romance,Thriller"}
+{"id":748,"text":"Title: MatchMaker, The (1997), Genres: Comedy,Romance"}
+{"id":749,"text":"Title: Amistad (1997), Genres: Drama"}
+{"id":750,"text":"Title: Tomorrow Never Dies (1997), Genres: Action,Romance,Thriller"}
+{"id":751,"text":"Title: Replacement Killers, The (1998), Genres: Action,Thriller"}
+{"id":752,"text":"Title: Burnt By the Sun (1994), Genres: Drama"}
+{"id":753,"text":"Title: Red Corner (1997), Genres: Crime,Thriller"}
+{"id":754,"text":"Title: Jumanji (1995), Genres: Action,Adventure,Children's,Fantasy,Sci-Fi"}
+{"id":755,"text":"Title: Father of the Bride Part II (1995), Genres: Comedy"}
+{"id":756,"text":"Title: Across the Sea of Time (1995), Genres: Documentary"}
+{"id":757,"text":"Title: Lawnmower Man 2: Beyond Cyberspace (1996), Genres: Sci-Fi,Thriller"}
+{"id":758,"text":"Title: Fair Game (1995), Genres: Action"}
+{"id":759,"text":"Title: Screamers (1995), Genres: Sci-Fi"}
+{"id":760,"text":"Title: Nick of Time (1995), Genres: Action,Thriller"}
+{"id":761,"text":"Title: Beautiful Girls (1996), Genres: Drama"}
+{"id":762,"text":"Title: Happy Gilmore (1996), Genres: Comedy"}
+{"id":763,"text":"Title: If Lucy Fell (1996), Genres: Comedy,Romance"}
+{"id":764,"text":"Title: Boomerang (1992), Genres: Comedy,Romance"}
+{"id":765,"text":"Title: Man of the Year (1995), Genres: Documentary"}
+{"id":766,"text":"Title: Addiction, The (1995), Genres: Horror"}
+{"id":767,"text":"Title: Casper (1995), Genres: Adventure,Children's"}
+{"id":768,"text":"Title: Congo (1995), Genres: Action,Adventure,Mystery,Sci-Fi"}
+{"id":769,"text":"Title: Devil in a Blue Dress (1995), Genres: Crime,Film-Noir,Mystery,Thriller"}
+{"id":770,"text":"Title: Johnny Mnemonic (1995), Genres: Action,Sci-Fi,Thriller"}
+{"id":771,"text":"Title: Kids (1995), Genres: Drama"}
+{"id":772,"text":"Title: Mute Witness (1994), Genres: Thriller"}
+{"id":773,"text":"Title: Prophecy, The (1995), Genres: Horror"}
+{"id":774,"text":"Title: Something to Talk About (1995), Genres: Comedy,Drama,Romance"}
+{"id":775,"text":"Title: Three Wishes (1995), Genres: Drama"}
+{"id":776,"text":"Title: Castle Freak (1995), Genres: Horror"}
+{"id":777,"text":"Title: Don Juan DeMarco (1995), Genres: Comedy,Drama,Romance"}
+{"id":778,"text":"Title: Drop Zone (1994), Genres: Action"}
+{"id":779,"text":"Title: Dumb & Dumber (1994), Genres: Comedy"}
+{"id":780,"text":"Title: French Kiss (1995), Genres: Comedy,Romance"}
+{"id":781,"text":"Title: Little Odessa (1994), Genres: Drama"}
+{"id":782,"text":"Title: Milk Money (1994), Genres: Comedy,Romance"}
+{"id":783,"text":"Title: Beyond Bedlam (1993), Genres: Drama,Horror"}
+{"id":784,"text":"Title: Only You (1994), Genres: Comedy,Romance"}
+{"id":785,"text":"Title: Perez Family, The (1995), Genres: Comedy,Romance"}
+{"id":786,"text":"Title: Roommates (1995), Genres: Comedy,Drama"}
+{"id":787,"text":"Title: Relative Fear (1994), Genres: Horror,Thriller"}
+{"id":788,"text":"Title: Swimming with Sharks (1995), Genres: Comedy,Drama"}
+{"id":789,"text":"Title: Tommy Boy (1995), Genres: Comedy"}
+{"id":790,"text":"Title: Baby-Sitters Club, The (1995), Genres: Children's"}
+{"id":791,"text":"Title: Bullets Over Broadway (1994), Genres: Comedy"}
+{"id":792,"text":"Title: Crooklyn (1994), Genres: Comedy"}
+{"id":793,"text":"Title: It Could Happen to You (1994), Genres: Drama,Romance"}
+{"id":794,"text":"Title: Richie Rich (1994), Genres: Children's,Comedy"}
+{"id":795,"text":"Title: Speechless (1994), Genres: Comedy,Romance"}
+{"id":796,"text":"Title: Timecop (1994), Genres: Action,Sci-Fi"}
+{"id":797,"text":"Title: Bad Company (1995), Genres: Action"}
+{"id":798,"text":"Title: Boys Life (1995), Genres: Drama"}
+{"id":799,"text":"Title: In the Mouth of Madness (1995), Genres: Horror,Thriller"}
+{"id":800,"text":"Title: Air Up There, The (1994), Genres: Comedy"}
+{"id":801,"text":"Title: Hard Target (1993), Genres: Action,Adventure,Crime,Thriller"}
+{"id":802,"text":"Title: Heaven & Earth (1993), Genres: Action,Drama,War"}
+{"id":803,"text":"Title: Jimmy Hollywood (1994), Genres: Comedy"}
+{"id":804,"text":"Title: Manhattan Murder Mystery (1993), Genres: Comedy,Mystery"}
+{"id":805,"text":"Title: Menace II Society (1993), Genres: Action,Crime,Drama"}
+{"id":806,"text":"Title: Poetic Justice (1993), Genres: Drama"}
+{"id":807,"text":"Title: Program, The (1993), Genres: Action,Drama"}
+{"id":808,"text":"Title: Rising Sun (1993), Genres: Action,Drama,Mystery"}
+{"id":809,"text":"Title: Shadow, The (1994), Genres: Action"}
+{"id":810,"text":"Title: Thirty-Two Short Films About Glenn Gould (1993), Genres: Documentary"}
+{"id":811,"text":"Title: Andre (1994), Genres: Adventure,Children's"}
+{"id":812,"text":"Title: Celluloid Closet, The (1995), Genres: Documentary"}
+{"id":813,"text":"Title: Great Day in Harlem, A (1994), Genres: Documentary"}
+{"id":814,"text":"Title: One Fine Day (1996), Genres: Drama,Romance"}
+{"id":815,"text":"Title: Candyman: Farewell to the Flesh (1995), Genres: Horror"}
+{"id":816,"text":"Title: Frisk (1995), Genres: Drama"}
+{"id":817,"text":"Title: Girl 6 (1996), Genres: Comedy"}
+{"id":818,"text":"Title: Eddie (1996), Genres: Comedy"}
+{"id":819,"text":"Title: Space Jam (1996), Genres: Adventure,Animation,Children's,Comedy,Fantasy"}
+{"id":820,"text":"Title: Mrs. Winterbourne (1996), Genres: Comedy,Romance"}
+{"id":821,"text":"Title: Faces (1968), Genres: Drama"}
+{"id":822,"text":"Title: Mulholland Falls (1996), Genres: Crime,Film-Noir,Thriller"}
+{"id":823,"text":"Title: Great White Hype, The (1996), Genres: Comedy"}
+{"id":824,"text":"Title: Arrival, The (1996), Genres: Action,Sci-Fi,Thriller"}
+{"id":825,"text":"Title: Phantom, The (1996), Genres: Adventure"}
+{"id":826,"text":"Title: Daylight (1996), Genres: Action,Adventure,Thriller"}
+{"id":827,"text":"Title: Alaska (1996), Genres: Adventure,Children's"}
+{"id":828,"text":"Title: Fled (1996), Genres: Action,Adventure"}
+{"id":829,"text":"Title: Power 98 (1995), Genres: Action,Mystery,Thriller"}
+{"id":830,"text":"Title: Escape from L.A. (1996), Genres: Action,Adventure,Sci-Fi,Thriller"}
+{"id":831,"text":"Title: Bogus (1996), Genres: Children's,Drama,Fantasy"}
+{"id":832,"text":"Title: Bulletproof (1996), Genres: Action"}
+{"id":833,"text":"Title: Halloween: The Curse of Michael Myers (1995), Genres: Horror,Thriller"}
+{"id":834,"text":"Title: Gay Divorcee, The (1934), Genres: Comedy,Musical,Romance"}
+{"id":835,"text":"Title: Ninotchka (1939), Genres: Comedy,Romance"}
+{"id":836,"text":"Title: Meet John Doe (1941), Genres: Drama"}
+{"id":837,"text":"Title: In the Line of Duty 2 (1987), Genres: Action"}
+{"id":838,"text":"Title: Loch Ness (1995), Genres: Horror,Thriller"}
+{"id":839,"text":"Title: Last Man Standing (1996), Genres: Action,Drama,Western"}
+{"id":840,"text":"Title: Glimmer Man, The (1996), Genres: Action,Thriller"}
+{"id":841,"text":"Title: Pollyanna (1960), Genres: Children's,Comedy,Drama"}
+{"id":842,"text":"Title: Shaggy Dog, The (1959), Genres: Children's,Comedy"}
+{"id":843,"text":"Title: Freeway (1996), Genres: Crime"}
+{"id":844,"text":"Title: That Thing You Do! (1996), Genres: Comedy"}
+{"id":845,"text":"Title: To Gillian on Her 37th Birthday (1996), Genres: Drama,Romance"}
+{"id":846,"text":"Title: Looking for Richard (1996), Genres: Documentary,Drama"}
+{"id":847,"text":"Title: Murder, My Sweet (1944), Genres: Film-Noir,Thriller"}
+{"id":848,"text":"Title: Days of Thunder (1990), Genres: Action,Romance"}
+{"id":849,"text":"Title: Perfect Candidate, A (1996), Genres: Documentary"}
+{"id":850,"text":"Title: Two or Three Things I Know About Her (1966), Genres: Drama"}
+{"id":851,"text":"Title: Bloody Child, The (1996), Genres: Drama,Thriller"}
+{"id":852,"text":"Title: Braindead (1992), Genres: Comedy,Horror"}
+{"id":853,"text":"Title: Bad Taste (1987), Genres: Comedy,Horror"}
+{"id":854,"text":"Title: Diva (1981), Genres: Action,Drama,Mystery,Romance,Thriller"}
+{"id":855,"text":"Title: Night on Earth (1991), Genres: Comedy,Drama"}
+{"id":856,"text":"Title: Paris Was a Woman (1995), Genres: Documentary"}
+{"id":857,"text":"Title: Amityville: Dollhouse (1996), Genres: Horror"}
+{"id":858,"text":"Title: April Fool's Day (1986), Genres: Comedy,Horror"}
+{"id":859,"text":"Title: Believers, The (1987), Genres: Horror,Thriller"}
+{"id":860,"text":"Title: Nosferatu a Venezia (1986), Genres: Horror"}
+{"id":861,"text":"Title: Jingle All the Way (1996), Genres: Adventure,Children's,Comedy"}
+{"id":862,"text":"Title: Garden of Finzi-Contini, The (Giardino dei Finzi-Contini, Il) (1970), Genres: Drama"}
+{"id":863,"text":"Title: My Fellow Americans (1996), Genres: Comedy"}
+{"id":864,"text":"Title: Ice Storm, The (1997), Genres: Drama"}
+{"id":865,"text":"Title: Michael (1996), Genres: Comedy,Romance"}
+{"id":866,"text":"Title: Whole Wide World, The (1996), Genres: Drama"}
+{"id":867,"text":"Title: Hearts and Minds (1996), Genres: Drama"}
+{"id":868,"text":"Title: Fools Rush In (1997), Genres: Comedy,Romance"}
+{"id":869,"text":"Title: Touch (1997), Genres: Romance"}
+{"id":870,"text":"Title: Vegas Vacation (1997), Genres: Comedy"}
+{"id":871,"text":"Title: Love Jones (1997), Genres: Romance"}
+{"id":872,"text":"Title: Picture Perfect (1997), Genres: Comedy,Romance"}
+{"id":873,"text":"Title: Career Girls (1997), Genres: Drama"}
+{"id":874,"text":"Title: She's So Lovely (1997), Genres: Drama,Romance"}
+{"id":875,"text":"Title: Money Talks (1997), Genres: Action,Comedy"}
+{"id":876,"text":"Title: Excess Baggage (1997), Genres: Adventure,Romance"}
+{"id":877,"text":"Title: That Darn Cat! (1997), Genres: Children's,Comedy,Mystery"}
+{"id":878,"text":"Title: Peacemaker, The (1997), Genres: Action,Thriller,War"}
+{"id":879,"text":"Title: Soul Food (1997), Genres: Drama"}
+{"id":880,"text":"Title: Money Talks (1997), Genres: Action,Comedy"}
+{"id":881,"text":"Title: Washington Square (1997), Genres: Drama"}
+{"id":882,"text":"Title: Telling Lies in America (1997), Genres: Drama"}
+{"id":883,"text":"Title: Year of the Horse (1997), Genres: Documentary"}
+{"id":884,"text":"Title: Phantoms (1998), Genres: Horror"}
+{"id":885,"text":"Title: Life Less Ordinary, A (1997), Genres: Romance,Thriller"}
+{"id":886,"text":"Title: Eve's Bayou (1997), Genres: Drama"}
+{"id":887,"text":"Title: One Night Stand (1997), Genres: Drama"}
+{"id":888,"text":"Title: Tango Lesson, The (1997), Genres: Romance"}
+{"id":889,"text":"Title: Mortal Kombat: Annihilation (1997), Genres: Action,Adventure"}
+{"id":890,"text":"Title: Bent (1997), Genres: Drama,War"}
+{"id":891,"text":"Title: Flubber (1997), Genres: Children's,Comedy,Fantasy"}
+{"id":892,"text":"Title: For Richer or Poorer (1997), Genres: Comedy"}
+{"id":893,"text":"Title: Home Alone 3 (1997), Genres: Children's,Comedy"}
+{"id":894,"text":"Title: Scream 2 (1997), Genres: Horror,Thriller"}
+{"id":895,"text":"Title: Sweet Hereafter, The (1997), Genres: Drama"}
+{"id":896,"text":"Title: Time Tracers (1995), Genres: Action,Adventure,Sci-Fi"}
+{"id":897,"text":"Title: Postman, The (1997), Genres: Drama"}
+{"id":898,"text":"Title: Winter Guest, The (1997), Genres: Drama"}
+{"id":899,"text":"Title: Kundun (1997), Genres: Drama"}
+{"id":900,"text":"Title: Mr. Magoo (1997), Genres: Comedy"}
+{"id":901,"text":"Title: Big Lebowski, The (1998), Genres: Comedy,Crime,Mystery,Thriller"}
+{"id":902,"text":"Title: Afterglow (1997), Genres: Drama,Romance"}
+{"id":903,"text":"Title: Ma vie en rose (My Life in Pink) (1997), Genres: Comedy,Drama"}
+{"id":904,"text":"Title: Great Expectations (1998), Genres: Drama,Romance"}
+{"id":905,"text":"Title: Oscar & Lucinda (1997), Genres: Drama,Romance"}
+{"id":906,"text":"Title: Vermin (1998), Genres: Comedy"}
+{"id":907,"text":"Title: Half Baked (1998), Genres: Comedy"}
+{"id":908,"text":"Title: Dangerous Beauty (1998), Genres: Drama"}
+{"id":909,"text":"Title: Nil By Mouth (1997), Genres: Drama"}
+{"id":910,"text":"Title: Twilight (1998), Genres: Crime,Drama"}
+{"id":911,"text":"Title: U.S. Marshalls (1998), Genres: Action,Thriller"}
+{"id":912,"text":"Title: Love and Death on Long Island (1997), Genres: Comedy"}
+{"id":913,"text":"Title: Wild Things (1998), Genres: Crime,Drama,Mystery,Thriller"}
+{"id":914,"text":"Title: Primary Colors (1998), Genres: Drama"}
+{"id":915,"text":"Title: Lost in Space (1998), Genres: Action,Sci-Fi,Thriller"}
+{"id":916,"text":"Title: Mercury Rising (1998), Genres: Action,Drama,Thriller"}
+{"id":917,"text":"Title: City of Angels (1998), Genres: Romance"}
+{"id":918,"text":"Title: City of Lost Children, The (1995), Genres: Adventure,Sci-Fi"}
+{"id":919,"text":"Title: Two Bits (1995), Genres: Drama"}
+{"id":920,"text":"Title: Farewell My Concubine (1993), Genres: Drama,Romance"}
+{"id":921,"text":"Title: Dead Man (1995), Genres: Western"}
+{"id":922,"text":"Title: Raise the Red Lantern (1991), Genres: Drama"}
+{"id":923,"text":"Title: White Squall (1996), Genres: Adventure,Drama"}
+{"id":924,"text":"Title: Unforgettable (1996), Genres: Sci-Fi,Thriller"}
+{"id":925,"text":"Title: Down Periscope (1996), Genres: Comedy"}
+{"id":926,"text":"Title: Flower of My Secret, The (Flor de mi secreto, La) (1995), Genres: Drama"}
+{"id":927,"text":"Title: Craft, The (1996), Genres: Drama,Horror"}
+{"id":928,"text":"Title: Harriet the Spy (1996), Genres: Children's,Comedy"}
+{"id":929,"text":"Title: Chain Reaction (1996), Genres: Action,Adventure,Thriller"}
+{"id":930,"text":"Title: Island of Dr. Moreau, The (1996), Genres: Sci-Fi,Thriller"}
+{"id":931,"text":"Title: First Kid (1996), Genres: Children's,Comedy"}
+{"id":932,"text":"Title: Funeral, The (1996), Genres: Drama"}
+{"id":933,"text":"Title: Preacher's Wife, The (1996), Genres: Drama"}
+{"id":934,"text":"Title: Paradise Road (1997), Genres: Drama,War"}
+{"id":935,"text":"Title: Brassed Off (1996), Genres: Comedy,Drama,Romance"}
+{"id":936,"text":"Title: Thousand Acres, A (1997), Genres: Drama"}
+{"id":937,"text":"Title: Smile Like Yours, A (1997), Genres: Comedy,Romance"}
+{"id":938,"text":"Title: Murder in the First (1995), Genres: Drama,Thriller"}
+{"id":939,"text":"Title: Airheads (1994), Genres: Comedy"}
+{"id":940,"text":"Title: With Honors (1994), Genres: Comedy,Drama"}
+{"id":941,"text":"Title: What's Love Got to Do with It (1993), Genres: Drama"}
+{"id":942,"text":"Title: Killing Zoe (1994), Genres: Thriller"}
+{"id":943,"text":"Title: Renaissance Man (1994), Genres: Comedy,Drama,War"}
+{"id":944,"text":"Title: Charade (1963), Genres: Comedy,Mystery,Romance,Thriller"}
+{"id":945,"text":"Title: Fox and the Hound, The (1981), Genres: Animation,Children's"}
+{"id":946,"text":"Title: Big Blue, The (Grand bleu, Le) (1988), Genres: Adventure,Romance"}
+{"id":947,"text":"Title: Booty Call (1997), Genres: Comedy,Romance"}
+{"id":948,"text":"Title: How to Make an American Quilt (1995), Genres: Drama,Romance"}
+{"id":949,"text":"Title: Georgia (1995), Genres: Drama"}
+{"id":950,"text":"Title: Indian in the Cupboard, The (1995), Genres: Adventure,Children's,Fantasy"}
+{"id":951,"text":"Title: Blue in the Face (1995), Genres: Comedy"}
+{"id":952,"text":"Title: Unstrung Heroes (1995), Genres: Comedy,Drama"}
+{"id":953,"text":"Title: Unzipped (1995), Genres: Documentary"}
+{"id":954,"text":"Title: Before Sunrise (1995), Genres: Drama,Romance"}
+{"id":955,"text":"Title: Nobody's Fool (1994), Genres: Drama"}
+{"id":956,"text":"Title: Pushing Hands (1992), Genres: Comedy"}
+{"id":957,"text":"Title: To Live (Huozhe) (1994), Genres: Drama"}
+{"id":958,"text":"Title: Dazed and Confused (1993), Genres: Comedy"}
+{"id":959,"text":"Title: Naked (1993), Genres: Drama"}
+{"id":960,"text":"Title: Orlando (1993), Genres: Drama"}
+{"id":961,"text":"Title: Ruby in Paradise (1993), Genres: Drama"}
+{"id":962,"text":"Title: Some Folks Call It a Sling Blade (1993), Genres: Drama,Thriller"}
+{"id":963,"text":"Title: Month by the Lake, A (1995), Genres: Comedy,Drama"}
+{"id":964,"text":"Title: Funny Face (1957), Genres: Comedy,Musical"}
+{"id":965,"text":"Title: Affair to Remember, An (1957), Genres: Romance"}
+{"id":966,"text":"Title: Little Lord Fauntleroy (1936), Genres: Drama"}
+{"id":967,"text":"Title: Inspector General, The (1949), Genres: Musical"}
+{"id":968,"text":"Title: Winnie the Pooh and the Blustery Day (1968), Genres: Animation,Children's"}
+{"id":969,"text":"Title: Hear My Song (1991), Genres: Comedy"}
+{"id":970,"text":"Title: Mediterraneo (1991), Genres: Comedy,War"}
+{"id":971,"text":"Title: Passion Fish (1992), Genres: Drama"}
+{"id":972,"text":"Title: Grateful Dead (1995), Genres: Documentary"}
+{"id":973,"text":"Title: Eye for an Eye (1996), Genres: Drama,Thriller"}
+{"id":974,"text":"Title: Fear (1996), Genres: Thriller"}
+{"id":975,"text":"Title: Solo (1996), Genres: Action,Sci-Fi,Thriller"}
+{"id":976,"text":"Title: Substitute, The (1996), Genres: Action"}
+{"id":977,"text":"Title: Heaven's Prisoners (1996), Genres: Mystery,Thriller"}
+{"id":978,"text":"Title: Trigger Effect, The (1996), Genres: Drama,Thriller"}
+{"id":979,"text":"Title: Mother Night (1996), Genres: Drama"}
+{"id":980,"text":"Title: Dangerous Ground (1997), Genres: Drama"}
+{"id":981,"text":"Title: Maximum Risk (1996), Genres: Action,Adventure,Thriller"}
+{"id":982,"text":"Title: Rich Man's Wife, The (1996), Genres: Thriller"}
+{"id":983,"text":"Title: Shadow Conspiracy (1997), Genres: Thriller"}
+{"id":984,"text":"Title: Blood & Wine (1997), Genres: Drama"}
+{"id":985,"text":"Title: Turbulence (1997), Genres: Thriller"}
+{"id":986,"text":"Title: Underworld (1997), Genres: Thriller"}
+{"id":987,"text":"Title: Beautician and the Beast, The (1997), Genres: Comedy,Romance"}
+{"id":988,"text":"Title: Cats Don't Dance (1997), Genres: Animation,Children's,Musical"}
+{"id":989,"text":"Title: Anna Karenina (1997), Genres: Drama,Romance"}
+{"id":990,"text":"Title: Keys to Tulsa (1997), Genres: Crime"}
+{"id":991,"text":"Title: Head Above Water (1996), Genres: Comedy,Thriller"}
+{"id":992,"text":"Title: Hercules (1997), Genres: Adventure,Animation,Children's,Comedy,Musical"}
+{"id":993,"text":"Title: Last Time I Committed Suicide, The (1997), Genres: Drama"}
+{"id":994,"text":"Title: Kiss Me, Guido (1997), Genres: Comedy"}
+{"id":995,"text":"Title: Big Green, The (1995), Genres: Children's,Comedy"}
+{"id":996,"text":"Title: Stuart Saves His Family (1995), Genres: Comedy"}
+{"id":997,"text":"Title: Cabin Boy (1994), Genres: Comedy"}
+{"id":998,"text":"Title: Clean Slate (1994), Genres: Comedy"}
+{"id":999,"text":"Title: Lightning Jack (1994), Genres: Comedy,Western"}
+{"id":1000,"text":"Title: Stupids, The (1996), Genres: Comedy"}
+{"id":1001,"text":"Title: Pest, The (1997), Genres: Comedy"}
+{"id":1002,"text":"Title: That Darn Cat! (1997), Genres: Children's,Comedy,Mystery"}
+{"id":1003,"text":"Title: Geronimo: An American Legend (1993), Genres: Drama,Western"}
+{"id":1004,"text":"Title: Double vie de Véronique, La (Double Life of Veronique, The) (1991), Genres: Drama"}
+{"id":1005,"text":"Title: Until the End of the World (Bis ans Ende der Welt) (1991), Genres: Drama,Sci-Fi"}
+{"id":1006,"text":"Title: Waiting for Guffman (1996), Genres: Comedy"}
+{"id":1007,"text":"Title: I Shot Andy Warhol (1996), Genres: Drama"}
+{"id":1008,"text":"Title: Stealing Beauty (1996), Genres: Drama"}
+{"id":1009,"text":"Title: Basquiat (1996), Genres: Drama"}
+{"id":1010,"text":"Title: 2 Days in the Valley (1996), Genres: Crime"}
+{"id":1011,"text":"Title: Private Parts (1997), Genres: Comedy,Drama"}
+{"id":1012,"text":"Title: Anaconda (1997), Genres: Action,Adventure,Thriller"}
+{"id":1013,"text":"Title: Romy and Michele's High School Reunion (1997), Genres: Comedy"}
+{"id":1014,"text":"Title: Shiloh (1997), Genres: Children's,Drama"}
+{"id":1015,"text":"Title: Con Air (1997), Genres: Action,Adventure,Thriller"}
+{"id":1016,"text":"Title: Trees Lounge (1996), Genres: Drama"}
+{"id":1017,"text":"Title: Tie Me Up! Tie Me Down! (1990), Genres: Drama"}
+{"id":1018,"text":"Title: Die xue shuang xiong (Killer, The) (1989), Genres: Action,Thriller"}
+{"id":1019,"text":"Title: Gaslight (1944), Genres: Mystery,Thriller"}
+{"id":1020,"text":"Title: 8 1/2 (1963), Genres: Drama"}
+{"id":1021,"text":"Title: Fast, Cheap & Out of Control (1997), Genres: Documentary"}
+{"id":1022,"text":"Title: Fathers' Day (1997), Genres: Comedy"}
+{"id":1023,"text":"Title: Mrs. Dalloway (1997), Genres: Romance"}
+{"id":1024,"text":"Title: Fire Down Below (1997), Genres: Action,Drama,Thriller"}
+{"id":1025,"text":"Title: Lay of the Land, The (1997), Genres: Comedy,Drama"}
+{"id":1026,"text":"Title: Shooter, The (1995), Genres: Action"}
+{"id":1027,"text":"Title: Grumpier Old Men (1995), Genres: Comedy,Romance"}
+{"id":1028,"text":"Title: Jury Duty (1995), Genres: Comedy"}
+{"id":1029,"text":"Title: Beverly Hillbillies, The (1993), Genres: Comedy"}
+{"id":1030,"text":"Title: Lassie (1994), Genres: Adventure,Children's"}
+{"id":1031,"text":"Title: Little Big League (1994), Genres: Children's,Comedy"}
+{"id":1032,"text":"Title: Homeward Bound II: Lost in San Francisco (1996), Genres: Adventure,Children's"}
+{"id":1033,"text":"Title: Quest, The (1996), Genres: Action,Adventure"}
+{"id":1034,"text":"Title: Cool Runnings (1993), Genres: Comedy"}
+{"id":1035,"text":"Title: Drop Dead Fred (1991), Genres: Comedy,Fantasy"}
+{"id":1036,"text":"Title: Grease 2 (1982), Genres: Comedy,Musical,Romance"}
+{"id":1037,"text":"Title: Switchback (1997), Genres: Thriller"}
+{"id":1038,"text":"Title: Hamlet (1996), Genres: Drama"}
+{"id":1039,"text":"Title: Two if by Sea (1996), Genres: Comedy,Romance"}
+{"id":1040,"text":"Title: Forget Paris (1995), Genres: Comedy,Romance"}
+{"id":1041,"text":"Title: Just Cause (1995), Genres: Mystery,Thriller"}
+{"id":1042,"text":"Title: Rent-a-Kid (1995), Genres: Comedy"}
+{"id":1043,"text":"Title: Paper, The (1994), Genres: Comedy,Drama"}
+{"id":1044,"text":"Title: Fearless (1993), Genres: Drama"}
+{"id":1045,"text":"Title: Malice (1993), Genres: Thriller"}
+{"id":1046,"text":"Title: Multiplicity (1996), Genres: Comedy"}
+{"id":1047,"text":"Title: She's the One (1996), Genres: Comedy,Romance"}
+{"id":1048,"text":"Title: House Arrest (1996), Genres: Comedy"}
+{"id":1049,"text":"Title: Ghost and Mrs. Muir, The (1947), Genres: Drama,Romance"}
+{"id":1050,"text":"Title: Associate, The (1996), Genres: Comedy"}
+{"id":1051,"text":"Title: Dracula: Dead and Loving It (1995), Genres: Comedy,Horror"}
+{"id":1052,"text":"Title: Now and Then (1995), Genres: Drama"}
+{"id":1053,"text":"Title: Mr. Wrong (1996), Genres: Comedy"}
+{"id":1054,"text":"Title: Simple Twist of Fate, A (1994), Genres: Drama"}
+{"id":1055,"text":"Title: Cronos (1992), Genres: Horror"}
+{"id":1056,"text":"Title: Pallbearer, The (1996), Genres: Comedy"}
+{"id":1057,"text":"Title: War, The (1994), Genres: Adventure,Drama"}
+{"id":1058,"text":"Title: Don't Be a Menace to South Central While Drinking Your Juice in the Hood (1996), Genres: Comedy"}
+{"id":1059,"text":"Title: Adventures of Pinocchio, The (1996), Genres: Adventure,Children's"}
+{"id":1060,"text":"Title: Evening Star, The (1996), Genres: Comedy,Drama"}
+{"id":1061,"text":"Title: Four Days in September (1997), Genres: Drama"}
+{"id":1062,"text":"Title: Little Princess, A (1995), Genres: Children's,Drama"}
+{"id":1063,"text":"Title: Crossfire (1947), Genres: Crime,Film-Noir"}
+{"id":1064,"text":"Title: Koyaanisqatsi (1983), Genres: Documentary,War"}
+{"id":1065,"text":"Title: Balto (1995), Genres: Animation,Children's"}
+{"id":1066,"text":"Title: Bottle Rocket (1996), Genres: Comedy"}
+{"id":1067,"text":"Title: Star Maker, The (Uomo delle stelle, L') (1995), Genres: Drama"}
+{"id":1068,"text":"Title: Amateur (1994), Genres: Crime,Drama,Thriller"}
+{"id":1069,"text":"Title: Living in Oblivion (1995), Genres: Comedy"}
+{"id":1070,"text":"Title: Party Girl (1995), Genres: Comedy"}
+{"id":1071,"text":"Title: Pyromaniac's Love Story, A (1995), Genres: Comedy,Romance"}
+{"id":1072,"text":"Title: Shallow Grave (1994), Genres: Thriller"}
+{"id":1073,"text":"Title: Reality Bites (1994), Genres: Comedy,Drama"}
+{"id":1074,"text":"Title: Man of No Importance, A (1994), Genres: Drama"}
+{"id":1075,"text":"Title: Pagemaster, The (1994), Genres: Action,Adventure,Animation,Children's,Fantasy"}
+{"id":1076,"text":"Title: Love and a .45 (1994), Genres: Thriller"}
+{"id":1077,"text":"Title: Oliver & Company (1988), Genres: Animation,Children's"}
+{"id":1078,"text":"Title: Joe's Apartment (1996), Genres: Comedy,Musical"}
+{"id":1079,"text":"Title: Celestial Clockwork (1994), Genres: Comedy"}
+{"id":1080,"text":"Title: Curdled (1996), Genres: Crime"}
+{"id":1081,"text":"Title: Female Perversions (1996), Genres: Drama"}
+{"id":1082,"text":"Title: Albino Alligator (1996), Genres: Crime,Thriller"}
+{"id":1083,"text":"Title: Anne Frank Remembered (1995), Genres: Documentary"}
+{"id":1084,"text":"Title: Carried Away (1996), Genres: Drama,Romance"}
+{"id":1085,"text":"Title: It's My Party (1995), Genres: Drama"}
+{"id":1086,"text":"Title: Bloodsport 2 (1995), Genres: Action"}
+{"id":1087,"text":"Title: Double Team (1997), Genres: Action"}
+{"id":1088,"text":"Title: Speed 2: Cruise Control (1997), Genres: Action,Romance,Thriller"}
+{"id":1089,"text":"Title: Sliver (1993), Genres: Thriller"}
+{"id":1090,"text":"Title: Pete's Dragon (1977), Genres: Adventure,Animation,Children's,Musical"}
+{"id":1091,"text":"Title: Dear God (1996), Genres: Comedy"}
+{"id":1092,"text":"Title: Live Nude Girls (1995), Genres: Comedy"}
+{"id":1093,"text":"Title: Thin Line Between Love and Hate, A (1996), Genres: Comedy"}
+{"id":1094,"text":"Title: High School High (1996), Genres: Comedy"}
+{"id":1095,"text":"Title: Commandments (1997), Genres: Romance"}
+{"id":1096,"text":"Title: Hate (Haine, La) (1995), Genres: Drama"}
+{"id":1097,"text":"Title: Flirting With Disaster (1996), Genres: Comedy"}
+{"id":1098,"text":"Title: Red Firecracker, Green Firecracker (1994), Genres: Drama"}
+{"id":1099,"text":"Title: What Happened Was... (1994), Genres: Comedy,Drama,Romance"}
+{"id":1100,"text":"Title: Six Degrees of Separation (1993), Genres: Drama,Mystery"}
+{"id":1101,"text":"Title: Two Much (1996), Genres: Comedy,Romance"}
+{"id":1102,"text":"Title: Trust (1990), Genres: Comedy,Drama"}
+{"id":1103,"text":"Title: C'est arrivé près de chez vous (1992), Genres: Comedy,Crime,Drama"}
+{"id":1104,"text":"Title: Firestorm (1998), Genres: Action,Adventure,Thriller"}
+{"id":1105,"text":"Title: Newton Boys, The (1998), Genres: Crime,Drama"}
+{"id":1106,"text":"Title: Beyond Rangoon (1995), Genres: Drama"}
+{"id":1107,"text":"Title: Feast of July (1995), Genres: Drama"}
+{"id":1108,"text":"Title: Death and the Maiden (1994), Genres: Drama,Thriller"}
+{"id":1109,"text":"Title: Tank Girl (1995), Genres: Action,Comedy,Musical,Sci-Fi"}
+{"id":1110,"text":"Title: Double Happiness (1994), Genres: Drama"}
+{"id":1111,"text":"Title: Cobb (1994), Genres: Drama"}
+{"id":1112,"text":"Title: Mrs. Parker and the Vicious Circle (1994), Genres: Drama"}
+{"id":1113,"text":"Title: Faithful (1996), Genres: Comedy"}
+{"id":1114,"text":"Title: Twelfth Night (1996), Genres: Comedy,Drama,Romance"}
+{"id":1115,"text":"Title: Mark of Zorro, The (1940), Genres: Adventure"}
+{"id":1116,"text":"Title: Surviving Picasso (1996), Genres: Drama"}
+{"id":1117,"text":"Title: Up in Smoke (1978), Genres: Comedy"}
+{"id":1118,"text":"Title: Some Kind of Wonderful (1987), Genres: Drama,Romance"}
+{"id":1119,"text":"Title: I'm Not Rappaport (1996), Genres: Comedy"}
+{"id":1120,"text":"Title: Umbrellas of Cherbourg, The (Parapluies de Cherbourg, Les) (1964), Genres: Drama,Musical"}
+{"id":1121,"text":"Title: They Made Me a Criminal (1939), Genres: Crime,Drama"}
+{"id":1122,"text":"Title: Last Time I Saw Paris, The (1954), Genres: Drama"}
+{"id":1123,"text":"Title: Farewell to Arms, A (1932), Genres: Romance,War"}
+{"id":1124,"text":"Title: Innocents, The (1961), Genres: Thriller"}
+{"id":1125,"text":"Title: Old Man and the Sea, The (1958), Genres: Adventure,Drama"}
+{"id":1126,"text":"Title: Truman Show, The (1998), Genres: Drama"}
+{"id":1127,"text":"Title: Heidi Fleiss: Hollywood Madam (1995) , Genres: Documentary"}
+{"id":1128,"text":"Title: Chungking Express (1994), Genres: Drama,Mystery,Romance"}
+{"id":1129,"text":"Title: Jupiter's Wife (1994), Genres: Documentary"}
+{"id":1130,"text":"Title: Safe (1995), Genres: Thriller"}
+{"id":1131,"text":"Title: Feeling Minnesota (1996), Genres: Drama,Romance"}
+{"id":1132,"text":"Title: Escape to Witch Mountain (1975), Genres: Adventure,Children's,Fantasy"}
+{"id":1133,"text":"Title: Get on the Bus (1996), Genres: Drama"}
+{"id":1134,"text":"Title: Doors, The (1991), Genres: Drama,Musical"}
+{"id":1135,"text":"Title: Ghosts of Mississippi (1996), Genres: Drama"}
+{"id":1136,"text":"Title: Beautiful Thing (1996), Genres: Drama,Romance"}
+{"id":1137,"text":"Title: Best Men (1997), Genres: Action,Comedy,Crime,Drama"}
+{"id":1138,"text":"Title: Hackers (1995), Genres: Action,Crime,Thriller"}
+{"id":1139,"text":"Title: Road to Wellville, The (1994), Genres: Comedy"}
+{"id":1140,"text":"Title: War Room, The (1993), Genres: Documentary"}
+{"id":1141,"text":"Title: When We Were Kings (1996), Genres: Documentary"}
+{"id":1142,"text":"Title: Hard Eight (1996), Genres: Crime,Thriller"}
+{"id":1143,"text":"Title: Quiet Room, The (1996), Genres: Drama"}
+{"id":1144,"text":"Title: Blue Chips (1994), Genres: Drama"}
+{"id":1145,"text":"Title: Calendar Girl (1993), Genres: Drama"}
+{"id":1146,"text":"Title: My Family (1995), Genres: Drama"}
+{"id":1147,"text":"Title: Tom & Viv (1994), Genres: Drama"}
+{"id":1148,"text":"Title: Walkabout (1971), Genres: Drama"}
+{"id":1149,"text":"Title: Last Dance (1996), Genres: Drama"}
+{"id":1150,"text":"Title: Original Gangstas (1996), Genres: Crime"}
+{"id":1151,"text":"Title: In Love and War (1996), Genres: Romance,War"}
+{"id":1152,"text":"Title: Backbeat (1993), Genres: Drama,Musical"}
+{"id":1153,"text":"Title: Alphaville (1965), Genres: Sci-Fi"}
+{"id":1154,"text":"Title: Rendezvous in Paris (Rendez-vous de Paris, Les) (1995), Genres: Comedy,Romance"}
+{"id":1155,"text":"Title: Cyclo (1995), Genres: Crime,Drama"}
+{"id":1156,"text":"Title: Relic, The (1997), Genres: Horror"}
+{"id":1157,"text":"Title: Fille seule, La (A Single Girl) (1995), Genres: Drama"}
+{"id":1158,"text":"Title: Stalker (1979), Genres: Mystery,Sci-Fi"}
+{"id":1159,"text":"Title: Love! Valour! Compassion! (1997), Genres: Drama,Romance"}
+{"id":1160,"text":"Title: Palookaville (1996), Genres: Action,Drama"}
+{"id":1161,"text":"Title: Phat Beach (1996), Genres: Comedy"}
+{"id":1162,"text":"Title: Portrait of a Lady, The (1996), Genres: Drama"}
+{"id":1163,"text":"Title: Zeus and Roxanne (1997), Genres: Children's"}
+{"id":1164,"text":"Title: Big Bully (1996), Genres: Comedy,Drama"}
+{"id":1165,"text":"Title: Love & Human Remains (1993), Genres: Comedy"}
+{"id":1166,"text":"Title: Sum of Us, The (1994), Genres: Comedy"}
+{"id":1167,"text":"Title: Little Buddha (1993), Genres: Drama"}
+{"id":1168,"text":"Title: Fresh (1994), Genres: Drama"}
+{"id":1169,"text":"Title: Spanking the Monkey (1994), Genres: Comedy,Drama"}
+{"id":1170,"text":"Title: Wild Reeds (1994), Genres: Drama"}
+{"id":1171,"text":"Title: Women, The (1939), Genres: Comedy"}
+{"id":1172,"text":"Title: Bliss (1997), Genres: Drama,Romance"}
+{"id":1173,"text":"Title: Caught (1996), Genres: Drama,Thriller"}
+{"id":1174,"text":"Title: Hugo Pool (1997), Genres: Romance"}
+{"id":1175,"text":"Title: Welcome To Sarajevo (1997), Genres: Drama,War"}
+{"id":1176,"text":"Title: Dunston Checks In (1996), Genres: Comedy"}
+{"id":1177,"text":"Title: Major Payne (1994), Genres: Comedy"}
+{"id":1178,"text":"Title: Man of the House (1995), Genres: Comedy"}
+{"id":1179,"text":"Title: I Love Trouble (1994), Genres: Action,Comedy"}
+{"id":1180,"text":"Title: Low Down Dirty Shame, A (1994), Genres: Action,Comedy"}
+{"id":1181,"text":"Title: Cops and Robbersons (1994), Genres: Comedy"}
+{"id":1182,"text":"Title: Cowboy Way, The (1994), Genres: Action,Comedy"}
+{"id":1183,"text":"Title: Endless Summer 2, The (1994), Genres: Documentary"}
+{"id":1184,"text":"Title: In the Army Now (1994), Genres: Comedy,War"}
+{"id":1185,"text":"Title: Inkwell, The (1994), Genres: Comedy,Drama"}
+{"id":1186,"text":"Title: Switchblade Sisters (1975), Genres: Crime"}
+{"id":1187,"text":"Title: Young Guns II (1990), Genres: Action,Comedy,Western"}
+{"id":1188,"text":"Title: Prefontaine (1997), Genres: Drama"}
+{"id":1189,"text":"Title: That Old Feeling (1997), Genres: Comedy,Romance"}
+{"id":1190,"text":"Title: Letter From Death Row, A (1998), Genres: Crime,Drama"}
+{"id":1191,"text":"Title: Boys of St. Vincent, The (1993), Genres: Drama"}
+{"id":1192,"text":"Title: Before the Rain (Pred dozhdot) (1994), Genres: Drama"}
+{"id":1193,"text":"Title: Once Were Warriors (1994), Genres: Crime,Drama"}
+{"id":1194,"text":"Title: Strawberry and Chocolate (Fresa y chocolate) (1993), Genres: Drama"}
+{"id":1195,"text":"Title: Savage Nights (Nuits fauves, Les) (1992), Genres: Drama"}
+{"id":1196,"text":"Title: Family Thing, A (1996), Genres: Comedy,Drama"}
+{"id":1197,"text":"Title: Purple Noon (1960), Genres: Crime,Thriller"}
+{"id":1198,"text":"Title: Cemetery Man (Dellamorte Dellamore) (1994), Genres: Comedy,Horror"}
+{"id":1199,"text":"Title: Kim (1950), Genres: Children's,Drama"}
+{"id":1200,"text":"Title: Marlene Dietrich: Shadow and Light (1996) , Genres: Documentary"}
+{"id":1201,"text":"Title: Maybe, Maybe Not (Bewegte Mann, Der) (1994), Genres: Comedy"}
+{"id":1202,"text":"Title: Top Hat (1935), Genres: Comedy,Musical,Romance"}
+{"id":1203,"text":"Title: To Be or Not to Be (1942), Genres: Comedy,Drama,War"}
+{"id":1204,"text":"Title: Secret Agent, The (1996), Genres: Drama"}
+{"id":1205,"text":"Title: Amos & Andrew (1993), Genres: Comedy"}
+{"id":1206,"text":"Title: Jade (1995), Genres: Thriller"}
+{"id":1207,"text":"Title: Kiss of Death (1995), Genres: Crime,Drama,Thriller"}
+{"id":1208,"text":"Title: Mixed Nuts (1994), Genres: Comedy"}
+{"id":1209,"text":"Title: Virtuosity (1995), Genres: Sci-Fi,Thriller"}
+{"id":1210,"text":"Title: Blue Sky (1994), Genres: Drama,Romance"}
+{"id":1211,"text":"Title: Flesh and Bone (1993), Genres: Drama,Mystery,Romance"}
+{"id":1212,"text":"Title: Guilty as Sin (1993), Genres: Crime,Drama,Thriller"}
+{"id":1213,"text":"Title: In the Realm of the Senses (Ai no corrida) (1976), Genres: Drama"}
+{"id":1214,"text":"Title: Barb Wire (1996), Genres: Action,Sci-Fi"}
+{"id":1215,"text":"Title: Kissed (1996), Genres: Romance"}
+{"id":1216,"text":"Title: Assassins (1995), Genres: Thriller"}
+{"id":1217,"text":"Title: Friday (1995), Genres: Comedy"}
+{"id":1218,"text":"Title: Goofy Movie, A (1995), Genres: Animation,Children's,Comedy,Romance"}
+{"id":1219,"text":"Title: Higher Learning (1995), Genres: Drama"}
+{"id":1220,"text":"Title: When a Man Loves a Woman (1994), Genres: Drama"}
+{"id":1221,"text":"Title: Judgment Night (1993), Genres: Action"}
+{"id":1222,"text":"Title: King of the Hill (1993), Genres: Drama"}
+{"id":1223,"text":"Title: Scout, The (1994), Genres: Drama"}
+{"id":1224,"text":"Title: Angus (1995), Genres: Comedy"}
+{"id":1225,"text":"Title: Night Falls on Manhattan (1997), Genres: Crime,Drama"}
+{"id":1226,"text":"Title: Awfully Big Adventure, An (1995), Genres: Drama"}
+{"id":1227,"text":"Title: Under Siege 2: Dark Territory (1995), Genres: Action"}
+{"id":1228,"text":"Title: Poison Ivy II (1995), Genres: Drama,Thriller"}
+{"id":1229,"text":"Title: Ready to Wear (Pret-A-Porter) (1994), Genres: Comedy"}
+{"id":1230,"text":"Title: Marked for Death (1990), Genres: Action,Drama"}
+{"id":1231,"text":"Title: Madonna: Truth or Dare (1991), Genres: Documentary"}
+{"id":1232,"text":"Title: Nénette et Boni (1996), Genres: Drama"}
+{"id":1233,"text":"Title: Chairman of the Board (1998), Genres: Comedy"}
+{"id":1234,"text":"Title: Big Bang Theory, The (1994), Genres: Crime"}
+{"id":1235,"text":"Title: Other Voices, Other Rooms (1997), Genres: Drama"}
+{"id":1236,"text":"Title: Twisted (1996), Genres: Comedy,Drama"}
+{"id":1237,"text":"Title: Full Speed (1996), Genres: Drama"}
+{"id":1238,"text":"Title: Cutthroat Island (1995), Genres: Action,Adventure,Romance"}
+{"id":1239,"text":"Title: Ghost in the Shell (Kokaku kidotai) (1995), Genres: Animation,Sci-Fi"}
+{"id":1240,"text":"Title: Van, The (1996), Genres: Comedy,Drama"}
+{"id":1241,"text":"Title: Old Lady Who Walked in the Sea, The (Vieille qui marchait dans la mer, La) (1991), Genres: Comedy"}
+{"id":1242,"text":"Title: Night Flier (1997), Genres: Horror"}
+{"id":1243,"text":"Title: Metro (1997), Genres: Action"}
+{"id":1244,"text":"Title: Gridlock'd (1997), Genres: Crime"}
+{"id":1245,"text":"Title: Bushwhacked (1995), Genres: Comedy"}
+{"id":1246,"text":"Title: Bad Girls (1994), Genres: Western"}
+{"id":1247,"text":"Title: Blink (1994), Genres: Thriller"}
+{"id":1248,"text":"Title: For Love or Money (1993), Genres: Comedy"}
+{"id":1249,"text":"Title: Best of the Best 3: No Turning Back (1995), Genres: Action"}
+{"id":1250,"text":"Title: A Chef in Love (1996), Genres: Comedy"}
+{"id":1251,"text":"Title: Contempt (Mépris, Le) (1963), Genres: Drama"}
+{"id":1252,"text":"Title: Tie That Binds, The (1995), Genres: Thriller"}
+{"id":1253,"text":"Title: Gone Fishin' (1997), Genres: Comedy"}
+{"id":1254,"text":"Title: Broken English (1996), Genres: Drama"}
+{"id":1255,"text":"Title: Designated Mourner, The (1997), Genres: Drama"}
+{"id":1256,"text":"Title: Designated Mourner, The (1997), Genres: Drama"}
+{"id":1257,"text":"Title: Trial and Error (1997), Genres: Comedy,Romance"}
+{"id":1258,"text":"Title: Pie in the Sky (1995), Genres: Comedy,Romance"}
+{"id":1259,"text":"Title: Total Eclipse (1995), Genres: Drama"}
+{"id":1260,"text":"Title: Run of the Country, The (1995), Genres: Drama"}
+{"id":1261,"text":"Title: Walking and Talking (1996), Genres: Romance"}
+{"id":1262,"text":"Title: Foxfire (1996), Genres: Drama"}
+{"id":1263,"text":"Title: Nothing to Lose (1994), Genres: Drama"}
+{"id":1264,"text":"Title: Star Maps (1997), Genres: Drama"}
+{"id":1265,"text":"Title: Bread and Chocolate (Pane e cioccolata) (1973), Genres: Drama"}
+{"id":1266,"text":"Title: Clockers (1995), Genres: Drama"}
+{"id":1267,"text":"Title: Bitter Moon (1992), Genres: Drama"}
+{"id":1268,"text":"Title: Love in the Afternoon (1957), Genres: Comedy,Romance"}
+{"id":1269,"text":"Title: Life with Mikey (1993), Genres: Comedy"}
+{"id":1270,"text":"Title: North (1994), Genres: Comedy"}
+{"id":1271,"text":"Title: Talking About Sex (1994), Genres: Comedy,Drama"}
+{"id":1272,"text":"Title: Color of Night (1994), Genres: Drama,Thriller"}
+{"id":1273,"text":"Title: Robocop 3 (1993), Genres: Sci-Fi,Thriller"}
+{"id":1274,"text":"Title: Killer (Bulletproof Heart) (1994), Genres: Thriller"}
+{"id":1275,"text":"Title: Sunset Park (1996), Genres: Drama"}
+{"id":1276,"text":"Title: Set It Off (1996), Genres: Action,Crime"}
+{"id":1277,"text":"Title: Selena (1997), Genres: Drama,Musical"}
+{"id":1278,"text":"Title: Wild America (1997), Genres: Adventure,Children's"}
+{"id":1279,"text":"Title: Gang Related (1997), Genres: Crime"}
+{"id":1280,"text":"Title: Manny & Lo (1996), Genres: Drama"}
+{"id":1281,"text":"Title: Grass Harp, The (1995), Genres: Drama"}
+{"id":1282,"text":"Title: Out to Sea (1997), Genres: Comedy"}
+{"id":1283,"text":"Title: Before and After (1996), Genres: Drama,Mystery"}
+{"id":1284,"text":"Title: Princess Caraboo (1994), Genres: Drama"}
+{"id":1285,"text":"Title: Shall We Dance? (1937), Genres: Comedy,Musical,Romance"}
+{"id":1286,"text":"Title: Ed (1996), Genres: Comedy"}
+{"id":1287,"text":"Title: Denise Calls Up (1995), Genres: Comedy"}
+{"id":1288,"text":"Title: Jack and Sarah (1995), Genres: Romance"}
+{"id":1289,"text":"Title: Country Life (1994), Genres: Drama,Romance"}
+{"id":1290,"text":"Title: Celtic Pride (1996), Genres: Comedy"}
+{"id":1291,"text":"Title: Simple Wish, A (1997), Genres: Children's,Fantasy"}
+{"id":1292,"text":"Title: Star Kid (1997), Genres: Adventure,Children's,Fantasy,Sci-Fi"}
+{"id":1293,"text":"Title: Ayn Rand: A Sense of Life (1997), Genres: Documentary"}
+{"id":1294,"text":"Title: Kicked in the Head (1997), Genres: Comedy,Drama"}
+{"id":1295,"text":"Title: Indian Summer (1996), Genres: Comedy,Drama"}
+{"id":1296,"text":"Title: Love Affair (1994), Genres: Drama,Romance"}
+{"id":1297,"text":"Title: Band Wagon, The (1953), Genres: Comedy,Musical"}
+{"id":1298,"text":"Title: Penny Serenade (1941), Genres: Drama,Romance"}
+{"id":1299,"text":"Title: 'Til There Was You (1997), Genres: Drama,Romance"}
+{"id":1300,"text":"Title: Stripes (1981), Genres: Comedy"}
+{"id":1301,"text":"Title: Late Bloomers (1996), Genres: Comedy"}
+{"id":1302,"text":"Title: Getaway, The (1994), Genres: Action"}
+{"id":1303,"text":"Title: New York Cop (1996), Genres: Action,Crime"}
+{"id":1304,"text":"Title: National Lampoon's Senior Trip (1995), Genres: Comedy"}
+{"id":1305,"text":"Title: Delta of Venus (1994), Genres: Drama"}
+{"id":1306,"text":"Title: Carmen Miranda: Bananas Is My Business (1994), Genres: Documentary"}
+{"id":1307,"text":"Title: Babyfever (1994), Genres: Comedy,Drama"}
+{"id":1308,"text":"Title: Very Natural Thing, A (1974), Genres: Drama"}
+{"id":1309,"text":"Title: Walk in the Sun, A (1945), Genres: Drama"}
+{"id":1310,"text":"Title: Waiting to Exhale (1995), Genres: Comedy,Drama"}
+{"id":1311,"text":"Title: Pompatus of Love, The (1996), Genres: Comedy,Drama"}
+{"id":1312,"text":"Title: Palmetto (1998), Genres: Film-Noir,Mystery,Thriller"}
+{"id":1313,"text":"Title: Surviving the Game (1994), Genres: Action,Adventure,Thriller"}
+{"id":1314,"text":"Title: Inventing the Abbotts (1997), Genres: Drama,Romance"}
+{"id":1315,"text":"Title: Horse Whisperer, The (1998), Genres: Drama"}
+{"id":1316,"text":"Title: Journey of August King, The (1995), Genres: Drama"}
+{"id":1317,"text":"Title: Catwalk (1995), Genres: Documentary"}
+{"id":1318,"text":"Title: Neon Bible, The (1995), Genres: Drama"}
+{"id":1319,"text":"Title: Homage (1995), Genres: Drama"}
+{"id":1320,"text":"Title: Open Season (1996), Genres: Comedy"}
+{"id":1321,"text":"Title: Metisse (Café au Lait) (1993), Genres: Comedy"}
+{"id":1322,"text":"Title: Wooden Man's Bride, The (Wu Kui) (1994), Genres: Drama"}
+{"id":1323,"text":"Title: Loaded (1994), Genres: Drama,Thriller"}
+{"id":1324,"text":"Title: August (1996), Genres: Drama"}
+{"id":1325,"text":"Title: Boys (1996), Genres: Drama"}
+{"id":1326,"text":"Title: Captives (1994), Genres: Drama"}
+{"id":1327,"text":"Title: Of Love and Shadows (1994), Genres: Drama"}
+{"id":1328,"text":"Title: Low Life, The (1994), Genres: Drama"}
+{"id":1329,"text":"Title: An Unforgettable Summer (1994), Genres: Drama"}
+{"id":1330,"text":"Title: Last Klezmer: Leopold Kozlowski, His Life and Music, The (1995), Genres: Documentary"}
+{"id":1331,"text":"Title: My Life and Times With Antonin Artaud (En compagnie d'Antonin Artaud) (1993), Genres: Drama"}
+{"id":1332,"text":"Title: Midnight Dancers (Sibak) (1994), Genres: Comedy,Drama"}
+{"id":1333,"text":"Title: Somebody to Love (1994), Genres: Drama"}
+{"id":1334,"text":"Title: American Buffalo (1996), Genres: Drama"}
+{"id":1335,"text":"Title: Kazaam (1996), Genres: Children's,Comedy,Fantasy"}
+{"id":1336,"text":"Title: Larger Than Life (1996), Genres: Comedy"}
+{"id":1337,"text":"Title: Two Deaths (1995), Genres: Drama"}
+{"id":1338,"text":"Title: Stefano Quantestorie (1993), Genres: Comedy,Drama"}
+{"id":1339,"text":"Title: Crude Oasis, The (1995), Genres: Romance"}
+{"id":1340,"text":"Title: Hedd Wyn (1992), Genres: Drama"}
+{"id":1341,"text":"Title: Convent, The (Convento, O) (1995), Genres: Drama"}
+{"id":1342,"text":"Title: Lotto Land (1995), Genres: Drama"}
+{"id":1343,"text":"Title: Story of Xinghua, The (1993), Genres: Drama"}
+{"id":1344,"text":"Title: Day the Sun Turned Cold, The (Tianguo niezi) (1994), Genres: Drama"}
+{"id":1345,"text":"Title: Dingo (1992), Genres: Drama"}
+{"id":1346,"text":"Title: Ballad of Narayama, The (Narayama Bushiko) (1958), Genres: Drama"}
+{"id":1347,"text":"Title: Every Other Weekend (1990), Genres: Drama"}
+{"id":1348,"text":"Title: Mille bolle blu (1993), Genres: Comedy"}
+{"id":1349,"text":"Title: Crows and Sparrows (1949), Genres: Drama"}
+{"id":1350,"text":"Title: Lover's Knot (1996), Genres: Comedy"}
+{"id":1351,"text":"Title: Shadow of Angels (Schatten der Engel) (1976), Genres: Drama"}
+{"id":1352,"text":"Title: 1-900 (1994), Genres: Romance"}
+{"id":1353,"text":"Title: Venice/Venice (1992), Genres: Drama"}
+{"id":1354,"text":"Title: Infinity (1996), Genres: Drama"}
+{"id":1355,"text":"Title: Ed's Next Move (1996), Genres: Comedy"}
+{"id":1356,"text":"Title: For the Moment (1994), Genres: Romance,War"}
+{"id":1357,"text":"Title: The Deadly Cure (1996), Genres: Action"}
+{"id":1358,"text":"Title: Boys in Venice (1996), Genres: Drama"}
+{"id":1359,"text":"Title: Sexual Life of the Belgians, The (1994), Genres: Comedy"}
+{"id":1360,"text":"Title: Search for One-eye Jimmy, The (1996), Genres: Comedy"}
+{"id":1361,"text":"Title: American Strays (1996), Genres: Action"}
+{"id":1362,"text":"Title: Leopard Son, The (1996), Genres: Documentary"}
+{"id":1363,"text":"Title: Bird of Prey (1996), Genres: Action"}
+{"id":1364,"text":"Title: Johnny 100 Pesos (1993), Genres: Action,Drama"}
+{"id":1365,"text":"Title: JLG/JLG - autoportrait de décembre (1994), Genres: Documentary,Drama"}
+{"id":1366,"text":"Title: Faust (1994), Genres: Animation"}
+{"id":1367,"text":"Title: Mina Tannenbaum (1994), Genres: Drama"}
+{"id":1368,"text":"Title: Forbidden Christ, The (Cristo proibito, Il) (1950), Genres: Drama"}
+{"id":1369,"text":"Title: I Can't Sleep (J'ai pas sommeil) (1994), Genres: Drama,Thriller"}
+{"id":1370,"text":"Title: Machine, The (1994), Genres: Comedy,Horror"}
+{"id":1371,"text":"Title: Stranger, The (1994), Genres: Action"}
+{"id":1372,"text":"Title: Good Morning (1971), Genres: unknown"}
+{"id":1373,"text":"Title: Falling in Love Again (1980), Genres: Comedy"}
+{"id":1374,"text":"Title: Cement Garden, The (1993), Genres: Drama"}
+{"id":1375,"text":"Title: Meet Wally Sparks (1997), Genres: Comedy"}
+{"id":1376,"text":"Title: Hotel de Love (1996), Genres: Comedy,Romance"}
+{"id":1377,"text":"Title: Rhyme & Reason (1997), Genres: Documentary"}
+{"id":1378,"text":"Title: Love and Other Catastrophes (1996), Genres: Romance"}
+{"id":1379,"text":"Title: Hollow Reed (1996), Genres: Drama"}
+{"id":1380,"text":"Title: Losing Chase (1996), Genres: Drama"}
+{"id":1381,"text":"Title: Bonheur, Le (1965), Genres: Drama"}
+{"id":1382,"text":"Title: Second Jungle Book: Mowgli & Baloo, The (1997), Genres: Adventure,Children's"}
+{"id":1383,"text":"Title: Squeeze (1996), Genres: Drama"}
+{"id":1384,"text":"Title: Roseanna's Grave (For Roseanna) (1997), Genres: Comedy,Romance"}
+{"id":1385,"text":"Title: Tetsuo II: Body Hammer (1992), Genres: Sci-Fi"}
+{"id":1386,"text":"Title: Fall (1997), Genres: Romance"}
+{"id":1387,"text":"Title: Gabbeh (1996), Genres: Drama"}
+{"id":1388,"text":"Title: Mondo (1996), Genres: Drama"}
+{"id":1389,"text":"Title: Innocent Sleep, The (1995), Genres: Crime"}
+{"id":1390,"text":"Title: For Ever Mozart (1996), Genres: Drama"}
+{"id":1391,"text":"Title: Locusts, The (1997), Genres: Drama"}
+{"id":1392,"text":"Title: Stag (1997), Genres: Action,Thriller"}
+{"id":1393,"text":"Title: Swept from the Sea (1997), Genres: Romance"}
+{"id":1394,"text":"Title: Hurricane Streets (1998), Genres: Drama"}
+{"id":1395,"text":"Title: Stonewall (1995), Genres: Drama"}
+{"id":1396,"text":"Title: Of Human Bondage (1934), Genres: Drama"}
+{"id":1397,"text":"Title: Anna (1996), Genres: Drama"}
+{"id":1398,"text":"Title: Stranger in the House (1997), Genres: Thriller"}
+{"id":1399,"text":"Title: Picture Bride (1995), Genres: Drama,Romance"}
+{"id":1400,"text":"Title: M. Butterfly (1993), Genres: Drama"}
+{"id":1401,"text":"Title: Ciao, Professore! (1993), Genres: Drama"}
+{"id":1402,"text":"Title: Caro Diario (Dear Diary) (1994), Genres: Comedy,Drama"}
+{"id":1403,"text":"Title: Withnail and I (1987), Genres: Comedy"}
+{"id":1404,"text":"Title: Boy's Life 2 (1997), Genres: Drama"}
+{"id":1405,"text":"Title: When Night Is Falling (1995), Genres: Drama,Romance"}
+{"id":1406,"text":"Title: Specialist, The (1994), Genres: Action"}
+{"id":1407,"text":"Title: Gordy (1995), Genres: Comedy"}
+{"id":1408,"text":"Title: Swan Princess, The (1994), Genres: Animation,Children's"}
+{"id":1409,"text":"Title: Harlem (1993), Genres: Drama"}
+{"id":1410,"text":"Title: Barbarella (1968), Genres: Adventure,Sci-Fi"}
+{"id":1411,"text":"Title: Land Before Time III: The Time of the Great Giving (1995) (V), Genres: Animation,Children's"}
+{"id":1412,"text":"Title: Street Fighter (1994), Genres: Action"}
+{"id":1413,"text":"Title: Coldblooded (1995), Genres: Action"}
+{"id":1414,"text":"Title: Next Karate Kid, The (1994), Genres: Action,Children's"}
+{"id":1415,"text":"Title: No Escape (1994), Genres: Action,Sci-Fi"}
+{"id":1416,"text":"Title: Turning, The (1992), Genres: Drama"}
+{"id":1417,"text":"Title: Joy Luck Club, The (1993), Genres: Drama"}
+{"id":1418,"text":"Title: Highlander III: The Sorcerer (1994), Genres: Action,Sci-Fi"}
+{"id":1419,"text":"Title: Gilligan's Island: The Movie (1998), Genres: Comedy"}
+{"id":1420,"text":"Title: My Crazy Life (Mi vida loca) (1993), Genres: Drama"}
+{"id":1421,"text":"Title: Suture (1993), Genres: Film-Noir,Thriller"}
+{"id":1422,"text":"Title: Walking Dead, The (1995), Genres: Drama,War"}
+{"id":1423,"text":"Title: I Like It Like That (1994), Genres: Comedy,Drama,Romance"}
+{"id":1424,"text":"Title: I'll Do Anything (1994), Genres: Comedy,Drama"}
+{"id":1425,"text":"Title: Grace of My Heart (1996), Genres: Comedy,Drama"}
+{"id":1426,"text":"Title: Drunks (1995), Genres: Drama"}
+{"id":1427,"text":"Title: SubUrbia (1997), Genres: Comedy"}
+{"id":1428,"text":"Title: Sliding Doors (1998), Genres: Drama,Romance"}
+{"id":1429,"text":"Title: Ill Gotten Gains (1997), Genres: Drama"}
+{"id":1430,"text":"Title: Legal Deceit (1997), Genres: Thriller"}
+{"id":1431,"text":"Title: Mighty, The (1998), Genres: Drama"}
+{"id":1432,"text":"Title: Men of Means (1998), Genres: Action,Drama"}
+{"id":1433,"text":"Title: Shooting Fish (1997), Genres: Romance"}
+{"id":1434,"text":"Title: Steal Big, Steal Little (1995), Genres: Comedy"}
+{"id":1435,"text":"Title: Mr. Jones (1993), Genres: Drama,Romance"}
+{"id":1436,"text":"Title: House Party 3 (1994), Genres: Comedy"}
+{"id":1437,"text":"Title: Panther (1995), Genres: Drama"}
+{"id":1438,"text":"Title: Jason's Lyric (1994), Genres: Crime,Drama"}
+{"id":1439,"text":"Title: Above the Rim (1994), Genres: Drama"}
+{"id":1440,"text":"Title: Moonlight and Valentino (1995), Genres: Drama,Romance"}
+{"id":1441,"text":"Title: Scarlet Letter, The (1995), Genres: Drama"}
+{"id":1442,"text":"Title: 8 Seconds (1994), Genres: Drama"}
+{"id":1443,"text":"Title: That Darn Cat! (1965), Genres: Children's,Comedy,Mystery"}
+{"id":1444,"text":"Title: Ladybird Ladybird (1994), Genres: Drama"}
+{"id":1445,"text":"Title: Bye Bye, Love (1995), Genres: Comedy"}
+{"id":1446,"text":"Title: Century (1993), Genres: Drama"}
+{"id":1447,"text":"Title: My Favorite Season (1993), Genres: Drama"}
+{"id":1448,"text":"Title: Pather Panchali (1955), Genres: Drama"}
+{"id":1449,"text":"Title: Golden Earrings (1947), Genres: Adventure,Romance"}
+{"id":1450,"text":"Title: Foreign Correspondent (1940), Genres: Thriller"}
+{"id":1451,"text":"Title: Lady of Burlesque (1943), Genres: Comedy,Mystery"}
+{"id":1452,"text":"Title: Angel on My Shoulder (1946), Genres: Crime,Drama"}
+{"id":1453,"text":"Title: Angel and the Badman (1947), Genres: Western"}
+{"id":1454,"text":"Title: Outlaw, The (1943), Genres: Western"}
+{"id":1455,"text":"Title: Beat the Devil (1954), Genres: Comedy,Drama"}
+{"id":1456,"text":"Title: Love Is All There Is (1996), Genres: Comedy,Drama"}
+{"id":1457,"text":"Title: Damsel in Distress, A (1937), Genres: Comedy,Musical,Romance"}
+{"id":1458,"text":"Title: Madame Butterfly (1995), Genres: Musical"}
+{"id":1459,"text":"Title: Sleepover (1995), Genres: Comedy,Drama"}
+{"id":1460,"text":"Title: Here Comes Cookie (1935), Genres: Comedy"}
+{"id":1461,"text":"Title: Thieves (Voleurs, Les) (1996), Genres: Crime,Drama,Romance"}
+{"id":1462,"text":"Title: Boys, Les (1997), Genres: Comedy"}
+{"id":1463,"text":"Title: Stars Fell on Henrietta, The (1995), Genres: Drama"}
+{"id":1464,"text":"Title: Last Summer in the Hamptons (1995), Genres: Comedy,Drama"}
+{"id":1465,"text":"Title: Margaret's Museum (1995), Genres: Drama"}
+{"id":1466,"text":"Title: Saint of Fort Washington, The (1993), Genres: Drama"}
+{"id":1467,"text":"Title: Cure, The (1995), Genres: Drama"}
+{"id":1468,"text":"Title: Tom and Huck (1995), Genres: Adventure,Children's"}
+{"id":1469,"text":"Title: Gumby: The Movie (1995), Genres: Animation,Children's"}
+{"id":1470,"text":"Title: Hideaway (1995), Genres: Thriller"}
+{"id":1471,"text":"Title: Visitors, The (Visiteurs, Les) (1993), Genres: Comedy,Sci-Fi"}
+{"id":1472,"text":"Title: Little Princess, The (1939), Genres: Children's,Drama"}
+{"id":1473,"text":"Title: Nina Takes a Lover (1994), Genres: Comedy,Romance"}
+{"id":1474,"text":"Title: Bhaji on the Beach (1993), Genres: Comedy,Drama"}
+{"id":1475,"text":"Title: Raw Deal (1948), Genres: Film-Noir"}
+{"id":1476,"text":"Title: Nightwatch (1997), Genres: Horror,Thriller"}
+{"id":1477,"text":"Title: Dead Presidents (1995), Genres: Action,Crime,Drama"}
+{"id":1478,"text":"Title: Reckless (1995), Genres: Comedy"}
+{"id":1479,"text":"Title: Herbie Rides Again (1974), Genres: Adventure,Children's,Comedy"}
+{"id":1480,"text":"Title: S.F.W. (1994), Genres: Drama"}
+{"id":1481,"text":"Title: Gate of Heavenly Peace, The (1995), Genres: Documentary"}
+{"id":1482,"text":"Title: Man in the Iron Mask, The (1998), Genres: Action,Drama,Romance"}
+{"id":1483,"text":"Title: Jerky Boys, The (1994), Genres: Action,Comedy"}
+{"id":1484,"text":"Title: Colonel Chabert, Le (1994), Genres: Drama,Romance,War"}
+{"id":1485,"text":"Title: Girl in the Cadillac (1995), Genres: Drama"}
+{"id":1486,"text":"Title: Even Cowgirls Get the Blues (1993), Genres: Comedy,Romance"}
+{"id":1487,"text":"Title: Germinal (1993), Genres: Drama"}
+{"id":1488,"text":"Title: Chasers (1994), Genres: Comedy"}
+{"id":1489,"text":"Title: Fausto (1993), Genres: Comedy"}
+{"id":1490,"text":"Title: Tough and Deadly (1995), Genres: Action,Drama,Thriller"}
+{"id":1491,"text":"Title: Window to Paris (1994), Genres: Comedy"}
+{"id":1492,"text":"Title: Modern Affair, A (1995), Genres: Romance"}
+{"id":1493,"text":"Title: Mostro, Il (1994), Genres: Comedy"}
+{"id":1494,"text":"Title: Flirt (1995), Genres: Drama"}
+{"id":1495,"text":"Title: Carpool (1996), Genres: Comedy,Crime"}
+{"id":1496,"text":"Title: Line King: Al Hirschfeld, The (1996), Genres: Documentary"}
+{"id":1497,"text":"Title: Farmer & Chase (1995), Genres: Comedy"}
+{"id":1498,"text":"Title: Grosse Fatigue (1994), Genres: Comedy"}
+{"id":1499,"text":"Title: Santa with Muscles (1996), Genres: Comedy"}
+{"id":1500,"text":"Title: Prisoner of the Mountains (Kavkazsky Plennik) (1996), Genres: War"}
+{"id":1501,"text":"Title: Naked in New York (1994), Genres: Comedy,Romance"}
+{"id":1502,"text":"Title: Gold Diggers: The Secret of Bear Mountain (1995), Genres: Adventure,Children's"}
+{"id":1503,"text":"Title: Bewegte Mann, Der (1994), Genres: Comedy"}
+{"id":1504,"text":"Title: Killer: A Journal of Murder (1995), Genres: Crime,Drama"}
+{"id":1505,"text":"Title: Nelly & Monsieur Arnaud (1995), Genres: Drama"}
+{"id":1506,"text":"Title: Three Lives and Only One Death (1996), Genres: Comedy"}
+{"id":1507,"text":"Title: Babysitter, The (1995), Genres: Drama,Thriller"}
+{"id":1508,"text":"Title: Getting Even with Dad (1994), Genres: Comedy"}
+{"id":1509,"text":"Title: Mad Dog Time (1996), Genres: Crime"}
+{"id":1510,"text":"Title: Children of the Revolution (1996), Genres: Comedy"}
+{"id":1511,"text":"Title: World of Apu, The (Apur Sansar) (1959), Genres: Drama"}
+{"id":1512,"text":"Title: Sprung (1997), Genres: Comedy"}
+{"id":1513,"text":"Title: Dream With the Fishes (1997), Genres: Drama"}
+{"id":1514,"text":"Title: Wings of Courage (1995), Genres: Adventure,Romance"}
+{"id":1515,"text":"Title: Wedding Gift, The (1994), Genres: Drama"}
+{"id":1516,"text":"Title: Race the Sun (1996), Genres: Drama"}
+{"id":1517,"text":"Title: Losing Isaiah (1995), Genres: Drama"}
+{"id":1518,"text":"Title: New Jersey Drive (1995), Genres: Crime,Drama"}
+{"id":1519,"text":"Title: Fear, The (1995), Genres: Horror"}
+{"id":1520,"text":"Title: Mr. Wonderful (1993), Genres: Comedy,Romance"}
+{"id":1521,"text":"Title: Trial by Jury (1994), Genres: Thriller"}
+{"id":1522,"text":"Title: Good Man in Africa, A (1994), Genres: Action,Adventure"}
+{"id":1523,"text":"Title: Kaspar Hauser (1993), Genres: Drama"}
+{"id":1524,"text":"Title: Object of My Affection, The (1998), Genres: Comedy,Romance"}
+{"id":1525,"text":"Title: Witness (1985), Genres: Drama,Romance,Thriller"}
+{"id":1526,"text":"Title: Senseless (1998), Genres: Comedy"}
+{"id":1527,"text":"Title: Nowhere (1997), Genres: Drama"}
+{"id":1528,"text":"Title: Underground (1995), Genres: War"}
+{"id":1529,"text":"Title: Jefferson in Paris (1995), Genres: Drama"}
+{"id":1530,"text":"Title: Far From Home: The Adventures of Yellow Dog (1995), Genres: Adventure,Children's"}
+{"id":1531,"text":"Title: Foreign Student (1994), Genres: Drama"}
+{"id":1532,"text":"Title: I Don't Want to Talk About It (De eso no se habla) (1993), Genres: Drama"}
+{"id":1533,"text":"Title: Twin Town (1997), Genres: Comedy,Crime"}
+{"id":1534,"text":"Title: Enfer, L' (1994), Genres: Drama"}
+{"id":1535,"text":"Title: Aiqing wansui (1994), Genres: Drama"}
+{"id":1536,"text":"Title: Cosi (1996), Genres: Comedy"}
+{"id":1537,"text":"Title: All Over Me (1997), Genres: Drama"}
+{"id":1538,"text":"Title: Being Human (1993), Genres: Drama"}
+{"id":1539,"text":"Title: Amazing Panda Adventure, The (1995), Genres: Adventure,Children's"}
+{"id":1540,"text":"Title: Beans of Egypt, Maine, The (1994), Genres: Drama"}
+{"id":1541,"text":"Title: Scarlet Letter, The (1926), Genres: Drama"}
+{"id":1542,"text":"Title: Johns (1996), Genres: Drama"}
+{"id":1543,"text":"Title: It Takes Two (1995), Genres: Comedy"}
+{"id":1544,"text":"Title: Frankie Starlight (1995), Genres: Drama,Romance"}
+{"id":1545,"text":"Title: Shadows (Cienie) (1988), Genres: Drama"}
+{"id":1546,"text":"Title: Show, The (1995), Genres: Documentary"}
+{"id":1547,"text":"Title: The Courtyard (1995), Genres: Action,Thriller"}
+{"id":1548,"text":"Title: Dream Man (1995), Genres: Thriller"}
+{"id":1549,"text":"Title: Destiny Turns on the Radio (1995), Genres: Comedy"}
+{"id":1550,"text":"Title: Glass Shield, The (1994), Genres: Drama"}
+{"id":1551,"text":"Title: Hunted, The (1995), Genres: Action"}
+{"id":1552,"text":"Title: Underneath, The (1995), Genres: Mystery,Thriller"}
+{"id":1553,"text":"Title: Safe Passage (1994), Genres: Drama"}
+{"id":1554,"text":"Title: Secret Adventures of Tom Thumb, The (1993), Genres: Adventure,Children's"}
+{"id":1555,"text":"Title: Condition Red (1995), Genres: Action,Drama,Thriller"}
+{"id":1556,"text":"Title: Yankee Zulu (1994), Genres: Comedy,Drama"}
+{"id":1557,"text":"Title: Aparajito (1956), Genres: Drama"}
+{"id":1558,"text":"Title: Hostile Intentions (1994), Genres: Action,Drama,Thriller"}
+{"id":1559,"text":"Title: Clean Slate (Coup de Torchon) (1981), Genres: Crime"}
+{"id":1560,"text":"Title: Tigrero: A Film That Was Never Made (1994), Genres: Documentary,Drama"}
+{"id":1561,"text":"Title: Eye of Vichy, The (Oeil de Vichy, L') (1993), Genres: Documentary"}
+{"id":1562,"text":"Title: Promise, The (Versprechen, Das) (1994), Genres: Romance"}
+{"id":1563,"text":"Title: To Cross the Rubicon (1991), Genres: Drama"}
+{"id":1564,"text":"Title: Daens (1992), Genres: Drama"}
+{"id":1565,"text":"Title: Man from Down Under, The (1943), Genres: Drama"}
+{"id":1566,"text":"Title: Careful (1992), Genres: Comedy"}
+{"id":1567,"text":"Title: Vermont Is For Lovers (1992), Genres: Comedy,Romance"}
+{"id":1568,"text":"Title: Vie est belle, La (Life is Rosey) (1987), Genres: Comedy,Drama"}
+{"id":1569,"text":"Title: Quartier Mozart (1992), Genres: Comedy"}
+{"id":1570,"text":"Title: Touki Bouki (Journey of the Hyena) (1973), Genres: Drama"}
+{"id":1571,"text":"Title: Wend Kuuni (God's Gift) (1982), Genres: Drama"}
+{"id":1572,"text":"Title: Spirits of the Dead (Tre passi nel delirio) (1968), Genres: Horror"}
+{"id":1573,"text":"Title: Pharaoh's Army (1995), Genres: War"}
+{"id":1574,"text":"Title: I, Worst of All (Yo, la peor de todas) (1990), Genres: Drama"}
+{"id":1575,"text":"Title: Hungarian Fairy Tale, A (1987), Genres: Fantasy"}
+{"id":1576,"text":"Title: Death in the Garden (Mort en ce jardin, La) (1956), Genres: Drama"}
+{"id":1577,"text":"Title: Collectionneuse, La (1967), Genres: Drama"}
+{"id":1578,"text":"Title: Baton Rouge (1988), Genres: Thriller"}
+{"id":1579,"text":"Title: Liebelei (1933), Genres: Romance"}
+{"id":1580,"text":"Title: Woman in Question, The (1950), Genres: Mystery"}
+{"id":1581,"text":"Title: T-Men (1947), Genres: Film-Noir"}
+{"id":1582,"text":"Title: Invitation, The (Zaproszenie) (1986), Genres: Drama"}
+{"id":1583,"text":"Title: Symphonie pastorale, La (1946), Genres: Drama"}
+{"id":1584,"text":"Title: American Dream (1990), Genres: Documentary"}
+{"id":1585,"text":"Title: Lashou shentan (1992), Genres: Action,Crime,Drama"}
+{"id":1586,"text":"Title: Terror in a Texas Town (1958), Genres: Western"}
+{"id":1587,"text":"Title: Salut cousin! (1996), Genres: Comedy,Drama"}
+{"id":1588,"text":"Title: Schizopolis (1996), Genres: Comedy"}
+{"id":1589,"text":"Title: To Have, or Not (1995), Genres: Drama"}
+{"id":1590,"text":"Title: Duoluo tianshi (1995), Genres: Drama"}
+{"id":1591,"text":"Title: Magic Hour, The (1998), Genres: Drama"}
+{"id":1592,"text":"Title: Death in Brunswick (1991), Genres: Comedy"}
+{"id":1593,"text":"Title: Everest (1998), Genres: Documentary"}
+{"id":1594,"text":"Title: Shopping (1994), Genres: Action,Thriller"}
+{"id":1595,"text":"Title: Nemesis 2: Nebula (1995), Genres: Action,Sci-Fi,Thriller"}
+{"id":1596,"text":"Title: Romper Stomper (1992), Genres: Action,Drama"}
+{"id":1597,"text":"Title: City of Industry (1997), Genres: Crime,Thriller"}
+{"id":1598,"text":"Title: Someone Else's America (1995), Genres: Drama"}
+{"id":1599,"text":"Title: Guantanamera (1994), Genres: Comedy"}
+{"id":1600,"text":"Title: Office Killer (1997), Genres: Thriller"}
+{"id":1601,"text":"Title: Price Above Rubies, A (1998), Genres: Drama"}
+{"id":1602,"text":"Title: Angela (1995), Genres: Drama"}
+{"id":1603,"text":"Title: He Walked by Night (1948), Genres: Crime,Film-Noir,Thriller"}
+{"id":1604,"text":"Title: Love Serenade (1996), Genres: Comedy"}
+{"id":1605,"text":"Title: Deceiver (1997), Genres: Crime"}
+{"id":1606,"text":"Title: Hurricane Streets (1998), Genres: Drama"}
+{"id":1607,"text":"Title: Buddy (1997), Genres: Adventure,Children's,Drama"}
+{"id":1608,"text":"Title: B*A*P*S (1997), Genres: Comedy"}
+{"id":1609,"text":"Title: Truth or Consequences, N.M. (1997), Genres: Action,Crime,Romance"}
+{"id":1610,"text":"Title: Intimate Relations (1996), Genres: Comedy"}
+{"id":1611,"text":"Title: Leading Man, The (1996), Genres: Romance"}
+{"id":1612,"text":"Title: Tokyo Fist (1995), Genres: Action,Drama"}
+{"id":1613,"text":"Title: Reluctant Debutante, The (1958), Genres: Comedy,Drama"}
+{"id":1614,"text":"Title: Warriors of Virtue (1997), Genres: Action,Adventure,Children's,Fantasy"}
+{"id":1615,"text":"Title: Desert Winds (1995), Genres: Drama"}
+{"id":1616,"text":"Title: Hugo Pool (1997), Genres: Romance"}
+{"id":1617,"text":"Title: King of New York (1990), Genres: Action,Crime"}
+{"id":1618,"text":"Title: All Things Fair (1996), Genres: Drama"}
+{"id":1619,"text":"Title: Sixth Man, The (1997), Genres: Comedy"}
+{"id":1620,"text":"Title: Butterfly Kiss (1995), Genres: Thriller"}
+{"id":1621,"text":"Title: Paris, France (1993), Genres: Comedy"}
+{"id":1622,"text":"Title: Cérémonie, La (1995), Genres: Drama"}
+{"id":1623,"text":"Title: Hush (1998), Genres: Thriller"}
+{"id":1624,"text":"Title: Nightwatch (1997), Genres: Horror,Thriller"}
+{"id":1625,"text":"Title: Nobody Loves Me (Keiner liebt mich) (1994), Genres: Comedy,Drama"}
+{"id":1626,"text":"Title: Wife, The (1995), Genres: Comedy,Drama"}
+{"id":1627,"text":"Title: Lamerica (1994), Genres: Drama"}
+{"id":1628,"text":"Title: Nico Icon (1995), Genres: Documentary"}
+{"id":1629,"text":"Title: Silence of the Palace, The (Saimt el Qusur) (1994), Genres: Drama"}
+{"id":1630,"text":"Title: Slingshot, The (1993), Genres: Comedy,Drama"}
+{"id":1631,"text":"Title: Land and Freedom (Tierra y libertad) (1995), Genres: War"}
+{"id":1632,"text":"Title: Á köldum klaka (Cold Fever) (1994), Genres: Comedy,Drama"}
+{"id":1633,"text":"Title: Etz Hadomim Tafus (Under the Domin Tree) (1994), Genres: Drama"}
+{"id":1634,"text":"Title: Two Friends (1986) , Genres: Drama"}
+{"id":1635,"text":"Title: Brothers in Trouble (1995), Genres: Drama"}
+{"id":1636,"text":"Title: Girls Town (1996), Genres: Drama"}
+{"id":1637,"text":"Title: Normal Life (1996), Genres: Crime,Drama"}
+{"id":1638,"text":"Title: Bitter Sugar (Azucar Amargo) (1996), Genres: Drama"}
+{"id":1639,"text":"Title: Eighth Day, The (1996), Genres: Drama"}
+{"id":1640,"text":"Title: Dadetown (1995), Genres: Documentary"}
+{"id":1641,"text":"Title: Some Mother's Son (1996), Genres: Drama"}
+{"id":1642,"text":"Title: Angel Baby (1995), Genres: Drama"}
+{"id":1643,"text":"Title: Sudden Manhattan (1996), Genres: Comedy"}
+{"id":1644,"text":"Title: Butcher Boy, The (1998), Genres: Drama"}
+{"id":1645,"text":"Title: Men With Guns (1997), Genres: Action,Drama"}
+{"id":1646,"text":"Title: Hana-bi (1997), Genres: Comedy,Crime,Drama"}
+{"id":1647,"text":"Title: Niagara, Niagara (1997), Genres: Drama"}
+{"id":1648,"text":"Title: Big One, The (1997), Genres: Comedy,Documentary"}
+{"id":1649,"text":"Title: Butcher Boy, The (1998), Genres: Drama"}
+{"id":1650,"text":"Title: Spanish Prisoner, The (1997), Genres: Drama,Thriller"}
+{"id":1651,"text":"Title: Temptress Moon (Feng Yue) (1996), Genres: Romance"}
+{"id":1652,"text":"Title: Entertaining Angels: The Dorothy Day Story (1996), Genres: Drama"}
+{"id":1653,"text":"Title: Chairman of the Board (1998), Genres: Comedy"}
+{"id":1654,"text":"Title: Favor, The (1994), Genres: Comedy,Romance"}
+{"id":1655,"text":"Title: Little City (1998), Genres: Comedy,Romance"}
+{"id":1656,"text":"Title: Target (1995), Genres: Action,Drama"}
+{"id":1657,"text":"Title: Substance of Fire, The (1996), Genres: Drama"}
+{"id":1658,"text":"Title: Getting Away With Murder (1996), Genres: Comedy"}
+{"id":1659,"text":"Title: Small Faces (1995), Genres: Drama"}
+{"id":1660,"text":"Title: New Age, The (1994), Genres: Drama"}
+{"id":1661,"text":"Title: Rough Magic (1995), Genres: Drama,Romance"}
+{"id":1662,"text":"Title: Nothing Personal (1995), Genres: Drama,War"}
+{"id":1663,"text":"Title: 8 Heads in a Duffel Bag (1997), Genres: Comedy"}
+{"id":1664,"text":"Title: Brother's Kiss, A (1997), Genres: Drama"}
+{"id":1665,"text":"Title: Ripe (1996), Genres: Drama"}
+{"id":1666,"text":"Title: Next Step, The (1995), Genres: Drama"}
+{"id":1667,"text":"Title: Wedding Bell Blues (1996), Genres: Comedy"}
+{"id":1668,"text":"Title: MURDER and murder (1996), Genres: Crime,Drama,Mystery"}
+{"id":1669,"text":"Title: Tainted (1998), Genres: Comedy,Thriller"}
+{"id":1670,"text":"Title: Further Gesture, A (1996), Genres: Drama"}
+{"id":1671,"text":"Title: Kika (1993), Genres: Drama"}
+{"id":1672,"text":"Title: Mirage (1995), Genres: Action,Thriller"}
+{"id":1673,"text":"Title: Mamma Roma (1962), Genres: Drama"}
+{"id":1674,"text":"Title: Sunchaser, The (1996), Genres: Drama"}
+{"id":1675,"text":"Title: War at Home, The (1996), Genres: Drama"}
+{"id":1676,"text":"Title: Sweet Nothing (1995), Genres: Drama"}
+{"id":1677,"text":"Title: Mat' i syn (1997), Genres: Drama"}
+{"id":1678,"text":"Title: B. Monkey (1998), Genres: Romance,Thriller"}
+{"id":1679,"text":"Title: Sliding Doors (1998), Genres: Drama,Romance"}
+{"id":1680,"text":"Title: You So Crazy (1994), Genres: Comedy"}
+{"id":1681,"text":"Title: Scream of Stone (Schrei aus Stein) (1991), Genres: Drama"}
