@@ -10,7 +10,7 @@ from ranx import Qrels, Run, evaluate
 import numpy as np
 from datasets import Dataset
 from datasets import load_from_disk
-from src.utils.project_dirs import get_gen_dir_dataset, processed_data_dir, get_bm25_indexes_dir
+from src.utils.project_dirs import get_gen_dir_dataset, processed_data_dir, get_bm25_indexes_dir, get_peruser_metric_dataset_modelname_encoder
 from collections import defaultdict
 import argparse
 
@@ -152,7 +152,7 @@ def load_data(meta_filepath: str, generated_filepath: str, config: Dict) -> tupl
 
 def get_metrics(meta_filepath: str, generated_filepath: str,
                 retriever_filepath: str, num_sequences: int, at_k: int, dataset_name: str,
-                config: Dict):
+                config: Dict, peruser_savepath: str):
     """Main function to load data, evaluate retrieval, and print results."""
     print("Starting the evaluation process...")
 
@@ -169,6 +169,12 @@ def get_metrics(meta_filepath: str, generated_filepath: str,
     qrels, rundR, ans = evaluate_retrieval(genop, retriever_filepath, num_sequences,
                                            items_compact, at_k, config)
 
+    # Save peruser metrics
+    perusermetrics = rundR.scores
+    df_metrics = pd.DataFrame(perusermetrics)
+    df_metrics.to_csv(peruser_savepath + ".csv", index=False)
+    df_metrics.to_json(peruser_savepath + ".jsonl", orient="records")
+
     print("\n--- Evaluation Summary ---")
     print(f"Dataset: {dataset_name}")
     print(f"Generated sequences file: {generated_filepath}")
@@ -183,6 +189,9 @@ if __name__ == "__main__":
     parser.add_argument("--generated_file", type=str, required=True, help="The JSON file containing generated sequences (e.g., 'val_gen_op.json').")
     parser.add_argument("--retriever_index", type=str, required=True, help="The BM25 retriever index file (e.g., 'amznbeauty2014_index').")
     parser.add_argument("--num_sequences", type=int, default=5, help="Number of generated sequences to consider per reviewer.")
+    parser.add_argument("--split", type=str, required=True, help="The split to evaluate on (e.g., 'validation', 'test').")
+    parser.add_argument("--short_model_name", type=str, required=True, help="The short model name (e.g., 'llama-1b').")
+
 
     args = parser.parse_args()
     dataset_name = args.dataset_name.lower()
@@ -203,9 +212,89 @@ if __name__ == "__main__":
     retriever_filepath = str(get_bm25_indexes_dir() / args.retriever_index)
     at_k = args.num_sequences
 
-    get_metrics(meta_filepath, generated_filepath, retriever_filepath,
-                args.num_sequences, at_k, dataset_name, current_config)
+    filename = (args.dataset_name + "_" + args.split + "_" + args.short_model_name)
+    encoder_name = "bm25s"
+    peruser_savepath = str(get_peruser_metric_dataset_modelname_encoder(args.dataset_name, args.short_model_name, encoder_name) / filename)
 
+    get_metrics(meta_filepath, generated_filepath, retriever_filepath,
+                args.num_sequences, at_k, dataset_name, current_config, peruser_savepath)
+
+
+# Last item text retrieval baseline
+# Beauty, TEST
+# {'recall@5': np.float64(0.04333050127442651), 'ndcg@5': np.float64(0.023179244762936268), 'mrr': np.float64(0.016472894215147044)}
+
+# Toys, TEST
+# {'recall@5': np.float64(0.05212683681361176), 'ndcg@5': np.float64(0.026660292010049123), 'mrr': np.float64(0.0182822033170061)}
+
+# Sports  TEST
+# {'recall@5': np.float64(0.021153467988875466), 'ndcg@5': np.float64(0.011012792672956575), 'mrr': np.float64(0.007661226133288385)}
+
+# --------------------------------------------------------------------------------------------------------------------------------
+
+# RESULTS ON BEAUTY with finetuned Llama-3.2-1B, 3B, 8B
+
+# Llama-3.2-1B TEST, beam search
+# Metrics: {'recall@5': np.float64(0.04534275365559182), 'ndcg@5': np.float64(0.026878945255920418), 'mrr': np.float64(0.020865566635364964)}
+
+# Llama-3.2-3B TEST, beam search
+# Metrics: {'recall@5': np.float64(0.0651969771497563), 'ndcg@5': np.float64(0.04003929537456322), 'mrr': np.float64(0.031844266571271006)}
+
+# Llama-3.1-8B TEST, beam search
+# Metrics: {'recall@5': np.float64(0.06814828064213209), 'ndcg@5': np.float64(0.04232513489127515), 'mrr': np.float64(0.03390570734397591)}
+
+
+# --------------------------------------------------------------------------------------------------------------------------------
+
+# RESULTS on Toys
+
+# Llama-3.2-1B VALIDATION, beam search
+# Metrics: {'recall@5': np.float64(0.06398348813209494), 'ndcg@5': np.float64(0.040829700785598326), 'mrr': np.float64(0.03331613347093223)}
+
+# Llama-3.2-3B VALIDATION, beam search
+# Metrics: {'recall@5': np.float64(0.07430340557275542), 'ndcg@5': np.float64(0.045229769215361273), 'mrr': np.float64(0.03577571379428964)}
+
+# Llama-3.1-8B VALIDATION, beam search, @ end of all steps
+# Metrics: {'recall@5': np.float64(0.07739938080495357), 'ndcg@5': np.float64(0.046847991572880665), 'mrr': np.float64(0.0369797041623667)}
+
+# RESULTS on Toys
+# Llama-3.2-1B TEST, beam search
+# Metrics: {'recall@5': np.float64(0.0665635473060067), 'ndcg@5': np.float64(0.040061362732516495), 'mrr': np.float64(0.0314230471771075)}
+
+# Llama-3.2-3B TEST, test, beam search
+# Metrics: {'recall@5': np.float64(0.0720288734209848), 'ndcg@5': np.float64(0.04361009241182541), 'mrr': np.float64(0.034358511643894474)}
+
+# Llama-3.1-8B TEST, beam search, @ 8 epochs, 16 effective batch size, ~9.6k steps
+# Metrics: {'recall@5': np.float64(0.07238979118329467), 'ndcg@5': np.float64(0.043678647997469976), 'mrr': np.float64(0.03434046575577898)}
+
+# Llama-3.1-8B TEST, beam search, @ 7.2k steps
+# Metrics: {'recall@5': 0.07842227378190256, 'ndcg@5': 0.04717886157028416, 'mrr': 0.03702328778894904}
+
+
+# --------------------------------------------------------------------------------------------------------------------------------
+
+# RESULTS on Sports
+
+# Llama-3.2-1B validation, beam search
+# Metrics: {'recall@5': np.float64(0.02473299606520517), 'ndcg@5': np.float64(0.01400914019033381), 'mrr': np.float64(0.010577103241521453)}
+
+# Llama-3.2-3B validation, beam search
+# Metrics: {'recall@5': np.float64(0.03035413153456998), 'ndcg@5': np.float64(0.01629757765139283), 'mrr': np.float64(0.01177627880831928)}
+
+# Llama-3.1-8B validation, beam search    
+# skipped 
+
+# RESULTS on Sports
+# Llama-3.2-1B TEST, beam search
+# Metrics: {'recall@5': np.float64(0.02205242014776526), 'ndcg@5': np.float64(0.013278895268697173), 'mrr': np.float64(0.010423631204876816)}
+
+# Llama-3.2-3B TEST, beam search
+# Metrics: {'recall@5': np.float64(0.02876646908447341), 'ndcg@5': np.float64(0.017792914482537434), 'mrr': np.float64(0.014215617420943712)}
+
+# Llama-3.1-8B TEST, beam search    
+# Metrics: {'recall@5': 0.03590190184566115, 'ndcg@5': 0.02176466662205941, 'mrr': 0.01714938524782051}
+
+# --------------------------------------------------------------------------------------------------------------------------------
 
 # Movielens 100k, llama-1b-649 step cpt, TEST
 # Metrics: {'recall@5': np.float64(0.05938494167550371), 'ndcg@5': np.float64(0.031014263012511995), 'mrr': np.float64(0.02189819724284199)}
@@ -214,3 +303,4 @@ if __name__ == "__main__":
 # Metrics: {'recall@5': np.float64(0.05832449628844114), 'ndcg@5': np.float64(0.032443425480723265), 'mrr': np.float64(0.02407211028632025)}
 
 # Movielens 100k, llama-8B step cpt, TEST
+# Metrics: {'recall@5': np.float64(0.060445387062566275), 'ndcg@5': np.float64(0.03658788308547182), 'mrr': np.float64(0.028844114528101802)}

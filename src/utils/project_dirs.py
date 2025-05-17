@@ -118,7 +118,14 @@ def get_peruser_metric_dataset_modelname(dataset:str, model_name:str):
     res.mkdir(parents=True, exist_ok=True)
     return res
 
-# def get_peruser_metric_dataset_split(dataset:str, split:str):
-#     res = get_peruser_metric_dir() / dataset / split
-#     res.mkdir(parents=True, exist_ok=True)
-#     return res
+def get_peruser_metric_dataset_modelname_encoder(dataset:str, model_name:str, encoder_name:str):
+    res = get_peruser_metric_dir() / encoder_name / dataset / model_name
+    res.mkdir(parents=True, exist_ok=True)
+    return res
+
+def get_dense_retrieval_index_dir(encoder_name:str):
+    res = project_root() / f"{encoder_name}_indexes"
+    res.mkdir(parents=True, exist_ok=True)
+    return res
+
+
