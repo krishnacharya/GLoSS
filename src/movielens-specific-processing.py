@@ -432,8 +432,8 @@ def ml_1m_processing(ml1m_url: str, valfrac:float=0.05):
 
 
 if __name__ == "__main__":
-    # ml100k_url = "https://files.grouplens.org/datasets/movielens/ml-100k.zip"
-    # ml_100k_processing(ml100k_url)
+    ml100k_url = "https://files.grouplens.org/datasets/movielens/ml-100k.zip"
+    ml_100k_processing(ml100k_url)
 
     ml1m_url = "https://files.grouplens.org/datasets/movielens/ml-1m.zip"
     ml_1m_processing(ml1m_url)
