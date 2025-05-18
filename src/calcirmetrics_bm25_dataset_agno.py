@@ -13,7 +13,7 @@ from datasets import load_from_disk
 from src.utils.project_dirs import get_gen_dir_dataset, processed_data_dir, get_bm25_indexes_dir, get_peruser_metric_dataset_modelname_encoder
 from collections import defaultdict
 import argparse
-
+from functools import reduce
 # --- Dataset Configurations ---
 # This dictionary centralizes all dataset-specific information
 dataset_configs = {
@@ -171,9 +171,28 @@ def get_metrics(meta_filepath: str, generated_filepath: str,
 
     # Save peruser metrics
     perusermetrics = rundR.scores
-    df_metrics = pd.DataFrame(perusermetrics)
-    df_metrics.to_csv(peruser_savepath + ".csv", index=False)
-    df_metrics.to_json(peruser_savepath + ".jsonl", orient="records")
+
+    df_metrics_list = []
+    for metric_name, scores_dict in perusermetrics.items():
+        df_metric = pd.DataFrame.from_dict(scores_dict, orient='index', columns=[metric_name])
+        df_metrics_list.append(df_metric)
+
+    if df_metrics_list:
+        df_metrics = pd.concat(df_metrics_list, axis=1, join='outer')
+
+        user_id_column_name = config.get("user_id_key", "user_id") # agnostic mapping
+
+        df_metrics.index.name = user_id_column_name
+        df_metrics = df_metrics.reset_index()
+    else:
+        user_id_column_name = config.get("user_id_key", "user_id")
+        df_metrics = pd.DataFrame(columns=[user_id_column_name])
+
+    if not df_metrics.empty:
+        df_metrics.to_json(peruser_savepath + ".jsonl", orient="records", lines=True)
+        print(f"Per-user metrics saved to {peruser_savepath}.jsonl")
+    else:
+        print("No per-user metrics to save.")
 
     print("\n--- Evaluation Summary ---")
     print(f"Dataset: {dataset_name}")

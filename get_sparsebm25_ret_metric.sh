@@ -5,7 +5,6 @@ CUDA_VISIBLE_DEVICES="1"
 
 # Default parameters
 DEFAULT_NUM_SEQUENCES="5"
-DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L6-v2" # This parameter is not used in the example JSON, so it's kept as a default but won't be passed.
 
 # Function to run a job
 run_job() {
@@ -19,7 +18,7 @@ run_job() {
   local retriever_index="${dataset_name}_index" # Construct retriever_index based on dataset_name
 
   echo "Running job for dataset: $dataset_name, data family: $data_family, model: $short_model_name, split: $split"
-  CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES python "$PYTHON_SCRIPT" \
+  CUDA_VISIBLE_DEVICES=0 python "$PYTHON_SCRIPT" \
     --dataset_name "$dataset_name" \
     --data_family "$data_family" \
     --generated_file "$generated_file" \

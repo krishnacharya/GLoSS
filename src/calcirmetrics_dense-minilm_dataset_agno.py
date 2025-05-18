@@ -182,7 +182,7 @@ def get_metrics(meta_filepath: str, generated_filepath: str,
 
     # make denser retrieval index if not already made
     if not os.path.exists(retriever_filepath):
-        print("Making denser retrieval index...")
+        print("Making dense retrieval index...")
         create_dense_retrieval_index(meta_filepath, retriever_filepath, config["item_id_key"],
                                       max_length, encoder_name, use_ann, use_gpu, batch_size,
                                       show_progress, config=config, item_dict=item_dict)
@@ -196,13 +196,30 @@ def get_metrics(meta_filepath: str, generated_filepath: str,
                                             config,  # Pass the config
                                             batch_size=batch_size, metrics=metrics) # Added metrics
     perusermetrics = rundR.scores
-    df_metrics = pd.DataFrame(perusermetrics)
-    if peruser_savepath:
-      df_metrics.to_csv(peruser_savepath + ".csv", index=False)
-      df_metrics.to_json(peruser_savepath + ".jsonl", orient="records")
+    df_metrics_list = []
+    for metric_name, scores_dict in perusermetrics.items():
+        df_metric = pd.DataFrame.from_dict(scores_dict, orient='index', columns=[metric_name])
+        df_metrics_list.append(df_metric)
+
+    if df_metrics_list:
+        df_metrics = pd.concat(df_metrics_list, axis=1, join='outer')
+        user_id_column_name = config.get("user_id_key", "user_id")
+        # Convert the index (which holds the reviewer IDs) into a regular column
+        df_metrics.index.name = user_id_column_name
+        df_metrics = df_metrics.reset_index()
+    else:
+        user_id_column_name = config.get("user_id_key", "user_id")  # agnostic mapping
+        df_metrics = pd.DataFrame(columns=[user_id_column_name])
+
+    if not df_metrics.empty:
+        df_metrics.to_json(peruser_savepath + ".jsonl", orient="records", lines=True)
+        print(f"Per-user metrics saved to {peruser_savepath}.jsonl")
+    else:
+        print("No per-user metrics to save, as the DataFrame is empty.")
+
 
     print("\n--- Evaluation Summary ---")
-    print(f"Dataset: {dataset_name}")  # Changed from category to dataset_name
+    print(f"Dataset: {dataset_name}")
     print(f"Generated sequences file: {generated_filepath}")
     print(f"Retriever index file: {retriever_filepath}")
     print(f"Number of return sequences: {num_sequences}")
@@ -221,8 +238,6 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size", type=int, default=512, help="Batch size for dense retrieval.")
     parser.add_argument("--metrics", nargs='+', default=["recall@5", "ndcg@5", "mrr"], help="Metrics to evaluate.")
     parser.add_argument("--encoder_name", type=str, default="sentence-transformers/all-MiniLM-L6-v2", help="Encoder name.")
-
-
 
     args = parser.parse_args()
     dataset_name = args.dataset_name.lower()

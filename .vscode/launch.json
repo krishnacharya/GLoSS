@@ -1195,6 +1195,10 @@
 //     --dataset ml1m > finetune_ml1m_llama1b_7ep.log 2>&1 &
 
 
-nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
-    --config ft_configs/ml1m/llama8b_ml1m.yml \
-    --dataset ml1m > finetune_ml1m_llama8b_7ep.log 2>&1 &
+// nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/finetune_with_config.py \
+//     --config ft_configs/ml1m/llama8b_ml1m.yml \
+//     --dataset ml1m > finetune_ml1m_llama8b_7ep.log 2>&1 &
+
+// nohup env /bin/bash get_sparsebm25_ret_metric.sh > get_sparsebm25_withuid 2>&1 &
+
+nohup /bin/bash get_dense_ret_metrics_test.sh > get_minilmv6_withuid.log 2>&1 &

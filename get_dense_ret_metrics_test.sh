@@ -1,14 +1,14 @@
 #!/bin/bash
 
 PYTHON_SCRIPT="/home/kacharya33/nanoGenRec/src/calcirmetrics_dense-minilm_dataset_agno.py"
-CUDA_VISIBLE_DEVICES="0"
 
 # Default parameters
 DEFAULT_NUM_SEQUENCES="5"
-## DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L6-v2" # ran
-## DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L12-v2" # running
-## DEFAULT_ENCODER_NAME="sentence-transformers/static-retrieval-mrl-en-v1" # doesnt run, compatibility issues with retriv
-DEFAULT_ENCODER_NAME="avsolatorio/GIST-small-Embedding-v0"
+DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L6-v2"
+# DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L12-v2" # running
+## DEFAULT_ENCODER_NAME="sentence-transformers/static-retrieval-mrl-en-v1" # doesn't run, compatibility issues with retriv
+## DEFAULT_ENCODER_NAME="BAAI/bge-small-en-v1.5"
+# DEFAULT_ENCODER_NAME="intfloat/e5-small-v2"
 
 # Function to run a job
 run_job() {
@@ -21,7 +21,7 @@ run_job() {
   local short_model_name="$7"
 
   echo "Running job for dataset: $dataset_name, data family: $data_family, model: $short_model_name, split: $split"
-  CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES python "$PYTHON_SCRIPT" \
+  CUDA_VISIBLE_DEVICES=1 python "$PYTHON_SCRIPT" \
     --dataset_name "$dataset_name" \
     --data_family "$data_family" \
     --generated_file "$generated_file" \
@@ -36,12 +36,10 @@ run_job() {
   return 0
 }
 
-
 ## Jobs for ml100k dataset (Movielens family)
 run_job "ml100k" "movielens" "llama-1b/llama-1b-checkpoint-649_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-1b" || exit 1
 run_job "ml100k" "movielens" "llama-3b/llama-3b-checkpoint-590_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-3b" || exit 1
 run_job "ml100k" "movielens" "llama-8b/llama-8b-checkpoint-708_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-8b" || exit 1
-
 
 # Jobs for Amazon family datasets
 
