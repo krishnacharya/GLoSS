@@ -5,8 +5,11 @@ CUDA_VISIBLE_DEVICES="0"
 
 # Default parameters
 DEFAULT_NUM_SEQUENCES="5"
-# DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L6-v2"
-DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L12-v2"
+## DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L6-v2" # ran
+## DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L12-v2" # running
+## DEFAULT_ENCODER_NAME="sentence-transformers/static-retrieval-mrl-en-v1" # doesnt run, compatibility issues with retriv
+DEFAULT_ENCODER_NAME="avsolatorio/GIST-small-Embedding-v0"
+
 # Function to run a job
 run_job() {
   local dataset_name="$1"

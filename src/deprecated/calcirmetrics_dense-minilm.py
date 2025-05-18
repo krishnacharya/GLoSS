@@ -2,7 +2,7 @@
 from retriv import DenseRetriever
 import pandas as pd
 from src.utils.project_dirs import get_gen_dir_dataset, processed_data_dir, get_bm25_indexes_dir,get_minilm_index_dir,  get_peruser_metric_dataset_modelname
-from src.calcirmetrics_bm25 import load_data, verify_reviewer_ids, get_qrels
+from src.calcirmetrics_bm25_dataset_agno import load_data, verify_reviewer_ids, get_qrels
 from ranx import Qrels, Run, evaluate
 from typing import List, Dict
 import os

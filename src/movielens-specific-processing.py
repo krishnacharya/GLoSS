@@ -30,29 +30,27 @@ from src.process_metadata import truncate_text_columns
     #             The movie ids are the ones used in the u.data data set.
 
 # NOTES ON ML1M
+    #ratings.dat has the following format: user_id::movie_id::rating::timestamp
 
+    # All ratings are contained in the file "ratings.dat" and are in the
+    # following format:
 
-# def calculate_dfmetrics(df):
-#     """Calculates dataframe metrics."""
-#     unique_users = df['user_id'].nunique()
-#     unique_items = len(set(df['movie_id']))
-#     total_interactions = df.shape[0]
-#     avginteractions_per_user = df['user_id'].value_counts().mean()
-#     if unique_items > 0:
-#         avginteractions_for_item = total_interactions / unique_items
-#         density = total_interactions / (unique_users * unique_items)
-#     else:
-#         avginteractions_for_item = 0
-#         density = 0
+    # UserID::MovieID::Rating::Timestamp
 
-#     return {
-#         "unique_users": unique_users,
-#         "unique_items": unique_items,
-#         "total_interactions": total_interactions,
-#         "avg_interactions_per_user": avginteractions_per_user,
-#         "avg_interactions_per_item": avginteractions_for_item,
-#         "density": density
-#     }
+    # - UserIDs range between 1 and 6040 
+    # - MovieIDs range between 1 and 3952
+    # - Ratings are made on a 5-star scale (whole-star ratings only)
+    # - Timestamp is represented in seconds since the epoch as returned by time(2)
+    # - Each user has at least 20 ratings
+
+    # Movie information is in the file "movies.dat" and is in the following
+    # format:
+
+    # MovieID::Title::Genres
+
+    # - Titles are identical to titles provided by the IMDB (including
+    # year of release)
+    # - Genres are pipe-separated and are selected from the following genres:
 
 def merge_with_metadata(df, meta, merge_on='movie_id'):
     merged_df = df.merge(meta, on=merge_on, how='inner')
@@ -267,7 +265,7 @@ def ml_100k_processing(ml100k_url: str, valfrac:float=0.05):
                                            "Action", "Adventure", "Animation", "Children's", "Comedy", "Crime", "Documentary",
                                            "Drama", "Fantasy", "Film-Noir", "Horror", "Musical", "Mystery", "Romance", "Sci-Fi",
                                            "Thriller", "War", "Western"],
-                                    encoding='latin-1')  # Important: Specify encoding
+                                    encoding='latin-1')
     except FileNotFoundError:
         print(f"Error: Could not read metadata file {metadata_file}.")
         return
@@ -330,10 +328,112 @@ def ml_100k_processing(ml100k_url: str, valfrac:float=0.05):
     Nval = int(valfrac * len(df_ui['user_id'].unique()))
     create_hf_dataset_MLFamily(df_ui, metadata_df, save_path=hf_dir, Nval=Nval, random_seed=42, dname='ml100k')
 
-def ml_1m_processing():
-    pass
+def ml_1m_processing(ml1m_url: str, valfrac:float=0.05):
+    """
+    Downloads, unzips, and processes the MovieLens 1M dataset.
+    Args:
+        ml1m_url (str): URL of the MovieLens 1M dataset.
+    """
+    data_dir = get_movielens_raw_dir()
+    parsed_reviews_url = urllib.parse.urlparse(ml1m_url)
+    reviews_filename_compressed = os.path.basename(parsed_reviews_url.path)
+
+    reviews_file_compressed = str(data_dir / reviews_filename_compressed)
+
+    # Download and unzip the reviews file if it doesn't exist
+    if not os.path.exists(reviews_file_compressed):
+        print(f"Downloading reviews from: {ml1m_url} to {reviews_file_compressed}...")
+        os.system(f"wget '{ml1m_url}' -O '{reviews_file_compressed}'")
+        if not os.path.exists(reviews_file_compressed):
+            print(f"Error: Could not download reviews file from {ml1m_url}.")
+            return
+
+    # Extract the contents of the zip file.
+    if reviews_filename_compressed.endswith('.zip'):
+        print(f"Unzipping {reviews_file_compressed} to {data_dir}...")
+        try:
+            with zipfile.ZipFile(reviews_file_compressed, 'r') as zip_ref:
+                zip_ref.extractall(data_dir)
+        except zipfile.BadZipFile:
+            print(f"Error: {reviews_file_compressed} is not a valid zip file.")
+            return
+    else:
+        print(f"Error: Expected a .zip file, but got {reviews_filename_compressed}")
+        return
+
+    # Define the directory where the files are located (after extraction)
+    extracted_data_dir = os.path.join(data_dir, "ml-1m")
+
+    #############################################################
+    # Load the metadata
+    metadata_file = str(os.path.join(extracted_data_dir, "movies.dat"))
+    if not os.path.exists(metadata_file):
+        print(f"Error: Metadata file 'movies.dat' not found in the extracted files at {metadata_file}.")
+        return
+    try:
+        metadata_df = pd.read_csv(metadata_file, sep='::', header=None,
+                                    names=["movie_id", "title", "genre"],
+                                    encoding='latin-1', engine='python') # 'python' engine for 'sep' with multiple chars
+    except FileNotFoundError:
+        print(f"Error: Could not read metadata file {metadata_file}.")
+        return
+
+    # Genres are pipe-separated, replace with comma for consistency
+    metadata_df['genre'] = metadata_df['genre'].str.replace('|', ',', regex=False)
+    metadata_df = metadata_df.astype(str)
+
+    truncation_config = {'title': 25}
+    metadata_df = truncate_text_columns(metadata_df, truncation_config)
+
+    #############################################################
+    # Load the ratings data
+    ratings_file = str(os.path.join(extracted_data_dir, "ratings.dat"))
+    if not os.path.exists(ratings_file):
+        print(f"Error: Ratings file 'ratings.dat' not found in the extracted files at {ratings_file}.")
+        return
+    try:
+        df_ui = pd.read_csv(ratings_file, sep='::', header=None,
+                            names=["user_id", "movie_id", "rating", "timestamp"],
+                            engine='python')
+    except FileNotFoundError:
+        print(f"Error: Could not read ratings file {ratings_file}.")
+        return
+
+    df_ui = df_ui.astype(str)
+    # get the number of times each a user has rated, and the number of times each movie has been rated
+    print("User rating counts:")
+    print(df_ui['user_id'].value_counts().describe())
+    print("Movie rating counts:")
+    print(df_ui['movie_id'].value_counts().describe())
+
+    # sort the ratings by user_id and timestamp
+    df_ui = df_ui.sort_values(by=['user_id', 'timestamp']).reset_index(drop=True)
+    df_ui_dedup = dedup(df_ui, cols_to_check=['user_id', 'movie_id', 'rating', 'timestamp'])
+
+
+    # check monotonicity
+    mon_results = check_monotonicity(df_ui, group_by='user_id')
+    print(f"Monotonicity  {mon_results['global_monotonic']}, Grouped - {mon_results['grouped_monotonic']}")
+
+    # check fraction of movie_ids in metadata
+    frac_movieid_in_metadata = fraction_movieid_in_metadata(df_ui, metadata_df)
+    print(f"Fraction of movie_ids in metadata: {frac_movieid_in_metadata}")
+
+    df_ui = merge_with_metadata(df_ui, metadata_df)
+    df_ui.to_json(str(processed_data_dir(f"ml1m") / 'df_ui.json'), orient='records', lines=True)
+
+    output_path=str(processed_data_dir(f"ml1m") / 'meta_corpus.json')
+    create_corpus_metadata(metadata_df, movieid_list=df_ui['movie_id'].unique(), output_path=output_path)
+
+    hf_dir = get_hfdata_dir()
+    Nval = int(valfrac * len(df_ui['user_id'].unique()))
+    create_hf_dataset_MLFamily(df_ui, metadata_df, save_path=hf_dir, Nval=Nval, random_seed=42, dname='ml1m')
+
 
 
 if __name__ == "__main__":
-    ml100k_url = "https://files.grouplens.org/datasets/movielens/ml-100k.zip"
-    ml_100k_processing(ml100k_url)
+    # ml100k_url = "https://files.grouplens.org/datasets/movielens/ml-100k.zip"
+    # ml_100k_processing(ml100k_url)
+
+    ml1m_url = "https://files.grouplens.org/datasets/movielens/ml-1m.zip"
+    ml_1m_processing(ml1m_url)
