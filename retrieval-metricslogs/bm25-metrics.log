@@ -1,0 +1,85 @@
+--- Evaluation Summary ---
+Dataset: ml100k
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/ml100k/llama-1b/llama-1b-checkpoint-649_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/bm25_indexes/ml100k_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.05938494167550371, 'ndcg@5': 0.031014263012511995, 'mrr': 0.02189819724284199}
+
+--- Evaluation Summary ---
+Dataset: ml100k
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/ml100k/llama-3b/llama-3b-checkpoint-590_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/bm25_indexes/ml100k_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.05832449628844114, 'ndcg@5': 0.032443425480723265, 'mrr': 0.02407211028632025}
+
+--- Evaluation Summary ---
+Dataset: ml100k
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/ml100k/llama-8b/llama-8b-checkpoint-708_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/bm25_indexes/ml100k_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.060445387062566275, 'ndcg@5': 0.03658788308547182, 'mrr': 0.028844114528101802}
+
+
+--- Evaluation Summary ---
+Dataset: beauty
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/beauty/llama-1b/llama-1b-test_beam5_max_seq1024.json
+Retriever index file: /home/kacharya33/nanoGenRec/bm25_indexes/beauty_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.04534275365559182, 'ndcg@5': 0.026878945255920418, 'mrr': 0.020865566635364964}
+
+--- Evaluation Summary ---
+Dataset: beauty
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/beauty/llama-3b/llama-3b-test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/bm25_indexes/beauty_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.0651969771497563, 'ndcg@5': 0.04003929537456322, 'mrr': 0.031844266571271006}
+
+--- Evaluation Summary ---
+Dataset: beauty
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/beauty/llama-8b/llama-8b-8.3k_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/bm25_indexes/beauty_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.06814828064213209, 'ndcg@5': 0.04232513489127515, 'mrr': 0.03390570734397591}
+
+--- Evaluation Summary ---
+Dataset: toys
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/toys/llama-1b/Llama-3.2-1B-fttoys_ep10_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/bm25_indexes/toys_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.0665635473060067, 'ndcg@5': 0.040061362732516495, 'mrr': 0.0314230471771075}
+
+--- Evaluation Summary ---
+Dataset: toys
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/toys/llama-3b/Llama-3.2-3B-fttoys_ep10_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/bm25_indexes/toys_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.0720288734209848, 'ndcg@5': 0.04361009241182541, 'mrr': 0.034358511643894474}
+
+--- Evaluation Summary ---
+Dataset: toys
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/toys/llama-8b/llama-8b-toys-7.2kcpt_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/bm25_indexes/toys_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.07842227378190256, 'ndcg@5': 0.04717886157028416, 'mrr': 0.03702328778894904}
+
+
+--- Evaluation Summary ---
+Dataset: sports
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/sports/llama-1b/Llama-3.2-1B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/bm25_indexes/sports_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.02205242014776526, 'ndcg@5': 0.013278895268697173, 'mrr': 0.010423631204876816}
+
+--- Evaluation Summary ---
+Dataset: sports
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/sports/llama-3b/Llama-3.2-3B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/bm25_indexes/sports_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.02876646908447341, 'ndcg@5': 0.017792914482537434, 'mrr': 0.014215617420943712}
+
+--- Evaluation Summary ---
+Dataset: sports
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/sports/llama-8b/Llama-3.1-8B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/bm25_indexes/sports_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.03590190184566115, 'ndcg@5': 0.02176466662205941, 'mrr': 0.01714938524782051}

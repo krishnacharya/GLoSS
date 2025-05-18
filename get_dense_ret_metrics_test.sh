@@ -5,8 +5,8 @@ CUDA_VISIBLE_DEVICES="0"
 
 # Default parameters
 DEFAULT_NUM_SEQUENCES="5"
-DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L6-v2"
-
+# DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L6-v2"
+DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L12-v2"
 # Function to run a job
 run_job() {
   local dataset_name="$1"

@@ -71,8 +71,8 @@ def get_rundict(genop: List[Dict], retriever: bm25s.BM25,
     queries_flat = [seq for row in genop for seq in row['generated_sequences']]
     # Tokenize and retrieve
     stemmer = Stemmer.Stemmer("english")
-    query_tokens = bm25s.tokenize(queries_flat, stopwords="en")
-    res, scores = retriever.retrieve(query_tokens, k=1)
+    query_tokens = bm25s.tokenize(queries_flat, stopwords="en", show_progress=False)
+    res, scores = retriever.retrieve(query_tokens, k=1, show_progress=False)
     print(f"Retrieved results shape: {res.shape}, scores shape: {scores.shape}")
     # Reshape to group by reviewer
     res_temp = res.reshape((l, num_return_sequences))
