@@ -1,0 +1,217 @@
+nohup: ignoring input
+Running job for dataset: ml100k, data family: movielens, model: llama-1b, split: test
+WARNING:2025-05-18 17:00:25,898:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Starting the evaluation process...
+Loading data...
+Loaded generated data: type=<class 'list'>, first element length=4
+Verifying reviewer IDs...
+Number of reviewers: 943
+Number of unique reviewers: 943
+Dense retrieval index already exists...
+Evaluating retrieval performance...
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/sentence-transformers/all-MiniLM-L6-v2/ml100k/llama-1b/ml100k_test_llama-1b.jsonl
+
+--- Evaluation Summary ---
+Dataset: ml100k
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/ml100k/llama-1b/llama-1b-checkpoint-649_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/sentence-transformers/all-MiniLM-L6-v2_indexes/ml100k_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.05938494167550371, 'ndcg@5': 0.03742149201520707, 'mrr': 0.030381760339342524}
+Running job for dataset: ml100k, data family: movielens, model: llama-3b, split: test
+WARNING:2025-05-18 17:00:56,398:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Starting the evaluation process...
+Loading data...
+Loaded generated data: type=<class 'list'>, first element length=4
+Verifying reviewer IDs...
+Number of reviewers: 943
+Number of unique reviewers: 943
+Dense retrieval index already exists...
+Evaluating retrieval performance...
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/sentence-transformers/all-MiniLM-L6-v2/ml100k/llama-3b/ml100k_test_llama-3b.jsonl
+
+--- Evaluation Summary ---
+Dataset: ml100k
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/ml100k/llama-3b/llama-3b-checkpoint-590_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/sentence-transformers/all-MiniLM-L6-v2_indexes/ml100k_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.05938494167550371, 'ndcg@5': 0.036827855922726235, 'mrr': 0.02948038176033934}
+Running job for dataset: ml100k, data family: movielens, model: llama-8b, split: test
+WARNING:2025-05-18 17:01:19,085:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Starting the evaluation process...
+Loading data...
+Loaded generated data: type=<class 'list'>, first element length=4
+Verifying reviewer IDs...
+Number of reviewers: 943
+Number of unique reviewers: 943
+Dense retrieval index already exists...
+Evaluating retrieval performance...
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/sentence-transformers/all-MiniLM-L6-v2/ml100k/llama-8b/ml100k_test_llama-8b.jsonl
+
+--- Evaluation Summary ---
+Dataset: ml100k
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/ml100k/llama-8b/llama-8b-checkpoint-708_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/sentence-transformers/all-MiniLM-L6-v2_indexes/ml100k_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.060445387062566275, 'ndcg@5': 0.03594454348807995, 'mrr': 0.027942735949098622}
+Running job for dataset: beauty, data family: amazon, model: llama-1b, split: test
+WARNING:2025-05-18 17:01:48,751:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Starting the evaluation process...
+Loading data...
+Loaded generated data: type=<class 'list'>, first element length=4
+Verifying reviewer IDs...
+Number of reviewers: 22363
+Number of unique reviewers: 22363
+Dense retrieval index already exists...
+Evaluating retrieval performance...
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/sentence-transformers/all-MiniLM-L6-v2/beauty/llama-1b/beauty_test_llama-1b.jsonl
+
+--- Evaluation Summary ---
+Dataset: beauty
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/beauty/llama-1b/llama-1b-test_beam5_max_seq1024.json
+Retriever index file: /home/kacharya33/nanoGenRec/sentence-transformers/all-MiniLM-L6-v2_indexes/beauty_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.04561105397308053, 'ndcg@5': 0.028812242513725633, 'mrr': 0.023332438998941704}
+Running job for dataset: beauty, data family: amazon, model: llama-3b, split: test
+WARNING:2025-05-18 17:12:27,750:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Starting the evaluation process...
+Loading data...
+Loaded generated data: type=<class 'list'>, first element length=4
+Verifying reviewer IDs...
+Number of reviewers: 22363
+Number of unique reviewers: 22363
+Dense retrieval index already exists...
+Evaluating retrieval performance...
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/sentence-transformers/all-MiniLM-L6-v2/beauty/llama-3b/beauty_test_llama-3b.jsonl
+
+--- Evaluation Summary ---
+Dataset: beauty
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/beauty/llama-3b/llama-3b-test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/sentence-transformers/all-MiniLM-L6-v2_indexes/beauty_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.0651969771497563, 'ndcg@5': 0.042100990617915855, 'mrr': 0.03453174141811623}
+Running job for dataset: beauty, data family: amazon, model: llama-8b, split: test
+WARNING:2025-05-18 17:23:30,535:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Starting the evaluation process...
+Loading data...
+Loaded generated data: type=<class 'list'>, first element length=4
+Verifying reviewer IDs...
+Number of reviewers: 22363
+Number of unique reviewers: 22363
+Dense retrieval index already exists...
+Evaluating retrieval performance...
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/sentence-transformers/all-MiniLM-L6-v2/beauty/llama-8b/beauty_test_llama-8b.jsonl
+
+--- Evaluation Summary ---
+Dataset: beauty
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/beauty/llama-8b/llama-8b-8.3k_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/sentence-transformers/all-MiniLM-L6-v2_indexes/beauty_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.06801413048338774, 'ndcg@5': 0.04341765490021305, 'mrr': 0.0353657082383103}
+Running job for dataset: toys, data family: amazon, model: llama-1b, split: test
+WARNING:2025-05-18 17:34:22,825:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Starting the evaluation process...
+Loading data...
+Loaded generated data: type=<class 'list'>, first element length=4
+Verifying reviewer IDs...
+Number of reviewers: 19395
+Number of unique reviewers: 19395
+Dense retrieval index already exists...
+Evaluating retrieval performance...
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/sentence-transformers/all-MiniLM-L6-v2/toys/llama-1b/toys_test_llama-1b.jsonl
+
+--- Evaluation Summary ---
+Dataset: toys
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/toys/llama-1b/Llama-3.2-1B-fttoys_ep10_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/sentence-transformers/all-MiniLM-L6-v2_indexes/toys_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.06764630059293632, 'ndcg@5': 0.04440697001881856, 'mrr': 0.03678525393142563}
+Running job for dataset: toys, data family: amazon, model: llama-3b, split: test
+WARNING:2025-05-18 17:43:13,360:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Starting the evaluation process...
+Loading data...
+Loaded generated data: type=<class 'list'>, first element length=4
+Verifying reviewer IDs...
+Number of reviewers: 19395
+Number of unique reviewers: 19395
+Dense retrieval index already exists...
+Evaluating retrieval performance...
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/sentence-transformers/all-MiniLM-L6-v2/toys/llama-3b/toys_test_llama-3b.jsonl
+
+--- Evaluation Summary ---
+Dataset: toys
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/toys/llama-3b/Llama-3.2-3B-fttoys_ep10_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/sentence-transformers/all-MiniLM-L6-v2_indexes/toys_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.0728538283062645, 'ndcg@5': 0.04737355602537097, 'mrr': 0.03900489816963135}
+Running job for dataset: toys, data family: amazon, model: llama-8b, split: test
+WARNING:2025-05-18 17:52:14,790:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Starting the evaluation process...
+Loading data...
+Loaded generated data: type=<class 'list'>, first element length=4
+Verifying reviewer IDs...
+Number of reviewers: 19395
+Number of unique reviewers: 19395
+Dense retrieval index already exists...
+Evaluating retrieval performance...
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/sentence-transformers/all-MiniLM-L6-v2/toys/llama-8b/toys_test_llama-8b.jsonl
+
+--- Evaluation Summary ---
+Dataset: toys
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/toys/llama-8b/llama-8b-toys-7.2kcpt_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/sentence-transformers/all-MiniLM-L6-v2_indexes/toys_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.07960814642949214, 'ndcg@5': 0.05264008851607378, 'mrr': 0.043805963736358165}
+Running job for dataset: sports, data family: amazon, model: llama-1b, split: test
+WARNING:2025-05-18 18:01:28,703:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Starting the evaluation process...
+Loading data...
+Loaded generated data: type=<class 'list'>, first element length=4
+Verifying reviewer IDs...
+Number of reviewers: 35597
+Number of unique reviewers: 35597
+Dense retrieval index already exists...
+Evaluating retrieval performance...
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/sentence-transformers/all-MiniLM-L6-v2/sports/llama-1b/sports_test_llama-1b.jsonl
+
+--- Evaluation Summary ---
+Dataset: sports
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/sports/llama-1b/Llama-3.2-1B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/sentence-transformers/all-MiniLM-L6-v2_indexes/sports_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.022726634266932607, 'ndcg@5': 0.014191217934684214, 'mrr': 0.01140732833291195}
+Running job for dataset: sports, data family: amazon, model: llama-3b, split: test
+WARNING:2025-05-18 18:20:47,168:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Starting the evaluation process...
+Loading data...
+Loaded generated data: type=<class 'list'>, first element length=4
+Verifying reviewer IDs...
+Number of reviewers: 35597
+Number of unique reviewers: 35597
+Dense retrieval index already exists...
+Evaluating retrieval performance...
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/sentence-transformers/all-MiniLM-L6-v2/sports/llama-3b/sports_test_llama-3b.jsonl
+
+--- Evaluation Summary ---
+Dataset: sports
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/sports/llama-3b/Llama-3.2-3B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/sentence-transformers/all-MiniLM-L6-v2_indexes/sports_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.029581144478467287, 'ndcg@5': 0.01838146327921673, 'mrr': 0.014734855933552452}
+Running job for dataset: sports, data family: amazon, model: llama-8b, split: test
+WARNING:2025-05-18 18:40:40,778:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Starting the evaluation process...
+Loading data...
+Loaded generated data: type=<class 'list'>, first element length=4
+Verifying reviewer IDs...
+Number of reviewers: 35597
+Number of unique reviewers: 35597
+Dense retrieval index already exists...
+Evaluating retrieval performance...
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/sentence-transformers/all-MiniLM-L6-v2/sports/llama-8b/sports_test_llama-8b.jsonl
+
+--- Evaluation Summary ---
+Dataset: sports
+Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/sports/llama-8b/Llama-3.1-8B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json
+Retriever index file: /home/kacharya33/nanoGenRec/sentence-transformers/all-MiniLM-L6-v2_indexes/sports_index
+Number of return sequences: 5
+Metrics: {'recall@5': 0.03643565469000196, 'ndcg@5': 0.02307534306689837, 'mrr': 0.01871459205363748}
