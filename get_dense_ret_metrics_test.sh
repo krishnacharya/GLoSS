@@ -4,11 +4,12 @@ PYTHON_SCRIPT="/home/kacharya33/nanoGenRec/src/calcirmetrics_dense-minilm_datase
 
 # Default parameters
 DEFAULT_NUM_SEQUENCES="5"
-DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L6-v2"
-# DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L12-v2" # running
+# DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L6-v2"
+DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L12-v2"
 ## DEFAULT_ENCODER_NAME="sentence-transformers/static-retrieval-mrl-en-v1" # doesn't run, compatibility issues with retriv
 ## DEFAULT_ENCODER_NAME="BAAI/bge-small-en-v1.5"
 # DEFAULT_ENCODER_NAME="intfloat/e5-small-v2"
+# DEFAULT_ENCODER_NAME="intfloat/e5-base-v2"
 
 # Function to run a job
 run_job() {

@@ -1201,4 +1201,51 @@
 
 // nohup env /bin/bash get_sparsebm25_ret_metric.sh > get_sparsebm25_withuid 2>&1 &
 
-nohup /bin/bash get_dense_ret_metrics_test.sh > get_minilmv6_withuid.log 2>&1 &
+// nohup /bin/bash get_dense_ret_metrics_test.sh > get_minilmv6_withuid.log 2>&1 &
+// 1234962
+
+
+// nohup env CUDA_VISIBLE_DEVICES=1 python src/finetune_with_config.py \
+//     --config ft_configs/sports2014/llama8b_1024_sports.yml \
+//     --dataset sports \
+//     > ft_llama8b_sports_9ep.log 2>&1 &
+
+// nohup env CUDA_VISIBLE_DEVICES=0 python src/finetune_with_config.py \
+//     --config ft_configs/sports2014/llama3b_1024_sports.yml \
+//     --dataset sports \
+//     > ft_llama3b_sports_9ep.log 2>&1 &
+
+// nohup env CUDA_VISIBLE_DEVICES=0 python src/finetune_with_config.py \
+//     --config ft_configs/sports2014/llama1b_1024_sports.yml \
+//     --dataset sports \
+//     > ft_llama1b_sports_9ep.log 2>&1 &
+
+// nohup env /bin/bash get_dense_ret_metrics_test.sh > get_e5basev2_pum.log 2>&1 &
+
+
+// nohup env CUDA_VISIBLE_DEVICES=0 python /home/kacharya33/nanoGenRec/src/generate_withbeams.py \
+//     --model_name sports-bestmodels/Llama-3.2-3B-ftsports_ep9_maxseq1024_bs4_acc4 \
+//     --dataset_name sports \
+//     --dataset_split test \
+//     --max_seq_length 1024 \
+//     --num_beams 5 \
+//     --batch_size 8 \
+//     --num_return_sequences 5 \
+//     --max_new_tokens 50 \
+//     --load_in_4bit True \
+//     > genop_sports_test_llama3b_ep9.log 2>&1 &
+
+
+// nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate_withbeams.py \
+//     --model_name sports-bestmodels/Llama-3.2-1B-ftsports_ep9_maxseq1024_bs4_acc4\
+//     --dataset_name sports \
+//     --dataset_split test \
+//     --max_seq_length 1024 \
+//     --num_beams 5 \
+//     --batch_size 8 \
+//     --num_return_sequences 5 \
+//     --max_new_tokens 50 \
+//     --load_in_4bit True \
+//     > genop_sports_test_llama1b_ep9.log 2>&1 &
+
+// nohup /bin/bash get_dense_ret_metrics_test.sh > get_minilmv12.log 2>&1 &
