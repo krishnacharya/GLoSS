@@ -1,0 +1,78 @@
+
+############# Dataset: beauty #############
+User Sequence Length - Mean: 8.87, Std: 8.16
+Percentage of users <= 5: 32.11%
+Percentage of users > 14: 9.78%
+
+Total number of users: 22363
+Number of cold-start users, pcent usplit: 7180, 32.11%
+Number of regular users, pcent usplit: 12996, 58.11%
+Number of power users, pcent usplit: 2187, 9.78%
+Sanity check (user split): True
+
+Total number of interactions: 198371
+Cold start user interactions, pcent dsplit: 35871, 18.08%
+Regular user interactions, pcent dsplit: 104647, 52.75%
+Power user interactions, pcent dsplit: 57853, 29.16%
+Sanity check (interaction split): True
+
+############# Dataset: toys #############
+User Sequence Length - Mean: 8.59, Std: 8.49
+Percentage of users <= 5: 34.52%
+Percentage of users > 13: 10.69%
+
+Total number of users: 19406
+Number of cold-start users, pcent usplit: 6699, 34.52%
+Number of regular users, pcent usplit: 10632, 54.79%
+Number of power users, pcent usplit: 2075, 10.69%
+Sanity check (user split): True
+
+Total number of interactions: 166757
+Cold start user interactions, pcent dsplit: 33245, 19.94%
+Regular user interactions, pcent dsplit: 82827, 49.67%
+Power user interactions, pcent dsplit: 50685, 30.39%
+Sanity check (interaction split): True
+
+############# Dataset: sports #############
+User Sequence Length - Mean: 8.29, Std: 6.05
+Percentage of users <= 5: 32.60%
+Percentage of users > 13: 9.89%
+
+Total number of users: 35597
+Number of cold-start users, pcent usplit: 11604, 32.60%
+Number of regular users, pcent usplit: 20472, 57.51%
+Number of power users, pcent usplit: 3521, 9.89%
+Sanity check (user split): True
+
+Total number of interactions: 295091
+Cold start user interactions, pcent dsplit: 57770, 19.58%
+Regular user interactions, pcent dsplit: 161463, 54.72%
+Power user interactions, pcent dsplit: 75858, 25.71%
+Sanity check (interaction split): True
+
+--- Analyzing Metrics for beauty with llama-1b and intfloat/e5-small-v2 ---
+Error: 'reviewer_id' column not found in the metrics file for beauty. Please check the data format.
+
+--- Analyzing Metrics for beauty with llama-3b and intfloat/e5-small-v2 ---
+Error: 'reviewer_id' column not found in the metrics file for beauty. Please check the data format.
+
+--- Analyzing Metrics for beauty with llama-8b and intfloat/e5-small-v2 ---
+Error: 'reviewer_id' column not found in the metrics file for beauty. Please check the data format.
+
+--- Analyzing Metrics for toys with llama-1b and intfloat/e5-small-v2 ---
+Error: 'reviewer_id' column not found in the metrics file for toys. Please check the data format.
+
+--- Analyzing Metrics for toys with llama-3b and intfloat/e5-small-v2 ---
+Error: 'reviewer_id' column not found in the metrics file for toys. Please check the data format.
+
+--- Analyzing Metrics for toys with llama-8b and intfloat/e5-small-v2 ---
+Error: 'reviewer_id' column not found in the metrics file for toys. Please check the data format.
+
+--- Analyzing Metrics for sports with llama-1b and intfloat/e5-small-v2 ---
+Error: 'reviewer_id' column not found in the metrics file for sports. Please check the data format.
+
+--- Analyzing Metrics for sports with llama-3b and intfloat/e5-small-v2 ---
+Error: 'reviewer_id' column not found in the metrics file for sports. Please check the data format.
+
+--- Analyzing Metrics for sports with llama-8b and intfloat/e5-small-v2 ---
+Error: 'reviewer_id' column not found in the metrics file for sports. Please check the data format.

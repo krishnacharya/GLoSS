@@ -1180,7 +1180,7 @@
 
 // nohup /bin/bash get_dense_ret_metrics_testv2.sh > get_bgesmall_metrics.log 2>&1 &
 
-// nohup /bin/bash get_dense_ret_metrics_testv2.sh > get_e5smallv2_metrics.log 2>&1 &
+// nohup /bin/bash get_dense_ret_metrics_test.sh > get_e5smallv2_metrics.log 2>&1 &
 
 
 // # RECENT RUNS

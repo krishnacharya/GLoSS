@@ -5,10 +5,10 @@ PYTHON_SCRIPT="/home/kacharya33/nanoGenRec/src/calcirmetrics_dense-minilm_datase
 # Default parameters
 DEFAULT_NUM_SEQUENCES="5"
 # DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L6-v2"
-DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L12-v2"
+# DEFAULT_ENCODER_NAME="sentence-transformers/all-MiniLM-L12-v2"
 ## DEFAULT_ENCODER_NAME="sentence-transformers/static-retrieval-mrl-en-v1" # doesn't run, compatibility issues with retriv
 ## DEFAULT_ENCODER_NAME="BAAI/bge-small-en-v1.5"
-# DEFAULT_ENCODER_NAME="intfloat/e5-small-v2"
+DEFAULT_ENCODER_NAME="intfloat/e5-small-v2"
 # DEFAULT_ENCODER_NAME="intfloat/e5-base-v2"
 
 # Function to run a job
@@ -38,9 +38,9 @@ run_job() {
 }
 
 ## Jobs for ml100k dataset (Movielens family)
-run_job "ml100k" "movielens" "llama-1b/llama-1b-checkpoint-649_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-1b" || exit 1
-run_job "ml100k" "movielens" "llama-3b/llama-3b-checkpoint-590_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-3b" || exit 1
-run_job "ml100k" "movielens" "llama-8b/llama-8b-checkpoint-708_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-8b" || exit 1
+# run_job "ml100k" "movielens" "llama-1b/llama-1b-checkpoint-649_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-1b" || exit 1
+# run_job "ml100k" "movielens" "llama-3b/llama-3b-checkpoint-590_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-3b" || exit 1
+# run_job "ml100k" "movielens" "llama-8b/llama-8b-checkpoint-708_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-8b" || exit 1
 
 # Jobs for Amazon family datasets
 
