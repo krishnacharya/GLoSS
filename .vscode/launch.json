@@ -1288,7 +1288,7 @@
 
 // nohup /bin/bash get_dense_ret_metrics_test.sh > e5-small-v2.log 2>&1 &
 
-// nohup /bin/bash get_dense_ret_metrics_test.sh > e5-base-v2.log 2>&1 &
+// l
 
 // {
 //     "version": "0.2.0",
@@ -1313,25 +1313,29 @@
 //     ]
 // }
 
-{
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python Debugger: Current File with Arguments",
-            "type": "debugpy",
-            "request": "launch",
-            "program": "/home/kacharya33/nanoGenRec/src/eval_spsearch_lasttext.py",
-            "console": "integratedTerminal",
-            "args": [
-                "--dataset","toys",
-                "--data_family","amazon",
-                "--k","5",
-                "--bm25_index_name","toys_index",
-                "--split","test"
-            ],
-            "env": {
-                "CUDA_VISIBLE_DEVICES": "0"
-            }
-        }
-    ]
-}
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/eval_spsearch_lasttext.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "--dataset","toys",
+//                 "--data_family","amazon",
+//                 "--k","5",
+//                 "--bm25_index_name","toys_index",
+//                 "--split","test"
+//             ],
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             }
+//         }
+//     ]
+// }
+
+nohup /bin/bash get_LIS_dense.sh > LIS_oplogs/e5-base-v2.log 2>&1 &
+
+nohup /bin/bash get_LIS_dense.sh > LIS_oplogs/e5-base-v2_actual.log 2>&1 &

@@ -1,0 +1,37 @@
+nohup: ignoring input
+Running job for dataset: beauty, data family: amazon, encoder: intfloat/e5-base-v2, k: 5, split: test
+WARNING:2025-05-22 04:26:38,648:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Dense retrieval index already exists...
+
+Qrels (test):
+------------------------------
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/LIS/intfloat/e5-base-v2/beauty.jsonl
+
+--- Evaluation Summary ---
+Dataset: beauty
+Retriever index file: /home/kacharya33/nanoGenRec/intfloat/e5-base-v2_indexes/beauty_index
+Metrics: {'recall@5': 0.04207843312614586, 'ndcg@5': 0.022626542242544616, 'mrr': 0.016141990490244302}
+Running job for dataset: toys, data family: amazon, encoder: intfloat/e5-base-v2, k: 5, split: test
+WARNING:2025-05-22 04:57:12,700:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Dense retrieval index already exists...
+
+Qrels (test):
+------------------------------
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/LIS/intfloat/e5-base-v2/toys.jsonl
+
+--- Evaluation Summary ---
+Dataset: toys
+Retriever index file: /home/kacharya33/nanoGenRec/intfloat/e5-base-v2_indexes/toys_index
+Metrics: {'recall@5': 0.05723124516627997, 'ndcg@5': 0.02953741854953306, 'mrr': 0.02039872819455186}
+Running job for dataset: sports, data family: amazon, encoder: intfloat/e5-base-v2, k: 5, split: test
+WARNING:2025-05-22 05:14:51,205:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Dense retrieval index already exists...
+
+Qrels (test):
+------------------------------
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/LIS/intfloat/e5-base-v2/sports.jsonl
+
+--- Evaluation Summary ---
+Dataset: sports
+Retriever index file: /home/kacharya33/nanoGenRec/intfloat/e5-base-v2_indexes/sports_index
+Metrics: {'recall@5': 0.021631036323285672, 'ndcg@5': 0.011347211387263705, 'mrr': 0.00794823533818393}

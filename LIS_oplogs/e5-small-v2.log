@@ -1,0 +1,39 @@
+nohup: ignoring input
+Running job for dataset: beauty, data family: amazon, encoder: intfloat/e5-small-v2, k: 5, split: test
+WARNING:2025-05-22 03:57:11,854:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Dense retrieval index already exists...
+
+Qrels (test):
+------------------------------
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/LIS/intfloat/e5-small-v2/beauty.jsonl
+
+--- Evaluation Summary ---
+Dataset: beauty
+Retriever index file: /home/kacharya33/nanoGenRec/intfloat/e5-small-v2_indexes/beauty_index
+Metrics: {'recall@5': 0.041810132808657155, 'ndcg@5': 0.02236049700748934, 'mrr': 0.01589008630326879}
+Running job for dataset: toys, data family: amazon, encoder: intfloat/e5-small-v2, k: 5, split: test
+WARNING:2025-05-22 04:11:03,745:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Dense retrieval index already exists...
+
+Qrels (test):
+------------------------------
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/LIS/intfloat/e5-small-v2/toys.jsonl
+
+--- Evaluation Summary ---
+Dataset: toys
+Retriever index file: /home/kacharya33/nanoGenRec/intfloat/e5-small-v2_indexes/toys_index
+Metrics: {'recall@5': 0.05532353699407064, 'ndcg@5': 0.028769214854147702, 'mrr': 0.019990547391939506}
+Running job for dataset: sports, data family: amazon, encoder: intfloat/e5-small-v2, k: 5, split: test
+WARNING:2025-05-22 04:21:30,126:jax._src.xla_bridge:967: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Dense retrieval index already exists...
+
+Qrels (test):
+------------------------------
+Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/LIS/intfloat/e5-small-v2/sports.jsonl
+
+--- Evaluation Summary ---
+Dataset: sports
+Retriever index file: /home/kacharya33/nanoGenRec/intfloat/e5-small-v2_indexes/sports_index
+Metrics: {'recall@5': 0.021237744753771385, 'ndcg@5': 0.011212422836732435, 'mrr': 0.007885964173010835}
+get_LIS_dense.sh: line 43: unexpected EOF while looking for matching `"'
+get_LIS_dense.sh: line 44: syntax error: unexpected end of file
