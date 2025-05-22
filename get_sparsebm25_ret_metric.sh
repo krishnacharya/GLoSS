@@ -35,9 +35,9 @@ run_job() {
 
 
 ## Jobs for ml100k dataset (Movielens family)
-run_job "ml100k" "movielens" "llama-1b/llama-1b-checkpoint-649_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-1b" || exit 1
-run_job "ml100k" "movielens" "llama-3b/llama-3b-checkpoint-590_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-3b" || exit 1
-run_job "ml100k" "movielens" "llama-8b/llama-8b-checkpoint-708_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-8b" || exit 1
+# run_job "ml100k" "movielens" "llama-1b/llama-1b-checkpoint-649_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-1b" || exit 1
+# run_job "ml100k" "movielens" "llama-3b/llama-3b-checkpoint-590_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-3b" || exit 1
+# run_job "ml100k" "movielens" "llama-8b/llama-8b-checkpoint-708_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-8b" || exit 1
 
 
 # Jobs for Amazon family datasets

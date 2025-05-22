@@ -123,6 +123,11 @@ def get_peruser_metric_dataset_modelname_encoder(dataset:str, model_name:str, en
     res.mkdir(parents=True, exist_ok=True)
     return res
 
+def get_peruser_metric_encoder_LIS(encoder_name:str):
+    res = get_peruser_metric_dir() / "LIS" / encoder_name  # last text search
+    res.mkdir(parents=True, exist_ok=True)
+    return res
+
 def get_dense_retrieval_index_dir(encoder_name:str):
     res = project_root() / f"{encoder_name}_indexes"
     res.mkdir(parents=True, exist_ok=True)

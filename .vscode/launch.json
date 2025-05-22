@@ -1249,3 +1249,89 @@
 //     > genop_sports_test_llama1b_ep9.log 2>&1 &
 
 // nohup /bin/bash get_dense_ret_metrics_test.sh > get_minilmv12.log 2>&1 &
+
+
+// nohup env CUDA_VISIBLE_DEVICES=1 python src/finetune_with_config.py \
+//     --config ft_configs/sports2014/llama8b_1024_sports.yml \
+//     --dataset sports \
+//     > ft_llama8b_sports_9ep.log 2>&1 &
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/calcirmetrics_bm25_dataset_agno.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "--dataset_name", "sports",
+//                 "--data_family", "amazon",
+//                 "--generated_file", "llama-1b/Llama-3.2-1B-ftsports_ep9_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json",
+//                 "--retriever_index","sports_index",
+//                 "--num_sequences","5",
+//                 "--split","test",
+//                 "--short_model_name","llama-3b"
+//             ],
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             }
+//         }
+//     ]
+// }
+
+
+
+// # RECENTLY RUN
+// nohup /bin/bash get_sparsebm25_ret_metric.sh > get_sparsebm25_ret_metric.log 2>&1 &
+
+// nohup /bin/bash get_dense_ret_metrics_test.sh > e5-small-v2.log 2>&1 &
+
+// nohup /bin/bash get_dense_ret_metrics_test.sh > e5-base-v2.log 2>&1 &
+
+// {
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "Python Debugger: Current File with Arguments",
+//             "type": "debugpy",
+//             "request": "launch",
+//             "program": "/home/kacharya33/nanoGenRec/src/evaluate_ssearch_lasttext.py",
+//             "console": "integratedTerminal",
+//             "args": [
+//                 "--dataset_name", "beauty",
+//                 "--data_family", "amazon",
+//                 "--encoder_name", "intfloat/e5-small-v2",
+//                 "--k", "5",
+//                 "--split","test"
+//             ],
+//             "env": {
+//                 "CUDA_VISIBLE_DEVICES": "0"
+//             }
+//         }
+//     ]
+// }
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/home/kacharya33/nanoGenRec/src/eval_spsearch_lasttext.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--dataset","toys",
+                "--data_family","amazon",
+                "--k","5",
+                "--bm25_index_name","toys_index",
+                "--split","test"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        }
+    ]
+}

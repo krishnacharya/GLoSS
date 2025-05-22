@@ -9,9 +9,10 @@ from tqdm import tqdm
 import bm25s
 import Stemmer
 from ranx import Qrels, Run, evaluate
-from src.utils.project_dirs import processed_data_dir, get_hfdata_dir, get_bm25_indexes_dir
+from src.utils.project_dirs import processed_data_dir, get_hfdata_dir, get_bm25_indexes_dir, get_peruser_metric_encoder_LIS
 import argparse
 import os
+# SPARSE SEARCH on last text
 
 # --- Dataset Configurations ---
 # This dictionary centralizes dataset-specific information
@@ -37,7 +38,6 @@ def build_bm25_retriever(corpus_list: List[str], index_path: str):
     """Builds and saves a BM25 retriever, or loads it if it exists."""
     stemmer = Stemmer.Stemmer("english")
     corpus_tokens = bm25s.tokenize(corpus_list, stopwords="en")
-
     try:
         retriever = bm25s.BM25.load(index_path, load_corpus=False)
         print(f"Loaded BM25 retriever from {index_path}")
@@ -161,11 +161,14 @@ def textbased_lastsimilar(dataset: Dataset, retriever: bm25s.BM25, \
         run_dict[user_id] = {item: score for item, score in zip(items, item_scores)}
     return run_dict
 
-def main(dataset_path: str, meta_corpus_path: str, bm25_index_name: str, k: int = 5, metrics: List[str] = ["recall@5", "ndcg@5", "mrr"], dataset_split: str = "test", data_family: str = "movielens"):
+def main(dataset_name: str, dataset_path: str, meta_corpus_path: str, bm25_index_name: str, \
+         k: int = 5, metrics: List[str] = ["recall@5", "ndcg@5", "mrr"], \
+         dataset_split: str = "test", data_family: str = "movielens"):
     """
     Main function to run the text-based last similar item recommendation evaluation.
 
     Args:
+        dataset_name: Name of the Hugging Face dataset.
         dataset_path: Path to the Hugging Face dataset.
         meta_corpus_path: Path to the meta corpus file.
         bm25_index_name: Name of the BM25 index.
@@ -187,7 +190,6 @@ def main(dataset_path: str, meta_corpus_path: str, bm25_index_name: str, k: int 
     bm25_index_path = str(get_bm25_indexes_dir() / bm25_index_name)
     retriever = build_bm25_retriever(corpus_list, bm25_index_path)
     
-
     # Prepare ground truth
     qrels_test = Qrels(get_qrels(dataset[dataset_split], config))
     print(f"\nQrels ({dataset_split}):")
@@ -195,7 +197,34 @@ def main(dataset_path: str, meta_corpus_path: str, bm25_index_name: str, k: int 
 
     # Evaluate Text-Based Last Similar Recommendations
     run_test_textbased_lastsimilar = Run(textbased_lastsimilar(dataset[dataset_split], retriever, item_id_to_nlang, items_compact, config, k=k)) # Pass config
-    evaluate_model(qrels_test, run_test_textbased_lastsimilar, metrics, "Text-Based Last Similar Recommendations")
+    ans = evaluate_model(qrels_test, run_test_textbased_lastsimilar, metrics, "Text-Based Last Similar Recommendations")
+    perusermetrics = run_test_textbased_lastsimilar.scores
+    peruser_savepath = str(get_peruser_metric_encoder_LIS("bm25") / f"{dataset_name}.jsonl")
+
+    df_metrics_list = []
+    for metric_name, scores_dict in perusermetrics.items():
+        df_metric = pd.DataFrame.from_dict(scores_dict, orient='index', columns=[metric_name])
+        df_metrics_list.append(df_metric)
+
+    if df_metrics_list:
+        df_metrics = pd.concat(df_metrics_list, axis=1, join='outer')
+        user_id_column_name = config.get("user_id_key", "user_id")
+        df_metrics.index.name = user_id_column_name
+        df_metrics = df_metrics.reset_index()
+    else:
+        user_id_column_name = config.get("user_id_key", "user_id")
+        df_metrics = pd.DataFrame(columns=[user_id_column_name])
+
+    if not df_metrics.empty:
+        df_metrics.to_json(peruser_savepath, orient="records", lines=True)
+        print(f"Per-user metrics saved to {peruser_savepath}")
+    else:
+        print("No per-user metrics to save.")
+
+    print("\n--- Evaluation Summary ---")
+    print(f"Dataset: {args.dataset}")
+    print(f"BM25 index file: {bm25_index_path}")
+    print("Metrics:", ans)
 
 
 
@@ -208,7 +237,6 @@ if __name__ == "__main__":
     parser.add_argument("--split", type=str, default="test", help="The dataset split to evaluate (e.g., 'train', 'validation', 'test').")
     parser.add_argument("--data_family", type=str, required=True, choices=["amazon", "movielens"], help="The family of the dataset: 'amazon' or 'movielens'.")
 
-
     args = parser.parse_args()
 
     hf_dir = get_hfdata_dir()
@@ -218,23 +246,13 @@ if __name__ == "__main__":
     meta_corpus_path = str(processed_dir / 'meta_corpus.json')
     data_family = args.data_family
 
-    main(dataset_path, meta_corpus_path, bm25_index_name, args.k, args.metrics, args.split, data_family)
+    main(args.dataset, dataset_path, meta_corpus_path, bm25_index_name, args.k, args.metrics, args.split, data_family)
 
+# LIS on beauty with bm25s
+# Metrics: {'recall@5': 0.04333050127442651, 'ndcg@5': 0.023179244762936268, 'mrr': 0.016472894215147044}
 
-#ML100k test results with LIR
-# {'recall@5': 0.021208907741251327, 'ndcg@5': 0.01158073939771433, 'mrr': 0.008377518557794273}
+# LIS on toys with bm25s
+# Metrics: {'recall@5': 0.05212683681361176, 'ndcg@5': 0.026660292010049123, 'mrr': 0.0182822033170061}
 
-#ML1M test results with LIR
-# {'recall@5': 0.023178807947019868, 'ndcg@5': 0.012414309124221153, 'mrr': 0.008821743929359823}
-
-# beauty test results with LIR
-# {'recall@5': 0.04333050127442651, 'ndcg@5': 0.023179244762936268, 'mrr': 0.016472894215147044}
-
-#toys test results with LIR
-# {'recall@5': 0.05212683681361176, 'ndcg@5': 0.026660292010049123, 'mrr': 0.0182822033170061}
-
-#sports test results with LIR
-# {'recall@5': 0.021153467988875466, 'ndcg@5': 0.011012792672956575, 'mrr': 0.007661226133288385}
-
-# ------------------------------------------------------------------------------------------------------------------------
-
+# LIS on sports with bm25s
+# Metrics: {'recall@5': 0.021153467988875466, 'ndcg@5': 0.011012792672956575, 'mrr': 0.007661226133288385}
