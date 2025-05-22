@@ -153,7 +153,7 @@ def textbased_lastsimilar(dataset: Dataset, retriever: bm25s.BM25, \
     query_tokens = bm25s.tokenize(queries_flat, stopwords="en")
     res, scores = retriever.retrieve(query_tokens, k=k)
     run_dict = {}
-    for i in tqdm(range(l), desc="Generating Recommendations"):
+    for i in range(l):
         user_id = dataset[user_id_key][i]
         item_indices = res[i]
         item_scores = scores[i]

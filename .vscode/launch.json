@@ -1339,3 +1339,6 @@
 nohup /bin/bash get_LIS_dense.sh > LIS_oplogs/e5-base-v2.log 2>&1 &
 
 nohup /bin/bash get_LIS_dense.sh > LIS_oplogs/e5-base-v2_actual.log 2>&1 &
+
+
+nohup /bin/bash get_LIS_sparseBM.sh > LIS_oplogs/bm25_metrics.log 2>&1 &
