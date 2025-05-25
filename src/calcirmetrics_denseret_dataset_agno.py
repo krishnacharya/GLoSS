@@ -238,6 +238,7 @@ if __name__ == "__main__":
     parser.add_argument("--batch_size", type=int, default=512, help="Batch size for dense retrieval.")
     parser.add_argument("--metrics", nargs='+', default=["recall@5", "ndcg@5", "mrr"], help="Metrics to evaluate.")
     parser.add_argument("--encoder_name", type=str, default="sentence-transformers/all-MiniLM-L6-v2", help="Encoder name.")
+    parser.add_argument("--use_ann", type=bool, default=False, help="Whether to use an approximate nearest neighbor index.")
 
     args = parser.parse_args()
     dataset_name = args.dataset_name.lower()
@@ -253,7 +254,10 @@ if __name__ == "__main__":
 
     generated_filepath = str(get_gen_dir_dataset(dataset_name) / args.generated_file)
     meta_filepath = str(processed_data_dir(dataset_name) / 'meta_corpus.jsonl')
-    retriever_filepath = str(get_dense_retrieval_index_dir(args.encoder_name) / f'{dataset_name}_index')
+    if not args.use_ann:
+        retriever_filepath = str(get_dense_retrieval_index_dir(args.encoder_name) / f'{dataset_name}_index')
+    else:
+        retriever_filepath = str(get_dense_retrieval_index_dir(args.encoder_name) / f'{dataset_name}_ann_index')
     at_k = args.at_k
 
     filename = (args.dataset_name + "_" + args.split + "_" + args.short_model_name)
@@ -261,7 +265,7 @@ if __name__ == "__main__":
 
     get_metrics(meta_filepath=meta_filepath, generated_filepath=generated_filepath,
                 retriever_filepath=retriever_filepath, num_sequences=args.num_sequences,
-                at_k=at_k, dataset_name=dataset_name,
+                at_k=at_k, dataset_name=dataset_name, use_ann=args.use_ann,
                 config=current_config,
                 batch_size=args.batch_size, peruser_savepath=peruser_savepath, metrics=args.metrics, encoder_name=args.encoder_name)
 

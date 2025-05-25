@@ -5,7 +5,7 @@
 {"user_id":"102","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"103","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"104","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"105","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"user_id":"105","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"user_id":"106","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"107","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"108","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -22,7 +22,7 @@
 {"user_id":"118","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"119","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"12","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"120","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"user_id":"120","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"user_id":"121","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"122","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"123","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -37,7 +37,7 @@
 {"user_id":"131","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"132","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"133","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"134","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"user_id":"134","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"user_id":"135","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"136","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"137","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -200,7 +200,7 @@
 {"user_id":"279","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"28","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"280","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"281","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"user_id":"281","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"user_id":"282","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"283","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"284","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -280,10 +280,10 @@
 {"user_id":"350","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"351","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"352","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"353","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
+{"user_id":"353","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"user_id":"354","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"355","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"356","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"user_id":"356","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"user_id":"357","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"358","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"359","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -306,7 +306,7 @@
 {"user_id":"374","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"375","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"376","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"377","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"user_id":"377","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
 {"user_id":"378","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"379","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"38","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -320,7 +320,7 @@
 {"user_id":"387","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"388","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"user_id":"389","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"39","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"user_id":"39","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"user_id":"390","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"391","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"392","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -400,7 +400,7 @@
 {"user_id":"459","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"46","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"460","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"461","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"user_id":"461","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"user_id":"462","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"463","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"464","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -475,10 +475,10 @@
 {"user_id":"526","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"527","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"528","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"529","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
+{"user_id":"529","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"user_id":"53","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"530","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"531","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"user_id":"531","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"user_id":"532","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"533","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"534","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -526,7 +526,7 @@
 {"user_id":"572","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"573","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"574","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"575","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"user_id":"575","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"user_id":"576","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"577","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"578","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -541,7 +541,7 @@
 {"user_id":"586","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"587","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"588","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"589","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
+{"user_id":"589","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"user_id":"59","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"590","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"591","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -603,7 +603,7 @@
 {"user_id":"641","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"642","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"643","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"644","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"user_id":"644","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
 {"user_id":"645","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"646","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"647","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -631,7 +631,7 @@
 {"user_id":"667","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"668","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"669","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"67","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"user_id":"67","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"user_id":"670","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"671","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"672","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -659,7 +659,7 @@
 {"user_id":"692","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"693","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"694","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"695","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"user_id":"695","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"user_id":"696","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"697","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"698","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -667,7 +667,7 @@
 {"user_id":"7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"70","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"700","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"701","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"user_id":"701","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"user_id":"702","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
 {"user_id":"703","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"704","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -709,12 +709,12 @@
 {"user_id":"737","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"738","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"739","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"74","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
+{"user_id":"74","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"user_id":"740","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"741","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"742","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"743","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"744","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"user_id":"744","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"user_id":"745","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"746","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"747","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -726,7 +726,7 @@
 {"user_id":"752","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"753","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"754","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"755","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"user_id":"755","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"user_id":"756","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"757","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"758","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -799,9 +799,9 @@
 {"user_id":"818","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"819","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"82","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"820","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"user_id":"820","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"user_id":"821","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"822","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"user_id":"822","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"user_id":"823","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"824","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"825","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -903,10 +903,10 @@
 {"user_id":"911","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"912","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"913","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"914","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"user_id":"914","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
 {"user_id":"915","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"916","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"917","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"user_id":"917","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"user_id":"918","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"919","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"92","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -928,12 +928,12 @@
 {"user_id":"934","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"935","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"936","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"937","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"user_id":"937","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"user_id":"938","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"939","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"94","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"940","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"user_id":"941","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"user_id":"941","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"user_id":"942","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"943","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"user_id":"95","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}

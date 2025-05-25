@@ -22,7 +22,7 @@ run_job() {
   local short_model_name="$7"
 
   echo "Running job for dataset: $dataset_name, data family: $data_family, model: $short_model_name, split: $split"
-  CUDA_VISIBLE_DEVICES=1 python "$PYTHON_SCRIPT" \
+  CUDA_VISIBLE_DEVICES=0 python "$PYTHON_SCRIPT" \
     --dataset_name "$dataset_name" \
     --data_family "$data_family" \
     --generated_file "$generated_file" \
@@ -45,17 +45,20 @@ run_job() {
 # Jobs for Amazon family datasets
 
 ### Sports dataset
-run_job "sports" "amazon" "llama-1b/Llama-3.2-1B-ftsports_ep9_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-1b" || exit 1
-run_job "sports" "amazon" "llama-3b/Llama-3.2-3B-ftsports_ep9_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-3b" || exit 1
-run_job "sports" "amazon" "llama-8b/Llama-3.1-8B-ftsports_ep9_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-8b" || exit 1
+# run_job "sports" "amazon" "llama-1b/Llama-3.2-1B-ftsports_ep9_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-1b" || exit 1
+# run_job "sports" "amazon" "llama-3b/Llama-3.2-3B-ftsports_ep9_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-3b" || exit 1
+# run_job "sports" "amazon" "llama-8b/Llama-3.1-8B-ftsports_ep9_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-8b" || exit 1
 
+run_job "sports" "amazon" "llama-1b/Llama-3.2-1B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-1b" || exit 1
+run_job "sports" "amazon" "llama-3b/Llama-3.2-3B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-3b" || exit 1
+run_job "sports" "amazon" "llama-8b/Llama-3.1-8B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-8b" || exit 1
 
-### Beauty dataset
-run_job "beauty" "amazon" "llama-1b/llama-1b-test_beam5_max_seq1024.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-1b" || exit 1
-run_job "beauty" "amazon" "llama-3b/llama-3b-test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-3b" || exit 1
-run_job "beauty" "amazon" "llama-8b/llama-8b-8.3k_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-8b" || exit 1
+# ### Beauty dataset
+# run_job "beauty" "amazon" "llama-1b/llama-1b-test_beam5_max_seq1024.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-1b" || exit 1
+# run_job "beauty" "amazon" "llama-3b/llama-3b-test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-3b" || exit 1
+# run_job "beauty" "amazon" "llama-8b/llama-8b-8.3k_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-8b" || exit 1
 
-### Toys dataset
-run_job "toys" "amazon" "llama-1b/Llama-3.2-1B-fttoys_ep10_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-1b" || exit 1
-run_job "toys" "amazon" "llama-3b/Llama-3.2-3B-fttoys_ep10_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-3b" || exit 1
-run_job "toys" "amazon" "llama-8b/llama-8b-toys-7.2kcpt_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-8b" || exit 1
+# ### Toys dataset
+# run_job "toys" "amazon" "llama-1b/Llama-3.2-1B-fttoys_ep10_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-1b" || exit 1
+# run_job "toys" "amazon" "llama-3b/Llama-3.2-3B-fttoys_ep10_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-3b" || exit 1
+# run_job "toys" "amazon" "llama-8b/llama-8b-toys-7.2kcpt_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "$DEFAULT_ENCODER_NAME" "llama-8b" || exit 1
