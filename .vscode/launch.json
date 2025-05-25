@@ -1248,6 +1248,18 @@
 //     --load_in_4bit True \
 //     > genop_sports_test_llama1b_ep9.log 2>&1 &
 
+nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate_withbeams.py \
+    --model_name sports-bestmodels/Llama-3.1-8B-ftsports_ep9_maxseq1024_bs4_acc4\
+    --dataset_name sports \
+    --dataset_split test \
+    --max_seq_length 1024 \
+    --num_beams 5 \
+    --batch_size 8 \
+    --num_return_sequences 5 \
+    --max_new_tokens 50 \
+    --load_in_4bit True \
+    > genop_sports_test_llama8b_ep9.log 2>&1 &
+
 // nohup /bin/bash get_dense_ret_metrics_test.sh > get_minilmv12.log 2>&1 &
 
 
@@ -1336,9 +1348,9 @@
 //     ]
 // }
 
-nohup /bin/bash get_LIS_dense.sh > LIS_oplogs/e5-base-v2.log 2>&1 &
+// nohup /bin/bash get_LIS_dense.sh > LIS_oplogs/e5-base-v2.log 2>&1 &
 
-nohup /bin/bash get_LIS_dense.sh > LIS_oplogs/e5-base-v2_actual.log 2>&1 &
+// nohup /bin/bash get_LIS_dense.sh > LIS_oplogs/e5-base-v2_actual.log 2>&1 &
 
 
-nohup /bin/bash get_LIS_sparseBM.sh > LIS_oplogs/bm25_metrics.log 2>&1 &
+// nohup /bin/bash get_LIS_sparseBM.sh > LIS_oplogs/bm25_metrics.log 2>&1 &

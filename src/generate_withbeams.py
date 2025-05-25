@@ -42,7 +42,7 @@ def generate_beam_sequences(model, tokenizer, dataset: Dataset,
     """
     if model.training:
         print("Warning: Model is in training mode. Setting to evaluation mode.")
-        model.eval() # Ensure model is in eval mode
+        model.eval()
 
     if num_return_sequences > num_beams:
         raise ValueError(f"num_return_sequences ({num_return_sequences}) cannot be greater than num_beams ({num_beams})")
