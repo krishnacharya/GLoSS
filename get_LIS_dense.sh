@@ -6,7 +6,6 @@ PYTHON_SCRIPT="/home/kacharya33/nanoGenRec/src/eval_ssearch_lasttext.py"
 DEFAULT_K="5"
 DEFAULT_SPLIT="test"
 # DEFAULT_ENCODER_NAME="intfloat/e5-small-v2"
-DEFAULT_ENCODER_NAME="intfloat/e5-base-v2"
 
 # Function to run a job
 run_job() {

@@ -42,6 +42,16 @@ run_job() {
 
 # Jobs for Amazon family datasets
 
+### Sports dataset
+# run_job "sports" "amazon" "llama-1b/Llama-3.2-1B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-1b" || exit 1
+# run_job "sports" "amazon" "llama-3b/Llama-3.2-3B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-3b" || exit 1
+# run_job "sports" "amazon" "llama-8b/Llama-3.1-8B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-8b" || exit 1
+
+run_job "sports" "amazon" "llama-1b/Llama-3.2-1B-ftsports_ep9_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-1b" || exit 1
+run_job "sports" "amazon" "llama-3b/Llama-3.2-3B-ftsports_ep9_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-3b" || exit 1
+run_job "sports" "amazon" "llama-8b/Llama-3.1-8B-ftsports_ep9_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-8b" || exit 1
+
+
 ### Beauty dataset
 run_job "beauty" "amazon" "llama-1b/llama-1b-test_beam5_max_seq1024.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-1b" || exit 1
 run_job "beauty" "amazon" "llama-3b/llama-3b-test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-3b" || exit 1
@@ -52,7 +62,3 @@ run_job "toys" "amazon" "llama-1b/Llama-3.2-1B-fttoys_ep10_maxseq1024_bs4_acc4_t
 run_job "toys" "amazon" "llama-3b/Llama-3.2-3B-fttoys_ep10_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-3b" || exit 1
 run_job "toys" "amazon" "llama-8b/llama-8b-toys-7.2kcpt_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-8b" || exit 1
 
-### Sports dataset
-run_job "sports" "amazon" "llama-1b/Llama-3.2-1B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-1b" || exit 1
-run_job "sports" "amazon" "llama-3b/Llama-3.2-3B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-3b" || exit 1
-run_job "sports" "amazon" "llama-8b/Llama-3.1-8B-ftsports_ep7_maxseq1024_bs4_acc4_test_beam5_max_seq1024_bs8_numret5.json" "$DEFAULT_NUM_SEQUENCES" "test" "llama-8b" || exit 1

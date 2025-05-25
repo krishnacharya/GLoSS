@@ -1248,17 +1248,17 @@
 //     --load_in_4bit True \
 //     > genop_sports_test_llama1b_ep9.log 2>&1 &
 
-nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate_withbeams.py \
-    --model_name sports-bestmodels/Llama-3.1-8B-ftsports_ep9_maxseq1024_bs4_acc4\
-    --dataset_name sports \
-    --dataset_split test \
-    --max_seq_length 1024 \
-    --num_beams 5 \
-    --batch_size 8 \
-    --num_return_sequences 5 \
-    --max_new_tokens 50 \
-    --load_in_4bit True \
-    > genop_sports_test_llama8b_ep9.log 2>&1 &
+// nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate_withbeams.py \
+//     --model_name sports-bestmodels/Llama-3.1-8B-ftsports_ep9_maxseq1024_bs4_acc4\
+//     --dataset_name sports \
+//     --dataset_split test \
+//     --max_seq_length 1024 \
+//     --num_beams 5 \
+//     --batch_size 8 \
+//     --num_return_sequences 5 \
+//     --max_new_tokens 50 \
+//     --load_in_4bit True \
+//     > genop_sports_test_llama8b_ep9.log 2>&1 &
 
 // nohup /bin/bash get_dense_ret_metrics_test.sh > get_minilmv12.log 2>&1 &
 
@@ -1352,5 +1352,35 @@ nohup env CUDA_VISIBLE_DEVICES=1 python /home/kacharya33/nanoGenRec/src/generate
 
 // nohup /bin/bash get_LIS_dense.sh > LIS_oplogs/e5-base-v2_actual.log 2>&1 &
 
-
 // nohup /bin/bash get_LIS_sparseBM.sh > LIS_oplogs/bm25_metrics.log 2>&1 &
+
+
+// nohup /bin/bash get_dense_ret_metrics_test.sh > e5-base-vfinal.log 2>&1 &
+// nohup /bin/bash get_dense_ret_metrics_test.sh > e5-small-vfinal.log 2>&1 &
+
+// nohup /bin/bash get_sparsebm25_ret_metric.sh > sparsebm25_vfinal.log 2>&1 &
+
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/home/kacharya33/nanoGenRec/src/calcirmetrics_denseret_dataset_agno.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--dataset_name", "ml100k",
+                "--data_family", "movielens",
+                "--generated_file","llama-8b/llama-8b-checkpoint-708_test_beam5_max_seq1024_bs8_numret5.json",
+                "--split","test",
+                "--short_model_name","llama-8b",
+                "--encoder_name","intfloat/e5-small-v2"
+            ],
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "0"
+            }
+        }
+    ]
+}
