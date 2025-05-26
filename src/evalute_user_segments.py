@@ -140,10 +140,9 @@ if __name__ == "__main__":
     models_to_evaluate = ['llama-1b', 'llama-3b', 'llama-8b']
     
     cols_to_analyze = ['recall@5', 'ndcg@5']
-    # encoder_name = 'sentence-transformers/all-MiniLM-L6-v2'
-    # encoder_name = 'bm25s'
+    encoder_name = 'bm25s'
     # encoder_name = 'intfloat/e5-small-v2'
-    encoder_name = 'intfloat/e5-base-v2'
+    # encoder_name = 'intfloat/e5-base-v2'
     # Analyze metrics for each specified dataset and model
     for target_dataset in datasets_config.keys(): # Loop through all defined datasets
         if target_dataset in user_groups:

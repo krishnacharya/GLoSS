@@ -1,0 +1,249 @@
+
+############# Dataset: beauty #############
+User Sequence Length - Mean: 8.87, Std: 8.16
+Percentage of users <= 5: 32.11%
+Percentage of users > 14: 9.78%
+
+Total number of users: 22363
+Number of cold-start users, pcent usplit: 7180, 32.11%
+Number of regular users, pcent usplit: 12996, 58.11%
+Number of power users, pcent usplit: 2187, 9.78%
+Sanity check (user split): True
+
+Total number of interactions: 198371
+Cold start user interactions, pcent dsplit: 35871, 18.08%
+Regular user interactions, pcent dsplit: 104647, 52.75%
+Power user interactions, pcent dsplit: 57853, 29.16%
+Sanity check (interaction split): True
+
+############# Dataset: toys #############
+User Sequence Length - Mean: 8.59, Std: 8.49
+Percentage of users <= 5: 34.52%
+Percentage of users > 13: 10.69%
+
+Total number of users: 19406
+Number of cold-start users, pcent usplit: 6699, 34.52%
+Number of regular users, pcent usplit: 10632, 54.79%
+Number of power users, pcent usplit: 2075, 10.69%
+Sanity check (user split): True
+
+Total number of interactions: 166757
+Cold start user interactions, pcent dsplit: 33245, 19.94%
+Regular user interactions, pcent dsplit: 82827, 49.67%
+Power user interactions, pcent dsplit: 50685, 30.39%
+Sanity check (interaction split): True
+
+############# Dataset: sports #############
+User Sequence Length - Mean: 8.29, Std: 6.05
+Percentage of users <= 5: 32.60%
+Percentage of users > 13: 9.89%
+
+Total number of users: 35597
+Number of cold-start users, pcent usplit: 11604, 32.60%
+Number of regular users, pcent usplit: 20472, 57.51%
+Number of power users, pcent usplit: 3521, 9.89%
+Sanity check (user split): True
+
+Total number of interactions: 295091
+Cold start user interactions, pcent dsplit: 57770, 19.58%
+Regular user interactions, pcent dsplit: 161463, 54.72%
+Power user interactions, pcent dsplit: 75858, 25.71%
+Sanity check (interaction split): True
+
+--- Analyzing Metrics for beauty with llama-1b and bm25s ---
+
+Overall Average Metrics for beauty - llama-1b (22363 users):
+recall@5    0.045343
+ndcg@5      0.026879
+dtype: float64
+
+Average metrics for Cold-Start Users (7180 users):
+recall@5    0.043733
+ndcg@5      0.025527
+dtype: float64
+
+Average metrics for Regular Users (12996 users):
+recall@5    0.044629
+ndcg@5      0.026728
+dtype: float64
+
+Average metrics for Power Users (2187 users):
+recall@5    0.054870
+ndcg@5      0.032214
+dtype: float64
+
+--- Analyzing Metrics for beauty with llama-3b and bm25s ---
+
+Overall Average Metrics for beauty - llama-3b (22363 users):
+recall@5    0.065197
+ndcg@5      0.040039
+dtype: float64
+
+Average metrics for Cold-Start Users (7180 users):
+recall@5    0.057660
+ndcg@5      0.035061
+dtype: float64
+
+Average metrics for Regular Users (12996 users):
+recall@5    0.062481
+ndcg@5      0.038706
+dtype: float64
+
+Average metrics for Power Users (2187 users):
+recall@5    0.106081
+ndcg@5      0.064306
+dtype: float64
+
+--- Analyzing Metrics for beauty with llama-8b and bm25s ---
+
+Overall Average Metrics for beauty - llama-8b (22363 users):
+recall@5    0.068148
+ndcg@5      0.042325
+dtype: float64
+
+Average metrics for Cold-Start Users (7180 users):
+recall@5    0.062117
+ndcg@5      0.037213
+dtype: float64
+
+Average metrics for Regular Users (12996 users):
+recall@5    0.063943
+ndcg@5      0.040237
+dtype: float64
+
+Average metrics for Power Users (2187 users):
+recall@5    0.112940
+ndcg@5      0.071515
+dtype: float64
+
+--- Analyzing Metrics for toys with llama-1b and bm25s ---
+
+Overall Average Metrics for toys - llama-1b (19395 users):
+recall@5    0.066564
+ndcg@5      0.040061
+dtype: float64
+
+Average metrics for Cold-Start Users (6688 users):
+recall@5    0.075209
+ndcg@5      0.045043
+dtype: float64
+
+Average metrics for Regular Users (10632 users):
+recall@5    0.062265
+ndcg@5      0.037677
+dtype: float64
+
+Average metrics for Power Users (2075 users):
+recall@5    0.060723
+ndcg@5      0.036219
+dtype: float64
+
+--- Analyzing Metrics for toys with llama-3b and bm25s ---
+
+Overall Average Metrics for toys - llama-3b (19395 users):
+recall@5    0.072029
+ndcg@5      0.043610
+dtype: float64
+
+Average metrics for Cold-Start Users (6688 users):
+recall@5    0.080144
+ndcg@5      0.049357
+dtype: float64
+
+Average metrics for Regular Users (10632 users):
+recall@5    0.068096
+ndcg@5      0.040712
+dtype: float64
+
+Average metrics for Power Users (2075 users):
+recall@5    0.066024
+ndcg@5      0.039939
+dtype: float64
+
+--- Analyzing Metrics for toys with llama-8b and bm25s ---
+
+Overall Average Metrics for toys - llama-8b (19395 users):
+recall@5    0.078422
+ndcg@5      0.047179
+dtype: float64
+
+Average metrics for Cold-Start Users (6688 users):
+recall@5    0.085227
+ndcg@5      0.050830
+dtype: float64
+
+Average metrics for Regular Users (10632 users):
+recall@5    0.076279
+ndcg@5      0.046024
+dtype: float64
+
+Average metrics for Power Users (2075 users):
+recall@5    0.067470
+ndcg@5      0.041327
+dtype: float64
+
+--- Analyzing Metrics for sports with llama-1b and bm25s ---
+
+Overall Average Metrics for sports - llama-1b (35597 users):
+recall@5    0.025114
+ndcg@5      0.015328
+dtype: float64
+
+Average metrics for Cold-Start Users (11604 users):
+recall@5    0.029386
+ndcg@5      0.018178
+dtype: float64
+
+Average metrics for Regular Users (20472 users):
+recall@5    0.024033
+ndcg@5      0.014500
+dtype: float64
+
+Average metrics for Power Users (3521 users):
+recall@5    0.017325
+ndcg@5      0.010753
+dtype: float64
+
+--- Analyzing Metrics for sports with llama-3b and bm25s ---
+
+Overall Average Metrics for sports - llama-3b (35597 users):
+recall@5    0.030003
+ndcg@5      0.018337
+dtype: float64
+
+Average metrics for Cold-Start Users (11604 users):
+recall@5    0.034212
+ndcg@5      0.020985
+dtype: float64
+
+Average metrics for Regular Users (20472 users):
+recall@5    0.028478
+ndcg@5      0.017208
+dtype: float64
+
+Average metrics for Power Users (3521 users):
+recall@5    0.024993
+ndcg@5      0.016172
+dtype: float64
+
+--- Analyzing Metrics for sports with llama-8b and bm25s ---
+
+Overall Average Metrics for sports - llama-8b (35597 users):
+recall@5    0.032447
+ndcg@5      0.019733
+dtype: float64
+
+Average metrics for Cold-Start Users (11604 users):
+recall@5    0.034557
+ndcg@5      0.020594
+dtype: float64
+
+Average metrics for Regular Users (20472 users):
+recall@5    0.031262
+ndcg@5      0.019220
+dtype: float64
+
+Average metrics for Power Users (3521 users):
+recall@5    0.032377
+ndcg@5      0.019880
+dtype: float64
