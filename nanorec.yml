@@ -1,4 +1,4 @@
-name: nanogenrec
+name: nanorec
 channels:
   - pytorch
   - nvidia
@@ -210,4 +210,4 @@ dependencies:
 variables:
   WANDB_PROJECT: nanorec-proj
   PYTHONPATH: /home/kacharya33/nanoGenRec
-prefix: /home/kacharya33/.conda/envs/nanogenrec
+prefix: /home/kacharya33/.conda/envs/nanorec

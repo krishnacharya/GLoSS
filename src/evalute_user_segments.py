@@ -1,6 +1,5 @@
 import pandas as pd
 from src.utils.project_dirs import processed_data_dir, get_peruser_metric_dataset_modelname_encoder
-#TODO
 
 def get_seqlen_stats(dataset_name, low_seqlen, high_seqlen, user_col='user_id', item_col='item_id'):
     """
@@ -137,12 +136,17 @@ if __name__ == "__main__":
         user_groups[ds_name] = {'cold': cold, 'regular': regular, 'power': power}
 
     # Define models to evaluate
-    models_to_evaluate = ['llama-1b', 'llama-3b', 'llama-8b']
+
     
     cols_to_analyze = ['recall@5', 'ndcg@5']
-    encoder_name = 'bm25s'
+    # encoder_name = 'bm25s'
     # encoder_name = 'intfloat/e5-small-v2'
     # encoder_name = 'intfloat/e5-base-v2'
+    models_to_evaluate = ['llama-1b', 'llama-3b', 'llama-8b']
+    
+    # HACKY:
+    encoder_name = 'LIS/bm25s'
+    models_to_evaluate = []
     # Analyze metrics for each specified dataset and model
     for target_dataset in datasets_config.keys(): # Loop through all defined datasets
         if target_dataset in user_groups:

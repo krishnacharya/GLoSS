@@ -35,5 +35,3 @@ Per-user metrics saved to /home/kacharya33/nanoGenRec/peruser_metrics/LIS/intflo
 Dataset: sports
 Retriever index file: /home/kacharya33/nanoGenRec/intfloat/e5-small-v2_indexes/sports_index
 Metrics: {'recall@5': 0.021237744753771385, 'ndcg@5': 0.011212422836732435, 'mrr': 0.007885964173010835}
-get_LIS_dense.sh: line 43: unexpected EOF while looking for matching `"'
-get_LIS_dense.sh: line 44: syntax error: unexpected end of file

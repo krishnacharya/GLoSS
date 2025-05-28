@@ -1356,7 +1356,7 @@
 
 
 // nohup /bin/bash get_dense_ret_metrics_test.sh > e5-basev2-sportsfinal.log 2>&1 &
-// nohup /bin/bash get_dense_ret_metrics_test.sh > e5-small-vfinal.log 2>&1 &
+// nohup /bin/bash get_dense_ret_metrics_test.sh > e5-smallv2-sportsfinal.log 2>&1 &
 
 // nohup /bin/bash get_sparsebm25_ret_metric.sh > sparsebm25_vfinal.log 2>&1 &
 
