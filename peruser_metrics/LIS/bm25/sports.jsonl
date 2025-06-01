@@ -192,7 +192,7 @@
 {"reviewer_id":"A10J31HBQ4GQHD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A10J334N01WCRG","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A10J6UELWBK69L","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A10JCNCNCKR7CN","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A10JCNCNCKR7CN","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A10JRJVFJVJ60P","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A10JZDGVEBSNMP","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A10K03WAJZILNX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -872,7 +872,7 @@
 {"reviewer_id":"A1388E7BRE55CN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A138959PAG9K0K","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A138ARZOLL5AGI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A138OQVQ9E5SNP","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A138OQVQ9E5SNP","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A138Z5HK8H0CLR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1390WQJ54J8SH","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A139A14WTK8UPF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -1472,7 +1472,7 @@
 {"reviewer_id":"A15I71WYQTEFH5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A15I9MM3TK0WL0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A15IG53L0NGMTR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A15IHDHFP5U4QU","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A15IHDHFP5U4QU","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A15IK22QQOQEB8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A15IL2OGJG9BTF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A15INUI09PT32T","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -1855,7 +1855,7 @@
 {"reviewer_id":"A170G478MZYNIA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A170IMOK9XYS2K","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A170RZH0I1IYY0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A170XRC573LDTO","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A170XRC573LDTO","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A170Z7HTN9NDIJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1718L78QHNDXV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A171D3JXERXSUM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -2111,7 +2111,7 @@
 {"reviewer_id":"A17YXDVMGV89J4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A17Z168DB9UBM6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A17ZEY9MMDOCBT","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A17ZHSCXA5PJTQ","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A17ZHSCXA5PJTQ","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A17ZJOL94SW576","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A17ZLWN19HCQ3X","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A17ZPLHRUPPEG5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -2387,7 +2387,7 @@
 {"reviewer_id":"A19123D9G66E0O","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1912VY95GACSE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1916DVHC281UV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A191AMOO5QYHPC","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A191AMOO5QYHPC","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A191DR9D1RBI5H","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A191EY7HIDXEJW","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A191F1OUA0L659","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -2659,7 +2659,7 @@
 {"reviewer_id":"A19YS2UWGDR6WM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A19YUFBS693ZQO","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A19Z9LLHCK7DV9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A19ZDE50BJ0QIJ","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A19ZDE50BJ0QIJ","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A19ZF0F6CNEJ2X","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A19ZFWKTJ2D360","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A19ZJINBXOBOO4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -3013,7 +3013,7 @@
 {"reviewer_id":"A1BACMN9QGERD0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1BAH8UZH8LMPF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1BALZMHDFWOAJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1BAP6TT8SC5PV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A1BAP6TT8SC5PV","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A1BAVIX4TW12Q9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1BAWM6HUN6H7W","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1BB187QA0KV8J","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -3049,7 +3049,7 @@
 {"reviewer_id":"A1BF8HRSGF7HJL","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1BFQADQIUJZVH","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1BFQBL968GUUZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1BFTFOO11WRN5","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A1BFTFOO11WRN5","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A1BFY90ODAAZM4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1BG0KDRRJ8PUH","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1BG593W8NEARD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -3151,7 +3151,7 @@
 {"reviewer_id":"A1BSM4T0BABH0C","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1BSQOBZSFYD9Q","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1BSTVP3MCRBFU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1BT0ILHLFWS8T","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A1BT0ILHLFWS8T","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A1BT6TL7UCIC5Y","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1BT6W02UDPOGP","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1BT9WUP146JMB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -3390,7 +3390,7 @@
 {"reviewer_id":"A1CQF71XR9F293","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1CQF974M4EH8V","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1CQJX87OFBWTA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1CR2JQBXTNGJ5","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A1CR2JQBXTNGJ5","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A1CRH5SAVS1Q5E","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1CRMGRM0EXEH8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1CRNWEA9K53YK","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -3648,7 +3648,7 @@
 {"reviewer_id":"A1DPI2SCGHXR3E","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1DQ18EKZ7CTTD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1DQ5ZIQ1VHWTD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1DQ8NI5ED1DX9","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A1DQ8NI5ED1DX9","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
 {"reviewer_id":"A1DQE75M4R1SSM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1DQH9BYSNEQQU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1DQHS7MOVYYYA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -3674,7 +3674,7 @@
 {"reviewer_id":"A1DSRM2P0WGQNS","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1DSXZ5HW6MMDR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1DTCBBZOQ9HCY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1DTCCPBAHB08D","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A1DTCCPBAHB08D","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
 {"reviewer_id":"A1DTYIQC7S51S4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1DU0OSDOAB0YC","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1DU2CDA3TQTY8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -3734,7 +3734,7 @@
 {"reviewer_id":"A1E1YO6A3NX87U","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1E21P3ANZH9WT","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1E29NI1SBMXF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1E2Q40F8WI1NE","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A1E2Q40F8WI1NE","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A1E2SKM2X04FH3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1E2W5EU7JLS4J","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1E3FNJKK1N4EL","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -3780,7 +3780,7 @@
 {"reviewer_id":"A1E9K4UA0UZME9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1E9KF4B2AM9FI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1E9QD6LLQ7S90","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1EA298NGOFRYR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A1EA298NGOFRYR","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A1EA6I1HUBVMGH","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1EAAH5UM5P8SB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1EAKI75HW4K6P","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -4510,7 +4510,7 @@
 {"reviewer_id":"A1H1GNE684BCB9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1H1OUIOR7QP6H","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1H1PD5UF5U5Q8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1H2BA9R0O6QHW","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A1H2BA9R0O6QHW","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A1H2C9XTO8P3T8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1H2JA2Q8ULMRK","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1H2O9EQANIGQT","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -4845,7 +4845,7 @@
 {"reviewer_id":"A1IEO2XQGGQF5V","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1IEQW68IGUPLY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1IES8MYFNEA02","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1IF04H9DWYF4V","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A1IF04H9DWYF4V","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A1IF4L2EO8KKLX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1IF7PMLALAKU7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1IFCEDNWISVRG","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -5096,7 +5096,7 @@
 {"reviewer_id":"A1JAXLBWRVCXBZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1JB7XV3BT2MYZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1JBBR4MNGQ70G","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1JBLD7CFYFAC2","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A1JBLD7CFYFAC2","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A1JBP9R0PA5DW3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1JC1EZAO3L91C","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1JC30B5FJX8NF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -5160,7 +5160,7 @@
 {"reviewer_id":"A1JJ8LOTL9V9K6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1JJGY80GQ4H6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1JJH3POKY6OAO","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1JJHDHCF6FOTO","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A1JJHDHCF6FOTO","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A1JJIRGZGBKT6A","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1JJNR6NNRI6E6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1JJX3XE15ZC8K","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -5210,7 +5210,7 @@
 {"reviewer_id":"A1JQYVX102X51H","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1JR48FALJJR6P","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1JR689JH573OU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1JREYXLBVUR6X","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A1JREYXLBVUR6X","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A1JRQQYUP4S6T3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1JRW8U46LGYHY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1JRWFRN0H95Y0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -5920,7 +5920,7 @@
 {"reviewer_id":"A1MC4RY3QN4ZAZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1MC6BFHWY6WC3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1MCIBWCA5K9IW","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1MD9AEU9C4WJN","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A1MD9AEU9C4WJN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1MDB3G0YAM18R","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1MDBBSBSK5LD5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1MDHZJ5HF6YMQ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -6266,7 +6266,7 @@
 {"reviewer_id":"A1NMJ1XZIZ8U3E","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1NMQMRQQLR2UG","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1NN8Q1DLAYPGH","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1NNBAE36W74NA","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A1NNBAE36W74NA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1NNH2U45LAYBH","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1NNIVCEODFZHU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1NNKHFVKIW6NL","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -6509,7 +6509,7 @@
 {"reviewer_id":"A1OLOZ5762253M","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1OMBTS64ZMVF7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1OMHFK0R3KXU1","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1OMI3TXI41H5D","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A1OMI3TXI41H5D","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A1OMIFPRIO1KWY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1OMKLDVIEOLXE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1OMNOPD5QSS1F","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -6726,7 +6726,7 @@
 {"reviewer_id":"A1PGC1GEBY9CZU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1PGEGAQ1K43P2","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1PGL4QVOKBRU9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1PGM22LAII5BJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A1PGM22LAII5BJ","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A1PGQZ1RF5N76L","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1PGSGZGKCR3H7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1PGZM4KG3C62L","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -8094,7 +8094,7 @@
 {"reviewer_id":"A1UKO12ZY85H7U","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1UKO9SREAU0GS","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1UKP70O8QHXRX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1UKV82U34CY5E","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A1UKV82U34CY5E","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
 {"reviewer_id":"A1UKVPY8PBUPMC","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1UKW8VANQJE8T","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A1UKWBCPVC2IBT","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -8108,7 +8108,7 @@
 {"reviewer_id":"A1ULJORV1LN39U","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1ULNNV8GDC82X","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1ULUK2L0WUK4W","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1ULUU6CNS8FX4","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A1ULUU6CNS8FX4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1ULW7P79BFLUI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1ULZ9IBMK2L4C","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1UM59TRK3VPAF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -8410,7 +8410,7 @@
 {"reviewer_id":"A1VQRFYG9XCWLY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1VQSDBUF3VEZ4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1VQYE5VTY846A","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1VR1HIOVQWN09","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A1VR1HIOVQWN09","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A1VR62D823PC8G","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1VR7LCTPFPC2M","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1VRFRA4K06SKN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -8746,7 +8746,7 @@
 {"reviewer_id":"A1WYPDEIVTQE1J","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1WYYOD12D89OB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1WZI4N6V5F0EC","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1WZNIT0S12R02","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A1WZNIT0S12R02","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A1WZXIV1B5UZSE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1X02AIG3JZ1X3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1X02NPCWIDCUM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -8770,7 +8770,7 @@
 {"reviewer_id":"A1X265QIRQVAR6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1X2E8J3BD5N7I","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1X2LENOF84LCQ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1X32OMSMN4PMB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A1X32OMSMN4PMB","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A1X3716OFHG18I","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1X3E8CLSXF66B","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1X3ESYZ79H59E","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -9165,7 +9165,7 @@
 {"reviewer_id":"A1YNYCYXYLBOWN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1YO1ZRTOQMGEU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1YO4QQRPO2U2U","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A1YOAHJAQ3KNDZ","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A1YOAHJAQ3KNDZ","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A1YOC7BFU772KZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1YOH191E263LF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A1YOIX3ECWPQ3H","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -9874,7 +9874,7 @@
 {"reviewer_id":"A21FK93V1WSXCY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A21FO8HXJECL08","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A21FQSM5I5ZLIR","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
-{"reviewer_id":"A21FULRZNDAGV","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A21FULRZNDAGV","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A21FWV7IMMPSXP","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A21G8XF090VXN4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A21GMBV4KU0V4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -9989,7 +9989,7 @@
 {"reviewer_id":"A21W6EWDJJXJ4X","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A21WJO4MB240NF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A21WOY9XATG7ZB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A21WT3WTVAQSYG","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A21WT3WTVAQSYG","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A21WXXCKC1BU66","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A21X32F7VQGTBF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A21X4X3WYV5FQZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -10123,7 +10123,7 @@
 {"reviewer_id":"A22GHD1G3OQTED","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A22GJ2SRENMZS0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A22GLZ0P4MGO0W","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A22GOBF4GTJL7H","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A22GOBF4GTJL7H","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A22GR786249ODT","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A22GTAFTQ9C635","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A22GZ9LHF43N","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -10792,7 +10792,7 @@
 {"reviewer_id":"A24XVTXHYCE0AA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A24XWQW0JAHTT2","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A24XXSJY0HJ3AX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A24XZNBQTQLC3F","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A24XZNBQTQLC3F","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A24Y3095I35WLR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A24Y85BRN67ATV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A24YEQSCZIO1TM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -10830,7 +10830,7 @@
 {"reviewer_id":"A252MWTJRM1V67","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A252NTYCZ6L01L","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A252OOXJ4DEGEL","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A252TJGMGD45E3","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A252TJGMGD45E3","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A252UER9089YGO","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A252XCRU9VQSV2","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2534FUU4LDMIQ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -11001,7 +11001,7 @@
 {"reviewer_id":"A25PA4XRMZMF0G","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A25PLR89SU7H1U","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A25PNHM97EALLU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A25POFRQ7WFI42","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A25POFRQ7WFI42","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A25PWCZWZPVIDJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A25Q2N23KNW8NY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A25Q8DVB0NMABM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -11156,7 +11156,7 @@
 {"reviewer_id":"A26DSWYHJNWAVX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A26DW0I78545FV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A26E2V7YIFF4TX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A26E68WQMH85NO","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A26E68WQMH85NO","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A26ECP55JCWN3E","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A26EDCWR63UGR3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A26EGZ20JPDGN3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -11265,7 +11265,7 @@
 {"reviewer_id":"A26TTBMLW158KD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A26TZBHF7JBA7G","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A26U7JA8IAE62L","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A26U9ZXLCTDAPY","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A26U9ZXLCTDAPY","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A26UIP964MHAJE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A26URMN31RCEM7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A26UXDM50PU75","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -11948,7 +11948,7 @@
 {"reviewer_id":"A29CGYHTHRCAOF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A29CKCF5ID9MA4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A29CLFLQFTQU8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A29CQOLPMFB0WW","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A29CQOLPMFB0WW","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A29CT3MXKBWVQ6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A29D3GAKPCH5AV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A29DM5LSKTFZ4E","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -12001,7 +12001,7 @@
 {"reviewer_id":"A29JB1BINMP0EJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A29JO4UMF0X8BO","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A29JUMRL1US6YP","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A29K2QXKWSMUO3","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A29K2QXKWSMUO3","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A29K6CAJUYNS9M","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A29K6T162MON7F","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A29KAWSTBD6M8I","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -12163,7 +12163,7 @@
 {"reviewer_id":"A2A760LUUF6QBK","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2A7ENTPIQEDDH","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2A7IFJZX7PLNO","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2A7SO6BBYM13F","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A2A7SO6BBYM13F","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A2A7V2XCA052LN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2A852DIZCNYVP","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2A8DBL1DOPOKH","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -12973,7 +12973,7 @@
 {"reviewer_id":"A2DC3AHYCABX4G","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2DCGJQIY1E7E5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2DCJV5HKJOM5E","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
-{"reviewer_id":"A2DCMCTT3YV0A3","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A2DCMCTT3YV0A3","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A2DCNPG5XU9F65","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A2DCRFRP1ZIE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2DCSP4KCZ41","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -13071,7 +13071,7 @@
 {"reviewer_id":"A2DQFPWF699PWO","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2DQGD2M6EZRS6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2DQGEAILTIM9Y","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2DQHJWS2EL9IW","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A2DQHJWS2EL9IW","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A2DQL30PL4T0PN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2DQL5HYMM7TQD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2DQM5S3RMHN7M","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -13303,7 +13303,7 @@
 {"reviewer_id":"A2EPQ4JAMLV1R4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2EPRUHXQHL31Z","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2EPVBSAXIY72F","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2EQ0Q38TPO2P9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A2EQ0Q38TPO2P9","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A2EQ1AE5QW946K","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2EQ8GHKXEF141","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2EQEBOUUSUAXU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -13334,7 +13334,7 @@
 {"reviewer_id":"A2EUQ5UC6VA7D3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2EUUWOB2WY8CM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2EV399NUQW9AJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2EV8A4U0VAKQ3","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A2EV8A4U0VAKQ3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2EV8ZSBVR1V0N","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2EVA4NZDQ7RUU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2EVAH7MZG4CM5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -13480,7 +13480,7 @@
 {"reviewer_id":"A2FDYC0Q44ZPO9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2FE2U1SJ0MT4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2FE39W85RN2UE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2FE4E8IZSMTVX","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A2FE4E8IZSMTVX","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A2FELIJ31H94GE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2FELXB4ZFOM5Q","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A2FENQ6A5V3RHV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -13508,7 +13508,7 @@
 {"reviewer_id":"A2FIC05DY3HT7J","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2FICQ6IEJFK9D","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2FII3I2MBMUIA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2FIQFWJ260RZ2","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A2FIQFWJ260RZ2","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A2FIQX6UNOUY0E","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2FIYXK97CTS6D","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2FIZMDFYU92CN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -13712,7 +13712,7 @@
 {"reviewer_id":"A2GCFD2FCQ572M","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2GCG4E1MQUPGS","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2GCJMPR4E9X04","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2GCMWJAFC6LXM","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A2GCMWJAFC6LXM","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A2GCS5QU0SITDR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2GCX56ZS2S0LA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2GD2HORAJHBK5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -14043,7 +14043,7 @@
 {"reviewer_id":"A2HPKWCRQT4KGR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2HPTLW9K09WYW","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A2HPUO5CLWZ795","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2HPW4X7429R3W","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A2HPW4X7429R3W","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A2HPWRPW2A29D4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2HQ971GTX0SVR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2HQHUEOTG9XUI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -15120,7 +15120,7 @@
 {"reviewer_id":"A2LYBDOZ57NE91","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2LYC67LM7GQE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2LYCK55VIQ0G8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2LYE44WVLANW7","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A2LYE44WVLANW7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2LYY264P2R493","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2LYYZX378GXO5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2LYZNFX7D39I6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -15266,7 +15266,7 @@
 {"reviewer_id":"A2MIJIPC9ZZRXX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2MIP3AQVSF2SS","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2MIVOLAN127OW","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2MJ0SKW1WVDSD","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A2MJ0SKW1WVDSD","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
 {"reviewer_id":"A2MJ9CBDJGSNDN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2MJAZOQ5IPNRI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2MJI2TGX1JLJY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -15315,7 +15315,7 @@
 {"reviewer_id":"A2MOL8QCK661R6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2MOOQMP5QNMUM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2MOREZ3AFKKOK","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2MOUPAVI5I1JK","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A2MOUPAVI5I1JK","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A2MOVLZ429BFLZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2MOYHY49QTB6D","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2MP25A1IBO2SC","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -15573,7 +15573,7 @@
 {"reviewer_id":"A2NL9VKDN1E60M","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2NLCN3VKYQ2AN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2NLCPBJ34K883","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2NLEJIM4GMPB4","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A2NLEJIM4GMPB4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2NLH0V2KJF0BC","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2NLJ2FMVT2U97","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2NLMNMG5AT2JR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -15783,12 +15783,12 @@
 {"reviewer_id":"A2OE8Y9ILQ5PGI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2OERI2FWZ8L3V","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2OESAJV3U3I1V","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2OEZIIK61GDW0","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A2OEZIIK61GDW0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2OF3KUPYGHOOU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2OF3NUCMCVOBW","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2OF63HGS7CVK9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2OFV03UHHBO5J","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2OFWDRK6SKPQD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A2OFWDRK6SKPQD","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A2OFZSFHTLGIHY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2OG02RDIG3X72","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2OGE7Q0N371GI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -16161,7 +16161,7 @@
 {"reviewer_id":"A2PQLARQP90RKU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2PQUL8TI4P4HV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2PQVSD4MUESI3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2PQW20O49HB0A","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A2PQW20O49HB0A","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A2PQXRNX8J122N","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2PQYUA02G3O1V","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2PQZ5WHZ6W841","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -16234,7 +16234,7 @@
 {"reviewer_id":"A2PZ78ZE0ZUG1L","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2PZ85IEP2VG1R","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2PZE17ADHBO6C","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2PZIJ28O1TUTK","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A2PZIJ28O1TUTK","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A2PZLIZ0KMGY6K","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2PZMKJS5YIYKA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2Q011FX89Q6N2","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -16297,7 +16297,7 @@
 {"reviewer_id":"A2Q65YGP86DVZB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2Q66G7GVBHDCA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2Q67QBQYESLD1","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2Q6FAU6C12WFV","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A2Q6FAU6C12WFV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2Q6IMFITXQRRJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2Q6QAARYD41W9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2Q6YSXWJN3H5H","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -16305,7 +16305,7 @@
 {"reviewer_id":"A2Q79J76PISBAJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2Q7AZFRV2DGDF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2Q7DE6NA7VKAJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2Q7IUIZK1BTIE","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A2Q7IUIZK1BTIE","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A2Q7T4AX31Q2Y5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2Q7VY0358PA3W","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2Q7WOW00DYGPV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -17244,7 +17244,7 @@
 {"reviewer_id":"A2TX79GR278JMA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2TXIYMIN78I1V","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2TXR66RYK6C1","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2TXR85WQLE32N","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A2TXR85WQLE32N","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A2TXW5O561KKQF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2TY271P4XSFB9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2TY5N2S51NHI6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -17686,7 +17686,7 @@
 {"reviewer_id":"A2VOTTXUV5HWZK","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2VOZYZZ68V02J","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2VPADCUBU10KU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2VPB85KHFUZWJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A2VPB85KHFUZWJ","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A2VPCKPJE6AMTP","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2VPLLSO59JUSR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2VPRHXNU17OD5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -17734,7 +17734,7 @@
 {"reviewer_id":"A2VVIG77XX9AKI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2VW1QYZOELXS3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2VW4FYZILSXF2","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2VW4RVOP6GN04","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A2VW4RVOP6GN04","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A2VWHEZTQQU1U9","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A2VWLW8JMDWW9W","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2VWQSIBTG6NJ0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -18455,7 +18455,7 @@
 {"reviewer_id":"A2YUJ30GLFV6JE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2YUKELH3DTNHA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2YUQWU3S535UL","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2YUSFQ2JI2G59","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A2YUSFQ2JI2G59","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A2YUY93BG8HZFB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2YV3E3B4UDQBZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2YV66LCD5FPNR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -18684,7 +18684,7 @@
 {"reviewer_id":"A2ZRYWFYQBVOQ2","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2ZS08F5M81U82","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2ZS6GTBSJGJVF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A2ZS7TP45NIAH7","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A2ZS7TP45NIAH7","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A2ZS7ZU767GXB3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2ZSG4JB956572","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A2ZSGA2CYEVUH5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -19068,7 +19068,7 @@
 {"reviewer_id":"A315PGQ04GC4PL","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A315R4CBBM3LIZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A315WK4JF91PZQ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A3169X9SSE6LIT","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A3169X9SSE6LIT","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A316BFN7G6CXYQ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A316F2ANIGRYMS","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A316HP4NGEZDVM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -19361,7 +19361,7 @@
 {"reviewer_id":"A32BNZPPE7TG0Q","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A32BQ48099O7SZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A32BV3CV1DJYCR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A32BX9GGXNQISF","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A32BX9GGXNQISF","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A32BYKL19FCSWP","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A32C081UG005BL","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A32C25B7H24FHC","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -19885,7 +19885,7 @@
 {"reviewer_id":"A3494VTZN2DRZX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A349LIMR8J6CGF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A349LYA0QMZSQE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A34A1UP40713F8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A34A1UP40713F8","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A34A6C85J84JDK","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A34A8ZONH8STYD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A34ABORRHKZ181","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -20047,7 +20047,7 @@
 {"reviewer_id":"A34V8KVW2F0QLB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A34VBV2ESVDKWO","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A34VENRX11VUKA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A34VF8AWYZF3Y2","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A34VF8AWYZF3Y2","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A34VFY6VG360OR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A34VLEC1X06KL7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A34VQZH5Q0CLYY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -20352,7 +20352,7 @@
 {"reviewer_id":"A35YLHGS8ARZ8Z","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A35YRKTIBLBDVN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A35YSQ7OXNQ5AX","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
-{"reviewer_id":"A35YUBRGG1NS4T","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A35YUBRGG1NS4T","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A35Z12H2G089VU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A35Z3TBNCQU3VY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A35ZAGQG5HP2SL","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -20385,7 +20385,7 @@
 {"reviewer_id":"A362ST45XQNGY0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A36313Z5X8RLWG","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3631V61MWUBA7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A3634T5B9T80SZ","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A3634T5B9T80SZ","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A3639Z6O5JBLIZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A363CMMODB49NE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A363DB08146FWS","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -20640,7 +20640,7 @@
 {"reviewer_id":"A371HASQDGDDV0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A371M0B11CDPJS","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A371PE9CCO65OO","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A371TTBAUWKZNW","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A371TTBAUWKZNW","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A372A2682IXU12","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A372IO3Q3JXU0O","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A372JVRDQSHVRK","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -20723,7 +20723,7 @@
 {"reviewer_id":"A37ADBPXXRWHBE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A37AENKFNMYX4H","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A37AKBZBEMGU9N","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A37AO20OXS51QA","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A37AO20OXS51QA","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A37AT0EDFCNFBP","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A37AY6C09U4TXF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A37B24L10RZ71A","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -21249,7 +21249,7 @@
 {"reviewer_id":"A39AG6CGFJN94I","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A39AGACD0O5H","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A39AIPJUXO9HYV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A39ALS60U21HE5","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A39ALS60U21HE5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A39APYUHMVNYCF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A39AR6B9BDK7S4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A39B167PVMXUW3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -21313,7 +21313,7 @@
 {"reviewer_id":"A39I15AELRY6KW","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A39I9T4MUKQQFK","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A39IG4Y2G0UCHV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A39ILAW86DCL00","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A39ILAW86DCL00","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A39ING2UMVT03Q","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A39IO1R6ZM9TZ8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A39ISGPKMF9X0R","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -21628,7 +21628,7 @@
 {"reviewer_id":"A3AQSBVQRTXL2C","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3AR4TJ8U304O","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3AR7WCL0DSTLN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A3AR9219E9B5CQ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A3AR9219E9B5CQ","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A3ARA6SYHXVA8S","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3ARFUXVMCCTGU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3ARX21FFN2AAJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -22611,7 +22611,7 @@
 {"reviewer_id":"A3EEBE82C3HYRD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3EELV89ECZZTH","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3EES4J7RJKE7V","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
-{"reviewer_id":"A3EF2L5FYAR2E","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A3EF2L5FYAR2E","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3EF32V8IRSPZI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3EF6FNX2G4FD3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3EF7PUYTF057Z","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -23379,7 +23379,7 @@
 {"reviewer_id":"A3HB2I1SKRXRJJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3HBB5SSAN1ZNN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3HBGFJSJEV96O","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
-{"reviewer_id":"A3HBLJKM8GO1EL","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A3HBLJKM8GO1EL","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A3HBP4NV1L6Q3J","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3HBPQ607NGWJT","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3HC4071HNLGLZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -24327,7 +24327,7 @@
 {"reviewer_id":"A3KUO4CSEQ6TFZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3KUT657D9KJYD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3KV0D7OGBT84W","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A3KV2L54EQS8NK","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A3KV2L54EQS8NK","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A3KV691NSUKAN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3KVCHF2QXJKN5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3KVGXZMPELV8W","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -25114,7 +25114,7 @@
 {"reviewer_id":"A3NWSGFSARF99I","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3NX1LBHVA86DU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3NX4BZ58A640M","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A3NX6AN1ZC2BF9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A3NX6AN1ZC2BF9","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A3NX6TQ4VG4PBT","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3NXAN5ACMVNY8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3NXCAF2T6Y1NP","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -25551,7 +25551,7 @@
 {"reviewer_id":"A3POGQ1C8OFOMQ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3POJ33TOFKPYB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3POJV0EEOS5FC","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A3PON17TWPXCPH","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A3PON17TWPXCPH","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
 {"reviewer_id":"A3POQXEQHPG85M","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3PP8SO3UP7RHX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3PPACBO0HAIVL","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -25805,7 +25805,7 @@
 {"reviewer_id":"A3QNEEBUO7VYZX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3QNQQKJTL76H0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3QNW63YC9V86","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A3QNX5KWHDV0GD","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A3QNX5KWHDV0GD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3QO5YL2WMRN8W","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3QO73FZ1J4DIT","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3QO90L2Q32M7A","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -26002,7 +26002,7 @@
 {"reviewer_id":"A3REK3OFONWB1Q","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3REUILBAGPS06","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3REUNFHQOY65N","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A3REZNGLB8N0XP","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A3REZNGLB8N0XP","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A3RF2VORV4QF5S","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3RF8RCQPUGIFF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3RFNCMOL3FSE8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -26054,7 +26054,7 @@
 {"reviewer_id":"A3RM9CPH0MQ9HQ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3RMEV0OPNCQ17","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3RMGM15W0AK6S","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A3RMN2TWVICI2F","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A3RMN2TWVICI2F","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"A3RMTAD7YR1TN3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3RMV4TJ5MC5BY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3RMWLR41JU2JX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -26326,7 +26326,7 @@
 {"reviewer_id":"A3SRJ2JNFHWQBZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3SRKGEXZF5MOT","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3SRLF4PGFUTPN","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A3SRMK9AF1BAII","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A3SRMK9AF1BAII","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3SRWJM6O8PIVF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3SS06G3NO5MY7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3SS9VI1S2D344","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -26648,7 +26648,7 @@
 {"reviewer_id":"A3U0HRZXDW80QD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3U0IKEECPTOLW","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3U0KZRH7O8L8M","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A3U0NKTCD010BB","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A3U0NKTCD010BB","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
 {"reviewer_id":"A3U0QGF6LRP900","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3U0UBVX71S4Y6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3U0XS0CZWX8K2","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -26864,7 +26864,7 @@
 {"reviewer_id":"A3UU3B6ZTQLYUO","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3UU8W7PYBPHW9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3UUHLGCPRJTNA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A3UUK5G5BTY3R0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"A3UUK5G5BTY3R0","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"A3UUKEXALUB303","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3UUP16P95DT4W","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A3UUPHSQUWKTET","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -27302,7 +27302,7 @@
 {"reviewer_id":"A48NUZO68QFHM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A48UNJNL1MQ99","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A48XTH8RFWM24","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A497L1EUTOVXW","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"A497L1EUTOVXW","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
 {"reviewer_id":"A497YP1LRP5A2","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A49FLO3WCIRQB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A49LF193BLCBE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -27696,7 +27696,7 @@
 {"reviewer_id":"A5WVT6IGQS0G9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A5X2FEKTCV4H5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A5X5EGH95H0OQ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A5XB4EVQR8T6L","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"A5XB4EVQR8T6L","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A5XG0KDFX4WMI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A5XQ1I7SJ9201","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A5XST67MB560Y","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -27886,7 +27886,7 @@
 {"reviewer_id":"A6QZIFJHVO3WC","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A6R7MFKB209LZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A6RAAP48OCJ9D","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A6RDOQ77ZARCW","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A6RDOQ77ZARCW","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A6RGPU0H5VFTZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A6RHN9V2ZP32I","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A6RK4W5DOVT3S","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -28053,7 +28053,7 @@
 {"reviewer_id":"A7ELNGMVRPYWO","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A7EPWJU58QSBW","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A7EU2BWLLCJY2","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A7EU3UEWA7VS9","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"A7EU3UEWA7VS9","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"A7EUECZHY1E2S","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A7EW37ZQSIV78","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A7EZLH1VWI0X2","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -28604,7 +28604,7 @@
 {"reviewer_id":"A9EWI8UGYRM4S","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A9EYVF3E5ACI2","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"A9F3I6L4N5TUX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"A9F9N1WLJJKQI","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"A9F9N1WLJJKQI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A9FLWNMXBOJFD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A9G2CPS9N6HVF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"A9G85AJ78K471","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -29219,7 +29219,7 @@
 {"reviewer_id":"ABS6K19TDDACG","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ABSE75FAEAGME","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ABSEYAX48XK2I","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"ABSMCR2WE786O","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"ABSMCR2WE786O","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"ABSYIF0ONC2AF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ABT95WPR4VVHU","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ABTBOD679KEMX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -29764,7 +29764,7 @@
 {"reviewer_id":"ADW43S8H5PDXQ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ADW6SK2BPDTWQ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ADWCGW7CX7R8J","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"ADWCIN6P4ZSTD","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"ADWCIN6P4ZSTD","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"ADWCPTUJQ0BXK","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ADWQJVH0FO2N0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ADWRXIDKP0CR6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -30118,7 +30118,7 @@
 {"reviewer_id":"AFCEJ6UNZPCXC","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AFCFQE0UP98KA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AFCGX8II062AF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AFCIVNO3Q5Q75","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"AFCIVNO3Q5Q75","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"AFCNUTPDVEIDT","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AFCOO84XVP4WS","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AFD0JB5SCEM5S","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -30248,7 +30248,7 @@
 {"reviewer_id":"AFUQCSK0WPLNZ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AFUVWQIPPV8I8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AFV4KEBSD7OPS","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AFV4LO6D33DYY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"AFV4LO6D33DYY","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"AFV7JWAJMG5VG","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AFVG48SFGU8VB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AFVKI7BCS3FSX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -30423,7 +30423,7 @@
 {"reviewer_id":"AGGU8GVB24L6C","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AGH2LG47Y3B1S","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AGH9FOHXRAQ5E","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AGHA1CKJ9I6SM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"AGHA1CKJ9I6SM","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"AGHBU1UWQBW2Z","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AGHCCVXFUHYZD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AGHCN9HHCMX04","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -31190,7 +31190,7 @@
 {"reviewer_id":"AJEMUQU7KNI73","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AJEOFP6ZWY0MK","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AJEPSO44WZOGE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AJEPZJ0LQE5BQ","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
+{"reviewer_id":"AJEPZJ0LQE5BQ","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"AJEPZROU93OIC","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AJEVKMCF8ZJT9","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AJEWZDNLWXTGM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -31308,7 +31308,7 @@
 {"reviewer_id":"AJTW44BA9DC7U","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AJU16HH9MIP90","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AJU1HQWCM13Y8","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AJU6VFIFNGT62","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"AJU6VFIFNGT62","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"AJU8W50NUO094","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AJUEAE35LR20G","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AJUP0PNA44A0A","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -31362,7 +31362,7 @@
 {"reviewer_id":"AK0AZ175B3XSJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AK0EFNOVSQ3GM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AK15WRC3F9EX4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AK16KWK9211S3","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"AK16KWK9211S3","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"AK1HTWDD1JT9I","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AK1M5ZR0LME67","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AK1MRB79FJVBB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -31391,7 +31391,7 @@
 {"reviewer_id":"AK69BPBJ5Z4I5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AK6A4UKBXPVID","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AK6ASDG0G1XC5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AK6FQFP6U4ER5","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"AK6FQFP6U4ER5","recall@5":1.0,"ndcg@5":0.3868528072,"mrr":0.2}
 {"reviewer_id":"AK6GZVPJ9B0CP","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AK6Q7BEBB8NTY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AK6QV6O8CR00X","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -31457,7 +31457,7 @@
 {"reviewer_id":"AKEMZPYHDSQQB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AKERZ8O7L8V8H","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AKEWAQNGZBBFJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AKF1XBBWAQR6L","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"AKF1XBBWAQR6L","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"AKFACM3A3WMF3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AKFDXM1H93UEE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AKFDXT3YT56ND","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -32060,7 +32060,7 @@
 {"reviewer_id":"AMO1MLSIJSQOF","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AMO5770JRYSYO","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AMP5WITG8PCCM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AMP6PVR3UJXGN","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"AMP6PVR3UJXGN","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"AMP9SMF4KSZ5X","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AMPJ7MYTR9DT1","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AMPMJ8SIAZQLH","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -32315,7 +32315,7 @@
 {"reviewer_id":"ANNC9AJ5CK6KP","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ANNLQSAN1AOPA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ANNQP8SKR7870","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"ANNUJPMDRWF3C","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"ANNUJPMDRWF3C","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"ANO1EHX20GVG7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ANO8TQ5ZB10RV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ANOB52FGYTDD","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -32876,7 +32876,7 @@
 {"reviewer_id":"APKKCG6WT1HPI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"APKQ02M1J05RA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"APL4CYGZR6748","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"APL5GPELNS1XD","recall@5":1.0,"ndcg@5":1.0,"mrr":1.0}
+{"reviewer_id":"APL5GPELNS1XD","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
 {"reviewer_id":"APL6NOS3X6G8H","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"APL7UD4073SY5","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"APLA4YHDFWS5H","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -33036,7 +33036,7 @@
 {"reviewer_id":"AQ5IW36LA7OLE","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AQ5VLLXPQNEJI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AQ62X3Y898AG7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AQ66EFBFY7JXY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"AQ66EFBFY7JXY","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"AQ69WQY9ADEX1","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AQ6AGWKWMTY8H","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AQ6NXRIBGTF09","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -33658,7 +33658,7 @@
 {"reviewer_id":"ASEV3UG6XKYM4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ASEWIMPZU2UC7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ASEX8LA7AHQ0Z","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"ASEZTJV89KAYN","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"ASEZTJV89KAYN","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"ASF0LJ5NP39BM","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ASF3J4UYV34KA","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"ASF9G0D1VCV54","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -34256,7 +34256,7 @@
 {"reviewer_id":"AUOHVC1B4X4DX","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AUOL8284BYMV7","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AUP0YSR8IRJYB","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AUPBJPS08HJBJ","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
+{"reviewer_id":"AUPBJPS08HJBJ","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"AUPGEVBC9RV12","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AUPPK8SP7ZA8Q","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AUPWBLZD35YE3","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -34410,7 +34410,7 @@
 {"reviewer_id":"AV95TNOSKP29A","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AV97FVTK1KFXI","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AV9ABODU1BPYH","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AV9ATPIMFY4M","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
+{"reviewer_id":"AV9ATPIMFY4M","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
 {"reviewer_id":"AV9PIER7NE448","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AV9X2G1LNN8W1","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AVA23FS2PP338","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -34877,7 +34877,7 @@
 {"reviewer_id":"AX5V9LUGGS080","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AX5VA6RUPKP80","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AX5WIM00C7TGY","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AX62D1GJD79UE","recall@5":1.0,"ndcg@5":0.6309297536,"mrr":0.5}
+{"reviewer_id":"AX62D1GJD79UE","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"AX65HP000C9UR","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AX6CRRFTE9V10","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AX6EDFRUIIB26","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
@@ -35152,7 +35152,7 @@
 {"reviewer_id":"AY8TQIM9NDLGV","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AY8ZNDFP5F3I0","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AY92D346R4880","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
-{"reviewer_id":"AY96PBZ1GZ6MT","recall@5":1.0,"ndcg@5":0.4306765581,"mrr":0.25}
+{"reviewer_id":"AY96PBZ1GZ6MT","recall@5":1.0,"ndcg@5":0.5,"mrr":0.3333333333}
 {"reviewer_id":"AY98TV3EIJ2F4","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AY9QK5HH6AX9I","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}
 {"reviewer_id":"AY9RLBYZ4VVU6","recall@5":0.0,"ndcg@5":0.0,"mrr":0.0}

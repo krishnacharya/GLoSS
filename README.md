@@ -4,15 +4,15 @@
 
 GLoSS depends on the following components:
 
-- **[Unsloth](https://github.com/unslothai/unsloth)** – for QLoRA fine-tuning  
-- **[Retriv](https://github.com/AmenRa/retriv)** – for building dense retrieval indices  
+- **[Unsloth](https://github.com/unslothai/unsloth)** – for QLoRA fine-tuning
+- **[Retriv](https://github.com/AmenRa/retriv)** – for building dense retrieval indices
 - **[vLLM](https://github.com/vllm-project/vllm)** *(optional)* – for faster generation
 
 We provide two Conda environments in the `envs` directory:
-- `glosstune.yml` – has Unsloth for model fine-tuning  
-- `glossret.yml` – has Retriv for retrieval setup
+- `glosstune.yml` – contains Unsloth for model fine-tuning
+- `glossret.yml` – contains Retriv for retrieval setup
 
-> **Note:** Our workstation uses RTX A5000 GPUs (CUDA 10.1). Due to CUDA compatibility and conflicts among libraries, the two environments are separated.
+> **Note:** Our workstation uses RTX A5000 GPUs (CUDA 10.1). Due to CUDA compatibility and library conflicts, we maintain separate environments.
 
 ## Datasets and Preprocessing
 
@@ -22,22 +22,21 @@ We use the core-5 subset of the Beauty, Toys, and Sports categories from the Ama
 
 For convenience, we provide a script that downloads, preprocesses, and creates HuggingFace datasets from these sources.
 
-Run the following:
+To process the data, run:
 ```bash
 chmod +x ./scripts/pulldata_process.sh
-
 nohup ./scripts/pulldata_process.sh > pulldata_process.log 2>&1 &
 ```
 
 This creates the `hfdataset`, `reviews`, and `data/processed` directories.
 
-For posterity, in case the URLs are down, we also provide these processed datasets at [this link](https://drive.google.com/file/d/1nYleGIZA2gBp9VfFLS6PiFc0myaKldlK/view?usp=drive_link).
+For backup purposes, in case the URLs become unavailable, we also provide these processed datasets at [this link](https://drive.google.com/file/d/1nYleGIZA2gBp9VfFLS6PiFc0myaKldlK/view?usp=drive_link).
 
 ## QLoRA SFT
 
 For supervised fine-tuning, we use Unsloth's QLoRA. Fine-tuning configurations for each of the three datasets and each Llama-3 model size (Llama-3.1-8B, Llama-3.2-3B, and Llama-3.2-1B) are available in the `ft_configs` directory.
 
-The trained model checkpoints are available on [Gdrive](https://drive.google.com/file/d/101olRNCsDW1rkOpUJVy5cHah9N29ZIIt/view?usp=drive_link).
+The trained model checkpoints are available on [Google Drive](https://drive.google.com/file/d/101olRNCsDW1rkOpUJVy5cHah9N29ZIIt/view?usp=drive_link).
 
 To download and set up the checkpoints:
 ```bash
@@ -50,7 +49,7 @@ gdown 101olRNCsDW1rkOpUJVy5cHah9N29ZIIt
 # Unzip the downloaded file
 unzip trained_models.zip
 
-# Rename trained_models directory to llama_modelsave as gen_withbeams expects this directory
+# Rename trained_models directory to llama_modelsave as required by gen_withbeams
 rm -rf llama_modelsave
 mv trained_models llama_modelsave
 ```
@@ -59,7 +58,7 @@ mv trained_models llama_modelsave
 
 To generate recommendations, we use beam search decoding with 5 beams and 50 max new tokens using `src/generate_withbeams.py`.
 
-Assuming you've downloaded our checkpoints, here's how to run generation on the validation users. This will generate files in the `genqueries/toys/` folder with the val suffix. This saves the file `Llama-3.2-1B-fttoys_ep10_maxseq1024_bs4_acc4_validation_beam5_max_seq1024_bs8_numret5.json` in the toys folder.
+Assuming you've downloaded our checkpoints, here's how to run generation on the validation users. This will generate files in the `genqueries/toys/` folder with the val suffix, specifically saving the file `Llama-3.2-1B-fttoys_ep10_maxseq1024_bs4_acc4_validation_beam5_max_seq1024_bs8_numret5.json` in the toys folder.
 
 ```bash
 nohup python src/generate_withbeams.py \
@@ -77,9 +76,9 @@ nohup python src/generate_withbeams.py \
 
 ## Retrieval
 
-Note: First activate the glossret environment.
+> **Note:** First activate the glossret environment.
 
-To evaluate and get the metrics for the generated file run:
+To evaluate and calculate metrics for the generated file:
 
 ```bash
 # Create directory for the generated file if it doesn't exist
@@ -111,18 +110,25 @@ nohup python src/calcirmetrics_denseret_dataset_agno.py \
     > calc_irmetrics_e5-small_toysval.log 2>&1 &
 ```
 
-We provide scripts that runs this across all the datasets:
+We provide scripts to run this across all datasets:
 
 ```bash
 chmod +x ./scripts/get_sparsebm25_ret_metric.sh
 chmod +x ./scripts/get_dense_ret_metrics_test.sh
 
 nohup ./scripts/get_sparsebm25_ret_metric.sh > table3_sparsebm25.log 2>&1 &
-
 nohup ./scripts/get_dense_ret_metrics_test.sh > table3_e5smallv2.log 2>&1 &
 ```
 
-## Last item text search(LIS) baseline
+## Evaluation Across User Segments
+
+```bash
+nohup python src/evaluate_userseg_combined.py > userseq-encoders/combined_final.log
+```
+
+All metrics are available in the `all_metrics_logged` folder.
+
+## Last Item Search (LIS) Baseline
 
 ```bash
 chmod +x ./scripts/get_LIS_sparseBM.sh
@@ -130,11 +136,5 @@ chmod +x ./scripts/LIS_dense.sh
 
 nohup ./scripts/get_LIS_sparseBM.sh > LIS_bm25.log 2>&1 &
 nohup ./scripts/get_LIS_sparseBM.sh > LIS_e5small.log 2>&1 &
-```
-
-## Evaluation Across User Segments
-
-```bash
-nohup python src/evaluate_userseg_combined.py > userseq-encoders/combined_final.log
 ```
 

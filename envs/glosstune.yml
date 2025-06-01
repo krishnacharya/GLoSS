@@ -209,5 +209,5 @@ dependencies:
       - zlib-state==0.1.9
 variables:
   WANDB_PROJECT: glosstune-proj
-  PYTHONPATH: /home/kacharya33/GLoSS
-prefix: /home/kacharya33/.conda/envs/glosstune
+  PYTHONPATH: ${PWD}  # Replace with your project root directory
+  prefix: ${CONDA_PREFIX}  # This will use the current conda environment
