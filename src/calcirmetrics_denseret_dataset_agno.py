@@ -19,15 +19,7 @@ dataset_configs = {
         "meta_columns": ['asin', 'title'],  # Expected columns for meta_corpus
         "nlang_cols": ['title'],
         "nlang_prefix_map": {'title': 'Title: '},
-    },
-    "movielens": {
-        "user_id_key": "user_id",
-        "item_id_key": "movie_id",
-        "meta_columns": ['movie_id', 'title', 'genre'],  # Expected columns for meta_corpus
-        "nlang_cols": ['title', 'genre'],
-        "nlang_prefix_map": {'title': 'Title: ', 'genre': 'Genres: '},
     }
-    # Add more categories/datasets here as needed
 }
 
 def get_rundict_from_dense_faster(genop: List[Dict], dr: DenseRetriever, num_return_sequences: int, user_id_key: str, item_id_key: str, batch_size: int = None):
@@ -228,8 +220,8 @@ def get_metrics(meta_filepath: str, generated_filepath: str,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate retrieval performance based on generated sequences.")
-    parser.add_argument("--dataset_name", type=str, required=True, help="Specific dataset name (e.g., 'beauty', 'ml100k', 'sports').")
-    parser.add_argument("--data_family", type=str, required=True,choices=["amazon", "movielens"],help="Family of the dataset (e.g., 'amazon', 'movielens').")
+    parser.add_argument("--dataset_name", type=str, required=True, help="Specific dataset name (e.g., 'beauty', 'sports').")
+    parser.add_argument("--data_family", type=str, required=True, choices=["amazon"], help="Family of the dataset.")
     parser.add_argument("--generated_file", type=str, required=True,help="The JSON file containing generated sequences (e.g., 'val_gen_op.json').")
     parser.add_argument("--split", type=str, required=True, help="The split to evaluate on (e.g., 'validation', 'test').")
     parser.add_argument("--short_model_name", type=str, required=True, help="The short model name (e.g., 'llama-1b').")
@@ -247,8 +239,6 @@ if __name__ == "__main__":
     current_config = None
     if data_family == "amazon":
         current_config = dataset_configs["amazon"].copy()
-    elif data_family == "movielens":
-        current_config = dataset_configs["movielens"].copy()
     else:
         raise ValueError(f"Unsupported data_family: '{data_family}'. Please define its configuration.")
 
@@ -271,6 +261,3 @@ if __name__ == "__main__":
 
 # Toys, llama-8b, TEST with all-MiniLM-L6-v2
 # Metrics: {'recall@5': 0.07960814642949214, 'ndcg@5': 0.05264008851607378, 'mrr': 0.043805963736358165}
-
-# ML100k, llama-8b, TEST with all-MiniLM-L6-v2
-# Metrics: {'recall@5': 0.060445387062566275, 'ndcg@5': 0.03594454348807995, 'mrr': 0.027942735949098622}

@@ -64,9 +64,8 @@ def get_reviews_raw2014_dir():
     res.mkdir(parents=True, exist_ok=True)
     return res
 
-def get_movielens_raw_dir():
-    res = project_root() / "reviews" / "movielens"
-    res.mkdir(parents=True, exist_ok=True)
+def get_amazon_raw_dir():
+    res = project_root() / "reviews" / "amazon"
     return res
 
 def get_analysis_dir():

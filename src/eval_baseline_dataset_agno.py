@@ -14,23 +14,16 @@ import argparse
 import os
 
 # --- Dataset Configurations ---
-# This dictionary centralizes dataset-specific information
+# Any dataset which has user interactions and metadata can be added to the config
 dataset_configs = {
     "amazon": {
-        "user_id_key": "reviewer_id",
-        "item_id_key": "asin",
-        "meta_columns": ['asin', 'title'],
-        "nlang_cols": ['title'],
-        "nlang_prefix_map": {'title': 'Title: '},
-    },
-    "movielens": {
-        "user_id_key": "user_id",
-        "item_id_key": "movie_id",
-        "meta_columns": ['movie_id', 'title', 'genre'],
-        "nlang_cols": ['title', 'genre'],
-        "nlang_prefix_map": {'title': 'Title: ', 'genre': 'Genres: '},
-    },
-}
+        "user_id_key": "reviewer_id", 
+        "item_id_key": "asin", # Amazon Standard Identification Number
+        "meta_columns": ['asin', 'title'], 
+        "nlang_cols": ['title'], # columns to be serialized into natural language
+        "nlang_prefix_map": {'title': 'Title: '}, # natural language serialization of the item
+        }
+    }
 
 
 def build_bm25_retriever(corpus_list: List[str], index_path: str):
@@ -57,12 +50,9 @@ def evaluate_model(qrels: Qrels, run: Run, metrics: List[str], model_name: str):
     print("-" * 30)
     return results
 
-
-
-
 def prepare_metadata_for_retrieval(meta_corpus_path: str, config: Dict) -> (pd.DataFrame, Dict[str, str]):
     """
-    Prepares metadata for retrieval, handling both Amazon and MovieLens datasets.
+    Prepares metadata for retrieval.
 
     Args:
         meta_corpus_path: Path to the meta corpus file.
@@ -107,10 +97,9 @@ def prepare_metadata_for_retrieval(meta_corpus_path: str, config: Dict) -> (pd.D
     return items_compact, item_id_to_nlang
 
 
-
 def get_qrels(dataset: Dataset, config: Dict) -> Dict[str, Dict[str, int]]:
     """
-    Generates ground truth (qrels) from the dataset, compatible with both Amazon and MovieLens.
+    Generates ground truth (qrels) from the dataset.
     Args:
         dataset: The dataset.
         config: the dataset config.
@@ -134,8 +123,7 @@ def textbased_lastsimilar(dataset: Dataset, retriever: bm25s.BM25, \
                           item_id_to_nlang: Dict[str, str], items_compact: pd.DataFrame, \
                           config: Dict, k: int = 5) -> Dict[str, Dict[str, float]]:
     """
-    Generates recommendations based on text similarity of the last seen item using BM25,
-    compatible with both Amazon and MovieLens.
+    Generates recommendations based on text similarity of the last seen item using BM25.
     Args:
         dataset: The dataset.
         retriever: The BM25 retriever.
@@ -161,7 +149,7 @@ def textbased_lastsimilar(dataset: Dataset, retriever: bm25s.BM25, \
         run_dict[user_id] = {item: score for item, score in zip(items, item_scores)}
     return run_dict
 
-def main(dataset_path: str, meta_corpus_path: str, bm25_index_name: str, k: int = 5, metrics: List[str] = ["recall@5", "ndcg@5", "mrr"], dataset_split: str = "test", data_family: str = "movielens"):
+def main(dataset_path: str, meta_corpus_path: str, bm25_index_name: str, k: int = 5, metrics: List[str] = ["recall@5", "ndcg@5", "mrr"], dataset_split: str = "test", data_family: str = "amazon"):
     """
     Main function to run the text-based last similar item recommendation evaluation.
 
@@ -172,7 +160,7 @@ def main(dataset_path: str, meta_corpus_path: str, bm25_index_name: str, k: int 
         k: The number of recommendations to generate.
         metrics: List of evaluation metrics to use.
         dataset_split: The dataset split to evaluate (e.g., 'train', 'validation', 'test').
-        data_family: The family of the dataset, either "amazon" or "movielens".
+        data_family: The family of the dataset.
     """
     if data_family not in dataset_configs:
         raise ValueError(f"Unsupported data_family: {data_family}.  Must be one of {list(dataset_configs.keys())}")
@@ -206,7 +194,7 @@ if __name__ == "__main__":
     parser.add_argument("--k", type=int, default=5, help="The value of k for evaluation metrics (e.g., recall@k).")
     parser.add_argument("--metrics", nargs='+', default=["recall@5", "ndcg@5", "mrr"], help="List of evaluation metrics to use.")
     parser.add_argument("--split", type=str, default="test", help="The dataset split to evaluate (e.g., 'train', 'validation', 'test').")
-    parser.add_argument("--data_family", type=str, required=True, choices=["amazon", "movielens"], help="The family of the dataset: 'amazon' or 'movielens'.")
+    parser.add_argument("--data_family", type=str, required=True, choices=["amazon"], help="The family of the dataset.")
 
 
     args = parser.parse_args()
@@ -221,20 +209,12 @@ if __name__ == "__main__":
     main(dataset_path, meta_corpus_path, bm25_index_name, args.k, args.metrics, args.split, data_family)
 
 
-#ML100k test results with LIR
-# {'recall@5': 0.021208907741251327, 'ndcg@5': 0.01158073939771433, 'mrr': 0.008377518557794273}
-
-#ML1M test results with LIR
-# {'recall@5': 0.023178807947019868, 'ndcg@5': 0.012414309124221153, 'mrr': 0.008821743929359823}
-
-# beauty test results with LIR
+# Beauty test results with Last item search
 # {'recall@5': 0.04333050127442651, 'ndcg@5': 0.023179244762936268, 'mrr': 0.016472894215147044}
 
-#toys test results with LIR
+# Toys test results with Last item search
 # {'recall@5': 0.05212683681361176, 'ndcg@5': 0.026660292010049123, 'mrr': 0.0182822033170061}
 
-#sports test results with LIR
+# Sports test results with Last item search
 # {'recall@5': 0.021153467988875466, 'ndcg@5': 0.011012792672956575, 'mrr': 0.007661226133288385}
-
-# ------------------------------------------------------------------------------------------------------------------------
 

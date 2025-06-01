@@ -17,21 +17,12 @@ from functools import reduce
 # --- Dataset Configurations ---
 # This dictionary centralizes all dataset-specific information
 dataset_configs = {
-    "amazon": { # Base configuration for Amazon-like datasets
+    "amazon": {
         "user_id_key": "reviewer_id",
         "item_id_key": "asin",
-        "meta_columns": ['asin', 'title'], # Expected columns for meta_corpus
+        "meta_columns": ['asin', 'title'],
         "nlang_cols": ['title'],
         "nlang_prefix_map": {'title': 'Title: '},
-        # No 'processed_data_dir_name' here; it will be dynamically set by the specific dataset name
-    },
-    "movielens": {
-        "user_id_key": "user_id",
-        "item_id_key": "movie_id",
-        "meta_columns": ['movie_id', 'title', 'genre'], # Expected columns for meta_corpus
-        "nlang_cols": ['title', 'genre'],
-        "nlang_prefix_map": {'title': 'Title: ', 'genre': 'Genres: '},
-        # No 'processed_data_dir_name' here; it will be dynamically set by the specific dataset name
     }
 }
 
@@ -150,6 +141,21 @@ def load_data(meta_filepath: str, generated_filepath: str, config: Dict) -> tupl
     print(f"Loaded generated data: type={type(genop)}, first element length={len(genop[0]) if genop else 0}")
     return items_compact, genop
 
+def build_bm25_retriever(corpus_list: List[str], index_path: str):
+    """Builds and saves a BM25 retriever, or loads it if it exists."""
+    stemmer = Stemmer.Stemmer("english")
+    corpus_tokens = bm25s.tokenize(corpus_list, stopwords="en")
+
+    try:
+        retriever = bm25s.BM25.load(index_path, load_corpus=False)
+        print(f"Loaded BM25 retriever from {index_path}")
+    except FileNotFoundError:
+        retriever = bm25s.BM25()
+        retriever.index(corpus_tokens)
+        retriever.save(index_path, corpus=corpus_list)
+        print(f"Built and saved BM25 retriever to {index_path}")
+    return retriever
+
 def get_metrics(meta_filepath: str, generated_filepath: str,
                 retriever_filepath: str, num_sequences: int, at_k: int, dataset_name: str,
                 config: Dict, peruser_savepath: str):
@@ -163,6 +169,10 @@ def get_metrics(meta_filepath: str, generated_filepath: str,
     # Verify reviewer IDs
     print("Verifying reviewer IDs...")
     verify_reviewer_ids(genop, config["user_id_key"])
+
+    # Build or load BM25 retriever if it doesn't exist
+    corpus_list = items_compact['nlang'].tolist()
+    retriever = build_bm25_retriever(corpus_list, retriever_filepath)
 
     # Evaluate retrieval
     print("Evaluating retrieval performance...")
@@ -203,8 +213,8 @@ def get_metrics(meta_filepath: str, generated_filepath: str,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Evaluate retrieval performance based on generated sequences.")
-    parser.add_argument("--dataset_name", type=str, required=True, help="Specific dataset name (e.g., 'beauty', 'ml100k', 'sports').")
-    parser.add_argument("--data_family", type=str, required=True, choices=["amazon", "movielens"], help="Family of the dataset (e.g., 'amazon', 'movielens').")
+    parser.add_argument("--dataset_name", type=str, required=True, help="Specific dataset name (e.g., 'beauty', 'sports').")
+    parser.add_argument("--data_family", type=str, required=True, choices=["amazon"], help="Family of the dataset.")
     parser.add_argument("--generated_file", type=str, required=True, help="The JSON file containing generated sequences (e.g., 'val_gen_op.json').")
     parser.add_argument("--retriever_index", type=str, required=True, help="The BM25 retriever index file (e.g., 'amznbeauty2014_index').")
     parser.add_argument("--num_sequences", type=int, default=5, help="Number of generated sequences to consider per reviewer.")
@@ -220,8 +230,6 @@ if __name__ == "__main__":
     current_config = None
     if data_family == "amazon":
         current_config = dataset_configs["amazon"].copy()
-    elif data_family == "movielens":
-        current_config = dataset_configs["movielens"].copy()
     else:
         raise ValueError(f"Unsupported data_family: '{data_family}'. Please define its configuration.")
 
@@ -312,17 +320,6 @@ if __name__ == "__main__":
 
 # Llama-3.1-8B TEST, beam search    
 # Metrics: {'recall@5': 0.03590190184566115, 'ndcg@5': 0.02176466662205941, 'mrr': 0.01714938524782051}
-
-# --------------------------------------------------------------------------------------------------------------------------------
-
-# Movielens 100k, llama-1b-649 step cpt, TEST
-# Metrics: {'recall@5': np.float64(0.05938494167550371), 'ndcg@5': np.float64(0.031014263012511995), 'mrr': np.float64(0.02189819724284199)}
-
-# Movielens 100k, llama-3B-590 step cpt, TEST
-# Metrics: {'recall@5': np.float64(0.05832449628844114), 'ndcg@5': np.float64(0.032443425480723265), 'mrr': np.float64(0.02407211028632025)}
-
-# Movielens 100k, llama-8B step cpt, TEST
-# Metrics: {'recall@5': np.float64(0.060445387062566275), 'ndcg@5': np.float64(0.03658788308547182), 'mrr': np.float64(0.028844114528101802)}
 
 # --------------------------------------------------------------------------------------------------------------------------------
 # sports with llama-1b 9 epochs, bm25s

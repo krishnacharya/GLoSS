@@ -17,7 +17,7 @@ from retriv import DenseRetriever
 import argparse
 import os
 
-# DENSE SEARCH on last text
+# SEMANTIC SEARCH aka dense retrieval on last text
 dataset_configs = {
     "amazon": {
         "user_id_key": "reviewer_id",

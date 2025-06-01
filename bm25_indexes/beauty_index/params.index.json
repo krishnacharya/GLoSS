@@ -7,6 +7,6 @@
     "dtype": "float32",
     "int_dtype": "int32",
     "num_docs": 12094,
-    "version": "0.2.9",
+    "version": "0.2.13",
     "backend": "numpy"
 }

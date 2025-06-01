@@ -1,27 +1,5 @@
 
 --- Evaluation Summary ---
-Dataset: ml100k
-Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/ml100k/llama-1b/llama-1b-checkpoint-649_test_beam5_max_seq1024_bs8_numret5.json
-Retriever index file: /home/kacharya33/nanoGenRec/intfloat/e5-small-v2_indexes/ml100k_index
-Number of return sequences: 5
-Metrics: {'recall@5': 0.05938494167550371, 'ndcg@5': 0.035321375405706984, 'mrr': 0.02748320961470484}
-
---- Evaluation Summary ---
-Dataset: ml100k
-Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/ml100k/llama-3b/llama-3b-checkpoint-590_test_beam5_max_seq1024_bs8_numret5.json
-Retriever index file: /home/kacharya33/nanoGenRec/intfloat/e5-small-v2_indexes/ml100k_index
-Number of return sequences: 5
-Metrics: {'recall@5': 0.05832449628844114, 'ndcg@5': 0.03305534549366956, 'mrr': 0.02486744432661718}
-
-
---- Evaluation Summary ---
-Dataset: ml100k
-Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/ml100k/llama-8b/llama-8b-checkpoint-708_test_beam5_max_seq1024_bs8_numret5.json
-Retriever index file: /home/kacharya33/nanoGenRec/intfloat/e5-small-v2_indexes/ml100k_index
-Number of return sequences: 5
-Metrics: {'recall@5': 0.05832449628844114, 'ndcg@5': 0.03523718784213239, 'mrr': 0.027712972781901733}
-
---- Evaluation Summary ---
 Dataset: beauty
 Generated sequences file: /home/kacharya33/nanoGenRec/genqueries/beauty/llama-1b/llama-1b-test_beam5_max_seq1024.json
 Retriever index file: /home/kacharya33/nanoGenRec/intfloat/e5-small-v2_indexes/beauty_index

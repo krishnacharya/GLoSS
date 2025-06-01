@@ -204,7 +204,7 @@ def main():
 
     file_path_compressed = str(raw_dir2014 / filename_compressed)
     file_path_uncompressed = str(raw_dir2014 / filename_uncompressed)
-    output_dir = processed_data_dir(f"{category.lower()}2014")
+    output_dir = processed_data_dir(f"{category.lower()}")
     output_path = str(output_dir / 'meta_proc.json')
     columns_to_keep = ['asin', 'title']
     title_word_limit = 25

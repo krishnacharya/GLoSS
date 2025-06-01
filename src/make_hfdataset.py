@@ -158,7 +158,7 @@ def main():
     args = parser.parse_args()
     category = args.category.lower()
 
-    processed_dir = processed_data_dir(f"{category}2014")
+    processed_dir = processed_data_dir(f"{category}")
     hf_dir = get_hfdata_dir()
 
     core5_file = str(processed_dir / 'df_withdup.json')

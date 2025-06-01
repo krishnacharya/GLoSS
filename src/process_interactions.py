@@ -102,8 +102,14 @@ def filter_reviewers_with_min_reviews(df, min_reviews=3):
 def create_corpus_metadata(meta, asin_list, output_path):
     """Creates a metadata file containing only items present in the provided ASIN list."""
     corpus_items = meta[meta['asin'].isin(asin_list)]
+    # Save with .json extension
     corpus_items.to_json(output_path, orient='records', lines=True)
     print(f"Corpus metadata saved to {output_path}")
+    
+    # Save with .jsonl extension
+    jsonl_path = output_path.replace('.json', '.jsonl')
+    corpus_items.to_json(jsonl_path, orient='records', lines=True)
+    print(f"Corpus metadata saved to {jsonl_path}")
 
 def main():
     parser = argparse.ArgumentParser(description="Process Amazon reviews datasets.")
@@ -124,8 +130,8 @@ def main():
 
     reviews_file_compressed = str(raw_dir2014 / reviews_filename_compressed)
     reviews_file_uncompressed = str(raw_dir2014 / reviews_filename_uncompressed)
-    metadata_file = str(processed_data_dir(f"{category.lower()}2014") / 'meta_proc.json')
-    output_dir = processed_data_dir(f"{category.lower()}2014")
+    metadata_file = str(processed_data_dir(f"{category.lower()}") / 'meta_proc.json')
+    output_dir = processed_data_dir(f"{category.lower()}")
 
     # Ensure the output directory exists
     Path(output_dir).mkdir(parents=True, exist_ok=True)
@@ -189,8 +195,9 @@ def main():
         print(f"{key}: {value:.2f}" if isinstance(value, float) else f"{key}: {value}")
 
     # save df_withdup_merged and df_dedup_merged
-    df_withdup.to_json(str(processed_data_dir(f"{category.lower()}2014") / 'df_withdup.json'), orient='records', lines=True)
-    df_dedup.to_json(str(processed_data_dir(f"{category.lower()}2014") / 'df_dedup.json'), orient='records', lines=True)
+    df_withdup.to_json(str(processed_data_dir(f"{category.lower()}") / 'df_withdup.json'), orient='records', lines=True)
+    df_dedup.to_json(str(processed_data_dir(f"{category.lower()}") / 'df_dedup.json'), orient='records', lines=True)
+    df_dedup.to_json(str(processed_data_dir(f"{category.lower()}") / 'df_ui.json'), orient='records', lines=True)
 
     # Filter reviewers with minimum reviews
     df_withdup_filtered = filter_reviewers_with_min_reviews(df_withdup, min_reviews=3)
@@ -202,7 +209,7 @@ def main():
     print(f"Number of unique ASINs (deduplicated, filtered): {len(unique_asins_dedup)}")
 
     # Create corpus metadata
-    create_corpus_metadata(meta_df, unique_asins_withdup, output_path=str(processed_data_dir(f"{category.lower()}2014") / 'meta_corpus.json'))
+    create_corpus_metadata(meta_df, unique_asins_withdup, output_path=str(processed_data_dir(f"{category.lower()}") / 'meta_corpus.json'))
 
 
 
