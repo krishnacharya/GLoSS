@@ -146,5 +146,5 @@ dependencies:
       - yarl==1.20.0
       - zlib-state==0.1.9
 variables:
-  PYTHONPATH: /home/kacharya33/GLoSS
-prefix: /home/kacharya33/.conda/envs/glossret
+  PYTHONPATH: ${PWD}  # Replace with your project root directory
+  prefix: ${CONDA_PREFIX}  # This will use the current conda environment
