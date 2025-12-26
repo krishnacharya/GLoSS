@@ -6,7 +6,7 @@ import pandas as pd
 import bm25s
 import Stemmer
 from typing import List, Dict
-from ranx import Qrels, Run, evaluate
+from ranx import Qrels, Run, evaluate, fuse
 import numpy as np
 from datasets import Dataset
 from datasets import load_from_disk
@@ -14,6 +14,7 @@ from src.utils.project_dirs import get_gen_dir_dataset, processed_data_dir, get_
 from collections import defaultdict
 import argparse
 from functools import reduce
+
 # --- Dataset Configurations ---
 # This dictionary centralizes all dataset-specific information
 dataset_configs = {
@@ -50,33 +51,144 @@ def get_unique_sorted_items(items: List[str], scores: List[float]) -> Dict[str, 
             seen.add(item)
     return dict(item_score_pairs)
 
-def get_rundict(genop: List[Dict], retriever: bm25s.BM25,
-    num_return_sequences: int, items_compact: pd.DataFrame, user_id_key: str, item_id_key: str) -> Dict[str, Dict[str, float]]:
-    # Changed 'asins_compact' parameter to 'items_compact'
-    run_dict = {}
-    l = len(genop) # number of users
+def retrieve_with_topk(genop: List[Dict], retriever: bm25s.BM25,
+                       num_return_sequences: int, items_compact: pd.DataFrame,
+                       user_id_key: str, item_id_key: str, top_k: int) -> Dict[str, List[Dict]]:
+    """
+    Retrieves topK items for each generated query and groups by user.
+    
+    Returns:
+        Dict mapping user_id to list of retrieval results, where each result contains:
+        - 'query_idx': index of the generated query (0 to num_return_sequences-1)
+        - 'items': list of item IDs (topK)
+        - 'scores': list of BM25 scores (topK)
+        - 'item_indices': list of item indices in items_compact
+    """
+    l = len(genop)  # number of users
     if num_return_sequences != len(genop[0]['generated_sequences']):
         raise ValueError(f"num_return_sequences {num_return_sequences} "
                          f"does not match the number of generated sequences {len(genop[0]['generated_sequences'])}")
+    
     # Flatten all generated queries
     queries_flat = [seq for row in genop for seq in row['generated_sequences']]
+    
     # Tokenize and retrieve
-    stemmer = Stemmer.Stemmer("english")
     query_tokens = bm25s.tokenize(queries_flat, stopwords="en", show_progress=False)
-    res, scores = retriever.retrieve(query_tokens, k=1, show_progress=False)
+    res, scores = retriever.retrieve(query_tokens, k=top_k, show_progress=False)
     print(f"Retrieved results shape: {res.shape}, scores shape: {scores.shape}")
+    
     # Reshape to group by reviewer
-    res_temp = res.reshape((l, num_return_sequences))
-    scores_temp = scores.reshape((l, num_return_sequences))
-    res = res_temp
-    scores = scores_temp
+    res_reshaped = res.reshape((l, num_return_sequences, top_k))
+    scores_reshaped = scores.reshape((l, num_return_sequences, top_k))
+    
+    # Organize results by user
+    user_results = {}
     for i in range(l):
         reviewer_id = genop[i][user_id_key]
-        item_indices = res[i]
-        item_scores = scores[i]
-        items = items_compact.iloc[item_indices][item_id_key].tolist()
-        run_dict[reviewer_id] = get_unique_sorted_items(items, item_scores)
-    return run_dict
+        user_results[reviewer_id] = []
+        
+        for query_idx in range(num_return_sequences):
+            item_indices = res_reshaped[i, query_idx]
+            item_scores = scores_reshaped[i, query_idx]
+            items = items_compact.iloc[item_indices][item_id_key].tolist()
+            
+            user_results[reviewer_id].append({
+                'query_idx': query_idx,
+                'items': items,
+                'scores': item_scores.tolist(),
+                'item_indices': item_indices.tolist()
+            })
+    
+    return user_results
+
+def automated_fusion(user_results_dict: Dict[str, List[Dict]], method="sum",norm="min-max") -> Dict[str, Dict[str, float]]:
+    """
+    Use ranx.fuse() to automatically aggregate scores across queries for all users.
+    
+    Creates one run per query (across all users), then fuses them together.
+    
+    Args:
+        user_results_dict: Dict mapping user_id to list of retrieval results.
+                         Each result contains 'items', 'scores', and 'query_idx'
+    
+    Returns:
+        Dictionary mapping user_id to aggregated scores: {user_id: {item_id: aggregated_score}}
+    """
+    # Determine number of queries from first user
+    if not user_results_dict:
+        return {}
+    
+    first_user_results = next(iter(user_results_dict.values()))
+    num_queries = len(first_user_results)
+    
+    # Create a run for each query index (across all users)
+    # Format: {user_id: {item_id: score}}
+    query_runs = []
+    
+    for query_idx in range(num_queries):
+        query_run_dict = {}  # {user_id: {item_id: score}}
+        
+        for user_id, user_results in user_results_dict.items():
+            # Find the result for this query index
+            query_result = None
+            for result in user_results:
+                if result.get('query_idx') == query_idx:
+                    query_result = result
+                    break
+            
+            if query_result is None:
+                continue
+            
+            items = query_result['items']
+            scores = query_result['scores']
+            
+            # Create item_id -> score mapping for this user and query
+            user_item_scores = {item: score for item, score in zip(items, scores)}
+            query_run_dict[user_id] = user_item_scores
+        
+        # Create Run object for this query (across all users)
+        query_run = Run(query_run_dict)
+        query_runs.append(query_run)
+    
+    # Fuse all query runs using sum method with min-max normalization
+    fused_run = fuse(
+        runs=query_runs,
+        norm="min-max",
+        method="sum"
+    )
+    
+    # Convert fused Run to dictionary format
+    # fused_run.run is {user_id: {item_id: aggregated_score}}
+    return fused_run.run
+
+def get_rundict_with_fusion(genop: List[Dict], retriever: bm25s.BM25,
+                            num_return_sequences: int, items_compact: pd.DataFrame,
+                            user_id_key: str, item_id_key: str, top_k: int, method="sum",norm="min-max") -> Dict[str, Dict[str, float]]:
+    """
+    Retrieves topK items for each query and uses automated fusion to aggregate scores.
+    
+    Args:
+        genop: List of dictionaries with generated sequences
+        retriever: BM25 retriever
+        num_return_sequences: Number of generated sequences per user
+        items_compact: DataFrame with item metadata
+        user_id_key: Key for user ID in genop
+        item_id_key: Key for item ID
+        top_k: Number of top items to retrieve per query
+    
+    Returns:
+        Dictionary mapping user_id to aggregated item scores: {user_id: {item_id: aggregated_score}}
+    """
+    # Retrieve topK items for each query
+    user_results_dict = retrieve_with_topk(
+        genop, retriever, num_return_sequences, items_compact,
+        user_id_key, item_id_key, top_k
+    )
+    
+    # Apply automated fusion to aggregate scores across queries
+    fused_run_dict = automated_fusion(user_results_dict)
+    
+    return fused_run_dict
 
 def verify_reviewer_ids(valgen: List[Dict], user_id_key: str) -> None:
     """Verifies the number and uniqueness of reviewer IDs."""
@@ -85,11 +197,12 @@ def verify_reviewer_ids(valgen: List[Dict], user_id_key: str) -> None:
     print(f"Number of unique reviewers: {len(set(reviewers))}")
 
 def evaluate_retrieval(genop: List[Dict], retriever_filepath: str, num_return_sequences: int,
-                       items_compact: pd.DataFrame, at_k: int, config: Dict):
-    """Evaluates the retrieval performance."""
+                       items_compact: pd.DataFrame, at_k: int, config: Dict, top_k: int = 10, method="sum", norm="min-max"):
+    """Evaluates the retrieval performance using rank fusion."""
     qrels = Qrels(get_qrels(genop, config["user_id_key"], config["item_id_key"]))
     retriever = bm25s.BM25.load(retriever_filepath, load_corpus=False)
-    run_dict = get_rundict(genop, retriever, num_return_sequences, items_compact, config["user_id_key"], config["item_id_key"])
+    run_dict = get_rundict_with_fusion(genop, retriever, num_return_sequences, items_compact,
+                                       config["user_id_key"], config["item_id_key"], top_k)
     rundR = Run(run_dict)
     metrics = ["recall@" + str(at_k), "ndcg@" + str(at_k), "mrr"]
     ans = evaluate(qrels, rundR, metrics)
@@ -139,7 +252,7 @@ def load_data(meta_filepath: str, generated_filepath: str, config: Dict) -> tupl
         final_nlang_series = nlang_parts_series[0]
         for i in range(1, len(nlang_parts_series)):
             final_nlang_series = final_nlang_series.str.cat(nlang_parts_series[i], sep=", ")
-        items_compact['nlang'] = final_nlang_series # Changed 'asins_compact' to 'items_compact'
+        items_compact['nlang'] = final_nlang_series
     else:
         items_compact['nlang'] = pd.Series("", index=items_compact.index)
 
@@ -166,7 +279,7 @@ def build_bm25_retriever(corpus_list: List[str], index_path: str):
 
 def get_metrics(meta_filepath: str, generated_filepath: str,
                 retriever_filepath: str, num_sequences: int, at_k: int, dataset_name: str,
-                config: Dict, peruser_savepath: str):
+                config: Dict, peruser_savepath: str, top_k: int = 10):
     """Main function to load data, evaluate retrieval, and print results."""
     print("Starting the evaluation process...")
 
@@ -180,12 +293,12 @@ def get_metrics(meta_filepath: str, generated_filepath: str,
 
     # Build or load BM25 retriever if it doesn't exist
     corpus_list = items_compact['nlang'].tolist()
-    retriever = build_bm25_retriever(corpus_list, retriever_filepath) # bm25 index is built on items_compact order of items
+    retriever = build_bm25_retriever(corpus_list, retriever_filepath)
 
-    # Evaluate retrieval
-    print("Evaluating retrieval performance...")
+    # Evaluate retrieval with rank fusion
+    print("Evaluating retrieval performance with rank fusion...")
     qrels, rundR, ans = evaluate_retrieval(genop, retriever_filepath, num_sequences,
-                                           items_compact, at_k, config) # while retrieving, we use items_compact order of items
+                                           items_compact, at_k, config, top_k, method='max', norm='min-max') # TODO
 
     # Save peruser metrics
     perusermetrics = rundR.scores
@@ -198,7 +311,7 @@ def get_metrics(meta_filepath: str, generated_filepath: str,
     if df_metrics_list:
         df_metrics = pd.concat(df_metrics_list, axis=1, join='outer')
 
-        user_id_column_name = config.get("user_id_key", "user_id") # agnostic mapping
+        user_id_column_name = config.get("user_id_key", "user_id")
 
         df_metrics.index.name = user_id_column_name
         df_metrics = df_metrics.reset_index()
@@ -217,10 +330,11 @@ def get_metrics(meta_filepath: str, generated_filepath: str,
     print(f"Generated sequences file: {generated_filepath}")
     print(f"Retriever index file: {retriever_filepath}")
     print(f"Number of return sequences: {num_sequences}")
+    print(f"Top-K retrieval depth: {top_k}")
     print("Metrics:", ans)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Evaluate retrieval performance based on generated sequences.")
+    parser = argparse.ArgumentParser(description="Evaluate retrieval performance based on generated sequences with rank fusion.")
     parser.add_argument("--dataset_name", type=str, required=True, help="Specific dataset name (e.g., 'beauty', 'sports').")
     parser.add_argument("--data_family", type=str, required=True, choices=["amazon"], help="Family of the dataset.")
     parser.add_argument("--generated_file", type=str, required=True, help="The JSON file containing generated sequences (e.g., 'val_gen_op.json').")
@@ -228,7 +342,7 @@ if __name__ == "__main__":
     parser.add_argument("--num_sequences", type=int, default=5, help="Number of generated sequences to consider per reviewer.")
     parser.add_argument("--split", type=str, required=True, help="The split to evaluate on (e.g., 'validation', 'test').")
     parser.add_argument("--short_model_name", type=str, required=True, help="The short model name (e.g., 'llama-1b').")
-
+    parser.add_argument("--top_k", type=int, default=10, help="Number of top items to retrieve per query for rank fusion (default: 10).")
 
     args = parser.parse_args()
     dataset_name = args.dataset_name.lower()
@@ -252,87 +366,5 @@ if __name__ == "__main__":
     peruser_savepath = str(get_peruser_metric_dataset_modelname_encoder(args.dataset_name, args.short_model_name, encoder_name) / filename)
 
     get_metrics(meta_filepath, generated_filepath, retriever_filepath,
-                args.num_sequences, at_k, dataset_name, current_config, peruser_savepath)
-
-
-# Last item text retrieval baseline
-# Beauty, TEST
-# {'recall@5': np.float64(0.04333050127442651), 'ndcg@5': np.float64(0.023179244762936268), 'mrr': np.float64(0.016472894215147044)}
-
-# Toys, TEST
-# {'recall@5': np.float64(0.05212683681361176), 'ndcg@5': np.float64(0.026660292010049123), 'mrr': np.float64(0.0182822033170061)}
-
-# Sports  TEST
-# {'recall@5': np.float64(0.021153467988875466), 'ndcg@5': np.float64(0.011012792672956575), 'mrr': np.float64(0.007661226133288385)}
-
-# --------------------------------------------------------------------------------------------------------------------------------
-
-# RESULTS ON BEAUTY with finetuned Llama-3.2-1B, 3B, 8B
-
-# Llama-3.2-1B TEST, beam search
-# Metrics: {'recall@5': np.float64(0.04534275365559182), 'ndcg@5': np.float64(0.026878945255920418), 'mrr': np.float64(0.020865566635364964)}
-
-# Llama-3.2-3B TEST, beam search
-# Metrics: {'recall@5': np.float64(0.0651969771497563), 'ndcg@5': np.float64(0.04003929537456322), 'mrr': np.float64(0.031844266571271006)}
-
-# Llama-3.1-8B TEST, beam search
-# Metrics: {'recall@5': np.float64(0.06814828064213209), 'ndcg@5': np.float64(0.04232513489127515), 'mrr': np.float64(0.03390570734397591)}
-
-
-# --------------------------------------------------------------------------------------------------------------------------------
-
-# RESULTS on Toys
-
-# Llama-3.2-1B VALIDATION, beam search
-# Metrics: {'recall@5': np.float64(0.06398348813209494), 'ndcg@5': np.float64(0.040829700785598326), 'mrr': np.float64(0.03331613347093223)}
-
-# Llama-3.2-3B VALIDATION, beam search
-# Metrics: {'recall@5': np.float64(0.07430340557275542), 'ndcg@5': np.float64(0.045229769215361273), 'mrr': np.float64(0.03577571379428964)}
-
-# Llama-3.1-8B VALIDATION, beam search, @ end of all steps
-# Metrics: {'recall@5': np.float64(0.07739938080495357), 'ndcg@5': np.float64(0.046847991572880665), 'mrr': np.float64(0.0369797041623667)}
-
-# RESULTS on Toys
-# Llama-3.2-1B TEST, beam search
-# Metrics: {'recall@5': np.float64(0.0665635473060067), 'ndcg@5': np.float64(0.040061362732516495), 'mrr': np.float64(0.0314230471771075)}
-
-# Llama-3.2-3B TEST, test, beam search
-# Metrics: {'recall@5': np.float64(0.0720288734209848), 'ndcg@5': np.float64(0.04361009241182541), 'mrr': np.float64(0.034358511643894474)}
-
-# Llama-3.1-8B TEST, beam search, @ 8 epochs, 16 effective batch size, ~9.6k steps
-# Metrics: {'recall@5': np.float64(0.07238979118329467), 'ndcg@5': np.float64(0.043678647997469976), 'mrr': np.float64(0.03434046575577898)}
-
-# Llama-3.1-8B TEST, beam search, @ 7.2k steps
-# Metrics: {'recall@5': 0.07842227378190256, 'ndcg@5': 0.04717886157028416, 'mrr': 0.03702328778894904}
-
-
-# --------------------------------------------------------------------------------------------------------------------------------
-
-# RESULTS on Sports
-
-# Llama-3.2-1B validation, beam search
-# Metrics: {'recall@5': np.float64(0.02473299606520517), 'ndcg@5': np.float64(0.01400914019033381), 'mrr': np.float64(0.010577103241521453)}
-
-# Llama-3.2-3B validation, beam search
-# Metrics: {'recall@5': np.float64(0.03035413153456998), 'ndcg@5': np.float64(0.01629757765139283), 'mrr': np.float64(0.01177627880831928)}
-
-# Llama-3.1-8B validation, beam search    
-# skipped 
-
-# RESULTS on Sports
-# Llama-3.2-1B TEST, beam search
-# Metrics: {'recall@5': np.float64(0.02205242014776526), 'ndcg@5': np.float64(0.013278895268697173), 'mrr': np.float64(0.010423631204876816)}
-
-# Llama-3.2-3B TEST, beam search
-# Metrics: {'recall@5': np.float64(0.02876646908447341), 'ndcg@5': np.float64(0.017792914482537434), 'mrr': np.float64(0.014215617420943712)}
-
-# Llama-3.1-8B TEST, beam search    
-# Metrics: {'recall@5': 0.03590190184566115, 'ndcg@5': 0.02176466662205941, 'mrr': 0.01714938524782051}
-
-# --------------------------------------------------------------------------------------------------------------------------------
-# sports with llama-1b 9 epochs, bm25s
-# Metrics: {'recall@5': 0.02511447593898362, 'ndcg@5': 0.015328168218490337, 'mrr': 0.01214147259600528}
-
-# sports with llama-3b 9 epochs, bm25s
-# Metrics: {'recall@5': 0.030002528302946876, 'ndcg@5': 0.01833686928890612, 'mrr': 0.014534932719049357}
+                args.num_sequences, at_k, dataset_name, current_config, peruser_savepath, args.top_k)
 

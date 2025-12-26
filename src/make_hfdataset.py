@@ -61,6 +61,17 @@ def create_datasets(
 
     Returns:
         DatasetDict: A Hugging Face DatasetDict containing train, validation, and test splits.
+
+    Schema:
+        Train set:
+            - If a user is a validation user: seen_asins are index 0 to n-3 (included) and 
+              train_text is formatted as formatted_asins_list[:n-3], formatted_asins_list[n-3]
+            - If a user is not a validation user: seen_asins are index 0 to n-2 (included) and 
+              train_text is formatted as formatted_asins_list[:n-2], formatted_asins_list[n-2]
+        
+        Test dataset:
+            - Always use n-1 as the target
+            - seen_asins are index 0 to n-2 (included)
     """
     # Prepare metadata
     meta_corpus.columns = ['asin', 'Title']
